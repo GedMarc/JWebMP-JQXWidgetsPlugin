@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,12 +17,12 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist;
 
 import com.fasterxml.jackson.annotation.JsonRawValue;
+import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXHorizontalAlignments;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXSearchModes;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
-import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 
 /**
  * All the options for the Drop Down List
@@ -44,7 +44,7 @@ public class JQXDropDownListOptions extends JQXDefaultJavaScriptPart
     private Boolean checkboxes;//  Boolean 	false
     private Integer closeDelay;//  Number 	400
     private Boolean disabled;//  Boolean 	false
-    private String displayMember;//  String 	""
+    private String displayMember;//  String 	"" 
     private JQXHorizontalAlignments dropDownHorizontalAlignment;//  String 'left'
     private Integer dropDownHeight;//  Number 	200
     private Integer number;//  	200

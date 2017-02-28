@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.buttongroup;
 
 import za.co.mmagon.jwebswing.base.html.Button;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 
 /**
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Button Group",
+        description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXButtonGroup extends Button implements JQXNavBarChildren
 {
 
@@ -41,7 +46,7 @@ public class JQXButtonGroup extends Button implements JQXNavBarChildren
     public JQXButtonGroup()
     {
     }
-    
+
     public final JQXButtonGroupFeature getFeature()
     {
         if (feature == null)

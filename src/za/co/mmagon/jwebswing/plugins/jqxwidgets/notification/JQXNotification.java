@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,7 +18,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.notification;
 
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
-import za.co.mmagon.jwebswing.components.jquerylayout.layout.interfaces.JWLayoutDivChildren;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time.
@@ -27,7 +27,11 @@ import za.co.mmagon.jwebswing.components.jquerylayout.layout.interfaces.JWLayout
  * @since 20 Dec 2015
  * @version 1.0
  */
-public class JQXNotification extends Div<JQXNotificationChildren, JQXNotificationAttributes, JQXNotificationFeature, JQXNotificationEvents, JQXNotification> implements JWLayoutDivChildren, GlobalChildren
+@ComponentInformation(name = "JQX Notification",
+        description = "jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnotification/jquery-notification-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+public class JQXNotification extends Div<JQXNotificationChildren, JQXNotificationAttributes, JQXNotificationFeature, JQXNotificationEvents, JQXNotification> implements GlobalChildren
 {
 
     private static final long serialVersionUID = 1L;
@@ -55,7 +59,7 @@ public class JQXNotification extends Div<JQXNotificationChildren, JQXNotificatio
 
     public Div addText(String textToAdd)
     {
-        Div d = new Div();
+        JQXNotificationDiv d = new JQXNotificationDiv();
         d.setText(textToAdd);
         add(d);
         return d;

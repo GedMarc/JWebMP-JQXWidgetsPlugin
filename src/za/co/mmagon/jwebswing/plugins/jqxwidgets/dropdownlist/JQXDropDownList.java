@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,6 +18,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist;
 
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.List;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down.
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.base.html.List;
  * @since 13 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Dropdown List",
+        description = "jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdropdownlist/jquery-dropdownlist-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDropDownList extends Div<JQXDropDownListChildren, JQXDropDownListAttributes, JQXDropDownListFeatures, JQXDropDownListEvents, JQXDropDownList>
 {
 

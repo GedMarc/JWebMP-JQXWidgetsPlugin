@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.datetimeinput;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * An implementation of the jsTree project.
@@ -25,6 +26,11 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Date Time Input",
+        description = "jqxDateTimeInput represents a jQuery datetimeinput widget that enables the user to select a date or time using a popup calendar display or by keyboard input into the text field. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdatetimeinput/jquery-datetimeinput-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+
 public class JQXDateTimeInput extends Div<JQXDateTimeInputChildren, JQXDateTimeInputAttributes, JQXDateTimeInputFeature, JQXDateTimeInputEvents, JQXDateTimeInput>
 {
 

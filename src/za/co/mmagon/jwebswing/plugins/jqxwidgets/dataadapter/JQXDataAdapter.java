@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,14 +17,14 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import java.util.logging.Level;
 import java.util.logging.*;
 import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.components.DataAdapter;
+import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * A Data Adapter Component
@@ -34,7 +34,12 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  * @since 29 Aug 2015
  * @version 1.0
  */
-public class JQXDataAdapter<A extends JQXDataAdapterSourceData> 
+@ComponentInformation(name = "JQX Data Adapter",
+        description = "jqxDataAdapter represents a jQuery plug-in which simplifies data binding and data operations and supports binding to local and remote data",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdataadapter/jquery-data-adapter.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+
+public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
         extends DataAdapter<JQXDataAdapterChildren, JQXDataAdapterAttributes, JQXDataAdapterFeature, JQXDataAdapterEvents, JQXDataAdapter> implements IJQXDataAdapter<A>
 {
 
@@ -42,8 +47,9 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
     private JQXDataAdapterFeature<A> feature;
 
     /**
-     * Constructs a new Data Adapter 
-     * @param component 
+     * Constructs a new Data Adapter
+     *
+     * @param component
      */
     public JQXDataAdapter(Component component)
     {
@@ -54,10 +60,11 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
             component.getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
         }
     }
-    
+
     /**
      * Returns a cleaner version of me
-     * @return 
+     *
+     * @return
      */
     public IJQXDataAdapter asMe()
     {
@@ -66,7 +73,8 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
 
     /**
      * Returns the JS feature for this data adapter
-     * @return 
+     *
+     * @return
      */
     @Override
     public final JQXDataAdapterFeature getFeature()
@@ -80,7 +88,8 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
 
     /**
      * Returns all the options associated with the given feature
-     * @return 
+     *
+     * @return
      */
     @Override
     public JQXDataAdapterOptions<A> getOptions()
@@ -90,7 +99,8 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
 
     /**
      * Renders the given JavaScript for the given component
-     * @return 
+     *
+     * @return
      */
     @Override
     public StringBuilder renderJavascript()
@@ -116,5 +126,5 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
     {
         return new StringBuilder();
     }
-    
+
 }

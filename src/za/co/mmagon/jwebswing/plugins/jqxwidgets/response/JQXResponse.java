@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.response;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Response",
+        description = "jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc. jqxResponse also enables you to listen for Window(ViewPort) resizes and provides cross-browser compatible triggering for Mouse and Touch events. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxresponse/jquery-response.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXResponse extends Div<JQXResponseChildren, JQXResponseAttributes, JQXResponseFeature, JQXResponseEvents, JQXResponse>
 {
 

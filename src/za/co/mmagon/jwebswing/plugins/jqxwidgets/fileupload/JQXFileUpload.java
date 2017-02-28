@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.fileupload;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxFileUpload is a widget which can be used to select files and upload them to a server. The file upload widget supports automatic upload and multiple files upload.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX File Upload",
+        description = "jqxFileUpload is a widget which can be used to select files and upload them to a server. The file upload widget supports automatic upload and multiple files upload. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxfileupload/jquery-file-upload-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXFileUpload extends Div//<JQXFileUploadChildren, JQXFileUploadAttributes, JQXFileUploadFeature, JQXFileUploadEvents, JQXFileUpload>
 {
 

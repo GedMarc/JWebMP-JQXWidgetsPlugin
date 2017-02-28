@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.rangeselector;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxRangeSelector is a widget which can easily be used to select a numeric or date range. The API of jqxRangeSelector allows for a variety of user settings to be applied such as setting the range in
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Range Selector",
+        description = "jqxRangeSelector is a widget which can easily be used to select a numeric or date range. The API of jqxRangeSelector allows for a variety of user settings to be applied such as setting the range in numbers, days, weeks, months, years, etc ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxrangeselector/jquery-rangeselector-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRangeSelector extends Div<JQXRangeSelectorChildren, JQXRangeSelectorAttributes, JQXRangeSelectorFeature, JQXRangeSelectorEvents, JQXRangeSelector>
 {
 

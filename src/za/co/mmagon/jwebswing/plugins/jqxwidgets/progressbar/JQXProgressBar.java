@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.progressbar;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Progress Bar",
+        description = "jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxprogressbar/jquery-progressbar-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXProgressBar extends Div<JQXProgressBarChildren, JQXProgressBarAttributes, JQXProgressBarFeature, JQXProgressBarEvents, JQXProgressBar>
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.numberinput;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxNumberInput represents a jQuery widget that allows you to input currency, percentages and any type of numeric data.
@@ -29,6 +30,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 20 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Number Input",
+        description = "jqxNumberInput represents a jQuery widget that allows you to input currency, percentages and any type of numeric data. The edited data can be presented in various formats.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnumberinput/jquery-number-input-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNumberInput extends Div<JQXNumberInputChildren, JQXNumberInputAttributes, JQXNumberInputFeature, JQXNumberInputEvents, JQXNumberInput>
 {
 

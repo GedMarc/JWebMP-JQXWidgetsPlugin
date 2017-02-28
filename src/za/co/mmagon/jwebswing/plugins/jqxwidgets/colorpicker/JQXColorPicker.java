@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.colorpicker;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownListChildren;
 
 /**
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownListChi
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Color Picker",
+        description = "jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcolorpicker/jquery-colorpicker-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXColorPicker extends Div<JQXColorPickerChildren, JQXColorPickerAttributes, JQXColorPickerFeature, JQXColorPickerEvents, JQXColorPicker> implements JQXDropDownListChildren
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,14 +17,19 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.bulletchart;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- * An implementation of the jsTree project.
+ * An implementation of the JQX Bullet Chart
  * <p>
  * @author Marc Magon
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Bullet Chart",
+        description = "jqxBulletChart represents a jQuery widget which features two measures - a primary one (the pointer) and a comparative one (the target) and displays them in the context of a number of differently styled qualitative ranges.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbulletchart/jquery-bullet-chart-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXBulletChart extends Div<JQXBulletChartChildren, JQXBulletChartAttributes, JQXBulletChartFeatures, JQXBulletChartEvents, JQXBulletChart>
 {
 
@@ -36,7 +41,7 @@ public class JQXBulletChart extends Div<JQXBulletChartChildren, JQXBulletChartAt
         addFeature(getFeature());
     }
 
-    public JQXBulletChartFeature getFeature()
+    public final JQXBulletChartFeature getFeature()
     {
         if (feature == null)
         {
@@ -48,6 +53,7 @@ public class JQXBulletChart extends Div<JQXBulletChartChildren, JQXBulletChartAt
     @Override
     public JQXBulletChartOptions getOptions()
     {
+
         return getFeature().getOptions();
     }
 

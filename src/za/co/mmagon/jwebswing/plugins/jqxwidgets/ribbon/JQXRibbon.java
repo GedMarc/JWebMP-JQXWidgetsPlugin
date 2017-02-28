@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,9 +18,9 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 
 import java.util.ArrayList;
 import za.co.mmagon.jwebswing.base.html.Div;
-import za.co.mmagon.jwebswing.base.html.List;
 import za.co.mmagon.jwebswing.base.html.ListItem;
 import za.co.mmagon.jwebswing.base.html.attributes.NoAttributes;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.panel.JQXPanel;
 
 /**
@@ -30,21 +30,25 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.panel.JQXPanel;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Ribbon",
+        description = "jqxRibbon represents a jQuery widget which can be used as a tabbed toolbar or mega menu. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxribbon/jquery-ribbon-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFeature, JQXRibbonEvents, JQXRibbon>
 {
 
     private static final long serialVersionUID = 1L;
     private JQXRibbonFeature feature;
 
-    private List unorderedList;
-    private Div itemDivs;
+    private JQXRibbonList unorderedList;
+    private JQXRibbonContent itemDivs;
     private ArrayList<JQXRibbonItem> ribbonItems;
 
     public JQXRibbon()
     {
         addFeature(getFeature());
-        unorderedList = new List(false);
-        itemDivs = new Div();
+        unorderedList = new JQXRibbonList();
+        itemDivs = new JQXRibbonContent();
         add(unorderedList);
         add(itemDivs);
     }

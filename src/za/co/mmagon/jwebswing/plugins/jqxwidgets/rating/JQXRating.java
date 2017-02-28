@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,15 +17,19 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.rating;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- * jqxRating represents a jQuery UI widget that allows you to choose a rating.
- * You can configure the jqxRating items size, image and the number of displayed items
+ * jqxRating represents a jQuery UI widget that allows you to choose a rating. You can configure the jqxRating items size, image and the number of displayed items
  * <p>
  * @author Marc Magon
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Rating",
+        description = "jqxRating represents a jQuery UI widget that allows you to choose a rating. You can configure the jqxRating items size, image and the number of displayed items ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxrating/jquery-rating-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRating extends Div<JQXRatingChildren, JQXRatingAttributes, JQXRatingFeature, JQXRatingEvents, JQXRating>
 {
 

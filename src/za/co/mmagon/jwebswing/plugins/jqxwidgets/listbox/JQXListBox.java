@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.listbox;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * The jqxListBox represents a jQuery listbox widget that contains a list of selectable items.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX List Box",
+        description = "The jqxListBox represents a jQuery listbox widget that contains a list of selectable items. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlistbox/jquery-listbox-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXListBox extends Div<JQXListBoxChildren, JQXListBoxAttributes, JQXListBoxFeature, JQXListBoxEvents, JQXListBox>
 {
 

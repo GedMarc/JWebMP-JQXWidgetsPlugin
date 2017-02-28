@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,9 +18,9 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.gauge;
 
 import java.util.ArrayList;
 import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementCSSImpl;
-import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
+import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 
 /**
  * All the options for the tooltip library

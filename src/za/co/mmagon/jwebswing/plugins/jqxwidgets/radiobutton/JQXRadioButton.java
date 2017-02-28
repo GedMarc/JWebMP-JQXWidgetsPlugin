@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.radiobutton;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Radio Button",
+        description = "With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcheckandradio/jquery-radiobutton-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRadioButton extends Div<JQXRadioButtonChildren, JQXRadioButtonAttributes, JQXRadioButtonFeature, JQXRadioButtonEvents, JQXRadioButton>
 {
 

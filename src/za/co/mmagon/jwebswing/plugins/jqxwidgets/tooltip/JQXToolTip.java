@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,16 +17,20 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.tooltip;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- * jqxTooltip represents a jQuery widget that displays a popup message.
- * The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the
+ * jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the
  * html element as parameter.
  * <p>
  * @author Marc Magon
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Tooltip",
+        description = "jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the html element as parameter. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtooltip/jquery-tooltip-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXToolTip extends Div<JQXToolTipChildren, JQXToolTipAttributes, JQXToolTipFeature, JQXToolTipEvents, JQXToolTip>
 {
 

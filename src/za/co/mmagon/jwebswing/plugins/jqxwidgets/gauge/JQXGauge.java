@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.gauge;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxGauge displays an indicator within a range of values.
@@ -27,6 +28,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 15 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Gauge",
+        description = "jqxGauge displays an indicator within a range of values. Gauges can be used in a table or matrix to show the relative value of a field in a range of values in the data region, for example, as a KPI.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgauge/jquery-gauge-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXGauge extends Div<JQXGaugeChildren, JQXGaugeAttributes, JQXGaugeFeature, JQXGaugeEvents, JQXGauge>
 {
 

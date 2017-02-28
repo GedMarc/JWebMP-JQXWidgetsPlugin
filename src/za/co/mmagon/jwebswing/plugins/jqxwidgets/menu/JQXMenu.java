@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.menu;
 
 import za.co.mmagon.jwebswing.base.html.Div;
-import za.co.mmagon.jwebswing.base.html.List;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context menus, or
@@ -27,18 +27,22 @@ import za.co.mmagon.jwebswing.base.html.List;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Menu",
+        description = "jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context menus, or application-style menu bars with just a small amount of scripting. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxmenu/jquery-menu-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeature, JQXMenuEvents, JQXMenu>
 {
 
     private static final long serialVersionUID = 1L;
     private JQXMenuFeature feature;
 
-    private List menuList;
+    private JQXMenuList menuList;
 
     public JQXMenu()
     {
         addFeature(getFeature());
-        add(menuList = new List(false));
+        add(menuList = new JQXMenuList());
     }
 
     public JQXMenuFeature getFeature()
@@ -61,7 +65,7 @@ public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeat
      *
      * @return
      */
-    public List getMenuList()
+    public JQXMenuList getMenuList()
     {
         return menuList;
     }
@@ -71,7 +75,7 @@ public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeat
      *
      * @param menuList
      */
-    public void setMenuList(List menuList)
+    public void setMenuList(JQXMenuList menuList)
     {
         this.menuList = menuList;
     }

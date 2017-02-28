@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,6 +18,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.input;
 
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.interfaces.NoClosingTag;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxInput represents an Input widget with auto-complete capabilities.
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.base.html.interfaces.NoClosingTag;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Input",
+        description = "jqxInput represents an Input widget with auto-complete capabilities. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxinput/jquery-input-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXInput extends Div<JQXInputChildren, JQXInputAttributes, JQXInputFeature, JQXInputEvents, JQXInput> implements NoClosingTag
 {
 

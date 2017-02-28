@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.splitter;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * AjqxSplitter represents a widget consisting of a moveable split bar(s) that divides a container's display area into two or more resizable and collapsible panels.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Splitter",
+        description = "jqxSplitter represents a widget consisting of a moveable split bar(s) that divides a container's display area into two or more resizable and collapsible panels. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxsplitter/jquery-splitter-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXSplitter extends Div<JQXSplitterChildren, JQXSplitterAttributes, JQXSplitterFeature, JQXSplitterEvents, JQXSplitter>
 {
 

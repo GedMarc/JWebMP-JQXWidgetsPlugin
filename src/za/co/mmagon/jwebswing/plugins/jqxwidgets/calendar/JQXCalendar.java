@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.calendar;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxCalendar represents a jQuery calendar widget that enables the user to select a date using a visual monthly calendar display.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Calendar",
+        description = "jqxCalendar represents a jQuery calendar widget that enables the user to select a date using a visual monthly calendar display. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcalendar/jquery-calendar-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXCalendar extends Div<JQXCalendarChildren, JQXCalendarAttributes, JQXCalendarFeature, JQXCalendarEvents, JQXCalendar>
 {
 

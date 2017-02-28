@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dockinglayout;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * An implementation of the jsTree project.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Docking Layout",
+        description = "jqxDockingLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be floated, docked, nested, resized, pinned, unpinned and closed. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdockinglayout/jquery-docking-layout-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDockingLayout extends Div<JQXDockingLayoutChildren, JQXDockingLayoutAttributes, JQXDockingLayoutFeature, JQXDockingLayoutEvents, JQXDockingLayout>
 {
 

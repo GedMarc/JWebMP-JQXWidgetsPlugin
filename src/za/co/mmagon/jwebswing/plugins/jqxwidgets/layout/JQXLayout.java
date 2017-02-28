@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.layout;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 15 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Layout",
+        description = "jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlayout/jquery-layout-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXLayout extends Div<JQXLayoutChildren, JQXLayoutAttributes, JQXLayoutFeature, JQXLayoutEvents, JQXLayout>
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,6 +18,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar;
 
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxNavBar is a small widget which is built from UL and LI tags. It can be used for creating responsive horizontal/vertical layouts or simple navigation menus.
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Navbar",
+        description = "jqxNavBar is a small widget which is built from UL and LI tags. It can be used for creating responsive horizontal/vertical layouts or simple navigation menus.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavbar/jquery-navbar-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNavBar extends Div<GlobalChildren, JQXNavBarAttributes, JQXNavBarFeatures, JQXNavBarEvents, JQXNavBar>
 {
 

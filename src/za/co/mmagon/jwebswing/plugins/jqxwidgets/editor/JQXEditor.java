@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.editor;
 
 import za.co.mmagon.jwebswing.base.html.TextArea;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.TextArea;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Editor",
+        description = "jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxeditor/jquery-editor-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXEditor extends TextArea
 {
 

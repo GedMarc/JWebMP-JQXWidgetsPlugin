@@ -18,6 +18,8 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 
 import java.util.ArrayList;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXLocalization;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXPagerPositions;
 
 /**
  * All the options for the JQX Data Library library

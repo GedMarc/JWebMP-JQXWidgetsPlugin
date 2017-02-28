@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,6 +19,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons;
 import za.co.mmagon.jwebswing.base.html.Button;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
 import za.co.mmagon.jwebswing.base.html.interfaces.children.ListItemChildren;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 
 /**
@@ -28,16 +29,21 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
  * @since 29 Aug 2015
  * @version 1.0
  */
-public class JQXButton extends Button implements JQXNavBarChildren,GlobalChildren,ListItemChildren
+@ComponentInformation(name = "JQX Buttons",
+        description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildren, ListItemChildren
 {
 
     private static final long serialVersionUID = 1L;
-    
+
     private JQXButtonFeature feature;
 
     /**
      * Constructs a new button feature with the given text
-     * @param text 
+     *
+     * @param text
      */
     public JQXButton(String text)
     {
@@ -56,17 +62,16 @@ public class JQXButton extends Button implements JQXNavBarChildren,GlobalChildre
     @Override
     public void preConfigure()
     {
-        if(!isConfigured())
+        if (!isConfigured())
         {
         }
         super.preConfigure();
     }
-    
-    
 
     /**
      * Returns the features
-     * @return 
+     *
+     * @return
      */
     public final JQXButtonFeature getFeature()
     {
@@ -79,7 +84,8 @@ public class JQXButton extends Button implements JQXNavBarChildren,GlobalChildre
 
     /**
      * Returns the button options
-     * @return 
+     *
+     * @return
      */
     @Override
     public JQXButtonOptions getOptions()

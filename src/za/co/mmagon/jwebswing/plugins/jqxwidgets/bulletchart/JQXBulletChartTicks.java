@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,6 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.bulletchart;
 
-import za.co.mmagon.jwebswing.components.jqueryui.position.Position;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
@@ -27,8 +26,20 @@ public class JQXBulletChartTicks extends JavaScriptPart
 {
 
     private static final long serialVersionUID = 1L;
+    /**
+     * The actual position
+     */
+    private JQXBulletChartTickPosition position;
+    /**
+     * The relevant interval
+     */
+    private Integer interval;
+    /**
+     * The size of the ticks
+     */
+    private Integer size;
 
-    public JQXBulletChartTicks(Position position, Integer interval, Integer size)
+    public JQXBulletChartTicks(JQXBulletChartTickPosition position, Integer interval, Integer size)
     {
         this.position = position;
         this.interval = interval;
@@ -39,16 +50,12 @@ public class JQXBulletChartTicks extends JavaScriptPart
     {
     }
 
-    private Position position;
-    private Integer interval;
-    private Integer size;
-
-    public Position getPosition()
+    public JQXBulletChartTickPosition getPosition()
     {
         return position;
     }
 
-    public void setPosition(Position position)
+    public void setPosition(JQXBulletChartTickPosition position)
     {
         this.position = position;
     }

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,15 +17,15 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.treegrid;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxTreeGrid is a lightweight jQuery widget which represents data in a tree-like structure.
  * <p>
- * The TreeGrid(also known as TreeList) widget supports multi column display of hierarchical data, data
- * paging, sorting and filtering, data editing, columns resizing, fixed columns, conditional formatting, aggregates and rows selection.
+ * The TreeGrid(also known as TreeList) widget supports multi column display of hierarchical data, data paging, sorting and filtering, data editing, columns resizing, fixed columns, conditional
+ * formatting, aggregates and rows selection.
  * <p>
- * It can read and display the data from your data sources like
- * XML, JSON, Array, CSV or TSV.
+ * It can read and display the data from your data sources like XML, JSON, Array, CSV or TSV.
  * <p>
  * jqxTreeGrid has intuitive and easy to use APIs and works across devices and browsers.
  * <p>
@@ -33,6 +33,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Tree Grid",
+        description = "jqxTreeGrid is a lightweight jQuery widget which represents data in a tree-like structure. The TreeGrid(also known as TreeList) widget supports multi column display of hierarchical data, data paging, sorting and filtering, data editing, columns resizing, fixed columns, conditional formatting, aggregates and rows selection.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtreegrid/jquery-treegrid-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTreeGrid extends Div<JQXTreeGridChildren, JQXTreeGridAttributes, JQXTreeGridFeature, JQXTreeGridEvents, JQXTreeGrid>
 {
 

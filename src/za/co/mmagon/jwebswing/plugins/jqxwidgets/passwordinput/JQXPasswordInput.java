@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.passwordinput;
 
 import za.co.mmagon.jwebswing.base.html.InputPasswordType;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxPasswordInput represents a widget which enables you to input passwords with nice visual feedback about the password's strength.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.InputPasswordType;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Password Input",
+        description = "jqxPasswordInput represents a widget which enables you to input passwords with nice visual feedback about the password's strength. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpasswordinput/jquery-password-input-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXPasswordInput extends InputPasswordType
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,18 +17,22 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.tagcloud;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- * jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website.
- * Each tag has weight value which corresponds to its popularity, importance or recurrence on the page.
- * The keywords in the cloud can have their own URL which navigates to a collection of items associated with the relevant tag.
- * The user can easily customize the appearance of the control, choose the items that will be displayed in the cloud, their font size and color, sort the tags alphabetically or by value, in ascending
- * or descending order.
+ * jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website. Each tag has weight value
+ * which corresponds to its popularity, importance or recurrence on the page. The keywords in the cloud can have their own URL which navigates to a collection of items associated with the relevant
+ * tag. The user can easily customize the appearance of the control, choose the items that will be displayed in the cloud, their font size and color, sort the tags alphabetically or by value, in
+ * ascending or descending order.
  * <p>
  * @author Marc Magon
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Tag Cloud",
+        description = "jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website. Each tag has weight value which corresponds to its popularity, importance or recurrence on the page.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtagcloud/jquery-tagcloud-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTagCloud extends Div<JQXTagCloudChildren, JQXTagCloudAttributes, JQXTagCloudFeature, JQXTagCloudEvents, JQXTagCloud>
 {
 

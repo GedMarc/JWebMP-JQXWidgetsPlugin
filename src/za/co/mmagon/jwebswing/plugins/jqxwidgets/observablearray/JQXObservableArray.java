@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.observablearray;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * An implementation of the jsTree project.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Observable Array",
+        description = "The Observable Array wraps a JavaScript Array object and tracks changes in the Array. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxobservablearray/javascript-observable-array.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXObservableArray extends Div<JQXObservableArrayChildren, JQXObservableArrayAttributes, JQXObservableArrayFeature, JQXObservableArrayEvents, JQXObservableArray>
 {
 

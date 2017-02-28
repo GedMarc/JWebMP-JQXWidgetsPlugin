@@ -44,7 +44,7 @@ public class JQXAngularModuleTest extends BaseTestClass
         Page p = getInstance();
         JQXAngularModule mod = new JQXAngularModule(p.getBody());
         System.out.println(p.toString(true));
-        System.out.println(p.getAngular().renderJavascript());
+        System.out.println(p.getAngular().renderAngularJavascript(p));
 
     }
 }

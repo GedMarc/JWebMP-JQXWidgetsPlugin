@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -21,16 +21,21 @@ import java.util.Objects;
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.Paragraph;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.utilities.ComponentUtils;
 
 /**
- * jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content.
- * Optionally you can change the default toggle mode to double-click or mouse-over.
+ * jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content. Optionally you can change the default toggle mode to
+ * double-click or mouse-over.
  * <p>
  * @author Marc Magon
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Navigation Bar",
+        description = "jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content. Optionally you can change the default toggle mode to double-click or mouseover.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavigationbar/jquery-navigationbar-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttributes, JQXNavigationBarFeature, JQXNavigationBarEvents, JQXNavigationBar>
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -25,15 +25,19 @@ import za.co.mmagon.jwebswing.base.html.interfaces.NoNewLineForRawText;
 import za.co.mmagon.jwebswing.base.html.interfaces.children.BodyChildren;
 import za.co.mmagon.jwebswing.base.html.interfaces.events.GlobalEvents;
 import za.co.mmagon.jwebswing.base.servlets.interfaces.Loader;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- * The jqxLoader represents a jQuery widget which displays the built-in loading element.
- * The loading element can be icon only, text only or combination of icon and text.
+ * The jqxLoader represents a jQuery widget which displays the built-in loading element. The loading element can be icon only, text only or combination of icon and text.
  * <p>
  * It can be used to display loading element until the widget's data is loaded.
  *
  * @author MMagon
  */
+@ComponentInformation(name = "JQX Loader",
+        description = "The jqxLoader represents a jQuery widget which displays the built-in loading element. The loading element can be icon only, text only or combination of icon and text. It can be used to display loading element until the widget's data is loaded. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxloader/jquery-loader-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXLoader extends Div<GlobalChildren, NoAttributes, GlobalFeatures, GlobalEvents, JQXLoader> implements BodyChildren, NoNewLineForRawText, NoNewLineBeforeClosingTag, Loader
 {
 
@@ -43,19 +47,6 @@ public class JQXLoader extends Div<GlobalChildren, NoAttributes, GlobalFeatures,
     {
         setID("JWLoader");
         addFeature(feature = new JQXLoaderFeature(this));
-
-        //add("loader div");
-    }
-
-    public static void main(String... args)
-    {
-        JQXLoader loader = new JQXLoader();
-        //loader.
-        /*
-         * System.out.println(loader.toString(true));
-         * System.out.println(loader.renderJavascripts(0));
-         * System.out.println(loader.renderComponentCSS(0));
-         */
     }
 
     @Override

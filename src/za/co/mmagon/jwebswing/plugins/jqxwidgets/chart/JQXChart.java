@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,31 +17,21 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.chart;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  *
- * jqxChart is a lightweight and powerful chart widget written 100% in javascript.
- * It offers many advanced features and supports three different rendering technologies - SVG, HTML5 Canvas and VML.
+ * jqxChart is a lightweight and powerful chart widget written 100% in javascript. It offers many advanced features and supports three different rendering technologies - SVG, HTML5 Canvas and VML.
  * <p>
  * You can use jqxChart to add interactive charts to your website, build custom dashboards, or use it in your mobile applications.
  * <p>
- * jqxChart offers excellent cross-browser compatibility and works well with both desktop and mobile browsers.
- * jqxChart is being used by thousands of individual developers, small companies as well as a significant percentage of the Furtune 100 companies.
+ * jqxChart offers excellent cross-browser compatibility and works well with both desktop and mobile browsers. jqxChart is being used by thousands of individual developers, small companies as well as
+ * a significant percentage of the Furtune 100 companies.
  * <p>
- * Basic concepts
- * Before you start using jqxChart you need to learn how it works and some basic concepts. Depending on which features you use, your chart may contain the following elements:
+ * Basic concepts Before you start using jqxChart you need to learn how it works and some basic concepts. Depending on which features you use, your chart may contain the following elements:
  * <p>
- * horizontal axis (xAxis)
- * vertical axis (valueAxis)
- * title and description
- * one or more series groups and series
- * grid lines and tick marks
- * legend
- * border line
- * background
- * tooltips
- * annotations
- * range selector
+ * horizontal axis (xAxis) vertical axis (valueAxis) title and description one or more series groups and series grid lines and tick marks legend border line background tooltips annotations range
+ * selector
  * <p>
  * <p>
  * Some simple charts may not have all of these elements, while complicated charts could be highly customized and even include additional elements added through custom drawing.
@@ -50,6 +40,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Chart",
+        description = "jqxChart is a lightweight and powerful chart widget written 100% in javascript. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxchart/jquery-chart-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXChart extends Div<JQXChartChildren, JQXChartAttributes, JQXChartFeature, JQXChartEvents, JQXChart>
 {
 

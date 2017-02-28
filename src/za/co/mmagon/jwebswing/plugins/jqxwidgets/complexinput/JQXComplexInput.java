@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.complexinput;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxComplexInput represents an input widget for entering complex numbers and getting their real and imaginary parts. The complex input also supports on-keydown and on-change number validation.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Complex Input",
+        description = "jqxComplexInput represents an input widget for entering complex numbers and getting their real and imaginary parts. The complex input also supports on-keydown and on-change number validation.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcomplexinput/jquery-complex-input-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXComplexInput extends Div<JQXComplexInputChildren, JQXComplexInputAttributes, JQXComplexInputFeature, JQXComplexInputEvents, JQXComplexInput>
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.validator;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxValidator is jQWidgets plugin used for validating html forms using JavaScript. It has a set of build in rules (for required inputs, e-mail, SSN, ZIP, max value, min value, interval etc.) used
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 25 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Validator",
+        description = "jqxValidator is jQWidgets plugin used for validating html forms using JavaScript. It has a set of build in rules (for required inputs, e-mail, SSN, ZIP, max value, min value, interval etc.) used for validating the user inputs. You can also write a custom rule which will fit best to your requirements. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxvalidator/jquery-validator-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXValidator extends Div<JQXValidatorChildren, JQXValidatorAttributes, JQXValidatorFeature, JQXValidatorEvents, JQXValidator>
 {
 

@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.grid;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * The Grid is a powerful jQuery widget that displays tabular data. It offers rich support for interacting with data, including paging, grouping, sorting, filtering and editing.
@@ -25,6 +26,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 15 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Grid",
+        description = "The Grid is a powerful jQuery widget that displays tabular data. It offers rich support for interacting with data, including paging, grouping, sorting, filtering and editing. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgrid/jquery-grid-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXGrid extends Div<JQXGridChildren, JQXGridAttributes, JQXGridFeature, JQXGridEvents, JQXGrid>
 {
 

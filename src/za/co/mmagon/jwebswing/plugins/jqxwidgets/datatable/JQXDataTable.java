@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * An implementation of the jsTree project.
@@ -25,6 +26,11 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 29 Aug 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Data Table",
+        description = "qxDataTable is a lightweight jQuery Table widget built to easily replace your HTML Tables.",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdatatable/jquery-datatable-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+
 public class JQXDataTable extends Div<JQXDataTableChildren, JQXDataTableAttributes, JQXDataTableFeature, JQXDataTableEvents, JQXDataTable>
 {
 

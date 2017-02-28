@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,17 +17,21 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.treemap;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- * jqxTreeMap displays hierarchical data as a set of nested rectangles.
- * Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches.
- * A leaf node's rectangle has an area proportional to a specified dimension on the data.
+ * jqxTreeMap displays hierarchical data as a set of nested rectangles. Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches. A leaf
+ * node's rectangle has an area proportional to a specified dimension on the data.
  * <p>
  * <p>
  * @author Marc Magon
  * @since 25 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Tree Map",
+        description = "jqxTreeMap displays hierarchical data as a set of nested rectangles. Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches. A leaf node's rectangle has an area proportional to a specified dimension on the data. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtreemap/jquery-treemap-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTreeMap extends Div<JQXTreeMapChildren, JQXTreeMapAttributes, JQXTreeMapFeature, JQXTreeMapEvents, JQXTreeMap>
 {
 

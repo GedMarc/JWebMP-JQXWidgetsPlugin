@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.scrollview;
 
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * jqxScrollView represents a widget which can be used for viewing content which is wider than the visible area outlined by the device's screen. Specific item can be chosen using drag movements or
@@ -26,6 +27,10 @@ import za.co.mmagon.jwebswing.base.html.Div;
  * @since 24 Dec 2015
  * @version 1.0
  */
+@ComponentInformation(name = "JQX Scroll View",
+        description = "jqxScrollView represents a widget which can be used for viewing content which is wider than the visible area outlined by the device's screen. Specific item can be chosen using drag movements or clicking/tapping on the buttons at the bottom of the jqxScrollView. ",
+        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxscrollview/jquery-scrollview-getting-started.htm?search=",
+        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXScrollView extends Div<JQXScrollViewChildren, JQXScrollViewAttributes, JQXScrollViewFeature, JQXScrollViewEvents, JQXScrollView>
 {
 

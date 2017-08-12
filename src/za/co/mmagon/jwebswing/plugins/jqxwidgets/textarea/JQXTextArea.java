@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxTextArea represents an textarea widget with auto-complete capabilities.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Text Area",
-        description = "jqxTextArea represents an textarea widget with auto-complete capabilities. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtextarea/jquery-textarea-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTextArea represents an textarea widget with auto-complete capabilities. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtextarea/jquery-textarea-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTextArea extends Div<JQXTextAreaChildren, JQXTextAreaAttributes, JQXTextAreaFeature, JQXTextAreaEvents, JQXTextArea>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTextAreaFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXTextAreaFeature feature;
 
-    public JQXTextArea()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTextArea()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTextAreaFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTextAreaFeature(this);
-        }
-        return feature;
-    }
+	public JQXTextAreaFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTextAreaFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTextAreaOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTextAreaOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

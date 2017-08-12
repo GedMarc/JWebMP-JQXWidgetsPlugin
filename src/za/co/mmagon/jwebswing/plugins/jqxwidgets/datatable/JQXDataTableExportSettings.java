@@ -19,83 +19,82 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXDataTableExportSettings extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Boolean columnsHeader;
-    private Boolean hiddenColumns;
-    private String serverURL;
-    private String characterSet;
-    private Boolean recordsInView;
-    private String fileName;
+	private Boolean columnsHeader;
+	private Boolean hiddenColumns;
+	private String serverURL;
+	private String characterSet;
+	private Boolean recordsInView;
+	private String fileName;
 
-    public JQXDataTableExportSettings()
-    {
-    }
+	public JQXDataTableExportSettings()
+	{
+	}
 
-    public Boolean getColumnsHeader()
-    {
-        return columnsHeader;
-    }
+	public Boolean getColumnsHeader()
+	{
+		return columnsHeader;
+	}
 
-    public void setColumnsHeader(Boolean columnsHeader)
-    {
-        this.columnsHeader = columnsHeader;
-    }
+	public void setColumnsHeader(Boolean columnsHeader)
+	{
+		this.columnsHeader = columnsHeader;
+	}
 
-    public Boolean getHiddenColumns()
-    {
-        return hiddenColumns;
-    }
+	public Boolean getHiddenColumns()
+	{
+		return hiddenColumns;
+	}
 
-    public void setHiddenColumns(Boolean hiddenColumns)
-    {
-        this.hiddenColumns = hiddenColumns;
-    }
+	public void setHiddenColumns(Boolean hiddenColumns)
+	{
+		this.hiddenColumns = hiddenColumns;
+	}
 
-    public String getServerURL()
-    {
-        return serverURL;
-    }
+	public String getServerURL()
+	{
+		return serverURL;
+	}
 
-    public void setServerURL(String serverURL)
-    {
-        this.serverURL = serverURL;
-    }
+	public void setServerURL(String serverURL)
+	{
+		this.serverURL = serverURL;
+	}
 
-    public String getCharacterSet()
-    {
-        return characterSet;
-    }
+	public String getCharacterSet()
+	{
+		return characterSet;
+	}
 
-    public void setCharacterSet(String characterSet)
-    {
-        this.characterSet = characterSet;
-    }
+	public void setCharacterSet(String characterSet)
+	{
+		this.characterSet = characterSet;
+	}
 
-    public Boolean getRecordsInView()
-    {
-        return recordsInView;
-    }
+	public Boolean getRecordsInView()
+	{
+		return recordsInView;
+	}
 
-    public void setRecordsInView(Boolean recordsInView)
-    {
-        this.recordsInView = recordsInView;
-    }
+	public void setRecordsInView(Boolean recordsInView)
+	{
+		this.recordsInView = recordsInView;
+	}
 
-    public String getFileName()
-    {
-        return fileName;
-    }
+	public String getFileName()
+	{
+		return fileName;
+	}
 
-    public void setFileName(String fileName)
-    {
-        this.fileName = fileName;
-    }
+	public void setFileName(String fileName)
+	{
+		this.fileName = fileName;
+	}
 
 }

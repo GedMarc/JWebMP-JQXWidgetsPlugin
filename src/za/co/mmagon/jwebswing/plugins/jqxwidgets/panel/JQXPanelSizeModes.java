@@ -24,19 +24,19 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.panel;
  */
 public enum JQXPanelSizeModes
 {
-    /**
-     * In the 'fixed' mode, the panel displays scrollbars, if its content requires it.
-     */
-    fixed,
-    /**
-     * In the wrap mode, the scrollbars are not displayed and the panel automatically changes its size.
-     */
-    wrap;
+	/**
+	 * In the 'fixed' mode, the panel displays scrollbars, if its content requires it.
+	 */
+	fixed,
+	/**
+	 * In the wrap mode, the scrollbars are not displayed and the panel automatically changes its size.
+	 */
+	wrap;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

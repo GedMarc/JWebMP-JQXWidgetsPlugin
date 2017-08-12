@@ -1,4 +1,3 @@
-
 //Colour constants
 var fc_cmt = "#080";
 var fc_html = "#11a";
@@ -23,8 +22,7 @@ function formatCode(precode) {
     for (var b = 0; b < textlines.length; b++) {
         var code = textlines[b];
         code = code.replace(/\f|\n/g, "");
-        if (code.indexOf("if (") == -1 && code.indexOf("for (") == -1)
-        {
+        if (code.indexOf("if (") == -1 && code.indexOf("for (") == -1) {
             code = code.replace(/&/g, '&amp;');
             code = code.replace(/</g, '&lt;');
             code = code.replace(/>/g, '&gt;');
@@ -33,7 +31,7 @@ function formatCode(precode) {
         code = code.replace(/('.+')/g, "<span style=\" clear: both; padding: 0px; margin: 0px; color: " + fc_quot + ";\">$1</span>");
         code = code.replace(/&lt;(\S.*?)&gt;/g, "<span style=\"clear: both; padding: 0px; margin: 0px; color: " + fc_html + ";\">&lt;$1&gt;</span>");
         code = code.replace(/&lt;!--/g, "<span style=\"clear: both; padding: 0px; margin: 0px; color: " + fc_cmt + ";\">&lt;!--");
-        code = code.replace(/--&gt;/g, "--&gt;</span>");        
+        code = code.replace(/--&gt;/g, "--&gt;</span>");
 
         code = colourKeywords(keywords, code);
         code = colourCodeKeywordsCustom("width:|disabled:|height:|uploadUrl:|datafield:|dataField:|text:|minwidth:|cellsformat:|cellsalign:|cellsformat:|columntype:", code);
@@ -46,7 +44,7 @@ function formatCode(precode) {
         newcode += code + "<div/>";
         linecount++;
     }
- 
+
     return "<pre style='border:none !important; padding: 0px !important; overflow: auto; margin-top: 5px; margin-bottom: 5px;' class='code'>" + newcode + "</pre>";
 }
 

@@ -17,10 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.fileupload;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXFileUploadAttributes
 {
-    Visibility;
+	Visibility;
 }

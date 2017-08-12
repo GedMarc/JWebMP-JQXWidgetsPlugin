@@ -24,12 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.slider;
  */
 public enum JQXSliderTickPositions
 {
-    top, bottom, both;
-
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
-
+	top, bottom, both;
+	
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+	
 }

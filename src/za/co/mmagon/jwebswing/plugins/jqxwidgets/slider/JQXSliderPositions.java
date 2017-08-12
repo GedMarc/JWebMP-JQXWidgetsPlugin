@@ -24,12 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.slider;
  */
 public enum JQXSliderPositions
 {
-    near, far;
-
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
-
+	near, far;
+	
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+	
 }

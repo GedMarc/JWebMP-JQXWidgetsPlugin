@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownListChi
 /**
  * jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. You can configure the jqxColorPicker's color mode, input a color in hex or rgb format.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Color Picker",
-        description = "jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcolorpicker/jquery-colorpicker-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcolorpicker/jquery-colorpicker-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXColorPicker extends Div<JQXColorPickerChildren, JQXColorPickerAttributes, JQXColorPickerFeature, JQXColorPickerEvents, JQXColorPicker> implements JQXDropDownListChildren
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXColorPickerFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXColorPickerFeature feature;
 
-    public JQXColorPicker()
-    {
-        addFeature(getFeature());
-    }
+	public JQXColorPicker()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXColorPickerFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXColorPickerFeature(this);
-        }
-        return feature;
-    }
+	public JQXColorPickerFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXColorPickerFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXColorPickerOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXColorPickerOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

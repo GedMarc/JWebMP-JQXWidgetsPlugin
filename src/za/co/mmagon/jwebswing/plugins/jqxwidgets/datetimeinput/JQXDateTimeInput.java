@@ -22,39 +22,40 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Date Time Input",
-        description = "jqxDateTimeInput represents a jQuery datetimeinput widget that enables the user to select a date or time using a popup calendar display or by keyboard input into the text field. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdatetimeinput/jquery-datetimeinput-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxDateTimeInput represents a jQuery datetimeinput widget that enables the user to select a date or time using a popup calendar display or by keyboard input into the text field. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdatetimeinput/jquery-datetimeinput-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 
 public class JQXDateTimeInput extends Div<JQXDateTimeInputChildren, JQXDateTimeInputAttributes, JQXDateTimeInputFeature, JQXDateTimeInputEvents, JQXDateTimeInput>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXDateTimeInputFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXDateTimeInputFeature feature;
 
-    public JQXDateTimeInput()
-    {
-        addFeature(getFeature());
-    }
+	public JQXDateTimeInput()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXDateTimeInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDateTimeInputFeature(this);
-        }
-        return feature;
-    }
+	public JQXDateTimeInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDateTimeInputFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXDateTimeInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXDateTimeInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

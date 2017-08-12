@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Docking",
-        description = "jqxDocking represents a jQuery widget which allows you to manage multiple windows and even the layout of your web page.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdocking/jquery-docking-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxDocking represents a jQuery widget which allows you to manage multiple windows and even the layout of your web page.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdocking/jquery-docking-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDocking extends Div<JQXDockingChildren, JQXDockingAttributes, JQXDockingFeature, JQXDockingEvents, JQXDocking>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXDockingFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXDockingFeature feature;
 
-    public JQXDocking()
-    {
-        addFeature(getFeature());
-    }
+	public JQXDocking()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXDockingFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDockingFeature(this);
-        }
-        return feature;
-    }
+	public JQXDockingFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDockingFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXDockingOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXDockingOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

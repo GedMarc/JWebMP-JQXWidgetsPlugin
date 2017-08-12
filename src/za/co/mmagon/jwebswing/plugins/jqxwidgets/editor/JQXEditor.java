@@ -22,40 +22,41 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Editor",
-        description = "jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxeditor/jquery-editor-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxeditor/jquery-editor-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXEditor extends TextArea
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXEditorFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXEditorFeature feature;
 
-    public JQXEditor()
-    {
-        super("");
-        addFeature(getFeature());
+	public JQXEditor()
+	{
+		super("");
+		addFeature(getFeature());
 
-    }
+	}
 
-    public JQXEditorFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXEditorFeature(this);
-        }
-        return feature;
-    }
+	public JQXEditorFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXEditorFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXEditorOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXEditorOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

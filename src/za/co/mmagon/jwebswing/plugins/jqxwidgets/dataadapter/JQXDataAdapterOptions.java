@@ -17,212 +17,215 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import java.util.ArrayList;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+
+import java.util.ArrayList;
 
 /**
  * All the options for the Data Adapter library
  * <p>
- * @author GedMarc
+ *
  * @param <A>
- * @since Dec 39, 2015
+ *
+ * @author GedMarc
  * @version 1.0
  * <p>
  * <p>
+ * @since Dec 39, 2015
  */
 public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * String "\t" when datatype is "tab" and "," when datatype is "CSV"
-     */
-    private String columnDelimiter;//
-    /**
-     * Array []
-     */
-    private ArrayList<JQXDataFields> datafields;//
-    private A data;// Object
-    @JsonIgnore
-    private A localdata;// Object
-    private JQXDataAdapterSourceType datatype;// String
-    private String type;
-    private String id;// String 	""
-//localdata Array or String[]
-    private String mapChar;// String 	">"
-    private String rowDelimiter;// String 	"\n"
-    private String root;// String 	""
-    private String record;// String 	""
-    private String url;// String
-    private Boolean async;// 	Boolean 	true
-    private Boolean autoBind;// 	Boolean 	false
-    private String contentType;// 	String 	"application/x-www-form-urlencoded"
+	/**
+	 * String "\t" when datatype is "tab" and "," when datatype is "CSV"
+	 */
+	private String columnDelimiter;//
+	/**
+	 * Array []
+	 */
+	private ArrayList<JQXDataFields> datafields;//
+	private A data;// Object
+	@JsonIgnore
+	private A localdata;// Object
+	private JQXDataAdapterSourceType datatype;// String
+	private String type;
+	private String id;// String 	""
+	//localdata Array or String[]
+	private String mapChar;// String 	">"
+	private String rowDelimiter;// String 	"\n"
+	private String root;// String 	""
+	private String record;// String 	""
+	private String url;// String
+	private Boolean async;// 	Boolean 	true
+	private Boolean autoBind;// 	Boolean 	false
+	private String contentType;// 	String 	"application/x-www-form-urlencoded"
 
-    public JQXDataAdapterOptions()
-    {
+	public JQXDataAdapterOptions()
+	{
 
-    }
+	}
 
-    public String getColumnDelimiter()
-    {
-        return columnDelimiter;
-    }
+	public String getColumnDelimiter()
+	{
+		return columnDelimiter;
+	}
 
-    public void setColumnDelimiter(String columnDelimiter)
-    {
-        this.columnDelimiter = columnDelimiter;
-    }
+	public void setColumnDelimiter(String columnDelimiter)
+	{
+		this.columnDelimiter = columnDelimiter;
+	}
 
-    public ArrayList<JQXDataFields> getDatafields()
-    {
-        if (datafields == null)
-        {
-            datafields = new ArrayList<>();
-        }
-        return datafields;
-    }
+	public ArrayList<JQXDataFields> getDatafields()
+	{
+		if (datafields == null)
+		{
+			datafields = new ArrayList<>();
+		}
+		return datafields;
+	}
 
-    public void setDatafields(ArrayList<JQXDataFields> datafields)
-    {
-        this.datafields = datafields;
-    }
+	public void setDatafields(ArrayList<JQXDataFields> datafields)
+	{
+		this.datafields = datafields;
+	}
 
-    public A getData()
-    {
-        return data;
-    }
+	public A getData()
+	{
+		return data;
+	}
 
-    public void setData(A data)
-    {
-        this.data = data;
-    }
+	public void setData(A data)
+	{
+		this.data = data;
+	}
 
-    public A getLocaldata()
-    {
-        return localdata;
-    }
+	public A getLocaldata()
+	{
+		return localdata;
+	}
 
-    public void setLocaldata(A localdata, JQXDataAdapter adapter)
-    {
-        this.localdata = localdata;
-        if (localdata != null)
-        {
-            setUrl("da?do=" + adapter.getDAID());
-            setAsync(true);
-            setAutoBind(true);
-            setDatatype(JQXDataAdapterSourceType.JSON);
-        }
-    }
+	public void setLocaldata(A localdata, JQXDataAdapter adapter)
+	{
+		this.localdata = localdata;
+		if (localdata != null)
+		{
+			setUrl("da?do=" + adapter.getDAID());
+			setAsync(true);
+			setAutoBind(true);
+			setDatatype(JQXDataAdapterSourceType.JSON);
+		}
+	}
 
-    public JQXDataAdapterSourceType getDatatype()
-    {
-        return datatype;
-    }
+	public JQXDataAdapterSourceType getDatatype()
+	{
+		return datatype;
+	}
 
-    public void setDatatype(JQXDataAdapterSourceType datatype)
-    {
-        this.datatype = datatype;
-    }
+	public void setDatatype(JQXDataAdapterSourceType datatype)
+	{
+		this.datatype = datatype;
+	}
 
-    public String getType()
-    {
-        return type;
-    }
+	public String getType()
+	{
+		return type;
+	}
 
-    public void setType(String type)
-    {
-        this.type = type;
-    }
+	public void setType(String type)
+	{
+		this.type = type;
+	}
 
-    public String getOwnerId()
-    {
-        return id;
-    }
+	public String getOwnerId()
+	{
+		return id;
+	}
 
-    public void setOwnerId(String id)
-    {
-        this.id = id;
-    }
+	public void setOwnerId(String id)
+	{
+		this.id = id;
+	}
 
-    public String getMapChar()
-    {
-        return mapChar;
-    }
+	public String getMapChar()
+	{
+		return mapChar;
+	}
 
-    public void setMapChar(String mapChar)
-    {
-        this.mapChar = mapChar;
-    }
+	public void setMapChar(String mapChar)
+	{
+		this.mapChar = mapChar;
+	}
 
-    public String getRowDelimiter()
-    {
-        return rowDelimiter;
-    }
+	public String getRowDelimiter()
+	{
+		return rowDelimiter;
+	}
 
-    public void setRowDelimiter(String rowDelimiter)
-    {
-        this.rowDelimiter = rowDelimiter;
-    }
+	public void setRowDelimiter(String rowDelimiter)
+	{
+		this.rowDelimiter = rowDelimiter;
+	}
 
-    public String getRoot()
-    {
-        return root;
-    }
+	public String getRoot()
+	{
+		return root;
+	}
 
-    public void setRoot(String root)
-    {
-        this.root = root;
-    }
+	public void setRoot(String root)
+	{
+		this.root = root;
+	}
 
-    public String getRecord()
-    {
-        return record;
-    }
+	public String getRecord()
+	{
+		return record;
+	}
 
-    public void setRecord(String record)
-    {
-        this.record = record;
-    }
+	public void setRecord(String record)
+	{
+		this.record = record;
+	}
 
-    public String getUrl()
-    {
-        return url;
-    }
+	public String getUrl()
+	{
+		return url;
+	}
 
-    public void setUrl(String url)
-    {
-        this.url = url;
-    }
+	public void setUrl(String url)
+	{
+		this.url = url;
+	}
 
-    public Boolean getAsync()
-    {
-        return async;
-    }
+	public Boolean getAsync()
+	{
+		return async;
+	}
 
-    public void setAsync(Boolean async)
-    {
-        this.async = async;
-    }
+	public void setAsync(Boolean async)
+	{
+		this.async = async;
+	}
 
-    public Boolean getAutoBind()
-    {
-        return autoBind;
-    }
+	public Boolean getAutoBind()
+	{
+		return autoBind;
+	}
 
-    public void setAutoBind(Boolean autoBind)
-    {
-        this.autoBind = autoBind;
-    }
+	public void setAutoBind(Boolean autoBind)
+	{
+		this.autoBind = autoBind;
+	}
 
-    public String getContentType()
-    {
-        return contentType;
-    }
+	public String getContentType()
+	{
+		return contentType;
+	}
 
-    public void setContentType(String contentType)
-    {
-        this.contentType = contentType;
-    }
+	public void setContentType(String contentType)
+	{
+		this.contentType = contentType;
+	}
 
 }

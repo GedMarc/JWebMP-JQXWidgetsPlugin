@@ -20,81 +20,76 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author mmagon
  */
 public class JQXBulletChartPointer extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
+	private Double value;
+	private String label;
+	private Integer thickness;
+	private ColourHex color;
+	public JQXBulletChartPointer(Double value, String label, Integer thickness)
+	{
+		this.value = value;
+		this.label = label;
+		this.thickness = thickness;
+	}
+	public JQXBulletChartPointer(Double value, ColourHex color)
+	{
+		this.value = value;
+		this.color = color;
+	}
+	public JQXBulletChartPointer(Double value, String label, ColourHex color)
+	{
+		this.value = value;
+		this.label = label;
+		this.color = color;
+	}
 
-    public JQXBulletChartPointer(Double value, String label, Integer thickness)
-    {
-        this.value = value;
-        this.label = label;
-        this.thickness = thickness;
-    }
+	public JQXBulletChartPointer()
+	{
+	}
 
-    public JQXBulletChartPointer(Double value, ColourHex color)
-    {
-        this.value = value;
-        this.color = color;
-    }
+	public Double getValue()
+	{
+		return value;
+	}
 
-    public JQXBulletChartPointer(Double value, String label, ColourHex color)
-    {
-        this.value = value;
-        this.label = label;
-        this.color = color;
-    }
+	public void setValue(Double value)
+	{
+		this.value = value;
+	}
 
-    private Double value;
-    private String label;
-    private Integer thickness;
-    private ColourHex color;
+	public String getLabel()
+	{
+		return label;
+	}
 
-    public JQXBulletChartPointer()
-    {
-    }
+	public void setLabel(String label)
+	{
+		this.label = label;
+	}
 
-    public Double getValue()
-    {
-        return value;
-    }
+	public Integer getThickness()
+	{
+		return thickness;
+	}
 
-    public void setValue(Double value)
-    {
-        this.value = value;
-    }
+	public void setThickness(Integer thickness)
+	{
+		this.thickness = thickness;
+	}
 
-    public String getLabel()
-    {
-        return label;
-    }
+	public ColourHex getColor()
+	{
+		return color;
+	}
 
-    public void setLabel(String label)
-    {
-        this.label = label;
-    }
-
-    public Integer getThickness()
-    {
-        return thickness;
-    }
-
-    public void setThickness(Integer thickness)
-    {
-        this.thickness = thickness;
-    }
-
-    public ColourHex getColor()
-    {
-        return color;
-    }
-
-    public void setColor(ColourHex color)
-    {
-        this.color = color;
-    }
+	public void setColor(ColourHex color)
+	{
+		this.color = color;
+	}
 
 }

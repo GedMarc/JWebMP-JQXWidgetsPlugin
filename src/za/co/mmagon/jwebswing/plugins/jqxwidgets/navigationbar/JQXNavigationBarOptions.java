@@ -16,137 +16,138 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.navigationbar;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
-import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the Navigation Bar library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXNavigationBarOptions extends JQXDefaultJavaScriptPart
 {
 
-    private JQEasingEffects animationType;// 	String 	'slide'
-    private JQXNavigationBarArrowPosition arrowPosition;// 	String 	'right'
-    private Integer collapseAnimationDuration;// 	Number 	400
-    private Boolean disabled;// 	Boolean 	false
-    private Integer expandAnimationDuration;// 	Number 	400
-    private JQXNavigationBarExpandModes expandMode;// 	String 	'singleFitHeight'
-//expandedIndexes 	Array 	[]
-    private JavascriptFunction initContent;// 	function 	null
-    private Boolean rtl;// 	Boolean 	false
-    private Boolean showArrow;// 	Boolean 	true
-    private JQXNavigationBarToggleModes toggleMode;// 	String 	click
+	private JQEasingEffects animationType;// 	String 	'slide'
+	private JQXNavigationBarArrowPosition arrowPosition;// 	String 	'right'
+	private Integer collapseAnimationDuration;// 	Number 	400
+	private Boolean disabled;// 	Boolean 	false
+	private Integer expandAnimationDuration;// 	Number 	400
+	private JQXNavigationBarExpandModes expandMode;// 	String 	'singleFitHeight'
+	//expandedIndexes 	Array 	[]
+	private JavascriptFunction initContent;// 	function 	null
+	private Boolean rtl;// 	Boolean 	false
+	private Boolean showArrow;// 	Boolean 	true
+	private JQXNavigationBarToggleModes toggleMode;// 	String 	click
 
-    public JQXNavigationBarOptions()
-    {
+	public JQXNavigationBarOptions()
+	{
 
-    }
+	}
 
-    public JQEasingEffects getAnimationType()
-    {
-        return animationType;
-    }
+	public JQEasingEffects getAnimationType()
+	{
+		return animationType;
+	}
 
-    public void setAnimationType(JQEasingEffects animationType)
-    {
-        this.animationType = animationType;
-    }
+	public void setAnimationType(JQEasingEffects animationType)
+	{
+		this.animationType = animationType;
+	}
 
-    public JQXNavigationBarArrowPosition getArrowPosition()
-    {
-        return arrowPosition;
-    }
+	public JQXNavigationBarArrowPosition getArrowPosition()
+	{
+		return arrowPosition;
+	}
 
-    public void setArrowPosition(JQXNavigationBarArrowPosition arrowPosition)
-    {
-        this.arrowPosition = arrowPosition;
-    }
+	public void setArrowPosition(JQXNavigationBarArrowPosition arrowPosition)
+	{
+		this.arrowPosition = arrowPosition;
+	}
 
-    public Integer getCollapseAnimationDuration()
-    {
-        return collapseAnimationDuration;
-    }
+	public Integer getCollapseAnimationDuration()
+	{
+		return collapseAnimationDuration;
+	}
 
-    public void setCollapseAnimationDuration(Integer collapseAnimationDuration)
-    {
-        this.collapseAnimationDuration = collapseAnimationDuration;
-    }
+	public void setCollapseAnimationDuration(Integer collapseAnimationDuration)
+	{
+		this.collapseAnimationDuration = collapseAnimationDuration;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Integer getExpandAnimationDuration()
-    {
-        return expandAnimationDuration;
-    }
+	public Integer getExpandAnimationDuration()
+	{
+		return expandAnimationDuration;
+	}
 
-    public void setExpandAnimationDuration(Integer expandAnimationDuration)
-    {
-        this.expandAnimationDuration = expandAnimationDuration;
-    }
+	public void setExpandAnimationDuration(Integer expandAnimationDuration)
+	{
+		this.expandAnimationDuration = expandAnimationDuration;
+	}
 
-    public JQXNavigationBarExpandModes getExpandMode()
-    {
-        return expandMode;
-    }
+	public JQXNavigationBarExpandModes getExpandMode()
+	{
+		return expandMode;
+	}
 
-    public void setExpandMode(JQXNavigationBarExpandModes expandMode)
-    {
-        this.expandMode = expandMode;
-    }
+	public void setExpandMode(JQXNavigationBarExpandModes expandMode)
+	{
+		this.expandMode = expandMode;
+	}
 
-    public JavascriptFunction getInitContent()
-    {
-        return initContent;
-    }
+	public JavascriptFunction getInitContent()
+	{
+		return initContent;
+	}
 
-    public void setInitContent(JavascriptFunction initContent)
-    {
-        this.initContent = initContent;
-    }
+	public void setInitContent(JavascriptFunction initContent)
+	{
+		this.initContent = initContent;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public Boolean getShowArrow()
-    {
-        return showArrow;
-    }
+	public Boolean getShowArrow()
+	{
+		return showArrow;
+	}
 
-    public void setShowArrow(Boolean showArrow)
-    {
-        this.showArrow = showArrow;
-    }
+	public void setShowArrow(Boolean showArrow)
+	{
+		this.showArrow = showArrow;
+	}
 
-    public JQXNavigationBarToggleModes getToggleMode()
-    {
-        return toggleMode;
-    }
+	public JQXNavigationBarToggleModes getToggleMode()
+	{
+		return toggleMode;
+	}
 
-    public void setToggleMode(JQXNavigationBarToggleModes toggleMode)
-    {
-        this.toggleMode = toggleMode;
-    }
+	public void setToggleMode(JQXNavigationBarToggleModes toggleMode)
+	{
+		this.toggleMode = toggleMode;
+	}
 
 }

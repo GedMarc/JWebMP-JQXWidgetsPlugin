@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxToolBar is a jQuery widget which represents a toolbar where different tools (including widgets) can be automatically added. By default, jqxToolBar supports the widgets jqxButton,
  * jqxToggleButton, jqxDropDownList, jqxComboBox and jqxInput but custom tools can also be added.
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Toolbar",
-        description = "jqxToolBar is a jQuery widget which represents a toolbar where different tools (including widgets) can be automatically added. By default, jqxToolBar supports the widgets jqxButton, jqxToggleButton, jqxDropDownList, jqxComboBox and jqxInput but custom tools can also be added. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtoolbar/jquery-toolbar-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxToolBar is a jQuery widget which represents a toolbar where different tools (including widgets) can be automatically added. By default, jqxToolBar supports the widgets jqxButton, jqxToggleButton, jqxDropDownList, jqxComboBox and jqxInput but custom tools can also be added. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtoolbar/jquery-toolbar-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXToolBar extends Div<JQXToolBarChildren, JQXToolBarAttributes, JQXToolBarFeature, JQXToolBarEvents, JQXToolBar>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXToolBarFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXToolBarFeature feature;
 
-    public JQXToolBar()
-    {
-        addFeature(getFeature());
-    }
+	public JQXToolBar()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXToolBarFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXToolBarFeature(this);
-        }
-        return feature;
-    }
+	public JQXToolBarFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXToolBarFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXToolBarOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXToolBarOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

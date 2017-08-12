@@ -17,14 +17,13 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXRibbonPositions
 {
 
-    top,
-    bottom,
-    left,
-    right,
+	top,
+	bottom,
+	left,
+	right,
 }

@@ -17,14 +17,13 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
 /**
- *
  * @author MXM3727
  */
 public enum JQXDayNameFormats
 {
-    Default,
-    shortest,
-    firstTwoLetters,
-    firstLetter,
-    full,
+	Default,
+	shortest,
+	firstTwoLetters,
+	firstLetter,
+	full,
 }

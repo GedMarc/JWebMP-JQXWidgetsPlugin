@@ -17,17 +17,16 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXRibbonModes
 {
-    /**
-     * Tthe ribbon's content is included in its height.
-     */
-    Default,
-    /**
-     * The ribbon's content is not included in its height and is positioned absolutely. It overlaps elements underneath it.
-     */
-    Popup
+	/**
+	 * Tthe ribbon's content is included in its height.
+	 */
+	Default,
+	/**
+	 * The ribbon's content is not included in its height and is positioned absolutely. It overlaps elements underneath it.
+	 */
+	Popup
 }

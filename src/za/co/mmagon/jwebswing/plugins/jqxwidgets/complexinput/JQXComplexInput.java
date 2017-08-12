@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxComplexInput represents an input widget for entering complex numbers and getting their real and imaginary parts. The complex input also supports on-keydown and on-change number validation.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Complex Input",
-        description = "jqxComplexInput represents an input widget for entering complex numbers and getting their real and imaginary parts. The complex input also supports on-keydown and on-change number validation.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcomplexinput/jquery-complex-input-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxComplexInput represents an input widget for entering complex numbers and getting their real and imaginary parts. The complex input also supports on-keydown and on-change number validation.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcomplexinput/jquery-complex-input-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXComplexInput extends Div<JQXComplexInputChildren, JQXComplexInputAttributes, JQXComplexInputFeature, JQXComplexInputEvents, JQXComplexInput>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXComplexInputFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXComplexInputFeature feature;
 
-    public JQXComplexInput()
-    {
-        addFeature(getFeature());
-    }
+	public JQXComplexInput()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXComplexInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXComplexInputFeature(this);
-        }
-        return feature;
-    }
+	public JQXComplexInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXComplexInputFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXComplexInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXComplexInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

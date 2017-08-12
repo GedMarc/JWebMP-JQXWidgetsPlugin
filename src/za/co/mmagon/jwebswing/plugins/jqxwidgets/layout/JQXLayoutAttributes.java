@@ -19,24 +19,23 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.layout;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXLayoutAttributes implements AttributeDefinitions
 {
-    Data_Container,
-    Visibility;
+	Data_Container,
+	Visibility;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase().replace('_', '-');
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase().replace('_', '-');
+	}
 
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 
 }

@@ -16,146 +16,147 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.expander;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXExpanderOptions extends JQXDefaultJavaScriptPart
 {
 
-    private String animationType;// 	String 	'slide'
-    private String arrowPosition;// 	String 	'left'
-    private Integer collapseAnimationDuration;// 	Number 	400
-    private Boolean disabled;// 	Boolean 	false
-    private Boolean expanded;// 	Boolean 	true
-    private Integer expandAnimationDuration;// 	Number 	400
-    private String HeaderPosition;// 	String 	'top'
-    private JavascriptFunction initContent;// 	function 	null
-    private Boolean rtl;// 	Boolean 	false
-    private Boolean showArrow;// 	Boolean 	true
-    private String toggleMode;// 	String 	'click'
+	private String animationType;// 	String 	'slide'
+	private String arrowPosition;// 	String 	'left'
+	private Integer collapseAnimationDuration;// 	Number 	400
+	private Boolean disabled;// 	Boolean 	false
+	private Boolean expanded;// 	Boolean 	true
+	private Integer expandAnimationDuration;// 	Number 	400
+	private String HeaderPosition;// 	String 	'top'
+	private JavascriptFunction initContent;// 	function 	null
+	private Boolean rtl;// 	Boolean 	false
+	private Boolean showArrow;// 	Boolean 	true
+	private String toggleMode;// 	String 	'click'
 
-    public JQXExpanderOptions()
-    {
+	public JQXExpanderOptions()
+	{
 
-    }
+	}
 
-    public String getAnimationType()
-    {
-        return animationType;
-    }
+	public String getAnimationType()
+	{
+		return animationType;
+	}
 
-    public void setAnimationType(String animationType)
-    {
-        this.animationType = animationType;
-    }
+	public void setAnimationType(String animationType)
+	{
+		this.animationType = animationType;
+	}
 
-    public String getArrowPosition()
-    {
-        return arrowPosition;
-    }
+	public String getArrowPosition()
+	{
+		return arrowPosition;
+	}
 
-    public void setArrowPosition(String arrowPosition)
-    {
-        this.arrowPosition = arrowPosition;
-    }
+	public void setArrowPosition(String arrowPosition)
+	{
+		this.arrowPosition = arrowPosition;
+	}
 
-    public Integer getCollapseAnimationDuration()
-    {
-        return collapseAnimationDuration;
-    }
+	public Integer getCollapseAnimationDuration()
+	{
+		return collapseAnimationDuration;
+	}
 
-    public void setCollapseAnimationDuration(Integer collapseAnimationDuration)
-    {
-        this.collapseAnimationDuration = collapseAnimationDuration;
-    }
+	public void setCollapseAnimationDuration(Integer collapseAnimationDuration)
+	{
+		this.collapseAnimationDuration = collapseAnimationDuration;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Boolean getExpanded()
-    {
-        return expanded;
-    }
+	public Boolean getExpanded()
+	{
+		return expanded;
+	}
 
-    public void setExpanded(Boolean expanded)
-    {
-        this.expanded = expanded;
-    }
+	public void setExpanded(Boolean expanded)
+	{
+		this.expanded = expanded;
+	}
 
-    public Integer getExpandAnimationDuration()
-    {
-        return expandAnimationDuration;
-    }
+	public Integer getExpandAnimationDuration()
+	{
+		return expandAnimationDuration;
+	}
 
-    public void setExpandAnimationDuration(Integer expandAnimationDuration)
-    {
-        this.expandAnimationDuration = expandAnimationDuration;
-    }
+	public void setExpandAnimationDuration(Integer expandAnimationDuration)
+	{
+		this.expandAnimationDuration = expandAnimationDuration;
+	}
 
-    public String getHeaderPosition()
-    {
-        return HeaderPosition;
-    }
+	public String getHeaderPosition()
+	{
+		return HeaderPosition;
+	}
 
-    public void setHeaderPosition(String HeaderPosition)
-    {
-        this.HeaderPosition = HeaderPosition;
-    }
+	public void setHeaderPosition(String HeaderPosition)
+	{
+		this.HeaderPosition = HeaderPosition;
+	}
 
-    public JavascriptFunction getInitContent()
-    {
-        return initContent;
-    }
+	public JavascriptFunction getInitContent()
+	{
+		return initContent;
+	}
 
-    public void setInitContent(JavascriptFunction initContent)
-    {
-        this.initContent = initContent;
-    }
+	public void setInitContent(JavascriptFunction initContent)
+	{
+		this.initContent = initContent;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public Boolean getShowArrow()
-    {
-        return showArrow;
-    }
+	public Boolean getShowArrow()
+	{
+		return showArrow;
+	}
 
-    public void setShowArrow(Boolean showArrow)
-    {
-        this.showArrow = showArrow;
-    }
+	public void setShowArrow(Boolean showArrow)
+	{
+		this.showArrow = showArrow;
+	}
 
-    public String getToggleMode()
-    {
-        return toggleMode;
-    }
+	public String getToggleMode()
+	{
+		return toggleMode;
+	}
 
-    public void setToggleMode(String toggleMode)
-    {
-        this.toggleMode = toggleMode;
-    }
+	public void setToggleMode(String toggleMode)
+	{
+		this.toggleMode = toggleMode;
+	}
 
 }

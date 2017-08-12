@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxValidator is jQWidgets plugin used for validating html forms using JavaScript. It has a set of build in rules (for required inputs, e-mail, SSN, ZIP, max value, min value, interval etc.) used
  * for validating the user inputs. You can also write a custom rule which will fit best to your requirements.
  * <p>
+ *
  * @author Marc Magon
- * @since 25 Dec 2015
  * @version 1.0
+ * @since 25 Dec 2015
  */
 @ComponentInformation(name = "JQX Validator",
-        description = "jqxValidator is jQWidgets plugin used for validating html forms using JavaScript. It has a set of build in rules (for required inputs, e-mail, SSN, ZIP, max value, min value, interval etc.) used for validating the user inputs. You can also write a custom rule which will fit best to your requirements. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxvalidator/jquery-validator-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxValidator is jQWidgets plugin used for validating html forms using JavaScript. It has a set of build in rules (for required inputs, e-mail, SSN, ZIP, max value, min value, interval etc.) used for validating the user inputs. You can also write a custom rule which will fit best to your requirements. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxvalidator/jquery-validator-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXValidator extends Div<JQXValidatorChildren, JQXValidatorAttributes, JQXValidatorFeature, JQXValidatorEvents, JQXValidator>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXValidatorFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXValidatorFeature feature;
 
-    public JQXValidator()
-    {
-        addFeature(getFeature());
-    }
+	public JQXValidator()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXValidatorFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXValidatorFeature(this);
-        }
-        return feature;
-    }
+	public JQXValidatorFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXValidatorFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXValidatorOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXValidatorOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

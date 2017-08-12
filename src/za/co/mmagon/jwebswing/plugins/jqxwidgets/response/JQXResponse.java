@@ -22,37 +22,38 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc.
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Response",
-        description = "jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc. jqxResponse also enables you to listen for Window(ViewPort) resizes and provides cross-browser compatible triggering for Mouse and Touch events. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxresponse/jquery-response.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc. jqxResponse also enables you to listen for Window(ViewPort) resizes and provides cross-browser compatible triggering for Mouse and Touch events. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxresponse/jquery-response.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXResponse extends Div<JQXResponseChildren, JQXResponseAttributes, JQXResponseFeature, JQXResponseEvents, JQXResponse>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXResponseFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXResponseFeature feature;
 
-    public JQXResponse()
-    {
-        addFeature(getFeature());
-    }
+	public JQXResponse()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXResponseFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXResponseFeature(this);
-        }
-        return feature;
-    }
+	public JQXResponseFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXResponseFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXResponseOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXResponseOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 }

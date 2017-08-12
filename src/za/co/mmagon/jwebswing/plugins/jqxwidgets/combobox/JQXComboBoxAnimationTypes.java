@@ -17,19 +17,18 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.combobox;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXComboBoxAnimationTypes
 {
-    None,
-    Fade,
-    Slide;
+	None,
+	Fade,
+	Slide;
 
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
 
 }

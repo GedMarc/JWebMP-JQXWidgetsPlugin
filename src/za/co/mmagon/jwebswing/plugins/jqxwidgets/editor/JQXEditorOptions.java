@@ -16,115 +16,116 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.editor;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the JQXEditor library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXEditorOptions extends JQXDefaultJavaScriptPart
 {
 
-    private JavascriptFunction createCommand;// 	Function 	null
-    private Boolean disabled;// 	Boolean 	false
-    private Boolean editable;// 	Boolean 	true
-    private String lineBreak;// 	String 	"default"
-//private localization 	Object 	{ "bold": "Bold", "italic": "Italic", "underline": "Underline", "format": "Format Block", "font": "Font Name", "size": "Font Size", "color": "Text Color", "background": "Fill Color", "left": "Align Left", "center": "Align Center", "right": "Align Right", "outdent": "Indent Less", "indent": "Indent More", "ul": "Insert unordered list", "ol": "Insert ordered list", "image": "Insert image", "link": "Insert link", "html": "View source", "clean": "Remove Formatting" }
-    private String pasteMode;// 	String 	"html"
-    private Boolean rtl;// 	Boolean 	false
-//stylesheets 	Array 	[]
-    private String toolbarPosition;// 	String 	"top"
-    private String tools;// 	String 	"bold italic underline | format font size | color background | left center right | outdent indent | ul ol | image | link | clean | html"
+	private JavascriptFunction createCommand;// 	Function 	null
+	private Boolean disabled;// 	Boolean 	false
+	private Boolean editable;// 	Boolean 	true
+	private String lineBreak;// 	String 	"default"
+	//private localization 	Object 	{ "bold": "Bold", "italic": "Italic", "underline": "Underline", "format": "Format Block", "font": "Font Name", "size": "Font Size", "color": "Text Color", "background": "Fill Color", "left": "Align Left", "center": "Align Center", "right": "Align Right", "outdent": "Indent Less", "indent": "Indent More", "ul": "Insert unordered list", "ol": "Insert ordered list", "image": "Insert image", "link": "Insert link", "html": "View source", "clean": "Remove Formatting" }
+	private String pasteMode;// 	String 	"html"
+	private Boolean rtl;// 	Boolean 	false
+	//stylesheets 	Array 	[]
+	private String toolbarPosition;// 	String 	"top"
+	private String tools;// 	String 	"bold italic underline | format font size | color background | left center right | outdent indent | ul ol | image | link | clean | html"
 
-    public JQXEditorOptions()
-    {
+	public JQXEditorOptions()
+	{
 
-    }
+	}
 
-    public JavascriptFunction getCreateCommand()
-    {
-        return createCommand;
-    }
+	public JavascriptFunction getCreateCommand()
+	{
+		return createCommand;
+	}
 
-    public void setCreateCommand(JavascriptFunction createCommand)
-    {
-        this.createCommand = createCommand;
-    }
+	public void setCreateCommand(JavascriptFunction createCommand)
+	{
+		this.createCommand = createCommand;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Boolean getEditable()
-    {
-        return editable;
-    }
+	public Boolean getEditable()
+	{
+		return editable;
+	}
 
-    public void setEditable(Boolean editable)
-    {
-        this.editable = editable;
-    }
+	public void setEditable(Boolean editable)
+	{
+		this.editable = editable;
+	}
 
-    public String getLineBreak()
-    {
-        return lineBreak;
-    }
+	public String getLineBreak()
+	{
+		return lineBreak;
+	}
 
-    public void setLineBreak(String lineBreak)
-    {
-        this.lineBreak = lineBreak;
-    }
+	public void setLineBreak(String lineBreak)
+	{
+		this.lineBreak = lineBreak;
+	}
 
-    public String getPasteMode()
-    {
-        return pasteMode;
-    }
+	public String getPasteMode()
+	{
+		return pasteMode;
+	}
 
-    public void setPasteMode(String pasteMode)
-    {
-        this.pasteMode = pasteMode;
-    }
+	public void setPasteMode(String pasteMode)
+	{
+		this.pasteMode = pasteMode;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public String getToolbarPosition()
-    {
-        return toolbarPosition;
-    }
+	public String getToolbarPosition()
+	{
+		return toolbarPosition;
+	}
 
-    public void setToolbarPosition(String toolbarPosition)
-    {
-        this.toolbarPosition = toolbarPosition;
-    }
+	public void setToolbarPosition(String toolbarPosition)
+	{
+		this.toolbarPosition = toolbarPosition;
+	}
 
-    public String getTools()
-    {
-        return tools;
-    }
+	public String getTools()
+	{
+		return tools;
+	}
 
-    public void setTools(String tools)
-    {
-        this.tools = tools;
-    }
+	public void setTools(String tools)
+	{
+		this.tools = tools;
+	}
 
 }

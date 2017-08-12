@@ -17,19 +17,18 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
 /**
- *
  * @author MXM3727
  */
 public enum JQXSelectionModes
 {
-    None,
-    Default,
-    Range;
-
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
-
+	None,
+	Default,
+	Range;
+	
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
+	
 }

@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Progress Bar",
-        description = "jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxprogressbar/jquery-progressbar-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxprogressbar/jquery-progressbar-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXProgressBar extends Div<JQXProgressBarChildren, JQXProgressBarAttributes, JQXProgressBarFeature, JQXProgressBarEvents, JQXProgressBar>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXProgressBarFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXProgressBarFeature feature;
 
-    public JQXProgressBar()
-    {
-        addFeature(getFeature());
-    }
+	public JQXProgressBar()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXProgressBarFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXProgressBarFeature(this);
-        }
-        return feature;
-    }
+	public JQXProgressBarFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXProgressBarFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXProgressBarOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXProgressBarOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

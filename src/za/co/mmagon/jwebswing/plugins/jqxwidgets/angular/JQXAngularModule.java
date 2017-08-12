@@ -24,25 +24,24 @@ import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
  * The integration between AngularJS and jQWidgets is implemented through a plug-in which we called jqxAngular. This plug-in includes AngularJS directives for all widgets.
  *
  * @author GedMarc
- * @since Nov 6, 2016
  * @version 1.0
- *
+ * @since Nov 6, 2016
  */
 public class JQXAngularModule extends AngularModuleBase
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQXAngularModule(ComponentHierarchyBase component)
-    {
-        super("jqwidgets");
-        component.getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
-        component.getJavascriptReferences().add(JQXReferencePool.AngularJS.getJavaScriptReference());
-    }
+	public JQXAngularModule(ComponentHierarchyBase component)
+	{
+		super("jqwidgets");
+		component.getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
+		component.getJavascriptReferences().add(JQXReferencePool.AngularJS.getJavaScriptReference());
+	}
 
-    @Override
-    public String renderFunction()
-    {
-        return "";
-    }
+	@Override
+	public String renderFunction()
+	{
+		return "";
+	}
 }

@@ -17,7 +17,6 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXHorizontalAlignments

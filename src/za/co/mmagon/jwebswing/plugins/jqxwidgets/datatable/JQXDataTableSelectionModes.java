@@ -17,10 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXDataTableSelectionModes
 {
-    multipleRows, singleRow, custom;
+	multipleRows, singleRow, custom;
 }

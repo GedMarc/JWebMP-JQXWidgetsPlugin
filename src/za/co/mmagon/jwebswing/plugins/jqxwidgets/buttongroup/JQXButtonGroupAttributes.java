@@ -17,10 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.buttongroup;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXButtonGroupAttributes
 {
-    Visibility;
+	Visibility;
 }

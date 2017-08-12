@@ -24,31 +24,31 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.navigationbar;
  */
 public enum JQXNavigationBarExpandModes
 {
-    /**
-     * only one item can be expanded. If the expanded item's height is greater than the value of the height property, a vertical scrollbar is shown.
-     */
-    single,
-    /**
-     * only one item can be expanded. If the expanded item's height is greater than the value of the height property, a vertical scrollbar is shown inside the content of the expanded item
-     */
-    singleFitHeight,
-    /**
-     * multiple items can be expanded. If the expanded items' height is greater than the value of the height property, a vertical scrollbar is shown.
-     */
-    multiple,
-    /**
-     * only one item can be expanded. The expanded item can also be collapsed.If the expanded item's height is greater than the value of the height property, a vertical scrollbar is shown
-     */
-    toggle,
-    /**
-     * no items can be expanded/collapsed
-     */
-    none;
+	/**
+	 * only one item can be expanded. If the expanded item's height is greater than the value of the height property, a vertical scrollbar is shown.
+	 */
+	single,
+	/**
+	 * only one item can be expanded. If the expanded item's height is greater than the value of the height property, a vertical scrollbar is shown inside the content of the expanded item
+	 */
+	singleFitHeight,
+	/**
+	 * multiple items can be expanded. If the expanded items' height is greater than the value of the height property, a vertical scrollbar is shown.
+	 */
+	multiple,
+	/**
+	 * only one item can be expanded. The expanded item can also be collapsed.If the expanded item's height is greater than the value of the height property, a vertical scrollbar is shown
+	 */
+	toggle,
+	/**
+	 * no items can be expanded/collapsed
+	 */
+	none;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

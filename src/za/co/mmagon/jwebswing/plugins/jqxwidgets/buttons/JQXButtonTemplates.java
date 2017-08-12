@@ -19,33 +19,32 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXButtonTemplates
 {
-    Default,// the default buttons template. The buttons style depends only on its "theme" property value.
+	Default,// the default buttons template. The buttons style depends only on its "theme" property value.
 
-    Primary,// dark blue button for extra visual weight.
+	Primary,// dark blue button for extra visual weight.
 
-    Success,// green button for successful or positive action.
+	Success,// green button for successful or positive action.
 
-    Warning,// orange button which indicates caution.
+	Warning,// orange button which indicates caution.
 
-    Danger,// red button which indicates a dangerous or negative action.
+	Danger,// red button which indicates a dangerous or negative action.
 
-    Inverse,// dark gray button, not tied to a semantic action or use.
+	Inverse,// dark gray button, not tied to a semantic action or use.
 
-    Info,// blue button, not tied to a semantic action or use.
+	Info,// blue button, not tied to a semantic action or use.
 
-    Link,// making it look like a link .
-    ;
+	Link,// making it look like a link .
+	;
 
-    @Override
-    @JsonValue
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
+	@Override
+	@JsonValue
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
 
 }

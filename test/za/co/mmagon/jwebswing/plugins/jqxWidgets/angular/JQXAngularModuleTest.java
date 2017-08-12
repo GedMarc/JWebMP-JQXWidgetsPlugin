@@ -23,28 +23,27 @@ import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.angular.JQXAngularModule;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXAngularModuleTest extends BaseTestClass
 {
 
-    public JQXAngularModuleTest()
-    {
-    }
+	public JQXAngularModuleTest()
+	{
+	}
 
-    @Before
-    public void setUp()
-    {
-    }
+	@Before
+	public void setUp()
+	{
+	}
 
-    @Test
-    public void testSomeMethod()
-    {
-        Page p = getInstance();
-        JQXAngularModule mod = new JQXAngularModule(p.getBody());
-        System.out.println(p.toString(true));
-        System.out.println(p.getAngular().renderAngularJavascript(p));
+	@Test
+	public void testSomeMethod()
+	{
+		Page p = getInstance();
+		JQXAngularModule mod = new JQXAngularModule(p.getBody());
+		System.out.println(p.toString(true));
+		System.out.println(p.getAngular().renderAngularJavascript(p));
 
-    }
+	}
 }

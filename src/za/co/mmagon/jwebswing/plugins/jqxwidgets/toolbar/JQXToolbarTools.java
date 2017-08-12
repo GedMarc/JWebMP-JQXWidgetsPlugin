@@ -27,14 +27,14 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXToolbarTools extends JavaScriptPart
 {
 
-    public JQXToolbarTools()
-    {
-    }
+	public JQXToolbarTools()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

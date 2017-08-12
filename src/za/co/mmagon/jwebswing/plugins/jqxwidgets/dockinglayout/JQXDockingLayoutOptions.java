@@ -21,25 +21,26 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Dec144, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Dec144, 2015
  */
 public class JQXDockingLayoutOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Boolean contextMenu;// 	Boolean 	false
-    private JQXDockingLayoutArray layout;// 	Array 	[]
-    private Integer minGroupHeight;// 	Number 	100
-    private Integer minGroupWidth;// 	Number 	100
-    private Boolean resizable;// 	Boolean 	true
-    private Boolean rtl;// 	Boolean 	false
+	private Boolean contextMenu;// 	Boolean 	false
+	private JQXDockingLayoutArray layout;// 	Array 	[]
+	private Integer minGroupHeight;// 	Number 	100
+	private Integer minGroupWidth;// 	Number 	100
+	private Boolean resizable;// 	Boolean 	true
+	private Boolean rtl;// 	Boolean 	false
 
-    public JQXDockingLayoutOptions()
-    {
+	public JQXDockingLayoutOptions()
+	{
 
-    }
+	}
 
 }

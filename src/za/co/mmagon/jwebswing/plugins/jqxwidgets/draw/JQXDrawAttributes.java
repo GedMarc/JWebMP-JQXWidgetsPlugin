@@ -19,16 +19,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.draw;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXDrawAttributes implements AttributeDefinitions
 {
-    Visibility;
-
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	Visibility;
+	
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

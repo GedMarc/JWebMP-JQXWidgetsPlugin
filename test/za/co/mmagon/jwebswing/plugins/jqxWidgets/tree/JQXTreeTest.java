@@ -16,33 +16,32 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.tree;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.tree.JQXTree;
 import org.junit.Test;
 import za.co.mmagon.jwebswing.Page;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.tree.JQXTree;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXTreeTest
 {
 
-    public JQXTreeTest()
-    {
-    }
+	public JQXTreeTest()
+	{
+	}
 
-    /**
-     * Test of addList method, of class JQXTree.
-     */
-    @Test
-    public void testAddList()
-    {
-        JQXTree tree = new JQXTree();
-        System.out.println(tree.toString(true));
-        Page p = new Page();
+	/**
+	 * Test of addList method, of class JQXTree.
+	 */
+	@Test
+	public void testAddList()
+	{
+		JQXTree tree = new JQXTree();
+		System.out.println(tree.toString(true));
+		Page p = new Page();
 
-        p.getBody().add(tree);
-        System.out.println(p.toString(true));
-    }
+		p.getBody().add(tree);
+		System.out.println(p.toString(true));
+	}
 
 }

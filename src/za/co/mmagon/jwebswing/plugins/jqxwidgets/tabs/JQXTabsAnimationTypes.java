@@ -24,12 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.tabs;
  */
 public enum JQXTabsAnimationTypes
 {
-    none, fade;
+	none, fade;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

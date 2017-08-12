@@ -24,13 +24,13 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.numberinput;
  */
 public enum JQXNumberInputTextAlignments
 {
-    left,
-    right;
+	left,
+	right;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

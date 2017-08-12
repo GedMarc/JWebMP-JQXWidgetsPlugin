@@ -24,38 +24,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * <p>
  * The displayed number can be incremented or decremented through the widget's spin buttons (optional) and the numeral system can be changed programmatically or through a pop-up menu (optional).
  * <p>
+ *
  * @author Marc Magon
- * @since 15 Dec 2015
  * @version 1.0
+ * @since 15 Dec 2015
  */
 @ComponentInformation(name = "JQX Formatted Input",
-        description = "jqxFormattedInput represents an input widget for entering numbers in the binary, octal, decimal or hexadecimal numeral systems.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxformattedinput/jquery-formatted-input-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxFormattedInput represents an input widget for entering numbers in the binary, octal, decimal or hexadecimal numeral systems.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxformattedinput/jquery-formatted-input-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXFormattedInput extends Div<JQXFormattedInputChildren, JQXFormattedInputAttributes, JQXFormattedInputFeature, JQXFormattedInputEvents, JQXFormattedInput>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXFormattedInputFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXFormattedInputFeature feature;
 
-    public JQXFormattedInput()
-    {
-        addFeature(getFeature());
-    }
+	public JQXFormattedInput()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXFormattedInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXFormattedInputFeature(this);
-        }
-        return feature;
-    }
+	public JQXFormattedInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXFormattedInputFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXFormattedInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXFormattedInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

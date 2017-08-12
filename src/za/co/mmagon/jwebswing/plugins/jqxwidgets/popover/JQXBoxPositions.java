@@ -24,15 +24,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.popover;
  */
 public enum JQXBoxPositions
 {
-    left,
-    top,
-    bottom,
-    right;
+	left,
+	top,
+	bottom,
+	right;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

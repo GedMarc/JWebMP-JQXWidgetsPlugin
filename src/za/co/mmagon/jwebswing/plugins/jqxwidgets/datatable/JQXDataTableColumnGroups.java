@@ -19,55 +19,54 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXDataTableColumnGroups extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * string property which determines the parent group's name.
-     */
-    private String parentGroup;// -
-    /**
-     * string property which determines the group's name.
-     */
-    private String name;// -
-    /**
-     * string property which determines the column header's alignment. Possible values: 'left', 'center' or 'right'.
-     */
-    private String align;// -
+	/**
+	 * string property which determines the parent group's name.
+	 */
+	private String parentGroup;// -
+	/**
+	 * string property which determines the group's name.
+	 */
+	private String name;// -
+	/**
+	 * string property which determines the column header's alignment. Possible values: 'left', 'center' or 'right'.
+	 */
+	private String align;// -
 
-    public String getParentGroup()
-    {
-        return parentGroup;
-    }
+	public String getParentGroup()
+	{
+		return parentGroup;
+	}
 
-    public void setParentGroup(String parentGroup)
-    {
-        this.parentGroup = parentGroup;
-    }
+	public void setParentGroup(String parentGroup)
+	{
+		this.parentGroup = parentGroup;
+	}
 
-    public String getName()
-    {
-        return name;
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
-    public String getAlign()
-    {
-        return align;
-    }
+	public String getAlign()
+	{
+		return align;
+	}
 
-    public void setAlign(String align)
-    {
-        this.align = align;
-    }
+	public void setAlign(String align)
+	{
+		this.align = align;
+	}
 
 }

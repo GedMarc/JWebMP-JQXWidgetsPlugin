@@ -22,118 +22,119 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 /**
  * All the options for the Progress Bar library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXProgressBarOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Integer animationDuration;// 	Number 	300
-    private Boolean disabled;// 	Boolean 	false
-    private JQXProgressBarLayouts layout;// 	String 	"normal"
-    private Integer max;// 	Number 	100
-    private Integer min;// 	Number 	0
-    private Orientation orientation;// 	String 	'horizontal'
-    private Boolean rtl;// 	Boolean 	false
-    private Boolean showText;// 	Boolean 	false
-    private Integer value;// 	Number 	0
+	private Integer animationDuration;// 	Number 	300
+	private Boolean disabled;// 	Boolean 	false
+	private JQXProgressBarLayouts layout;// 	String 	"normal"
+	private Integer max;// 	Number 	100
+	private Integer min;// 	Number 	0
+	private Orientation orientation;// 	String 	'horizontal'
+	private Boolean rtl;// 	Boolean 	false
+	private Boolean showText;// 	Boolean 	false
+	private Integer value;// 	Number 	0
 
-    public JQXProgressBarOptions()
-    {
+	public JQXProgressBarOptions()
+	{
 
-    }
+	}
 
-    public Integer getAnimationDuration()
-    {
-        return animationDuration;
-    }
+	public Integer getAnimationDuration()
+	{
+		return animationDuration;
+	}
 
-    public void setAnimationDuration(Integer animationDuration)
-    {
-        this.animationDuration = animationDuration;
-    }
+	public void setAnimationDuration(Integer animationDuration)
+	{
+		this.animationDuration = animationDuration;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public JQXProgressBarLayouts getLayout()
-    {
-        return layout;
-    }
+	public JQXProgressBarLayouts getLayout()
+	{
+		return layout;
+	}
 
-    public void setLayout(JQXProgressBarLayouts layout)
-    {
-        this.layout = layout;
-    }
+	public void setLayout(JQXProgressBarLayouts layout)
+	{
+		this.layout = layout;
+	}
 
-    public Integer getMax()
-    {
-        return max;
-    }
+	public Integer getMax()
+	{
+		return max;
+	}
 
-    public void setMax(Integer max)
-    {
-        this.max = max;
-    }
+	public void setMax(Integer max)
+	{
+		this.max = max;
+	}
 
-    public Integer getMin()
-    {
-        return min;
-    }
+	public Integer getMin()
+	{
+		return min;
+	}
 
-    public void setMin(Integer min)
-    {
-        this.min = min;
-    }
+	public void setMin(Integer min)
+	{
+		this.min = min;
+	}
 
-    public Orientation getOrientation()
-    {
-        return orientation;
-    }
+	public Orientation getOrientation()
+	{
+		return orientation;
+	}
 
-    public void setOrientation(Orientation orientation)
-    {
-        this.orientation = orientation;
-    }
+	public void setOrientation(Orientation orientation)
+	{
+		this.orientation = orientation;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public Boolean getShowText()
-    {
-        return showText;
-    }
+	public Boolean getShowText()
+	{
+		return showText;
+	}
 
-    public void setShowText(Boolean showText)
-    {
-        this.showText = showText;
-    }
+	public void setShowText(Boolean showText)
+	{
+		this.showText = showText;
+	}
 
-    public Integer getValue()
-    {
-        return value;
-    }
+	public Integer getValue()
+	{
+		return value;
+	}
 
-    public void setValue(Integer value)
-    {
-        this.value = value;
-    }
+	public void setValue(Integer value)
+	{
+		this.value = value;
+	}
 
 }

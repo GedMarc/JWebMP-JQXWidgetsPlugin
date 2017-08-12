@@ -22,41 +22,42 @@ import za.co.mmagon.jwebswing.base.html.List;
 /**
  * jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down.
  * <p>
+ *
  * @author Marc Magon
- * @since 13 Dec 2015
  * @version 1.0
+ * @since 13 Dec 2015
  */
 public class JQXDropDownButton extends Div<JQXDropDownListChildren, JQXDropDownListAttributes, JQXDropDownListFeatures, JQXDropDownListEvents, JQXDropDownButton>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXDropDownButtonFeature feature;
-    private final List list;
+	private static final long serialVersionUID = 1L;
+	private final List list;
+	private JQXDropDownButtonFeature feature;
 
-    public JQXDropDownButton()
-    {
-        addFeature(getFeature());
-        list = new List();
-    }
+	public JQXDropDownButton()
+	{
+		addFeature(getFeature());
+		list = new List();
+	}
 
-    public JQXDropDownButtonFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDropDownButtonFeature(this);
-        }
-        return feature;
-    }
+	public JQXDropDownButtonFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDropDownButtonFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXDropDownListOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXDropDownListOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
-    public List getList()
-    {
-        return list;
-    }
+	public List getList()
+	{
+		return list;
+	}
 
 }

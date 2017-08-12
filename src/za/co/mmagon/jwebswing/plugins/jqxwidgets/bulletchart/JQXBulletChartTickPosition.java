@@ -17,15 +17,13 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.bulletchart;
 
 /**
- *
  * @author GedMarc
  * @since 28 Feb 2017
- *
  */
 public enum JQXBulletChartTickPosition
 {
-    near,
-    far,
-    both,
-    none
+	near,
+	far,
+	both,
+	none
 }

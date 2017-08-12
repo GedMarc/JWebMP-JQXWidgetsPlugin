@@ -25,38 +25,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * tag. The user can easily customize the appearance of the control, choose the items that will be displayed in the cloud, their font size and color, sort the tags alphabetically or by value, in
  * ascending or descending order.
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Tag Cloud",
-        description = "jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website. Each tag has weight value which corresponds to its popularity, importance or recurrence on the page.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtagcloud/jquery-tagcloud-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website. Each tag has weight value which corresponds to its popularity, importance or recurrence on the page.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtagcloud/jquery-tagcloud-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTagCloud extends Div<JQXTagCloudChildren, JQXTagCloudAttributes, JQXTagCloudFeature, JQXTagCloudEvents, JQXTagCloud>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTagCloudFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXTagCloudFeature feature;
 
-    public JQXTagCloud()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTagCloud()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTagCloudFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTagCloudFeature(this);
-        }
-        return feature;
-    }
+	public JQXTagCloudFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTagCloudFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTagCloudOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTagCloudOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

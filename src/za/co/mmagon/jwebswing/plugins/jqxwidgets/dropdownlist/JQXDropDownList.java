@@ -23,45 +23,46 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down.
  * <p>
+ *
  * @author Marc Magon
- * @since 13 Dec 2015
  * @version 1.0
+ * @since 13 Dec 2015
  */
 @ComponentInformation(name = "JQX Dropdown List",
-        description = "jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdropdownlist/jquery-dropdownlist-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdropdownlist/jquery-dropdownlist-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDropDownList extends Div<JQXDropDownListChildren, JQXDropDownListAttributes, JQXDropDownListFeatures, JQXDropDownListEvents, JQXDropDownList>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXDropDownListFeature feature;
-    private final List list;
+	private static final long serialVersionUID = 1L;
+	private final List list;
+	private JQXDropDownListFeature feature;
 
-    public JQXDropDownList()
-    {
-        addFeature(getFeature());
-        list = new List();
-    }
+	public JQXDropDownList()
+	{
+		addFeature(getFeature());
+		list = new List();
+	}
 
-    public JQXDropDownListFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDropDownListFeature(this);
-        }
-        return feature;
-    }
+	public JQXDropDownListFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDropDownListFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXDropDownListOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXDropDownListOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
-    public List getList()
-    {
-        return list;
-    }
+	public List getList()
+	{
+		return list;
+	}
 
 }

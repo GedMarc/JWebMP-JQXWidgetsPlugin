@@ -16,40 +16,39 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.dataadapter;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import org.junit.Before;
 import org.junit.Test;
 import za.co.mmagon.jwebswing.base.html.Div;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownListNameValuePair;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.tree.JQXTreeItem;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXDataAdapterTest
 {
-    
-    public JQXDataAdapterTest()
-    {
-    }
-    
-    @Before
-    public void setUp()
-    {
-    }
 
-    @Test
-    public void testSomeMethod()
-    {
-        Div d= new Div();
-        JQXDataAdapter dataAdapter = new JQXDataAdapter<>(d);
-        d.add(dataAdapter);
-        dataAdapter.asMe().getOptions().setData(new JQXTreeItem());
-        System.out.println(d.toString(true));
-        System.out.println(d.renderJavascriptAll());
-        
-        dataAdapter.getOptions().setLocaldata(new JQXDropDownListNameValuePair(), dataAdapter);
-    }
-    
+	public JQXDataAdapterTest()
+	{
+	}
+
+	@Before
+	public void setUp()
+	{
+	}
+
+	@Test
+	public void testSomeMethod()
+	{
+		Div d = new Div();
+		JQXDataAdapter dataAdapter = new JQXDataAdapter<>(d);
+		d.add(dataAdapter);
+		dataAdapter.asMe().getOptions().setData(new JQXTreeItem());
+		System.out.println(d.toString(true));
+		System.out.println(d.renderJavascriptAll());
+
+		dataAdapter.getOptions().setLocaldata(new JQXDropDownListNameValuePair(), dataAdapter);
+	}
+
 }

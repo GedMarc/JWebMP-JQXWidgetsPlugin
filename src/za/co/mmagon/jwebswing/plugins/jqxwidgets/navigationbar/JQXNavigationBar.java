@@ -16,154 +16,156 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.navigationbar;
 
-import java.util.ArrayList;
-import java.util.Objects;
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.Paragraph;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.utilities.ComponentUtils;
 
+import java.util.ArrayList;
+import java.util.Objects;
+
 /**
  * jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content. Optionally you can change the default toggle mode to
  * double-click or mouse-over.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Navigation Bar",
-        description = "jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content. Optionally you can change the default toggle mode to double-click or mouseover.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavigationbar/jquery-navigationbar-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxNavigationBar represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content. Optionally you can change the default toggle mode to double-click or mouseover.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavigationbar/jquery-navigationbar-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttributes, JQXNavigationBarFeature, JQXNavigationBarEvents, JQXNavigationBar>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXNavigationBarFeature feature;
-    private ArrayList<NavigationBarGroup> groups;
+	private static final long serialVersionUID = 1L;
+	private JQXNavigationBarFeature feature;
+	private ArrayList<NavigationBarGroup> groups;
 
-    public JQXNavigationBar()
-    {
-        addFeature(getFeature());
-    }
+	public JQXNavigationBar()
+	{
+		addFeature(getFeature());
+	}
 
-    public final JQXNavigationBarFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXNavigationBarFeature(this);
-        }
-        return feature;
-    }
+	public final JQXNavigationBarFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXNavigationBarFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXNavigationBarOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXNavigationBarOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
-    public void addGroup(NavigationBarGroup group)
-    {
-        getGroups().add(group);
-        add(group.getHeader());
-        add(group.getContent());
-    }
+	public void addGroup(NavigationBarGroup group)
+	{
+		getGroups().add(group);
+		add(group.getHeader());
+		add(group.getContent());
+	}
 
-    public ArrayList<NavigationBarGroup> getGroups()
-    {
-        if (groups == null)
-        {
-            groups = new ArrayList<>();
-        }
-        return groups;
-    }
+	public ArrayList<NavigationBarGroup> getGroups()
+	{
+		if (groups == null)
+		{
+			groups = new ArrayList<>();
+		}
+		return groups;
+	}
 
-    public void setGroups(ArrayList<NavigationBarGroup> groups)
-    {
-        this.groups = groups;
-    }
+	public void setGroups(ArrayList<NavigationBarGroup> groups)
+	{
+		this.groups = groups;
+	}
 
-    public static class NavigationBarGroup
-    {
+	public static class NavigationBarGroup
+	{
 
-        private Div header;
-        private Div content;
-        private String name;
+		private Div header;
+		private Div content;
+		private String name;
 
-        public NavigationBarGroup()
-        {
-            this("No Header");
-        }
+		public NavigationBarGroup()
+		{
+			this("No Header");
+		}
 
-        public NavigationBarGroup(String header)
-        {
-            this(header, new Div());
-        }
+		public NavigationBarGroup(String header)
+		{
+			this(header, new Div());
+		}
 
-        public NavigationBarGroup(String header, Div content)
-        {
-            this.header = new Div();
-            ComponentUtils.removeAllMargins(this.header);
-            ComponentUtils.removeAllMargins(content);
-            Paragraph p = new Paragraph(header);
-            ComponentUtils.removeAllMargins(p);
-            this.header.add(p);
-            setName(header);
-            this.content = content;
-        }
+		public NavigationBarGroup(String header, Div content)
+		{
+			this.header = new Div();
+			ComponentUtils.removeAllMargins(this.header);
+			ComponentUtils.removeAllMargins(content);
+			Paragraph p = new Paragraph(header);
+			ComponentUtils.removeAllMargins(p);
+			this.header.add(p);
+			setName(header);
+			this.content = content;
+		}
 
-        public Div getHeader()
-        {
-            return header;
-        }
+		public Div getHeader()
+		{
+			return header;
+		}
 
-        public Div getContent()
-        {
-            return content;
-        }
+		public Div getContent()
+		{
+			return content;
+		}
 
-        public String getName()
-        {
-            return name;
-        }
+		public String getName()
+		{
+			return name;
+		}
 
-        public void setName(String name)
-        {
-            this.name = name;
-        }
+		public void setName(String name)
+		{
+			this.name = name;
+		}
 
-        @Override
-        public int hashCode()
-        {
-            int hash = 7;
-            hash = 67 * hash + Objects.hashCode(this.name);
-            return hash;
-        }
+		@Override
+		public int hashCode()
+		{
+			int hash = 7;
+			hash = 67 * hash + Objects.hashCode(this.name);
+			return hash;
+		}
 
-        @Override
-        public boolean equals(Object obj)
-        {
-            if (this == obj)
-            {
-                return true;
-            }
-            if (obj == null)
-            {
-                return false;
-            }
-            if (getClass() != obj.getClass())
-            {
-                return false;
-            }
-            final NavigationBarGroup other = (NavigationBarGroup) obj;
-            if (!Objects.equals(this.name, other.name))
-            {
-                return false;
-            }
-            return true;
-        }
+		@Override
+		public boolean equals(Object obj)
+		{
+			if (this == obj)
+			{
+				return true;
+			}
+			if (obj == null)
+			{
+				return false;
+			}
+			if (getClass() != obj.getClass())
+			{
+				return false;
+			}
+			final NavigationBarGroup other = (NavigationBarGroup) obj;
+			if (!Objects.equals(this.name, other.name))
+			{
+				return false;
+			}
+			return true;
+		}
 
-    }
+	}
 
 }

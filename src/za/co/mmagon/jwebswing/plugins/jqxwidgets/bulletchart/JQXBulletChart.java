@@ -22,39 +22,40 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the JQX Bullet Chart
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Bullet Chart",
-        description = "jqxBulletChart represents a jQuery widget which features two measures - a primary one (the pointer) and a comparative one (the target) and displays them in the context of a number of differently styled qualitative ranges.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbulletchart/jquery-bullet-chart-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxBulletChart represents a jQuery widget which features two measures - a primary one (the pointer) and a comparative one (the target) and displays them in the context of a number of differently styled qualitative ranges.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbulletchart/jquery-bullet-chart-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXBulletChart extends Div<JQXBulletChartChildren, JQXBulletChartAttributes, JQXBulletChartFeatures, JQXBulletChartEvents, JQXBulletChart>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXBulletChartFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXBulletChartFeature feature;
 
-    public JQXBulletChart()
-    {
-        addFeature(getFeature());
-    }
+	public JQXBulletChart()
+	{
+		addFeature(getFeature());
+	}
 
-    public final JQXBulletChartFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXBulletChartFeature(this);
-        }
-        return feature;
-    }
+	public final JQXBulletChartFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXBulletChartFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXBulletChartOptions getOptions()
-    {
+	@Override
+	public JQXBulletChartOptions getOptions()
+	{
 
-        return getFeature().getOptions();
-    }
+		return getFeature().getOptions();
+	}
 
 }

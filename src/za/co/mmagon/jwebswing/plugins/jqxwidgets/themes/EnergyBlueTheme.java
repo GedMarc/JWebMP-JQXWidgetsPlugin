@@ -27,11 +27,11 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 public class EnergyBlueTheme extends Theme
 {
 
-    public EnergyBlueTheme()
-    {
-        super("Energy Blue Theme", "jqxenergyblue");
-        getCssReferences().add(new CSSReference("JQXenergyblueTheme", 3.91, "bower_components/jqwidgets/jqwidgets/styles/jqx.energyblue.css", "https://jqwidgets.com/public/jqwidgets/styles/jqx.energyblue.css"));
+	public EnergyBlueTheme()
+	{
+		super("Energy Blue Theme", "jqxenergyblue");
+		getCssReferences().add(new CSSReference("JQXenergyblueTheme", 3.91, "bower_components/jqwidgets/jqwidgets/styles/jqx.energyblue.css", "https://jqwidgets.com/public/jqwidgets/styles/jqx.energyblue.css"));
 
-    }
+	}
 
 }

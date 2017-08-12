@@ -24,48 +24,48 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dockinglayout;
  */
 public enum JQXDockingLayoutType
 {
-    /**
-     * A container for other groups. It has no visual features. The root item is always of this type.
-     */
-    layoutGroup,
-    /**
-     * A group that contains layoutPanels. It is represented by a jqxWindow-like panel with a bottom-aligned jqxRibbon inside.
-     */
-    tabbedGroup,
-    /**
-     * A group that contains documentPanels. It is represented by a top-aligned jqxRibbon.
-     */
-    documentGroup,
-    /**
-     * A group that contains layoutPanels
-     * <p>
-     * It is represented by a jqxRibbon with mode: "popup".
-     * Each ribbon item has a jqxWindow-like panel in its content. This group has to be either the first or the
-     * last child item of its parent layoutGroup.
-     */
-    autoHideGroup,
-    /**
-     * A panel that can be inserted in a tabbedGroup or autoHideGroup. When it is in a tabbedGroup it is represented by a ribbon item and in an autoHideGroup - by a jqxWindow-like panel inside a
-     * ribbon item.
-     */
-    layoutPanel,
-    /**
-     * A panel that can be inserted in a documentGroup. It is represented by a ribbon item.
-     */
-    documentPanel,
-    /**
-     * A floating group that can contain a tabbedGroup or a layoutPanel. It is represented by a jqxWindow. Initial floatGroups have to be defined after the root layoutGroup in the layout array.
-     */
-    floatGroup,;
+	/**
+	 * A container for other groups. It has no visual features. The root item is always of this type.
+	 */
+	layoutGroup,
+	/**
+	 * A group that contains layoutPanels. It is represented by a jqxWindow-like panel with a bottom-aligned jqxRibbon inside.
+	 */
+	tabbedGroup,
+	/**
+	 * A group that contains documentPanels. It is represented by a top-aligned jqxRibbon.
+	 */
+	documentGroup,
+	/**
+	 * A group that contains layoutPanels
+	 * <p>
+	 * It is represented by a jqxRibbon with mode: "popup".
+	 * Each ribbon item has a jqxWindow-like panel in its content. This group has to be either the first or the
+	 * last child item of its parent layoutGroup.
+	 */
+	autoHideGroup,
+	/**
+	 * A panel that can be inserted in a tabbedGroup or autoHideGroup. When it is in a tabbedGroup it is represented by a ribbon item and in an autoHideGroup - by a jqxWindow-like panel inside a
+	 * ribbon item.
+	 */
+	layoutPanel,
+	/**
+	 * A panel that can be inserted in a documentGroup. It is represented by a ribbon item.
+	 */
+	documentPanel,
+	/**
+	 * A floating group that can contain a tabbedGroup or a layoutPanel. It is represented by a jqxWindow. Initial floatGroups have to be defined after the root layoutGroup in the layout array.
+	 */
+	floatGroup,;
 
-    private JQXDockingLayoutType()
-    {
-    }
+	private JQXDockingLayoutType()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

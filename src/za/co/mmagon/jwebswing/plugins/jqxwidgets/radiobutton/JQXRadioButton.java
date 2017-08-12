@@ -22,39 +22,40 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Radio Button",
-        description = "With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcheckandradio/jquery-radiobutton-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcheckandradio/jquery-radiobutton-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRadioButton extends Div<JQXRadioButtonChildren, JQXRadioButtonAttributes, JQXRadioButtonFeature, JQXRadioButtonEvents, JQXRadioButton>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXRadioButtonFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXRadioButtonFeature feature;
 
-    public JQXRadioButton(String text)
-    {
-        addFeature(getFeature());
-        setText(text);
-    }
+	public JQXRadioButton(String text)
+	{
+		addFeature(getFeature());
+		setText(text);
+	}
 
-    public JQXRadioButtonFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXRadioButtonFeature(this);
-        }
-        return feature;
-    }
+	public JQXRadioButtonFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXRadioButtonFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXRadioButtonOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXRadioButtonOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

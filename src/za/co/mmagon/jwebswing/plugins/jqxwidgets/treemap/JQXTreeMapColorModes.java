@@ -24,23 +24,23 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.treemap;
  */
 public enum JQXTreeMapColorModes
 {
-    /**
-     * - a child sector inherits the color from its parent sector. Depending on the child value and the colorRange property the color varies.
-     */
-    parent,
-    /**
-     * - automatic color generation based on the baseColor/colorRange and the value.
-     */
-    autoColors,
-    /**
-     * - the user can sets array of color ranges. Each color range has the properties min, max and color.
-     */
-    rangeColors,;
+	/**
+	 * - a child sector inherits the color from its parent sector. Depending on the child value and the colorRange property the color varies.
+	 */
+	parent,
+	/**
+	 * - automatic color generation based on the baseColor/colorRange and the value.
+	 */
+	autoColors,
+	/**
+	 * - the user can sets array of color ranges. Each color range has the properties min, max and color.
+	 */
+	rangeColors,;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

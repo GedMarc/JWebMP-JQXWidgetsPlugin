@@ -18,78 +18,79 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.colorpicker;
 
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
+import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
+import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXColourModes;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownButton;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownListFeatures;
-import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. You can configure the jqxColorPicker's color mode, input a color in hex or rgb format.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 public class JQXColorPickerDropDown extends JQXDropDownButton
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXColorPicker colourPicker;
-    private ColourHex colour;
+	private static final long serialVersionUID = 1L;
+	private JQXColorPicker colourPicker;
+	private ColourHex colour;
 
-    public JQXColorPickerDropDown()
-    {
-        colourPicker = new JQXColorPicker();
-        colour = new ColourHex("ffaabb");
-        getFeature().setSetContentMethod("getTextElementByColor(new $.jqx.color({ hex: '" + colour + "' }))");
-        getFeatures().add(0, colourPicker.getFeature());
-        getFeatures().add(new ColourPickerDropDownUpdate(this));
-        colourPicker.getOptions().setHeight(220);
-        colourPicker.getOptions().setWidth(220);
-        colourPicker.getOptions().setColorMode(JQXColourModes.Hue);
-        colourPicker.getOptions().setColor(colour);
-        add(colourPicker);
-    }
+	public JQXColorPickerDropDown()
+	{
+		colourPicker = new JQXColorPicker();
+		colour = new ColourHex("ffaabb");
+		getFeature().setSetContentMethod("getTextElementByColor(new $.jqx.color({ hex: '" + colour + "' }))");
+		getFeatures().add(0, colourPicker.getFeature());
+		getFeatures().add(new ColourPickerDropDownUpdate(this));
+		colourPicker.getOptions().setHeight(220);
+		colourPicker.getOptions().setWidth(220);
+		colourPicker.getOptions().setColorMode(JQXColourModes.Hue);
+		colourPicker.getOptions().setColor(colour);
+		add(colourPicker);
+	}
 
-    public JQXColorPicker getColourPicker()
-    {
-        return colourPicker;
-    }
+	public JQXColorPicker getColourPicker()
+	{
+		return colourPicker;
+	}
 
-    public void setColourPicker(JQXColorPicker colourPicker)
-    {
-        this.colourPicker = colourPicker;
-    }
+	public void setColourPicker(JQXColorPicker colourPicker)
+	{
+		this.colourPicker = colourPicker;
+	}
 
-    public ColourHex getColour()
-    {
-        return colour;
-    }
+	public ColourHex getColour()
+	{
+		return colour;
+	}
 
-    public void setColour(ColourHex colour)
-    {
-        this.colour = colour;
-    }
+	public void setColour(ColourHex colour)
+	{
+		this.colour = colour;
+	}
 
-    public class ColourPickerDropDownUpdate extends Feature<JavaScriptPart, ColourPickerDropDownUpdate> implements GlobalFeatures, JQXDropDownListFeatures
-    {
+	public class ColourPickerDropDownUpdate extends Feature<JavaScriptPart, ColourPickerDropDownUpdate> implements GlobalFeatures, JQXDropDownListFeatures
+	{
 
-        private JQXColorPickerDropDown dropDown;
+		private JQXColorPickerDropDown dropDown;
 
-        public ColourPickerDropDownUpdate(JQXColorPickerDropDown dropDown)
-        {
-            super("JQXColourPickerContentUpdater");
-            this.dropDown = dropDown;
-            setComponent(dropDown);
-        }
+		public ColourPickerDropDownUpdate(JQXColorPickerDropDown dropDown)
+		{
+			super("JQXColourPickerContentUpdater");
+			this.dropDown = dropDown;
+			setComponent(dropDown);
+		}
 
-        @Override
-        public void assignFunctionsToComponent()
-        {
-            addQuery("$('" + dropDown.getColourPicker().getID(true) + "').on('colorchange', function (event) {" + getNewLine()
-                    + "$('" + dropDown.getID(true) + "').jqxDropDownButton('setContent', getTextElementByColor(event.args.color));" + getNewLine()
-                    + "});" + getNewLine());
-        }
-    }
+		@Override
+		public void assignFunctionsToComponent()
+		{
+			addQuery("$('" + dropDown.getColourPicker().getID(true) + "').on('colorchange', function (event) {" + getNewLine()
+					         + "$('" + dropDown.getID(true) + "').jqxDropDownButton('setContent', getTextElementByColor(event.args.color));" + getNewLine()
+					         + "});" + getNewLine());
+		}
+	}
 }

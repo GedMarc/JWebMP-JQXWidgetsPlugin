@@ -24,19 +24,19 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.numberinput;
  */
 public enum JQXNumberInputOptionsModes
 {
-    /**
-     * 'simple'-the widget works as a normal textbox, but restricts the user's input to numbers
-     */
-    Simple,
-    /**
-     * 'advanced'- the number input behavior resembles a masked input with numeric mask
-     */
-    Advanced;
+	/**
+	 * 'simple'-the widget works as a normal textbox, but restricts the user's input to numbers
+	 */
+	Simple,
+	/**
+	 * 'advanced'- the number input behavior resembles a masked input with numeric mask
+	 */
+	Advanced;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

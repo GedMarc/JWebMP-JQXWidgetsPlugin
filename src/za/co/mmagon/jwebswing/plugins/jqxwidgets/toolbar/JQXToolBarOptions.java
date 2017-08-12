@@ -16,100 +16,101 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.toolbar;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXToolBarOptions extends JQXDefaultJavaScriptPart
 
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Boolean disabled;// 	Boolean 	false
-    private JavascriptFunction initTools;// 	function 	null
-    private Integer minimizeWidth;// 	Number/String 	200
-    private Integer minWidth;// 	Number/String 	null
-    private Integer maxWidth;// 	Number/String 	null
-    private Boolean rtl;// 	Boolean 	false
-    private JQXToolbarTools tools;// 	String 	''
+	private Boolean disabled;// 	Boolean 	false
+	private JavascriptFunction initTools;// 	function 	null
+	private Integer minimizeWidth;// 	Number/String 	200
+	private Integer minWidth;// 	Number/String 	null
+	private Integer maxWidth;// 	Number/String 	null
+	private Boolean rtl;// 	Boolean 	false
+	private JQXToolbarTools tools;// 	String 	''
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public JavascriptFunction getInitTools()
-    {
-        return initTools;
-    }
+	public JavascriptFunction getInitTools()
+	{
+		return initTools;
+	}
 
-    public void setInitTools(JavascriptFunction initTools)
-    {
-        this.initTools = initTools;
-    }
+	public void setInitTools(JavascriptFunction initTools)
+	{
+		this.initTools = initTools;
+	}
 
-    public Integer getMinimizeWidth()
-    {
-        return minimizeWidth;
-    }
+	public Integer getMinimizeWidth()
+	{
+		return minimizeWidth;
+	}
 
-    public void setMinimizeWidth(Integer minimizeWidth)
-    {
-        this.minimizeWidth = minimizeWidth;
-    }
+	public void setMinimizeWidth(Integer minimizeWidth)
+	{
+		this.minimizeWidth = minimizeWidth;
+	}
 
-    public Integer getMinWidth()
-    {
-        return minWidth;
-    }
+	public Integer getMinWidth()
+	{
+		return minWidth;
+	}
 
-    public void setMinWidth(Integer minWidth)
-    {
-        this.minWidth = minWidth;
-    }
+	public void setMinWidth(Integer minWidth)
+	{
+		this.minWidth = minWidth;
+	}
 
-    public Integer getMaxWidth()
-    {
-        return maxWidth;
-    }
+	public Integer getMaxWidth()
+	{
+		return maxWidth;
+	}
 
-    public void setMaxWidth(Integer maxWidth)
-    {
-        this.maxWidth = maxWidth;
-    }
+	public void setMaxWidth(Integer maxWidth)
+	{
+		this.maxWidth = maxWidth;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public JQXToolbarTools getTools()
-    {
-        return tools;
-    }
+	public JQXToolbarTools getTools()
+	{
+		return tools;
+	}
 
-    public void setTools(JQXToolbarTools tools)
-    {
-        this.tools = tools;
-    }
+	public void setTools(JQXToolbarTools tools)
+	{
+		this.tools = tools;
+	}
 
 }

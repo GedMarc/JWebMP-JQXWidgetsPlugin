@@ -24,43 +24,43 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.validator;
  */
 public enum JQXValidationRuleTypes
 {
-    /**
-     * - Social Security Number Requires input like: ___-__-____
-     */
-    ssn,
-    /**
-     * requires valid e-mail address.
-     */
-    email,
-    /**
-     * requires a CheckBox or Radio Button to be checked or any value to be entered in an Input.
-     */
-    required,
-    /**
-     * requires input like: (___)___-____
-     */
-    phone,
-    /**
-     * - requires a valid zip code like: ___-__-____
-     */
-    zipCode,
-    /**
-     * - restricts the maximum input characters to len.
-     */
-    maxLength,
-    /**
-     * restricts the minimum input characters to len
-     */
-    minLength,
-    /**
-     * - restricts the input length to a specific range.
-     */
-    length;
+	/**
+	 * - Social Security Number Requires input like: ___-__-____
+	 */
+	ssn,
+	/**
+	 * requires valid e-mail address.
+	 */
+	email,
+	/**
+	 * requires a CheckBox or Radio Button to be checked or any value to be entered in an Input.
+	 */
+	required,
+	/**
+	 * requires input like: (___)___-____
+	 */
+	phone,
+	/**
+	 * - requires a valid zip code like: ___-__-____
+	 */
+	zipCode,
+	/**
+	 * - restricts the maximum input characters to len.
+	 */
+	maxLength,
+	/**
+	 * restricts the minimum input characters to len
+	 */
+	minLength,
+	/**
+	 * - restricts the input length to a specific range.
+	 */
+	length;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

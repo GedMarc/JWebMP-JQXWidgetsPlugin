@@ -24,24 +24,24 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.tooltip;
  */
 public enum JQXTooltipTriggers
 {
-    /**
-     * - the tooltip shows after a short period of time at the position of the mouse cursor
-     */
-    Mouse,
-    /**
-     * - the tooltip shows where the mouse cursor has entered the host element
-     */
-    MouseEnter,
-    /**
-     * *
-     * the tooltip shows at the bottom-right side of the host element but does not make use of the left and top properties
-     */
-    Default;
+	/**
+	 * - the tooltip shows after a short period of time at the position of the mouse cursor
+	 */
+	Mouse,
+	/**
+	 * - the tooltip shows where the mouse cursor has entered the host element
+	 */
+	MouseEnter,
+	/**
+	 * *
+	 * the tooltip shows at the bottom-right side of the host element but does not make use of the left and top properties
+	 */
+	Default;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

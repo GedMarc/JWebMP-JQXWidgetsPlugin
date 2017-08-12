@@ -19,16 +19,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.splitter;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXSplitterAttributes implements AttributeDefinitions
 {
-    Visibility;
+	Visibility;
 
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

@@ -24,12 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.slider;
  */
 public enum JQXSliderLayouts
 {
-    normal, reverse;
-
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
-
+	normal, reverse;
+	
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+	
 }

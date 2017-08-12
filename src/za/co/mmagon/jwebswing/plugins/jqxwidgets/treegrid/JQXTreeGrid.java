@@ -29,38 +29,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * <p>
  * jqxTreeGrid has intuitive and easy to use APIs and works across devices and browsers.
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Tree Grid",
-        description = "jqxTreeGrid is a lightweight jQuery widget which represents data in a tree-like structure. The TreeGrid(also known as TreeList) widget supports multi column display of hierarchical data, data paging, sorting and filtering, data editing, columns resizing, fixed columns, conditional formatting, aggregates and rows selection.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtreegrid/jquery-treegrid-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTreeGrid is a lightweight jQuery widget which represents data in a tree-like structure. The TreeGrid(also known as TreeList) widget supports multi column display of hierarchical data, data paging, sorting and filtering, data editing, columns resizing, fixed columns, conditional formatting, aggregates and rows selection.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtreegrid/jquery-treegrid-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTreeGrid extends Div<JQXTreeGridChildren, JQXTreeGridAttributes, JQXTreeGridFeature, JQXTreeGridEvents, JQXTreeGrid>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTreeGridFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXTreeGridFeature feature;
 
-    public JQXTreeGrid()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTreeGrid()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTreeGridFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTreeGridFeature(this);
-        }
-        return feature;
-    }
+	public JQXTreeGridFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTreeGridFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTreeGridOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTreeGridOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

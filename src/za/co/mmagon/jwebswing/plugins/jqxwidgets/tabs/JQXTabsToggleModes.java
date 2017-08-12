@@ -24,15 +24,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.tabs;
  */
 public enum JQXTabsToggleModes
 {
-    click,
-    dblclick,
-    mouseenter,
-    none;
+	click,
+	dblclick,
+	mouseenter,
+	none;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

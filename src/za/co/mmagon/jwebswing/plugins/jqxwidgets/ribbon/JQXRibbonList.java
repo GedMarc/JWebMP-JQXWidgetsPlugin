@@ -19,18 +19,16 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 import za.co.mmagon.jwebswing.base.html.List;
 
 /**
- *
  * @author GedMarc
  * @since 28 Feb 2017
- *
  */
 public class JQXRibbonList extends List implements JQXRibbonChildren
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQXRibbonList()
-    {
-        super(false);
-    }
+	public JQXRibbonList()
+	{
+		super(false);
+	}
 }

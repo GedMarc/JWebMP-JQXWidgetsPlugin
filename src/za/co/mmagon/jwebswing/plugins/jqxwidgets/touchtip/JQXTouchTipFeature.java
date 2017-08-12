@@ -16,62 +16,65 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.touchtip;
 
-import java.util.ArrayList;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
+
+import java.util.ArrayList;
 
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
  * @author MMagon
- * @since 2013/01/16
  * @version 1.0
+ * @since 2013/01/16
  */
 public class JQXTouchTipFeature extends Feature<JQXTouchTipOptions, JQXTouchTipFeature> implements JQXTouchTipFeatures, GlobalFeatures
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private final JQXTouchTip forComponent;
-    private JQXTouchTipOptions options;
+	private final JQXTouchTip forComponent;
+	private JQXTouchTipOptions options;
 
-    /**
-     * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
-     * <p>
-     * @param forComponent
-     */
-    public JQXTouchTipFeature(JQXTouchTip forComponent)
-    {
-        super("JQXTouchTipFeature");
-        this.forComponent = forComponent;
-        getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
-        getCssReferences().add(JQXReferencePool.Core.getCssReference());
-    }
+	/**
+	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
+	 * <p>
+	 *
+	 * @param forComponent
+	 */
+	public JQXTouchTipFeature(JQXTouchTip forComponent)
+	{
+		super("JQXTouchTipFeature");
+		this.forComponent = forComponent;
+		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
+		getCssReferences().add(JQXReferencePool.Core.getCssReference());
+	}
 
-    /**
-     * Returns all the tooltip options
-     * <p>
-     * @return
-     */
-    @Override
-    public JQXTouchTipOptions getOptions()
-    {
-        if (options == null)
-        {
-            options = new JQXTouchTipOptions();
-        }
-        return options;
-    }
+	/**
+	 * Returns all the tooltip options
+	 * <p>
+	 *
+	 * @return
+	 */
+	@Override
+	public JQXTouchTipOptions getOptions()
+	{
+		if (options == null)
+		{
+			options = new JQXTouchTipOptions();
+		}
+		return options;
+	}
 
-    @Override
-    public void assignFunctionsToComponent()
-    {
-        ArrayList<String> queries = new ArrayList();
-        String requiredString = forComponent.getJQueryID() + "jqxTree(";
-        requiredString += getOptions().toString();
-        requiredString += ");" + getNewLine();
-        addQuery(requiredString);
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		ArrayList<String> queries = new ArrayList();
+		String requiredString = forComponent.getJQueryID() + "jqxTree(";
+		requiredString += getOptions().toString();
+		requiredString += ");" + getNewLine();
+		addQuery(requiredString);
 
-    }
+	}
 }

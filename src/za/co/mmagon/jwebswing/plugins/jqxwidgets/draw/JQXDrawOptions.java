@@ -21,30 +21,31 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXDrawOptions extends JavaScriptPart
 {
-
-    private String renderEngine;// 	String 	'' vv
-
-    public JQXDrawOptions()
-    {
-
-    }
-
-    public String getRenderEngine()
-    {
-        return renderEngine;
-    }
-
-    public void setRenderEngine(String renderEngine)
-    {
-        this.renderEngine = renderEngine;
-    }
-
+	
+	private String renderEngine;// 	String 	'' vv
+	
+	public JQXDrawOptions()
+	{
+	
+	}
+	
+	public String getRenderEngine()
+	{
+		return renderEngine;
+	}
+	
+	public void setRenderEngine(String renderEngine)
+	{
+		this.renderEngine = renderEngine;
+	}
+	
 }

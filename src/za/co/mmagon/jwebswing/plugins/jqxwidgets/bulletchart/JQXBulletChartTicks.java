@@ -19,65 +19,64 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.bulletchart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author MXM3727
  */
 public class JQXBulletChartTicks extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
-    /**
-     * The actual position
-     */
-    private JQXBulletChartTickPosition position;
-    /**
-     * The relevant interval
-     */
-    private Integer interval;
-    /**
-     * The size of the ticks
-     */
-    private Integer size;
+	private static final long serialVersionUID = 1L;
+	/**
+	 * The actual position
+	 */
+	private JQXBulletChartTickPosition position;
+	/**
+	 * The relevant interval
+	 */
+	private Integer interval;
+	/**
+	 * The size of the ticks
+	 */
+	private Integer size;
 
-    public JQXBulletChartTicks(JQXBulletChartTickPosition position, Integer interval, Integer size)
-    {
-        this.position = position;
-        this.interval = interval;
-        this.size = size;
-    }
+	public JQXBulletChartTicks(JQXBulletChartTickPosition position, Integer interval, Integer size)
+	{
+		this.position = position;
+		this.interval = interval;
+		this.size = size;
+	}
 
-    public JQXBulletChartTicks()
-    {
-    }
+	public JQXBulletChartTicks()
+	{
+	}
 
-    public JQXBulletChartTickPosition getPosition()
-    {
-        return position;
-    }
+	public JQXBulletChartTickPosition getPosition()
+	{
+		return position;
+	}
 
-    public void setPosition(JQXBulletChartTickPosition position)
-    {
-        this.position = position;
-    }
+	public void setPosition(JQXBulletChartTickPosition position)
+	{
+		this.position = position;
+	}
 
-    public Integer getInterval()
-    {
-        return interval;
-    }
+	public Integer getInterval()
+	{
+		return interval;
+	}
 
-    public void setInterval(Integer interval)
-    {
-        this.interval = interval;
-    }
+	public void setInterval(Integer interval)
+	{
+		this.interval = interval;
+	}
 
-    public Integer getSize()
-    {
-        return size;
-    }
+	public Integer getSize()
+	{
+		return size;
+	}
 
-    public void setSize(Integer size)
-    {
-        this.size = size;
-    }
+	public void setSize(Integer size)
+	{
+		this.size = size;
+	}
 
 }

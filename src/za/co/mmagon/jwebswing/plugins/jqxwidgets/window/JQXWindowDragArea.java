@@ -27,61 +27,61 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXWindowDragArea extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Integer x;
-    private Integer y;
-    private Integer height;
-    private Integer width;
+	private Integer x;
+	private Integer y;
+	private Integer height;
+	private Integer width;
 
-    public JQXWindowDragArea()
-    {
-    }
+	public JQXWindowDragArea()
+	{
+	}
 
-    public Integer getX()
-    {
-        return x;
-    }
+	public Integer getX()
+	{
+		return x;
+	}
 
-    public void setX(Integer x)
-    {
-        this.x = x;
-    }
+	public void setX(Integer x)
+	{
+		this.x = x;
+	}
 
-    public Integer getY()
-    {
-        return y;
-    }
+	public Integer getY()
+	{
+		return y;
+	}
 
-    public void setY(Integer y)
-    {
-        this.y = y;
-    }
+	public void setY(Integer y)
+	{
+		this.y = y;
+	}
 
-    public Integer getHeight()
-    {
-        return height;
-    }
+	public Integer getHeight()
+	{
+		return height;
+	}
 
-    public void setHeight(Integer height)
-    {
-        this.height = height;
-    }
+	public void setHeight(Integer height)
+	{
+		this.height = height;
+	}
 
-    public Integer getWidth()
-    {
-        return width;
-    }
+	public Integer getWidth()
+	{
+		return width;
+	}
 
-    public void setWidth(Integer width)
-    {
-        this.width = width;
-    }
+	public void setWidth(Integer width)
+	{
+		this.width = width;
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.layout.JQXLayoutChildren;
 /**
  * jqxTree represents a jQuery Tree widget that displays a hierarchical collection of items. You can populate it from 'UL' or by using its 'source' property.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Tree",
-        description = "jqxTree represents a jQuery Tree widget that displays a hierarchical collection of items. You can populate it from 'UL' or by using its 'source' property. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtree/jquery-tree-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTree represents a jQuery Tree widget that displays a hierarchical collection of items. You can populate it from 'UL' or by using its 'source' property. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtree/jquery-tree-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTree extends Div<JQXTreeChildren, JQXTreeAttributes, JQXTreeFeatures, JQXTreeEvents, JQXTree> implements JQXLayoutChildren
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTreeFeature feature;
-    // private JQXPanelFeature panelFeature;
+	private static final long serialVersionUID = 1L;
+	private JQXTreeFeature feature;
+	// private JQXPanelFeature panelFeature;
 
-    public JQXTree()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTree()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTreeFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTreeFeature(this);
-        }
-        return feature;
-    }
+	public JQXTreeFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTreeFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTreeOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTreeOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 }

@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * The jqxScheduler widget displays a set of Appointments in Day, Week, Month, Timeline Day, Timeline Week and Timeline Month views.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Scheduler",
-        description = "The jqxScheduler widget displays a set of Appointments in Day, Week, Month, Timeline Day, Timeline Week and Timeline Month views. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxscheduler/jquery-scheduler-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The jqxScheduler widget displays a set of Appointments in Day, Week, Month, Timeline Day, Timeline Week and Timeline Month views. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxscheduler/jquery-scheduler-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXScheduler extends Div<JQXSchedulerChildren, JQXSchedulerAttributes, JQXSchedulerFeature, JQXSchedulerEvents, JQXScheduler>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXSchedulerFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXSchedulerFeature feature;
 
-    public JQXScheduler()
-    {
-        addFeature(getFeature());
-    }
+	public JQXScheduler()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXSchedulerFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXSchedulerFeature(this);
-        }
-        return feature;
-    }
+	public JQXSchedulerFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXSchedulerFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXSchedulerOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXSchedulerOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

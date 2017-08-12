@@ -28,144 +28,144 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 public class JQXTreeGridColumns extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * string property which sets the column headers text.
-     */
-    private String text;
-    /**
-     * string property which sets the columns bound field. It should be unique and should point to a data field defined in the jqxDataAdapters dataFields array.
-     */
-    private String dataField;
-    /**
-     * string property which sets the columns display field. It should be unique and should point to a data field defined in the jqxDataAdapters dataFields array.
-     */
-    private String displayField;
-    /**
-     * boolean property which determines whether the column is sortable.
-     */
-    private Boolean sortable;
-    /**
-     * boolean property which determines whether the column is filterable.
-     */
-    private Boolean filterable;
-    /**
-     * boolean property which determines whether the column is visible or hidden.
-     */
-    private Boolean hidden;
-    /**
-     * string property which determines the name of the columns parent group. It should point to a valid name defined in the columnGroups.
-     */
-    private String columnGroup;
-    /**
-     * boolean property which determines whether the cells data wrapping is enabled. This property is set to true by default. When autoRowHeight is enabled and autoCellHeight is set to false, the
-     * cells data will not be wrapped.
-     */
-    private Boolean autoCellHeight;
-    /**
-     * callback function for custom rendering of the columns header.
-     */
-    private JavascriptFunction renderer;
+	/**
+	 * string property which sets the column headers text.
+	 */
+	private String text;
+	/**
+	 * string property which sets the columns bound field. It should be unique and should point to a data field defined in the jqxDataAdapters dataFields array.
+	 */
+	private String dataField;
+	/**
+	 * string property which sets the columns display field. It should be unique and should point to a data field defined in the jqxDataAdapters dataFields array.
+	 */
+	private String displayField;
+	/**
+	 * boolean property which determines whether the column is sortable.
+	 */
+	private Boolean sortable;
+	/**
+	 * boolean property which determines whether the column is filterable.
+	 */
+	private Boolean filterable;
+	/**
+	 * boolean property which determines whether the column is visible or hidden.
+	 */
+	private Boolean hidden;
+	/**
+	 * string property which determines the name of the columns parent group. It should point to a valid name defined in the columnGroups.
+	 */
+	private String columnGroup;
+	/**
+	 * boolean property which determines whether the cells data wrapping is enabled. This property is set to true by default. When autoRowHeight is enabled and autoCellHeight is set to false, the
+	 * cells data will not be wrapped.
+	 */
+	private Boolean autoCellHeight;
+	/**
+	 * callback function for custom rendering of the columns header.
+	 */
+	private JavascriptFunction renderer;
 
-    public JQXTreeGridColumns()
-    {
-    }
+	public JQXTreeGridColumns()
+	{
+	}
 
-    public String getText()
-    {
-        return text;
-    }
+	public String getText()
+	{
+		return text;
+	}
 
-    public void setText(String text)
-    {
-        this.text = text;
-    }
+	public void setText(String text)
+	{
+		this.text = text;
+	}
 
-    public String getDataField()
-    {
-        return dataField;
-    }
+	public String getDataField()
+	{
+		return dataField;
+	}
 
-    public void setDataField(String dataField)
-    {
-        this.dataField = dataField;
-    }
+	public void setDataField(String dataField)
+	{
+		this.dataField = dataField;
+	}
 
-    public String getDisplayField()
-    {
-        return displayField;
-    }
+	public String getDisplayField()
+	{
+		return displayField;
+	}
 
-    public void setDisplayField(String displayField)
-    {
-        this.displayField = displayField;
-    }
+	public void setDisplayField(String displayField)
+	{
+		this.displayField = displayField;
+	}
 
-    public Boolean getSortable()
-    {
-        return sortable;
-    }
+	public Boolean getSortable()
+	{
+		return sortable;
+	}
 
-    public void setSortable(Boolean sortable)
-    {
-        this.sortable = sortable;
-    }
+	public void setSortable(Boolean sortable)
+	{
+		this.sortable = sortable;
+	}
 
-    public Boolean getFilterable()
-    {
-        return filterable;
-    }
+	public Boolean getFilterable()
+	{
+		return filterable;
+	}
 
-    public void setFilterable(Boolean filterable)
-    {
-        this.filterable = filterable;
-    }
+	public void setFilterable(Boolean filterable)
+	{
+		this.filterable = filterable;
+	}
 
-    public Boolean getHidden()
-    {
-        return hidden;
-    }
+	public Boolean getHidden()
+	{
+		return hidden;
+	}
 
-    public void setHidden(Boolean hidden)
-    {
-        this.hidden = hidden;
-    }
+	public void setHidden(Boolean hidden)
+	{
+		this.hidden = hidden;
+	}
 
-    public String getColumnGroup()
-    {
-        return columnGroup;
-    }
+	public String getColumnGroup()
+	{
+		return columnGroup;
+	}
 
-    public void setColumnGroup(String columnGroup)
-    {
-        this.columnGroup = columnGroup;
-    }
+	public void setColumnGroup(String columnGroup)
+	{
+		this.columnGroup = columnGroup;
+	}
 
-    public Boolean getAutoCellHeight()
-    {
-        return autoCellHeight;
-    }
+	public Boolean getAutoCellHeight()
+	{
+		return autoCellHeight;
+	}
 
-    public void setAutoCellHeight(Boolean autoCellHeight)
-    {
-        this.autoCellHeight = autoCellHeight;
-    }
+	public void setAutoCellHeight(Boolean autoCellHeight)
+	{
+		this.autoCellHeight = autoCellHeight;
+	}
 
-    public JavascriptFunction getRenderer()
-    {
-        return renderer;
-    }
+	public JavascriptFunction getRenderer()
+	{
+		return renderer;
+	}
 
-    public void setRenderer(JavascriptFunction renderer)
-    {
-        this.renderer = renderer;
-    }
+	public void setRenderer(JavascriptFunction renderer)
+	{
+		this.renderer = renderer;
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

@@ -27,16 +27,16 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 class JQXGaugeLabels extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQXGaugeLabels()
-    {
-    }
+	public JQXGaugeLabels()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

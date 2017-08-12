@@ -24,13 +24,13 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.progressbar;
  */
 public enum JQXProgressBarLayouts
 {
-    Normal,
-    Reverse;
+	Normal,
+	Reverse;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

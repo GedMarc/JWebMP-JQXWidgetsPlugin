@@ -19,16 +19,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.complexinput;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXComplexInputAttributes implements AttributeDefinitions
 {
-    Visibility;
+	Visibility;
 
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

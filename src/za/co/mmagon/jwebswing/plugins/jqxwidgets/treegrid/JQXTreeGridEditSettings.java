@@ -27,105 +27,105 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXTreeGridEditSettings extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Boolean saveOnPageChange;
-    private Boolean saveOnBlur;
-    private Boolean saveOnSelectionChange;
-    private Boolean cancelOnEsc;
-    private Boolean saveOnEnter;
-    private Boolean editSingleCell;
-    private Boolean editOnDoubleClick;
-    private Boolean editOnF2;
+	private Boolean saveOnPageChange;
+	private Boolean saveOnBlur;
+	private Boolean saveOnSelectionChange;
+	private Boolean cancelOnEsc;
+	private Boolean saveOnEnter;
+	private Boolean editSingleCell;
+	private Boolean editOnDoubleClick;
+	private Boolean editOnF2;
 
-    public JQXTreeGridEditSettings()
-    {
-    }
+	public JQXTreeGridEditSettings()
+	{
+	}
 
-    public Boolean getSaveOnPageChange()
-    {
-        return saveOnPageChange;
-    }
+	public Boolean getSaveOnPageChange()
+	{
+		return saveOnPageChange;
+	}
 
-    public void setSaveOnPageChange(Boolean saveOnPageChange)
-    {
-        this.saveOnPageChange = saveOnPageChange;
-    }
+	public void setSaveOnPageChange(Boolean saveOnPageChange)
+	{
+		this.saveOnPageChange = saveOnPageChange;
+	}
 
-    public Boolean getSaveOnBlur()
-    {
-        return saveOnBlur;
-    }
+	public Boolean getSaveOnBlur()
+	{
+		return saveOnBlur;
+	}
 
-    public void setSaveOnBlur(Boolean saveOnBlur)
-    {
-        this.saveOnBlur = saveOnBlur;
-    }
+	public void setSaveOnBlur(Boolean saveOnBlur)
+	{
+		this.saveOnBlur = saveOnBlur;
+	}
 
-    public Boolean getSaveOnSelectionChange()
-    {
-        return saveOnSelectionChange;
-    }
+	public Boolean getSaveOnSelectionChange()
+	{
+		return saveOnSelectionChange;
+	}
 
-    public void setSaveOnSelectionChange(Boolean saveOnSelectionChange)
-    {
-        this.saveOnSelectionChange = saveOnSelectionChange;
-    }
+	public void setSaveOnSelectionChange(Boolean saveOnSelectionChange)
+	{
+		this.saveOnSelectionChange = saveOnSelectionChange;
+	}
 
-    public Boolean getCancelOnEsc()
-    {
-        return cancelOnEsc;
-    }
+	public Boolean getCancelOnEsc()
+	{
+		return cancelOnEsc;
+	}
 
-    public void setCancelOnEsc(Boolean cancelOnEsc)
-    {
-        this.cancelOnEsc = cancelOnEsc;
-    }
+	public void setCancelOnEsc(Boolean cancelOnEsc)
+	{
+		this.cancelOnEsc = cancelOnEsc;
+	}
 
-    public Boolean getSaveOnEnter()
-    {
-        return saveOnEnter;
-    }
+	public Boolean getSaveOnEnter()
+	{
+		return saveOnEnter;
+	}
 
-    public void setSaveOnEnter(Boolean saveOnEnter)
-    {
-        this.saveOnEnter = saveOnEnter;
-    }
+	public void setSaveOnEnter(Boolean saveOnEnter)
+	{
+		this.saveOnEnter = saveOnEnter;
+	}
 
-    public Boolean getEditSingleCell()
-    {
-        return editSingleCell;
-    }
+	public Boolean getEditSingleCell()
+	{
+		return editSingleCell;
+	}
 
-    public void setEditSingleCell(Boolean editSingleCell)
-    {
-        this.editSingleCell = editSingleCell;
-    }
+	public void setEditSingleCell(Boolean editSingleCell)
+	{
+		this.editSingleCell = editSingleCell;
+	}
 
-    public Boolean getEditOnDoubleClick()
-    {
-        return editOnDoubleClick;
-    }
+	public Boolean getEditOnDoubleClick()
+	{
+		return editOnDoubleClick;
+	}
 
-    public void setEditOnDoubleClick(Boolean editOnDoubleClick)
-    {
-        this.editOnDoubleClick = editOnDoubleClick;
-    }
+	public void setEditOnDoubleClick(Boolean editOnDoubleClick)
+	{
+		this.editOnDoubleClick = editOnDoubleClick;
+	}
 
-    public Boolean getEditOnF2()
-    {
-        return editOnF2;
-    }
+	public Boolean getEditOnF2()
+	{
+		return editOnF2;
+	}
 
-    public void setEditOnF2(Boolean editOnF2)
-    {
-        this.editOnF2 = editOnF2;
-    }
+	public void setEditOnF2(Boolean editOnF2)
+	{
+		this.editOnF2 = editOnF2;
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

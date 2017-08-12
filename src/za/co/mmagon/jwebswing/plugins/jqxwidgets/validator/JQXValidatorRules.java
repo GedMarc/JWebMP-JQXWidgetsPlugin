@@ -16,8 +16,8 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.validator;
 
-import za.co.mmagon.jwebswing.generics.XYObject;
 import za.co.mmagon.jwebswing.Component;
+import za.co.mmagon.jwebswing.generics.XYObject;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.events.enumerations.EventTypes;
 
 /**
@@ -29,70 +29,70 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.events.enumerations.EventTy
 public class JQXValidatorRules
 {
 
-    private Component input;
-    private String message;
-    private JQXValidationRuleTypes rule;
-    private XYObject position;
-    private EventTypes action;
+	private Component input;
+	private String message;
+	private JQXValidationRuleTypes rule;
+	private XYObject position;
+	private EventTypes action;
 
-    public JQXValidatorRules()
-    {
-    }
+	public JQXValidatorRules()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
-    public Component getInput()
-    {
-        return input;
-    }
+	public Component getInput()
+	{
+		return input;
+	}
 
-    public void setInput(Component input)
-    {
-        this.input = input;
-    }
+	public void setInput(Component input)
+	{
+		this.input = input;
+	}
 
-    public String getMessage()
-    {
-        return message;
-    }
+	public String getMessage()
+	{
+		return message;
+	}
 
-    public void setMessage(String message)
-    {
-        this.message = message;
-    }
+	public void setMessage(String message)
+	{
+		this.message = message;
+	}
 
-    public JQXValidationRuleTypes getRule()
-    {
-        return rule;
-    }
+	public JQXValidationRuleTypes getRule()
+	{
+		return rule;
+	}
 
-    public void setRule(JQXValidationRuleTypes rule)
-    {
-        this.rule = rule;
-    }
+	public void setRule(JQXValidationRuleTypes rule)
+	{
+		this.rule = rule;
+	}
 
-    public XYObject getPosition()
-    {
-        return position;
-    }
+	public XYObject getPosition()
+	{
+		return position;
+	}
 
-    public void setPosition(XYObject position)
-    {
-        this.position = position;
-    }
+	public void setPosition(XYObject position)
+	{
+		this.position = position;
+	}
 
-    public EventTypes getAction()
-    {
-        return action;
-    }
+	public EventTypes getAction()
+	{
+		return action;
+	}
 
-    public void setAction(EventTypes action)
-    {
-        this.action = action;
-    }
+	public void setAction(EventTypes action)
+	{
+		this.action = action;
+	}
 
 }

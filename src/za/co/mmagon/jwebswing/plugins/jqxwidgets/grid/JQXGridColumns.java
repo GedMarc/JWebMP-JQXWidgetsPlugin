@@ -27,16 +27,16 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 class JQXGridColumns extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQXGridColumns()
-    {
-    }
+	public JQXGridColumns()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

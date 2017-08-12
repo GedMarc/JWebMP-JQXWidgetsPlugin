@@ -24,13 +24,13 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.formattedinput;
  */
 public enum JQXDecimalNotation
 {
-    Default,
-    Exponential;
+	Default,
+	Exponential;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

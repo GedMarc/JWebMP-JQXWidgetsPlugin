@@ -27,16 +27,16 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 class JQXGridGroups extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQXGridGroups()
-    {
-    }
+	public JQXGridGroups()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

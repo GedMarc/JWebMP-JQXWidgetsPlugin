@@ -17,26 +17,26 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.window;
 
 /**
- * This Class 
+ * This Class
+ *
  * @author GedMarc
  * @since 25 Dec 2015
  */
 class JQXWindowKeyboardCloseKey
 {
 
-    public JQXWindowKeyboardCloseKey()
-    {
-    }
+	public JQXWindowKeyboardCloseKey()
+	{
+	}
 
-    
-    
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
 
-    
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+
+
 }
 
 

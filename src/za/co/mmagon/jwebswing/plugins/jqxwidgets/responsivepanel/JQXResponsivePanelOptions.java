@@ -18,139 +18,140 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.responsivepanel;
 
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import za.co.mmagon.jwebswing.Component;
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
-import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXResponsivePanelOptions extends JQXDefaultJavaScriptPart
 {
 
-    private JQXAnimationDirection animationDirection;// 	String 	'left'
-    private Integer animationHideDelay;// 	Boolean 	'fast'
-    private Integer animationShowDelay;// 	Number/String 	'fast'
-    private JQEasingEffects animationType;// 	String 	'fade'
-    private Boolean autoClose;// 	Boolean 	true
-    private Integer collapseBreakpoint;// 	Number 	1000
-    private Integer collapseWidth;// 	Number 	null
+	private JQXAnimationDirection animationDirection;// 	String 	'left'
+	private Integer animationHideDelay;// 	Boolean 	'fast'
+	private Integer animationShowDelay;// 	Number/String 	'fast'
+	private JQEasingEffects animationType;// 	String 	'fade'
+	private Boolean autoClose;// 	Boolean 	true
+	private Integer collapseBreakpoint;// 	Number 	1000
+	private Integer collapseWidth;// 	Number 	null
 
-    @JsonRawValue
-    private JavascriptFunction initContent;// 	function 	null
+	@JsonRawValue
+	private JavascriptFunction initContent;// 	function 	null
 
-    private Component toggleButton;// 	String/Object 	null
-    private Integer toggleButtonSize;// 	Number/String 	30
+	private Component toggleButton;// 	String/Object 	null
+	private Integer toggleButtonSize;// 	Number/String 	30
 
-    public JQXResponsivePanelOptions()
-    {
+	public JQXResponsivePanelOptions()
+	{
 
-    }
+	}
 
-    public JQXAnimationDirection getAnimationDirection()
-    {
-        return animationDirection;
-    }
+	public JQXAnimationDirection getAnimationDirection()
+	{
+		return animationDirection;
+	}
 
-    public void setAnimationDirection(JQXAnimationDirection animationDirection)
-    {
-        this.animationDirection = animationDirection;
-    }
+	public void setAnimationDirection(JQXAnimationDirection animationDirection)
+	{
+		this.animationDirection = animationDirection;
+	}
 
-    public Integer getAnimationHideDelay()
-    {
-        return animationHideDelay;
-    }
+	public Integer getAnimationHideDelay()
+	{
+		return animationHideDelay;
+	}
 
-    public void setAnimationHideDelay(Integer animationHideDelay)
-    {
-        this.animationHideDelay = animationHideDelay;
-    }
+	public void setAnimationHideDelay(Integer animationHideDelay)
+	{
+		this.animationHideDelay = animationHideDelay;
+	}
 
-    public Integer getAnimationShowDelay()
-    {
-        return animationShowDelay;
-    }
+	public Integer getAnimationShowDelay()
+	{
+		return animationShowDelay;
+	}
 
-    public void setAnimationShowDelay(Integer animationShowDelay)
-    {
-        this.animationShowDelay = animationShowDelay;
-    }
+	public void setAnimationShowDelay(Integer animationShowDelay)
+	{
+		this.animationShowDelay = animationShowDelay;
+	}
 
-    public JQEasingEffects getAnimationType()
-    {
-        return animationType;
-    }
+	public JQEasingEffects getAnimationType()
+	{
+		return animationType;
+	}
 
-    public void setAnimationType(JQEasingEffects animationType)
-    {
-        this.animationType = animationType;
-    }
+	public void setAnimationType(JQEasingEffects animationType)
+	{
+		this.animationType = animationType;
+	}
 
-    public Boolean getAutoClose()
-    {
-        return autoClose;
-    }
+	public Boolean getAutoClose()
+	{
+		return autoClose;
+	}
 
-    public void setAutoClose(Boolean autoClose)
-    {
-        this.autoClose = autoClose;
-    }
+	public void setAutoClose(Boolean autoClose)
+	{
+		this.autoClose = autoClose;
+	}
 
-    public Integer getCollapseBreakpoint()
-    {
-        return collapseBreakpoint;
-    }
+	public Integer getCollapseBreakpoint()
+	{
+		return collapseBreakpoint;
+	}
 
-    public void setCollapseBreakpoint(Integer collapseBreakpoint)
-    {
-        this.collapseBreakpoint = collapseBreakpoint;
-    }
+	public void setCollapseBreakpoint(Integer collapseBreakpoint)
+	{
+		this.collapseBreakpoint = collapseBreakpoint;
+	}
 
-    public Integer getCollapseWidth()
-    {
-        return collapseWidth;
-    }
+	public Integer getCollapseWidth()
+	{
+		return collapseWidth;
+	}
 
-    public void setCollapseWidth(Integer collapseWidth)
-    {
-        this.collapseWidth = collapseWidth;
-    }
+	public void setCollapseWidth(Integer collapseWidth)
+	{
+		this.collapseWidth = collapseWidth;
+	}
 
-    public JavascriptFunction getInitContent()
-    {
-        return initContent;
-    }
+	public JavascriptFunction getInitContent()
+	{
+		return initContent;
+	}
 
-    public void setInitContent(JavascriptFunction initContent)
-    {
-        this.initContent = initContent;
-    }
+	public void setInitContent(JavascriptFunction initContent)
+	{
+		this.initContent = initContent;
+	}
 
-    public Component getToggleButton()
-    {
-        return toggleButton;
-    }
+	public Component getToggleButton()
+	{
+		return toggleButton;
+	}
 
-    public void setToggleButton(Component toggleButton)
-    {
-        this.toggleButton = toggleButton;
-    }
+	public void setToggleButton(Component toggleButton)
+	{
+		this.toggleButton = toggleButton;
+	}
 
-    public Integer getToggleButtonSize()
-    {
-        return toggleButtonSize;
-    }
+	public Integer getToggleButtonSize()
+	{
+		return toggleButtonSize;
+	}
 
-    public void setToggleButtonSize(Integer toggleButtonSize)
-    {
-        this.toggleButtonSize = toggleButtonSize;
-    }
+	public void setToggleButtonSize(Integer toggleButtonSize)
+	{
+		this.toggleButtonSize = toggleButtonSize;
+	}
 
 }

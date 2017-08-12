@@ -27,11 +27,12 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXDataAdapterSourceData extends JavaScriptPart
 {
 
-    ;
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	;
+
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

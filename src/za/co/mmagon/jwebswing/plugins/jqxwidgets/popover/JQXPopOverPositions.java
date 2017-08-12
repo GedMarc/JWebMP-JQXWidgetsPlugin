@@ -17,26 +17,26 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.popover;
 
 /**
- * This Class 
+ * This Class
+ *
  * @author GedMarc
  * @since 24 Dec 2015
  */
 class JQXPopOverPositions
 {
 
-    public JQXPopOverPositions()
-    {
-    }
+	public JQXPopOverPositions()
+	{
+	}
 
-    
-    
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
 
-    
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+
+
 }
 
 

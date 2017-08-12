@@ -21,118 +21,119 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXRatingOptions extends JavaScriptPart
 {
 
-    private Integer count;// 	Number 	5
-    private Boolean disabled;// 	Boolean 	false
-    private Integer height;// 	Number/String 	auto
-    private Integer itemHeight;// 	Number 	auto
-    private Integer itemWidth;// 	Number 	auto
-    private Double precision;// 	Number 	1
-    private Boolean singleVote;// 	Boolean 	false
-    private Integer value;// 	Number 	0
-    private Integer width;// 	Number/String 	auto
+	private Integer count;// 	Number 	5
+	private Boolean disabled;// 	Boolean 	false
+	private Integer height;// 	Number/String 	auto
+	private Integer itemHeight;// 	Number 	auto
+	private Integer itemWidth;// 	Number 	auto
+	private Double precision;// 	Number 	1
+	private Boolean singleVote;// 	Boolean 	false
+	private Integer value;// 	Number 	0
+	private Integer width;// 	Number/String 	auto
 
-    public JQXRatingOptions()
-    {
+	public JQXRatingOptions()
+	{
 
-    }
+	}
 
-    public Integer getCount()
-    {
-        return count;
-    }
+	public Integer getCount()
+	{
+		return count;
+	}
 
-    public void setCount(Integer count)
-    {
-        this.count = count;
-    }
+	public void setCount(Integer count)
+	{
+		this.count = count;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Integer getHeight()
-    {
-        return height;
-    }
+	public Integer getHeight()
+	{
+		return height;
+	}
 
-    public void setHeight(Integer height)
-    {
-        this.height = height;
-    }
+	public void setHeight(Integer height)
+	{
+		this.height = height;
+	}
 
-    public Integer getItemHeight()
-    {
-        return itemHeight;
-    }
+	public Integer getItemHeight()
+	{
+		return itemHeight;
+	}
 
-    public void setItemHeight(Integer itemHeight)
-    {
-        this.itemHeight = itemHeight;
-    }
+	public void setItemHeight(Integer itemHeight)
+	{
+		this.itemHeight = itemHeight;
+	}
 
-    public Integer getItemWidth()
-    {
-        return itemWidth;
-    }
+	public Integer getItemWidth()
+	{
+		return itemWidth;
+	}
 
-    public void setItemWidth(Integer itemWidth)
-    {
-        this.itemWidth = itemWidth;
-    }
+	public void setItemWidth(Integer itemWidth)
+	{
+		this.itemWidth = itemWidth;
+	}
 
-    public Double getPrecision()
-    {
-        return precision;
-    }
+	public Double getPrecision()
+	{
+		return precision;
+	}
 
-    public void setPrecision(Double precision)
-    {
-        this.precision = precision;
-    }
+	public void setPrecision(Double precision)
+	{
+		this.precision = precision;
+	}
 
-    public Boolean getSingleVote()
-    {
-        return singleVote;
-    }
+	public Boolean getSingleVote()
+	{
+		return singleVote;
+	}
 
-    public void setSingleVote(Boolean singleVote)
-    {
-        this.singleVote = singleVote;
-    }
+	public void setSingleVote(Boolean singleVote)
+	{
+		this.singleVote = singleVote;
+	}
 
-    public Integer getValue()
-    {
-        return value;
-    }
+	public Integer getValue()
+	{
+		return value;
+	}
 
-    public void setValue(Integer value)
-    {
-        this.value = value;
-    }
+	public void setValue(Integer value)
+	{
+		this.value = value;
+	}
 
-    public Integer getWidth()
-    {
-        return width;
-    }
+	public Integer getWidth()
+	{
+		return width;
+	}
 
-    public void setWidth(Integer width)
-    {
-        this.width = width;
-    }
+	public void setWidth(Integer width)
+	{
+		this.width = width;
+	}
 
 }

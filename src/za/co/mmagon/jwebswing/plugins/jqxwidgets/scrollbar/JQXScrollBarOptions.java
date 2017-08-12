@@ -21,129 +21,130 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXScrollBarOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Boolean disabled;// 	Boolean 	false
-    private Integer largestep;// 	Number 	50
-    private Integer min;// 	Number 	0
-    private Integer max;// 	Number 	1000
-    private Boolean rtl;// 	Boolean 	false
-    private Integer step;// 	Number 	10
-    private Boolean showButtons;// 	Boolean 	true
-    private Integer thumbMinSize;// 	Number 	10
-    private Boolean vertical;// 	Boolean 	false
-    private Integer value;// 	Number
+	private Boolean disabled;// 	Boolean 	false
+	private Integer largestep;// 	Number 	50
+	private Integer min;// 	Number 	0
+	private Integer max;// 	Number 	1000
+	private Boolean rtl;// 	Boolean 	false
+	private Integer step;// 	Number 	10
+	private Boolean showButtons;// 	Boolean 	true
+	private Integer thumbMinSize;// 	Number 	10
+	private Boolean vertical;// 	Boolean 	false
+	private Integer value;// 	Number
 
-    public JQXScrollBarOptions()
-    {
+	public JQXScrollBarOptions()
+	{
 
-    }
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Integer getLargestep()
-    {
-        return largestep;
-    }
+	public Integer getLargestep()
+	{
+		return largestep;
+	}
 
-    public void setLargestep(Integer largestep)
-    {
-        this.largestep = largestep;
-    }
+	public void setLargestep(Integer largestep)
+	{
+		this.largestep = largestep;
+	}
 
-    public Integer getMin()
-    {
-        return min;
-    }
+	public Integer getMin()
+	{
+		return min;
+	}
 
-    public void setMin(Integer min)
-    {
-        this.min = min;
-    }
+	public void setMin(Integer min)
+	{
+		this.min = min;
+	}
 
-    public Integer getMax()
-    {
-        return max;
-    }
+	public Integer getMax()
+	{
+		return max;
+	}
 
-    public void setMax(Integer max)
-    {
-        this.max = max;
-    }
+	public void setMax(Integer max)
+	{
+		this.max = max;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public Integer getStep()
-    {
-        return step;
-    }
+	public Integer getStep()
+	{
+		return step;
+	}
 
-    public void setStep(Integer step)
-    {
-        this.step = step;
-    }
+	public void setStep(Integer step)
+	{
+		this.step = step;
+	}
 
-    public Boolean getShowButtons()
-    {
-        return showButtons;
-    }
+	public Boolean getShowButtons()
+	{
+		return showButtons;
+	}
 
-    public void setShowButtons(Boolean showButtons)
-    {
-        this.showButtons = showButtons;
-    }
+	public void setShowButtons(Boolean showButtons)
+	{
+		this.showButtons = showButtons;
+	}
 
-    public Integer getThumbMinSize()
-    {
-        return thumbMinSize;
-    }
+	public Integer getThumbMinSize()
+	{
+		return thumbMinSize;
+	}
 
-    public void setThumbMinSize(Integer thumbMinSize)
-    {
-        this.thumbMinSize = thumbMinSize;
-    }
+	public void setThumbMinSize(Integer thumbMinSize)
+	{
+		this.thumbMinSize = thumbMinSize;
+	}
 
-    public Boolean getVertical()
-    {
-        return vertical;
-    }
+	public Boolean getVertical()
+	{
+		return vertical;
+	}
 
-    public void setVertical(Boolean vertical)
-    {
-        this.vertical = vertical;
-    }
+	public void setVertical(Boolean vertical)
+	{
+		this.vertical = vertical;
+	}
 
-    public Integer getValue()
-    {
-        return value;
-    }
+	public Integer getValue()
+	{
+		return value;
+	}
 
-    public void setValue(Integer value)
-    {
-        this.value = value;
-    }
+	public void setValue(Integer value)
+	{
+		this.value = value;
+	}
 
 }

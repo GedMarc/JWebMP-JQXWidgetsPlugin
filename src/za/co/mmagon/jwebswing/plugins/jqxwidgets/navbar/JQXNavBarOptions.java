@@ -16,155 +16,157 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar;
 
-import java.util.ArrayList;
 import za.co.mmagon.jwebswing.base.servlets.enumarations.Orientation;
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
+
+import java.util.ArrayList;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXNavBarOptions extends JQXDefaultJavaScriptPart
 {
 
-    /**
-     * Defines the layout of the widget's elements. Each Array item should be a Percentage Value and the total should be "100%".
-     */
-    private ArrayList<MeasurementCSSImpl> columns;// 	Array 	[]
-    private Boolean disabled;// 	Boolean 	false
-    private Boolean minimized;// 	Boolean 	false
-    private String minimizeButtonPosition;// 	String 	'left'
-    private Integer minimizedHeight;// 	Number 	30
-    private String minimizedTitle;// 	String/HTML Element 	""
-    private Orientation orientation;// 	String 	"horizontal"
-    private Integer popupAnimationDelay;// 	Number 	250
-    private Boolean rtl;// 	Boolean 	false
-    private Boolean selection;// 	Boolean 	true
-    private Integer selectedItem;// 	Number 	0
+	/**
+	 * Defines the layout of the widget's elements. Each Array item should be a Percentage Value and the total should be "100%".
+	 */
+	private ArrayList<MeasurementCSSImpl> columns;// 	Array 	[]
+	private Boolean disabled;// 	Boolean 	false
+	private Boolean minimized;// 	Boolean 	false
+	private String minimizeButtonPosition;// 	String 	'left'
+	private Integer minimizedHeight;// 	Number 	30
+	private String minimizedTitle;// 	String/HTML Element 	""
+	private Orientation orientation;// 	String 	"horizontal"
+	private Integer popupAnimationDelay;// 	Number 	250
+	private Boolean rtl;// 	Boolean 	false
+	private Boolean selection;// 	Boolean 	true
+	private Integer selectedItem;// 	Number 	0
 
-    public JQXNavBarOptions()
-    {
+	public JQXNavBarOptions()
+	{
 
-    }
+	}
 
-    public ArrayList<MeasurementCSSImpl> getColumns()
-    {
-        if (columns == null)
-        {
-            columns = new ArrayList<>();
-        }
-        return columns;
-    }
+	public ArrayList<MeasurementCSSImpl> getColumns()
+	{
+		if (columns == null)
+		{
+			columns = new ArrayList<>();
+		}
+		return columns;
+	}
 
-    public void setColumns(ArrayList<MeasurementCSSImpl> columns)
-    {
-        this.columns = columns;
-    }
+	public void setColumns(ArrayList<MeasurementCSSImpl> columns)
+	{
+		this.columns = columns;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Boolean getMinimized()
-    {
-        return minimized;
-    }
+	public Boolean getMinimized()
+	{
+		return minimized;
+	}
 
-    public void setMinimized(Boolean minimized)
-    {
-        this.minimized = minimized;
-    }
+	public void setMinimized(Boolean minimized)
+	{
+		this.minimized = minimized;
+	}
 
-    public String getMinimizeButtonPosition()
-    {
-        return minimizeButtonPosition;
-    }
+	public String getMinimizeButtonPosition()
+	{
+		return minimizeButtonPosition;
+	}
 
-    public void setMinimizeButtonPosition(String minimizeButtonPosition)
-    {
-        this.minimizeButtonPosition = minimizeButtonPosition;
-    }
+	public void setMinimizeButtonPosition(String minimizeButtonPosition)
+	{
+		this.minimizeButtonPosition = minimizeButtonPosition;
+	}
 
-    public Integer getMinimizedHeight()
-    {
-        return minimizedHeight;
-    }
+	public Integer getMinimizedHeight()
+	{
+		return minimizedHeight;
+	}
 
-    public void setMinimizedHeight(Integer minimizedHeight)
-    {
-        this.minimizedHeight = minimizedHeight;
-    }
+	public void setMinimizedHeight(Integer minimizedHeight)
+	{
+		this.minimizedHeight = minimizedHeight;
+	}
 
-    public String getMinimizedTitle()
-    {
-        return minimizedTitle;
-    }
+	public String getMinimizedTitle()
+	{
+		return minimizedTitle;
+	}
 
-    public void setMinimizedTitle(String minimizedTitle)
-    {
-        this.minimizedTitle = minimizedTitle;
-    }
+	public void setMinimizedTitle(String minimizedTitle)
+	{
+		this.minimizedTitle = minimizedTitle;
+	}
 
-    public Orientation getOrientation()
-    {
-        return orientation;
-    }
+	public Orientation getOrientation()
+	{
+		return orientation;
+	}
 
-    public void setOrientation(Orientation orientation)
-    {
-        this.orientation = orientation;
-    }
+	public void setOrientation(Orientation orientation)
+	{
+		this.orientation = orientation;
+	}
 
-    public Integer getPopupAnimationDelay()
-    {
-        return popupAnimationDelay;
-    }
+	public Integer getPopupAnimationDelay()
+	{
+		return popupAnimationDelay;
+	}
 
-    public void setPopupAnimationDelay(Integer popupAnimationDelay)
-    {
-        this.popupAnimationDelay = popupAnimationDelay;
-    }
+	public void setPopupAnimationDelay(Integer popupAnimationDelay)
+	{
+		this.popupAnimationDelay = popupAnimationDelay;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public Boolean getSelection()
-    {
-        return selection;
-    }
+	public Boolean getSelection()
+	{
+		return selection;
+	}
 
-    public void setSelection(Boolean selection)
-    {
-        this.selection = selection;
-    }
+	public void setSelection(Boolean selection)
+	{
+		this.selection = selection;
+	}
 
-    public Integer getSelectedItem()
-    {
-        return selectedItem;
-    }
+	public Integer getSelectedItem()
+	{
+		return selectedItem;
+	}
 
-    public void setSelectedItem(Integer selectedItem)
-    {
-        this.selectedItem = selectedItem;
-    }
+	public void setSelectedItem(Integer selectedItem)
+	{
+		this.selectedItem = selectedItem;
+	}
 
 }

@@ -19,7 +19,6 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXLocalization extends JavaScriptPart

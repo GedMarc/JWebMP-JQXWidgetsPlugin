@@ -16,27 +16,26 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.numberinput;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.numberinput.JQXNumberInputOptions;
 import org.junit.Test;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.numberinput.JQXNumberInputOptions;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXNumberInputOptionsTest
 {
 
-    public JQXNumberInputOptionsTest()
-    {
-    }
+	public JQXNumberInputOptionsTest()
+	{
+	}
 
-    @Test
-    public void testSomeMethod()
-    {
-        JQXNumberInputOptions nio = new JQXNumberInputOptions();
-        nio.setDecimalDigits(0);
-        nio.setDecimal(1.0);
-        System.out.println(nio);
-    }
+	@Test
+	public void testSomeMethod()
+	{
+		JQXNumberInputOptions nio = new JQXNumberInputOptions();
+		nio.setDecimalDigits(0);
+		nio.setDecimal(1.0);
+		System.out.println(nio);
+	}
 
 }

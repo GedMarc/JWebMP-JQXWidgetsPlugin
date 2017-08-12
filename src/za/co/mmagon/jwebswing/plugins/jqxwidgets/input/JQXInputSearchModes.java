@@ -24,20 +24,20 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.input;
  */
 public enum JQXInputSearchModes
 {
-    None,
-    Contains,
-    ContainsIgnoreCase,
-    Equals,
-    EqualsIgnoreCase,
-    StartsWithIgnoreCase,
-    StartsWith,
-    EndsWithIgnoreCase,
-    EndsWith,;
+	None,
+	Contains,
+	ContainsIgnoreCase,
+	Equals,
+	EqualsIgnoreCase,
+	StartsWithIgnoreCase,
+	StartsWith,
+	EndsWithIgnoreCase,
+	EndsWith,;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

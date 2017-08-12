@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Touch",
-        description = "jqxTouch is a small jQuery-based plugin which detects and triggers touch events like 'swipe', 'swipe left', 'swipe right', 'tap' and 'orientationchange' on touch enabled devices. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtouch/jquery-touch-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTouch is a small jQuery-based plugin which detects and triggers touch events like 'swipe', 'swipe left', 'swipe right', 'tap' and 'orientationchange' on touch enabled devices. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtouch/jquery-touch-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTouch extends Div<JQXTouchChildren, JQXTouchAttributes, JQXTouchFeature, JQXTouchEvents, JQXTouch>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTouchFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXTouchFeature feature;
 
-    public JQXTouch()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTouch()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTouchFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTouchFeature(this);
-        }
-        return feature;
-    }
+	public JQXTouchFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTouchFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTouchOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTouchOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

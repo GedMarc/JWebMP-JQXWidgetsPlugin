@@ -27,55 +27,55 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
 public class JQXSchedulerStatus
 {
 
-    private ColourHex free;//: "white",
-    private ColourHex tentative;// tentative: "tentative",
-    private ColourHex busy;//: "transparent",
-    private ColourHex outOfOffice;//: "#800080"
+	private ColourHex free;//: "white",
+	private ColourHex tentative;// tentative: "tentative",
+	private ColourHex busy;//: "transparent",
+	private ColourHex outOfOffice;//: "#800080"
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
-    public ColourHex getFree()
-    {
-        return free;
-    }
+	public ColourHex getFree()
+	{
+		return free;
+	}
 
-    public void setFree(ColourHex free)
-    {
-        this.free = free;
-    }
+	public void setFree(ColourHex free)
+	{
+		this.free = free;
+	}
 
-    public ColourHex getTentative()
-    {
-        return tentative;
-    }
+	public ColourHex getTentative()
+	{
+		return tentative;
+	}
 
-    public void setTentative(ColourHex tentative)
-    {
-        this.tentative = tentative;
-    }
+	public void setTentative(ColourHex tentative)
+	{
+		this.tentative = tentative;
+	}
 
-    public ColourHex getBusy()
-    {
-        return busy;
-    }
+	public ColourHex getBusy()
+	{
+		return busy;
+	}
 
-    public void setBusy(ColourHex busy)
-    {
-        this.busy = busy;
-    }
+	public void setBusy(ColourHex busy)
+	{
+		this.busy = busy;
+	}
 
-    public ColourHex getOutOfOffice()
-    {
-        return outOfOffice;
-    }
+	public ColourHex getOutOfOffice()
+	{
+		return outOfOffice;
+	}
 
-    public void setOutOfOffice(ColourHex outOfOffice)
-    {
-        this.outOfOffice = outOfOffice;
-    }
+	public void setOutOfOffice(ColourHex outOfOffice)
+	{
+		this.outOfOffice = outOfOffice;
+	}
 
 }

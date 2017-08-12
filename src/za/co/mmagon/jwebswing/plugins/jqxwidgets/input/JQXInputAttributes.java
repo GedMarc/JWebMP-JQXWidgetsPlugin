@@ -19,17 +19,16 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.input;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXInputAttributes implements AttributeDefinitions
 {
-    Type,
-    Visibility;
+	Type,
+	Visibility;
 
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

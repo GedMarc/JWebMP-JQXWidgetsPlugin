@@ -30,23 +30,23 @@ import za.co.mmagon.jwebswing.events.select.SelectAdapter;
 public abstract class JQXTreeSelectEvent extends SelectAdapter implements JQXTreeEvents
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public JQXTreeSelectEvent(Component componentToAddTo)
-    {
-        super(componentToAddTo);
-    }
+	public JQXTreeSelectEvent(Component componentToAddTo)
+	{
+		super(componentToAddTo);
+	}
 
-    @Override
-    public abstract void onSelect(AjaxCall ajaxObject, AjaxResponse ajaxReceiver);
+	@Override
+	public abstract void onSelect(AjaxCall ajaxObject, AjaxResponse ajaxReceiver);
 
-    /**
-     * Perform the JQX Tree Select Event
-     * <p>
-     */
-    @Override
-    public void assignFunctionsToComponent()
-    {
-        addQuery(getComponent().getJQueryID() + "jqxSelectItem();" + getNewLine());
-    }
+	/**
+	 * Perform the JQX Tree Select Event
+	 * <p>
+	 */
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		addQuery(new StringBuilder(getComponent().getJQueryID().toString() + "jqxSelectItem();" + getNewLine()));
+	}
 }

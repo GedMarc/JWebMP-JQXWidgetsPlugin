@@ -27,53 +27,53 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXPopOverOffset extends JavaScriptPart
 {
 
-    private Integer left;
-    private Integer right;
-    private Integer bottom;
-    private Integer top;
+	private Integer left;
+	private Integer right;
+	private Integer bottom;
+	private Integer top;
 
-    public JQXPopOverOffset()
-    {
-    }
+	public JQXPopOverOffset()
+	{
+	}
 
-    public Integer getLeft()
-    {
-        return left;
-    }
+	public Integer getLeft()
+	{
+		return left;
+	}
 
-    public void setLeft(Integer left)
-    {
-        this.left = left;
-    }
+	public void setLeft(Integer left)
+	{
+		this.left = left;
+	}
 
-    public Integer getRight()
-    {
-        return right;
-    }
+	public Integer getRight()
+	{
+		return right;
+	}
 
-    public void setRight(Integer right)
-    {
-        this.right = right;
-    }
+	public void setRight(Integer right)
+	{
+		this.right = right;
+	}
 
-    public Integer getBottom()
-    {
-        return bottom;
-    }
+	public Integer getBottom()
+	{
+		return bottom;
+	}
 
-    public void setBottom(Integer bottom)
-    {
-        this.bottom = bottom;
-    }
+	public void setBottom(Integer bottom)
+	{
+		this.bottom = bottom;
+	}
 
-    public Integer getTop()
-    {
-        return top;
-    }
+	public Integer getTop()
+	{
+		return top;
+	}
 
-    public void setTop(Integer top)
-    {
-        this.top = top;
-    }
+	public void setTop(Integer top)
+	{
+		this.top = top;
+	}
 
 }

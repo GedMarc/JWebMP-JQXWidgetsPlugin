@@ -35,24 +35,24 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @author MMagon
  */
 @ComponentInformation(name = "JQX Loader",
-        description = "The jqxLoader represents a jQuery widget which displays the built-in loading element. The loading element can be icon only, text only or combination of icon and text. It can be used to display loading element until the widget's data is loaded. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxloader/jquery-loader-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The jqxLoader represents a jQuery widget which displays the built-in loading element. The loading element can be icon only, text only or combination of icon and text. It can be used to display loading element until the widget's data is loaded. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxloader/jquery-loader-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXLoader extends Div<GlobalChildren, NoAttributes, GlobalFeatures, GlobalEvents, JQXLoader> implements BodyChildren, NoNewLineForRawText, NoNewLineBeforeClosingTag, Loader
 {
 
-    private JQXLoaderFeature feature;
+	private JQXLoaderFeature feature;
 
-    public JQXLoader()
-    {
-        setID("JWLoader");
-        addFeature(feature = new JQXLoaderFeature(this));
-    }
+	public JQXLoader()
+	{
+		setID("JWLoader");
+		addFeature(feature = new JQXLoaderFeature(this));
+	}
 
-    @Override
-    public JQXLoaderOptions getOptions()
-    {
-        return feature.getOptions();
-    }
+	@Override
+	public JQXLoaderOptions getOptions()
+	{
+		return feature.getOptions();
+	}
 
 }

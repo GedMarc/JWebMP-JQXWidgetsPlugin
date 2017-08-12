@@ -71,14 +71,14 @@ public class JQXSchedulerAppointmentDataFields
      * : "timeZone"
      */
 
-    public JQXSchedulerAppointmentDataFields()
-    {
-    }
+	public JQXSchedulerAppointmentDataFields()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

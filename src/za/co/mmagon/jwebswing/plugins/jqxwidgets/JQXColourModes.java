@@ -17,18 +17,17 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXColourModes
 {
-    Hue,
-    Saturation;
-
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
-
+	Hue,
+	Saturation;
+	
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
+	
 }

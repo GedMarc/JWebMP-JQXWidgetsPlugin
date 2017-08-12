@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxScrollView represents a widget which can be used for viewing content which is wider than the visible area outlined by the device's screen. Specific item can be chosen using drag movements or
  * clicking/tapping on the buttons at the bottom of the jqxScrollView.
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Scroll View",
-        description = "jqxScrollView represents a widget which can be used for viewing content which is wider than the visible area outlined by the device's screen. Specific item can be chosen using drag movements or clicking/tapping on the buttons at the bottom of the jqxScrollView. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxscrollview/jquery-scrollview-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxScrollView represents a widget which can be used for viewing content which is wider than the visible area outlined by the device's screen. Specific item can be chosen using drag movements or clicking/tapping on the buttons at the bottom of the jqxScrollView. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxscrollview/jquery-scrollview-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXScrollView extends Div<JQXScrollViewChildren, JQXScrollViewAttributes, JQXScrollViewFeature, JQXScrollViewEvents, JQXScrollView>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXScrollViewFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXScrollViewFeature feature;
 
-    public JQXScrollView()
-    {
-        addFeature(getFeature());
-    }
+	public JQXScrollView()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXScrollViewFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXScrollViewFeature(this);
-        }
-        return feature;
-    }
+	public JQXScrollViewFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXScrollViewFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXScrollViewOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXScrollViewOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

@@ -20,7 +20,6 @@ import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
- *
  * jqxChart is a lightweight and powerful chart widget written 100% in javascript. It offers many advanced features and supports three different rendering technologies - SVG, HTML5 Canvas and VML.
  * <p>
  * You can use jqxChart to add interactive charts to your website, build custom dashboards, or use it in your mobile applications.
@@ -36,38 +35,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * <p>
  * Some simple charts may not have all of these elements, while complicated charts could be highly customized and even include additional elements added through custom drawing.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Chart",
-        description = "jqxChart is a lightweight and powerful chart widget written 100% in javascript. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxchart/jquery-chart-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxChart is a lightweight and powerful chart widget written 100% in javascript. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxchart/jquery-chart-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXChart extends Div<JQXChartChildren, JQXChartAttributes, JQXChartFeature, JQXChartEvents, JQXChart>
 {
-
-    private static final long serialVersionUID = 1L;
-    private JQXChartFeature feature;
-
-    public JQXChart()
-    {
-        addFeature(getFeature());
-    }
-
-    public JQXChartFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXChartFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public JQXChartOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	private JQXChartFeature feature;
+	
+	public JQXChart()
+	{
+		addFeature(getFeature());
+	}
+	
+	public JQXChartFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXChartFeature(this);
+		}
+		return feature;
+	}
+	
+	@Override
+	public JQXChartOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
 }

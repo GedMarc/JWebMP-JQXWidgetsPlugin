@@ -21,23 +21,24 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXDockPanelOptions extends JavaScriptPart
 {
 
-    private Boolean disabled;// 	Boolean 	false
-    private Integer height;// 	Number/String 	null
-    private Boolean lastchildfill;// 	Boolean 	true
-    private Integer width;// 	Number/String 	null
+	private Boolean disabled;// 	Boolean 	false
+	private Integer height;// 	Number/String 	null
+	private Boolean lastchildfill;// 	Boolean 	true
+	private Integer width;// 	Number/String 	null
 
-    public JQXDockPanelOptions()
-    {
+	public JQXDockPanelOptions()
+	{
 
-    }
+	}
 
 }

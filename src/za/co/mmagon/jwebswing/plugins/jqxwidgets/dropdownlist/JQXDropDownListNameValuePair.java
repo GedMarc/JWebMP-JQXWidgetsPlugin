@@ -17,8 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import java.util.ArrayList;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
+
+import java.util.ArrayList;
 
 /**
  * This Class
@@ -29,73 +30,73 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdap
 public class JQXDropDownListNameValuePair extends JQXDataAdapterSourceData
 {
 
-    private ArrayList<JQXDropDownListData> values;
+	private ArrayList<JQXDropDownListData> values;
 
-    public JQXDropDownListNameValuePair()
-    {
-    }
+	public JQXDropDownListNameValuePair()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
-    @JsonValue
-    public ArrayList<JQXDropDownListData> getValues()
-    {
-        if (values == null)
-        {
-            values = new ArrayList<>();
-        }
-        return values;
-    }
+	@JsonValue
+	public ArrayList<JQXDropDownListData> getValues()
+	{
+		if (values == null)
+		{
+			values = new ArrayList<>();
+		}
+		return values;
+	}
 
-    public void setValues(ArrayList<JQXDropDownListData> values)
-    {
-        this.values = values;
-    }
+	public void setValues(ArrayList<JQXDropDownListData> values)
+	{
+		this.values = values;
+	}
 
-    public static class JQXDropDownListData
-    {
+	public static class JQXDropDownListData
+	{
 
-        private String name;
-        private String value;
+		private String name;
+		private String value;
 
-        public JQXDropDownListData()
-        {
-        }
+		public JQXDropDownListData()
+		{
+		}
 
-        public JQXDropDownListData(String name, String value)
-        {
-            this.name = name;
-            this.value = value;
-        }
+		public JQXDropDownListData(String name, String value)
+		{
+			this.name = name;
+			this.value = value;
+		}
 
-        public JQXDropDownListData(String name)
-        {
-            this.name = name;
-        }
+		public JQXDropDownListData(String name)
+		{
+			this.name = name;
+		}
 
-        public String getName()
-        {
-            return name;
-        }
+		public String getName()
+		{
+			return name;
+		}
 
-        public void setName(String name)
-        {
-            this.name = name;
-        }
+		public void setName(String name)
+		{
+			this.name = name;
+		}
 
-        public String getValue()
-        {
-            return value;
-        }
+		public String getValue()
+		{
+			return value;
+		}
 
-        public void setValue(String value)
-        {
-            this.value = value;
-        }
+		public void setValue(String value)
+		{
+			this.value = value;
+		}
 
-    }
+	}
 }

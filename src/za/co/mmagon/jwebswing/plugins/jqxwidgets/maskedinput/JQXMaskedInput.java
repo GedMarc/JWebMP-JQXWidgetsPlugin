@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxMaskedInput represents a jQuery input widget which uses a mask to distinguish between proper and improper user input. You can define phone number, ssn, zip code, dates, etc. masks by setting the
  * jqxMaskedInput mask property.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Masked Input",
-        description = "jqxMaskedInput represents a jQuery input widget which uses a mask to distinguish between proper and improper user input. You can define phone number, ssn, zip code, dates, etc. masks by setting the jqxMaskedInput mask property. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxmaskedinput/jquery-masked-input-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxMaskedInput represents a jQuery input widget which uses a mask to distinguish between proper and improper user input. You can define phone number, ssn, zip code, dates, etc. masks by setting the jqxMaskedInput mask property. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxmaskedinput/jquery-masked-input-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXMaskedInput extends Div<JQXMaskedInputChildren, JQXMaskedInputAttributes, JQXMaskedInputFeature, JQXMaskedInputEvents, JQXMaskedInput>
 {
-
-    private static final long serialVersionUID = 1L;
-    private JQXMaskedInputFeature feature;
-
-    public JQXMaskedInput()
-    {
-        addFeature(getFeature());
-    }
-
-    public JQXMaskedInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXMaskedInputFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public JQXMaskedInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	private JQXMaskedInputFeature feature;
+	
+	public JQXMaskedInput()
+	{
+		addFeature(getFeature());
+	}
+	
+	public JQXMaskedInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXMaskedInputFeature(this);
+		}
+		return feature;
+	}
+	
+	@Override
+	public JQXMaskedInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
 }

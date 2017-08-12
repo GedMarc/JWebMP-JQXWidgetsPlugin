@@ -19,24 +19,23 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.tree;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXTreeAttributes implements AttributeDefinitions
 {
-    Visibility,
-    Data_Container;
-
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase().replace('_', '-');
-    }
-
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
-
+	Visibility,
+	Data_Container;
+	
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase().replace('_', '-');
+	}
+	
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
+	
 }

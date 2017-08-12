@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxTabs represents a jQuery Tabs widget. jqxTabs is breaking the content into multiple sections. You can populate it from 'LI' elements for the tab titles and 'DIV' elements for tab contents.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Tabs",
-        description = "jqxTabs represents a jQuery Tabs widget. jqxTabs is breaking the content into multiple sections. You can populate it from 'LI' elements for the tab titles and 'DIV' elements for tab contents. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtabs/jquery-tabs-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTabs represents a jQuery Tabs widget. jqxTabs is breaking the content into multiple sections. You can populate it from 'LI' elements for the tab titles and 'DIV' elements for tab contents. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtabs/jquery-tabs-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTabs extends Div<JQXTabsChildren, JQXTabsAttributes, JQXTabsFeature, JQXTabsEvents, JQXTabs>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTabsFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXTabsFeature feature;
 
-    public JQXTabs()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTabs()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTabsFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTabsFeature(this);
-        }
-        return feature;
-    }
+	public JQXTabsFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTabsFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTabsOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTabsOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

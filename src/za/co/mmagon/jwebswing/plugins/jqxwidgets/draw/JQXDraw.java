@@ -21,34 +21,35 @@ import za.co.mmagon.jwebswing.base.html.Div;
 /**
  * jqxDraw is a small jQuery-based plugin which allows you to draw shapes and texts using VML, SVG and HTML5.
  * <p>
+ *
  * @author Marc Magon
- * @since 13 Dec 2015
  * @version 1.0
+ * @since 13 Dec 2015
  */
 public class JQXDraw extends Div<JQXDrawChildren, JQXDrawAttributes, JQXDrawFeature, JQXDrawEvents, JQXDraw>
 {
-
-    private static final long serialVersionUID = 1L;
-    private JQXDrawFeature feature;
-
-    public JQXDraw()
-    {
-        addFeature(getFeature());
-    }
-
-    public JQXDrawFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDrawFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public JQXDrawOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	private JQXDrawFeature feature;
+	
+	public JQXDraw()
+	{
+		addFeature(getFeature());
+	}
+	
+	public JQXDrawFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDrawFeature(this);
+		}
+		return feature;
+	}
+	
+	@Override
+	public JQXDrawOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
 }

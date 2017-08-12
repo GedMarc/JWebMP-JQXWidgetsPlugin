@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxComboBox represents a jQuery combobox widget that contains an input field with auto-complete functionality and a list of selectable items displayed in a drop-down.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Combo Box",
-        description = "jqxComboBox represents a jQuery combobox widget that contains an input field with auto-complete functionality and a list of selectable items displayed in a drop-down. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcombobox/jquery-combobox-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxComboBox represents a jQuery combobox widget that contains an input field with auto-complete functionality and a list of selectable items displayed in a drop-down. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcombobox/jquery-combobox-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXComboBox extends Div<JQXComboBoxChildren, JQXComboBoxAttributes, JQXComboBoxFeature, JQXComboBoxEvents, JQXComboBox>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXComboBoxFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXComboBoxFeature feature;
 
-    public JQXComboBox()
-    {
-        addFeature(getFeature());
-    }
+	public JQXComboBox()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXComboBoxFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXComboBoxFeature(this);
-        }
-        return feature;
-    }
+	public JQXComboBoxFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXComboBoxFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXComboBoxOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXComboBoxOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

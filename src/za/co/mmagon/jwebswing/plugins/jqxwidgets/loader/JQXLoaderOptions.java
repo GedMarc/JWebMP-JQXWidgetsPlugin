@@ -25,136 +25,137 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
 /**
  * All the options for the Loader
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXLoaderOptions extends JavaScriptPart
 {
 
-    private Boolean autoOpen;
-    private Integer height;
-    private Integer width;
-    private String html;
-    private Boolean isModal;
-    private VerticalAlignments imagePosition;
-    private Boolean rtl;
-    private String text;
-    private VerticalAlignments textPosition;
-    private String theme;
+	private Boolean autoOpen;
+	private Integer height;
+	private Integer width;
+	private String html;
+	private Boolean isModal;
+	private VerticalAlignments imagePosition;
+	private Boolean rtl;
+	private String text;
+	private VerticalAlignments textPosition;
+	private String theme;
 
-    public JQXLoaderOptions()
-    {
+	public JQXLoaderOptions()
+	{
 
-    }
+	}
 
-    @Override
-    public JavascriptPartType getJavascriptType()
-    {
-        return JavascriptPartType.Javascript;
-    }
+	@Override
+	public JavascriptPartType getJavascriptType()
+	{
+		return JavascriptPartType.Javascript;
+	}
 
-    public Boolean getAutoOpen()
-    {
-        return autoOpen;
-    }
+	public Boolean getAutoOpen()
+	{
+		return autoOpen;
+	}
 
-    public void setAutoOpen(Boolean autoOpen)
-    {
-        this.autoOpen = autoOpen;
-    }
+	public void setAutoOpen(Boolean autoOpen)
+	{
+		this.autoOpen = autoOpen;
+	}
 
-    public Integer getHeight()
-    {
-        return height;
-    }
+	public Integer getHeight()
+	{
+		return height;
+	}
 
-    public void setHeight(Integer height)
-    {
-        this.height = height;
-    }
+	public void setHeight(Integer height)
+	{
+		this.height = height;
+	}
 
-    public Integer getWidth()
-    {
-        return width;
-    }
+	public Integer getWidth()
+	{
+		return width;
+	}
 
-    public void setWidth(Integer width)
-    {
-        this.width = width;
-    }
+	public void setWidth(Integer width)
+	{
+		this.width = width;
+	}
 
-    public String getHtml()
-    {
-        return html;
-    }
+	public String getHtml()
+	{
+		return html;
+	}
 
-    public void setHtml(Component html)
-    {
-        html.setTiny(true);
-        this.html = html.toString(true);
-    }
+	public void setHtml(Component html)
+	{
+		html.setTiny(true);
+		this.html = html.toString(true);
+	}
 
-    public Boolean getIsModal()
-    {
-        return isModal;
-    }
+	public Boolean getIsModal()
+	{
+		return isModal;
+	}
 
-    public void setIsModal(Boolean isModal)
-    {
-        this.isModal = isModal;
-    }
+	public void setIsModal(Boolean isModal)
+	{
+		this.isModal = isModal;
+	}
 
-    public VerticalAlignments getImagePosition()
-    {
-        return imagePosition;
-    }
+	public VerticalAlignments getImagePosition()
+	{
+		return imagePosition;
+	}
 
-    public void setImagePosition(VerticalAlignments imagePosition)
-    {
-        this.imagePosition = imagePosition;
-    }
+	public void setImagePosition(VerticalAlignments imagePosition)
+	{
+		this.imagePosition = imagePosition;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public String getText()
-    {
-        return text;
-    }
+	public String getText()
+	{
+		return text;
+	}
 
-    public void setText(String text)
-    {
-        this.text = text;
-    }
+	public void setText(String text)
+	{
+		this.text = text;
+	}
 
-    public VerticalAlignments getTextPosition()
-    {
-        return textPosition;
-    }
+	public VerticalAlignments getTextPosition()
+	{
+		return textPosition;
+	}
 
-    public void setTextPosition(VerticalAlignments textPosition)
-    {
-        this.textPosition = textPosition;
-    }
+	public void setTextPosition(VerticalAlignments textPosition)
+	{
+		this.textPosition = textPosition;
+	}
 
-    public String getTheme()
-    {
-        return theme;
-    }
+	public String getTheme()
+	{
+		return theme;
+	}
 
-    public void setTheme(Theme theme)
-    {
-        this.theme = theme.getClassName();
-    }
+	public void setTheme(Theme theme)
+	{
+		this.theme = theme.getClassName();
+	}
 
 }

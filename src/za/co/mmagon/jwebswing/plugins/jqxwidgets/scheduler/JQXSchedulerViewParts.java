@@ -17,26 +17,26 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.scheduler;
 
 /**
- * This Class 
+ * This Class
+ *
  * @author GedMarc
  * @since 24 Dec 2015
  */
 public class JQXSchedulerViewParts
 {
 
-    public JQXSchedulerViewParts()
-    {
-    }
+	public JQXSchedulerViewParts()
+	{
+	}
 
-    
-    
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
 
-    
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+
+
 }
 
 

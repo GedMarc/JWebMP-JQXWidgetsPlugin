@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -25,17 +25,17 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
  * @author GedMarc
  * @since 30 Jan 2016
  */
-public class JQXTreeSourceDataAdapter extends JQXDataAdapter<JQXTreeItem>
+public class JQXTreeSourceDataAdapter extends JQXDataAdapter<JQXTreeItem, JQXTreeSourceDataAdapter>
 {
 
-    public JQXTreeSourceDataAdapter(Component componentAddingTo)
-    {
-        super(componentAddingTo);
-    }
+	public JQXTreeSourceDataAdapter(Component componentAddingTo)
+	{
+		super(componentAddingTo);
+	}
 
-    @Override
-    public String toString()
-    {
-        return "";
-    }
+	@Override
+	public String toString()
+	{
+		return "";
+	}
 }

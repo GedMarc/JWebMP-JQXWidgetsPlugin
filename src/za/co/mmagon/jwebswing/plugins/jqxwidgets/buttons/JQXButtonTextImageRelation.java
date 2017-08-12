@@ -17,22 +17,20 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons;
 
 /**
- *
  * @author GedMarc
- * @since Nov 7, 2016
  * @version 1.0
- * 
+ * @since Nov 7, 2016
  */
-public enum JQXButtonTextImageRelation 
+public enum JQXButtonTextImageRelation
 {
-    imageBeforeText,
-    imageAboveText,
-    textAboveImage,
-    textBeforeImage,
-    overlay
-    ;
-    private JQXButtonTextImageRelation ()
-    {
-        
-    }
+	imageBeforeText,
+	imageAboveText,
+	textAboveImage,
+	textBeforeImage,
+	overlay;
+
+	private JQXButtonTextImageRelation()
+	{
+
+	}
 }

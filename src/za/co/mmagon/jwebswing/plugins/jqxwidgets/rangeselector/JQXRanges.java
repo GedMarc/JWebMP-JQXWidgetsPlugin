@@ -16,8 +16,9 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.rangeselector;
 
-import java.text.SimpleDateFormat;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+
+import java.text.SimpleDateFormat;
 
 /**
  * This Class
@@ -27,60 +28,59 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXRanges extends JavaScriptPart
 {
-
-    public JQXRanges(String from, String to)
-    {
-        this.from = from;
-        this.to = to;
-    }
-
-    private String from;
-    private String to;
-
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
-
-    public String getFrom()
-    {
-        return from;
-    }
-
-    public void setFrom(String from)
-    {
-        this.from = from;
-    }
-
-    public String getTo()
-    {
-        return to;
-    }
-
-    public void setTo(String to)
-    {
-        this.to = to;
-    }
-
-    public void setFrom(Integer from)
-    {
-        this.from = from.toString();
-    }
-
-    public void setTo(Integer to)
-    {
-        this.to = to.toString();
-    }
-
-    public void setFrom(SimpleDateFormat from)
-    {
-        this.from = from.toPattern();
-    }
-
-    public void setTo(SimpleDateFormat to)
-    {
-        this.to = to.toPattern();
-    }
-
+	
+	private String from;
+	private String to;
+	public JQXRanges(String from, String to)
+	{
+		this.from = from;
+		this.to = to;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+	
+	public String getFrom()
+	{
+		return from;
+	}
+	
+	public void setFrom(SimpleDateFormat from)
+	{
+		this.from = from.toPattern();
+	}
+	
+	public void setFrom(String from)
+	{
+		this.from = from;
+	}
+	
+	public String getTo()
+	{
+		return to;
+	}
+	
+	public void setTo(SimpleDateFormat to)
+	{
+		this.to = to.toPattern();
+	}
+	
+	public void setTo(String to)
+	{
+		this.to = to;
+	}
+	
+	public void setFrom(Integer from)
+	{
+		this.from = from.toString();
+	}
+	
+	public void setTo(Integer to)
+	{
+		this.to = to.toString();
+	}
+	
 }

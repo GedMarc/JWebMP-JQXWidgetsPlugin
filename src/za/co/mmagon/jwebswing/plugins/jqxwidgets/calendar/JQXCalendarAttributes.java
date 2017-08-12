@@ -19,16 +19,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.calendar;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXCalendarAttributes implements AttributeDefinitions
 {
-    Visibility;
+	Visibility;
 
-    @Override
-    public boolean isKeyword()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	public boolean isKeyword()
+	{
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
 }

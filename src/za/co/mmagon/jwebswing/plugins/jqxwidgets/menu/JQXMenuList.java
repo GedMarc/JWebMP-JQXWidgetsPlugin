@@ -19,21 +19,19 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.menu;
 import za.co.mmagon.jwebswing.base.html.List;
 
 /**
- *
  * @author GedMarc
  * @since 28 Feb 2017
- *
  */
 public class JQXMenuList extends List implements JQXMenuChildren
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * The menu list
-     */
-    public JQXMenuList()
-    {
-        super(false);
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * The menu list
+	 */
+	public JQXMenuList()
+	{
+		super(false);
+	}
 }

@@ -16,136 +16,137 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.passwordinput;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the Password Input library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXPasswordInputOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Boolean disabled;// 	Boolean 	false
-    //localization 	Object
-    private Integer maxLength;// 	Number 	null
-    private String placeHolder;// 	String 	null
-    private JavascriptFunction passwordStrength;// 	Function 	null
-    private Boolean rtl;// 	Boolean 	false
-    private Boolean strengthColors;// 	Object
-    private Boolean showStrength;// 	Boolean 	true
-    private JQXPasswordInputPosition showStrengthPosition;// 	String 	"right"
-    private JavascriptFunction strengthTypeRenderer;// 	Function 	null
-    private Boolean showPasswordIcon;// 	Boolean 	true
+	private Boolean disabled;// 	Boolean 	false
+	//localization 	Object
+	private Integer maxLength;// 	Number 	null
+	private String placeHolder;// 	String 	null
+	private JavascriptFunction passwordStrength;// 	Function 	null
+	private Boolean rtl;// 	Boolean 	false
+	private Boolean strengthColors;// 	Object
+	private Boolean showStrength;// 	Boolean 	true
+	private JQXPasswordInputPosition showStrengthPosition;// 	String 	"right"
+	private JavascriptFunction strengthTypeRenderer;// 	Function 	null
+	private Boolean showPasswordIcon;// 	Boolean 	true
 
-    public JQXPasswordInputOptions()
-    {
+	public JQXPasswordInputOptions()
+	{
 
-    }
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Integer getMaxLength()
-    {
-        return maxLength;
-    }
+	public Integer getMaxLength()
+	{
+		return maxLength;
+	}
 
-    public void setMaxLength(Integer maxLength)
-    {
-        this.maxLength = maxLength;
-    }
+	public void setMaxLength(Integer maxLength)
+	{
+		this.maxLength = maxLength;
+	}
 
-    public String getPlaceHolder()
-    {
-        return placeHolder;
-    }
+	public String getPlaceHolder()
+	{
+		return placeHolder;
+	}
 
-    public void setPlaceHolder(String placeHolder)
-    {
-        this.placeHolder = placeHolder;
-    }
+	public void setPlaceHolder(String placeHolder)
+	{
+		this.placeHolder = placeHolder;
+	}
 
-    public JavascriptFunction getPasswordStrength()
-    {
-        return passwordStrength;
-    }
+	public JavascriptFunction getPasswordStrength()
+	{
+		return passwordStrength;
+	}
 
-    public void setPasswordStrength(JavascriptFunction passwordStrength)
-    {
-        this.passwordStrength = passwordStrength;
-    }
+	public void setPasswordStrength(JavascriptFunction passwordStrength)
+	{
+		this.passwordStrength = passwordStrength;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public Boolean getStrengthColors()
-    {
-        return strengthColors;
-    }
+	public Boolean getStrengthColors()
+	{
+		return strengthColors;
+	}
 
-    public void setStrengthColors(Boolean strengthColors)
-    {
-        this.strengthColors = strengthColors;
-    }
+	public void setStrengthColors(Boolean strengthColors)
+	{
+		this.strengthColors = strengthColors;
+	}
 
-    public Boolean getShowStrength()
-    {
-        return showStrength;
-    }
+	public Boolean getShowStrength()
+	{
+		return showStrength;
+	}
 
-    public void setShowStrength(Boolean showStrength)
-    {
-        this.showStrength = showStrength;
-    }
+	public void setShowStrength(Boolean showStrength)
+	{
+		this.showStrength = showStrength;
+	}
 
-    public JQXPasswordInputPosition getShowStrengthPosition()
-    {
-        return showStrengthPosition;
-    }
+	public JQXPasswordInputPosition getShowStrengthPosition()
+	{
+		return showStrengthPosition;
+	}
 
-    public void setShowStrengthPosition(JQXPasswordInputPosition showStrengthPosition)
-    {
-        this.showStrengthPosition = showStrengthPosition;
-    }
+	public void setShowStrengthPosition(JQXPasswordInputPosition showStrengthPosition)
+	{
+		this.showStrengthPosition = showStrengthPosition;
+	}
 
-    public JavascriptFunction getStrengthTypeRenderer()
-    {
-        return strengthTypeRenderer;
-    }
+	public JavascriptFunction getStrengthTypeRenderer()
+	{
+		return strengthTypeRenderer;
+	}
 
-    public void setStrengthTypeRenderer(JavascriptFunction strengthTypeRenderer)
-    {
-        this.strengthTypeRenderer = strengthTypeRenderer;
-    }
+	public void setStrengthTypeRenderer(JavascriptFunction strengthTypeRenderer)
+	{
+		this.strengthTypeRenderer = strengthTypeRenderer;
+	}
 
-    public Boolean getShowPasswordIcon()
-    {
-        return showPasswordIcon;
-    }
+	public Boolean getShowPasswordIcon()
+	{
+		return showPasswordIcon;
+	}
 
-    public void setShowPasswordIcon(Boolean showPasswordIcon)
-    {
-        this.showPasswordIcon = showPasswordIcon;
-    }
+	public void setShowPasswordIcon(Boolean showPasswordIcon)
+	{
+		this.showPasswordIcon = showPasswordIcon;
+	}
 
 }

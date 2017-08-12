@@ -26,42 +26,42 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
  */
 public enum JQXWidgetThemes
 {
-    Android(new AndroidTheme()),
-    Arctic(new ArcticTheme()),
-    Black(new BlackTheme()),
-    Blackberry(new BlackberryTheme()),
-    BootStrap(new BootStrapTheme()),
-    Classic(new ClassicTheme()),
-    DarkBlue(new DarkBlueTheme()),
-    EnergyBlue(new EnergyBlueTheme()),
-    Fresh(new FreshTheme()),
-    HighContrast(new HighContrastTheme()),
-    MetroDark(new MetroDarkTheme()),
-    Metro(new MetroTheme()),
-    Mobile(new MobileTheme()),
-    Office(new OfficeTheme()),
-    Orange(new OrangeTheme()),
-    ShinyBlack(new ShinyBlackTheme()),
-    Summer(new SummerTheme()),
-    Web(new WebTheme()),
-    WindowsPhone(new WindowsPhoneTheme());
+	Android(new AndroidTheme()),
+	Arctic(new ArcticTheme()),
+	Black(new BlackTheme()),
+	Blackberry(new BlackberryTheme()),
+	BootStrap(new BootStrapTheme()),
+	Classic(new ClassicTheme()),
+	DarkBlue(new DarkBlueTheme()),
+	EnergyBlue(new EnergyBlueTheme()),
+	Fresh(new FreshTheme()),
+	HighContrast(new HighContrastTheme()),
+	MetroDark(new MetroDarkTheme()),
+	Metro(new MetroTheme()),
+	Mobile(new MobileTheme()),
+	Office(new OfficeTheme()),
+	Orange(new OrangeTheme()),
+	ShinyBlack(new ShinyBlackTheme()),
+	Summer(new SummerTheme()),
+	Web(new WebTheme()),
+	WindowsPhone(new WindowsPhoneTheme());
 
-    private Theme theme;
+	private Theme theme;
 
-    private JQXWidgetThemes(Theme theme)
-    {
-        this.theme = theme;
-    }
+	private JQXWidgetThemes(Theme theme)
+	{
+		this.theme = theme;
+	}
 
-    public Theme getTheme()
-    {
-        return theme;
-    }
+	public Theme getTheme()
+	{
+		return theme;
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

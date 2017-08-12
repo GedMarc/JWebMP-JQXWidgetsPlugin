@@ -17,11 +17,10 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.combobox;
 
 /**
- *
  * @author GedMarc
  */
 public enum JXComboBoxHorizontalAlignment
 {
-    Left,
-    Right
+	Left,
+	Right
 }

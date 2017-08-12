@@ -29,30 +29,30 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXDataThemeFeature extends Feature<JavaScriptPart, JQXDataThemeFeature> implements GlobalFeatures
 {
 
-    private JQXWidgetThemes globalTheme;
+	private JQXWidgetThemes globalTheme;
 
-    public JQXDataThemeFeature(JQXWidgetThemes theme)
-    {
-        super("JQXDataThemeFeature");
-        this.globalTheme = theme;
-        getCssReferences().add(globalTheme.getTheme().getCssReferences().get(0));
-    }
+	public JQXDataThemeFeature(JQXWidgetThemes theme)
+	{
+		super("JQXDataThemeFeature");
+		this.globalTheme = theme;
+		getCssReferences().add(globalTheme.getTheme().getCssReferences().get(0));
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
-    @Override
-    public void assignFunctionsToComponent()
-    {
-        addQuery("$.data(document.body, 'theme', '" + globalTheme.name().toLowerCase() + "');" + getNewLine());
-    }
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		addQuery("$.data(document.body, 'theme', '" + globalTheme.name().toLowerCase() + "');" + getNewLine());
+	}
 
-    public void setGlobalTheme(JQXWidgetThemes theme)
-    {
-        this.globalTheme = theme;
-    }
+	public void setGlobalTheme(JQXWidgetThemes theme)
+	{
+		this.globalTheme = theme;
+	}
 
 }

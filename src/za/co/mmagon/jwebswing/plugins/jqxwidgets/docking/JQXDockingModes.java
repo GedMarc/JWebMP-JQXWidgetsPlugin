@@ -24,23 +24,23 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.docking;
  */
 public enum JQXDockingModes
 {
-    /**
-     * -the user can drop every window inside any docking panel or outside the docking panels
-     */
-    Default,
-    /**
-     * -the user can drop every window just into the docking panels
-     */
-    Docked,
-    /**
-     * -the user can drop any window just outside of the docking panels.
-     */
-    Floating;
+	/**
+	 * -the user can drop every window inside any docking panel or outside the docking panels
+	 */
+	Default,
+	/**
+	 * -the user can drop every window just into the docking panels
+	 */
+	Docked,
+	/**
+	 * -the user can drop any window just outside of the docking panels.
+	 */
+	Floating;
 
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
 
 }

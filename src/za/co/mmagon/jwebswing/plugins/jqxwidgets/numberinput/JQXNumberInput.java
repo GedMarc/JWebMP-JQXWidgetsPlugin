@@ -26,38 +26,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * <p>
  * Other built-in capabilities are customizable number of digits and decimal digits, currency symbol's string and position, group and decimal separator character.
  * <p>
+ *
  * @author Marc Magon
- * @since 20 Dec 2015
  * @version 1.0
+ * @since 20 Dec 2015
  */
 @ComponentInformation(name = "JQX Number Input",
-        description = "jqxNumberInput represents a jQuery widget that allows you to input currency, percentages and any type of numeric data. The edited data can be presented in various formats.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnumberinput/jquery-number-input-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxNumberInput represents a jQuery widget that allows you to input currency, percentages and any type of numeric data. The edited data can be presented in various formats.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnumberinput/jquery-number-input-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNumberInput extends Div<JQXNumberInputChildren, JQXNumberInputAttributes, JQXNumberInputFeature, JQXNumberInputEvents, JQXNumberInput>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXNumberInputFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXNumberInputFeature feature;
 
-    public JQXNumberInput()
-    {
-        addFeature(getFeature());
-    }
+	public JQXNumberInput()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXNumberInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXNumberInputFeature(this);
-        }
-        return feature;
-    }
+	public JQXNumberInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXNumberInputFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXNumberInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXNumberInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

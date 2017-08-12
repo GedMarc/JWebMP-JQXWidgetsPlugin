@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * The Grid is a powerful jQuery widget that displays tabular data. It offers rich support for interacting with data, including paging, grouping, sorting, filtering and editing.
  * <p>
+ *
  * @author Marc Magon
- * @since 15 Dec 2015
  * @version 1.0
+ * @since 15 Dec 2015
  */
 @ComponentInformation(name = "JQX Grid",
-        description = "The Grid is a powerful jQuery widget that displays tabular data. It offers rich support for interacting with data, including paging, grouping, sorting, filtering and editing. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgrid/jquery-grid-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The Grid is a powerful jQuery widget that displays tabular data. It offers rich support for interacting with data, including paging, grouping, sorting, filtering and editing. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgrid/jquery-grid-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXGrid extends Div<JQXGridChildren, JQXGridAttributes, JQXGridFeature, JQXGridEvents, JQXGrid>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXGridFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXGridFeature feature;
 
-    public JQXGrid()
-    {
-        addFeature(getFeature());
-    }
+	public JQXGrid()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXGridFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXGridFeature(this);
-        }
-        return feature;
-    }
+	public JQXGridFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXGridFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXGridOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXGridOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

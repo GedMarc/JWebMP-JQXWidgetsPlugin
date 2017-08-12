@@ -16,42 +16,41 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.buttons;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButton;
 import org.junit.Before;
 import org.junit.Test;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButton;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXButtonTest
 {
-    
-    public JQXButtonTest()
-    {
-    }
-    
-    @Before
-    public void setUp()
-    {
-    }
-    
-    @Test 
-    public void testHtml()
-    {
-        JQXButton button = new JQXButton();
-        button.setID("id");
-        button.getOptions().setDisabled(true);
-        System.out.println(button.toString(true));
-    }
 
-    @Test
-    public void testSomeMethod()
-    {
-        JQXButton button = new JQXButton();
-        button.setID("id");
-        button.getOptions().setDisabled(true);
-        System.out.println(button.renderJavascript());
-    }
-    
+	public JQXButtonTest()
+	{
+	}
+
+	@Before
+	public void setUp()
+	{
+	}
+
+	@Test
+	public void testHtml()
+	{
+		JQXButton button = new JQXButton();
+		button.setID("id");
+		button.getOptions().setDisabled(true);
+		System.out.println(button.toString(true));
+	}
+
+	@Test
+	public void testSomeMethod()
+	{
+		JQXButton button = new JQXButton();
+		button.setID("id");
+		button.getOptions().setDisabled(true);
+		System.out.println(button.renderJavascript());
+	}
+
 }

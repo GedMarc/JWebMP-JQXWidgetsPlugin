@@ -25,59 +25,59 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.splitter;
 public class JQXSplitterPanel
 {
 
-    private Integer size;// - sets the panel's size.
-    private Integer min;// - sets the panel's minimum size.
-    private Boolean collapsible;// - sets whether the panel is collapsible.
-    private Boolean collapsed;// - sets whether the panel is collapsed.
+	private Integer size;// - sets the panel's size.
+	private Integer min;// - sets the panel's minimum size.
+	private Boolean collapsible;// - sets whether the panel is collapsible.
+	private Boolean collapsed;// - sets whether the panel is collapsed.
 
-    public JQXSplitterPanel()
-    {
-    }
+	public JQXSplitterPanel()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
-    public Integer getSize()
-    {
-        return size;
-    }
+	public Integer getSize()
+	{
+		return size;
+	}
 
-    public void setSize(Integer size)
-    {
-        this.size = size;
-    }
+	public void setSize(Integer size)
+	{
+		this.size = size;
+	}
 
-    public Integer getMin()
-    {
-        return min;
-    }
+	public Integer getMin()
+	{
+		return min;
+	}
 
-    public void setMin(Integer min)
-    {
-        this.min = min;
-    }
+	public void setMin(Integer min)
+	{
+		this.min = min;
+	}
 
-    public Boolean getCollapsible()
-    {
-        return collapsible;
-    }
+	public Boolean getCollapsible()
+	{
+		return collapsible;
+	}
 
-    public void setCollapsible(Boolean collapsible)
-    {
-        this.collapsible = collapsible;
-    }
+	public void setCollapsible(Boolean collapsible)
+	{
+		this.collapsible = collapsible;
+	}
 
-    public Boolean getCollapsed()
-    {
-        return collapsed;
-    }
+	public Boolean getCollapsed()
+	{
+		return collapsed;
+	}
 
-    public void setCollapsed(Boolean collapsed)
-    {
-        this.collapsed = collapsed;
-    }
+	public void setCollapsed(Boolean collapsed)
+	{
+		this.collapsed = collapsed;
+	}
 
 }

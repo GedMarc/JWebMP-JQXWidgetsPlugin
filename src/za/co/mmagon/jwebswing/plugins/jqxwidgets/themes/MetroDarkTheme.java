@@ -17,26 +17,24 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.themes;
 
 import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**
  * The Dark Hive theme to JQuery UI
  *
- * @since 2012/02/04
- * @version
  * @author MMagon
- *
+ * @since 2012/02/04
  */
 public class MetroDarkTheme extends Theme
 {
 
-    public MetroDarkTheme()
-    {
-        super("Metro Dark Theme", "metrodark");
-        getCssReferences().add(JQXReferencePool.Core.getCssReference());
-        getCssReferences().add(new CSSReference("JQXmetrodarkTheme", 3.91, "bower_components/jqwidgets/jqwidgets/styles/jqx.metrodark.css", "https://jqwidgets.com/public/jqwidgets/styles/jqx.metrodark.css"));
+	public MetroDarkTheme()
+	{
+		super("Metro Dark Theme", "metrodark");
+		getCssReferences().add(JQXReferencePool.Core.getCssReference());
+		getCssReferences().add(new CSSReference("JQXmetrodarkTheme", 3.91, "bower_components/jqwidgets/jqwidgets/styles/jqx.metrodark.css", "https://jqwidgets.com/public/jqwidgets/styles/jqx.metrodark.css"));
 
-    }
+	}
 
 }

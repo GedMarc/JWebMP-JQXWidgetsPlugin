@@ -17,12 +17,11 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXScrollPositions
 {
-    both,
-    near,
-    far,
+	both,
+	near,
+	far,
 }

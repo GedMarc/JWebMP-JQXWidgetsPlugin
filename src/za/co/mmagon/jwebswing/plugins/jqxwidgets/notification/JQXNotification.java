@@ -23,45 +23,46 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time.
  * <p>
+ *
  * @author Marc Magon
- * @since 20 Dec 2015
  * @version 1.0
+ * @since 20 Dec 2015
  */
 @ComponentInformation(name = "JQX Notification",
-        description = "jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnotification/jquery-notification-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnotification/jquery-notification-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNotification extends Div<JQXNotificationChildren, JQXNotificationAttributes, JQXNotificationFeature, JQXNotificationEvents, JQXNotification> implements GlobalChildren
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXNotificationFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXNotificationFeature feature;
 
-    public JQXNotification()
-    {
-        addFeature(getFeature());
-    }
+	public JQXNotification()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXNotificationFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXNotificationFeature(this);
-        }
-        return feature;
-    }
+	public JQXNotificationFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXNotificationFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXNotificationOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXNotificationOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
-    public Div addText(String textToAdd)
-    {
-        JQXNotificationDiv d = new JQXNotificationDiv();
-        d.setText(textToAdd);
-        add(d);
-        return d;
-    }
+	public Div addText(String textToAdd)
+	{
+		JQXNotificationDiv d = new JQXNotificationDiv();
+		d.setText(textToAdd);
+		add(d);
+		return d;
+	}
 }

@@ -16,42 +16,41 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.layout;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.layout.JQXLayoutArray;
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.layout.JQXLayout;
 import org.junit.Test;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.layout.JQXLayout;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.layout.JQXLayoutArray;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXLayoutTest
 {
 
-    public JQXLayoutTest()
-    {
-    }
+	public JQXLayoutTest()
+	{
+	}
 
-    /**
-     * Test of getFeature method, of class JQXLayout.
-     */
-    @Test
-    public void testOptions()
-    {
+	/**
+	 * Test of getFeature method, of class JQXLayout.
+	 */
+	@Test
+	public void testOptions()
+	{
 
-        JQXLayout layout = new JQXLayout();
-        layout.getOptions().setContextMenu(true);
+		JQXLayout layout = new JQXLayout();
+		layout.getOptions().setContextMenu(true);
 
-        JQXLayoutArray arr = new JQXLayoutArray();
-        arr.setAllowPin(true);
+		JQXLayoutArray arr = new JQXLayoutArray();
+		arr.setAllowPin(true);
 
-        layout.getOptions().getLayout().add(arr);
+		layout.getOptions().getLayout().add(arr);
 
-        JQXLayoutArray arr2 = new JQXLayoutArray();
-        arr2.setTitle("title");
-        arr2.setInitContent("init content");
-        layout.getOptions().getLayout().add(arr2);
+		JQXLayoutArray arr2 = new JQXLayoutArray();
+		arr2.setTitle("title");
+		arr2.setInitContent("init content");
+		layout.getOptions().getLayout().add(arr2);
 
-        System.out.println(layout.renderJavascript());
-    }
+		System.out.println(layout.renderJavascript());
+	}
 
 }

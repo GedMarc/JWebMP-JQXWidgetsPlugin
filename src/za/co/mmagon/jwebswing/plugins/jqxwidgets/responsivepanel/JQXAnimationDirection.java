@@ -24,15 +24,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.responsivepanel;
  */
 public enum JQXAnimationDirection
 {
-    left,
-    right,
-    top,
-    bottom;
+	left,
+	right,
+	top,
+	bottom;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

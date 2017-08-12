@@ -16,77 +16,78 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.colorpicker;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXColourModes;
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXColourModes;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXColorPickerOptions extends JQXDefaultJavaScriptPart
 {
 
-    private JQXColourModes colorMode;// 	String 	'saturation'
-    private Boolean disabled;// 	Boolean 	false
-    private Boolean showTransparent;// 	Boolean 	false
-    private ColourHex color;
+	private JQXColourModes colorMode;// 	String 	'saturation'
+	private Boolean disabled;// 	Boolean 	false
+	private Boolean showTransparent;// 	Boolean 	false
+	private ColourHex color;
 
-    public JQXColorPickerOptions()
-    {
+	public JQXColorPickerOptions()
+	{
 
-    }
+	}
 
-    @Override
-    public JavascriptPartType getJavascriptType()
-    {
-        return JavascriptPartType.Javascript;
-    }
+	@Override
+	public JavascriptPartType getJavascriptType()
+	{
+		return JavascriptPartType.Javascript;
+	}
 
-    public JQXColourModes getColorMode()
-    {
-        return colorMode;
-    }
+	public JQXColourModes getColorMode()
+	{
+		return colorMode;
+	}
 
-    public void setColorMode(JQXColourModes colorMode)
-    {
-        this.colorMode = colorMode;
-    }
+	public void setColorMode(JQXColourModes colorMode)
+	{
+		this.colorMode = colorMode;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Boolean getShowTransparent()
-    {
-        return showTransparent;
-    }
+	public Boolean getShowTransparent()
+	{
+		return showTransparent;
+	}
 
-    public void setShowTransparent(Boolean showTransparent)
-    {
-        this.showTransparent = showTransparent;
-    }
+	public void setShowTransparent(Boolean showTransparent)
+	{
+		this.showTransparent = showTransparent;
+	}
 
-    public ColourHex getColor()
-    {
-        return color;
-    }
+	public ColourHex getColor()
+	{
+		return color;
+	}
 
-    public void setColor(ColourHex color)
-    {
-        this.color = color;
-    }
+	public void setColor(ColourHex color)
+	{
+		this.color = color;
+	}
 
 }

@@ -17,17 +17,16 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXPagerModes
 {
-    Default, Advanced;
-
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
-
+	Default, Advanced;
+	
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
+	
 }

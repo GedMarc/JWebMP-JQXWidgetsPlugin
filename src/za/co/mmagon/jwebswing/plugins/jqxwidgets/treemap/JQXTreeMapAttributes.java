@@ -19,16 +19,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.treemap;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXTreeMapAttributes implements AttributeDefinitions
 {
-    Visibility;
-
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	Visibility;
+	
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

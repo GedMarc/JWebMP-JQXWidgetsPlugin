@@ -16,157 +16,158 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.fileupload;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXFileUploadOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Boolean autoUpload;// 	Boolean 	false
-    private String accept;// 	String 	null
-    private String browseTemplate;// 	String 	''
-    private String cancelTemplate;// 	String 	''
-    private Boolean disabled;// 	Boolean 	false
-    private String fileInputName;// 	String 	''
-    private JQXFileUploadLocalization localization;// 	Object 	null
-    private Boolean multipleFilesUpload;// 	Boolean 	true
-    private JavascriptFunction renderFiles;// 	function 	null
-    private Boolean rtl;// 	Boolean 	false
-    private String uploadUrl;// 	String 	''
-    private String uploadTemplate;// 	String 	''
+	private Boolean autoUpload;// 	Boolean 	false
+	private String accept;// 	String 	null
+	private String browseTemplate;// 	String 	''
+	private String cancelTemplate;// 	String 	''
+	private Boolean disabled;// 	Boolean 	false
+	private String fileInputName;// 	String 	''
+	private JQXFileUploadLocalization localization;// 	Object 	null
+	private Boolean multipleFilesUpload;// 	Boolean 	true
+	private JavascriptFunction renderFiles;// 	function 	null
+	private Boolean rtl;// 	Boolean 	false
+	private String uploadUrl;// 	String 	''
+	private String uploadTemplate;// 	String 	''
 
-    public JQXFileUploadOptions()
-    {
+	public JQXFileUploadOptions()
+	{
 
-    }
+	}
 
-    public Boolean getAutoUpload()
-    {
-        return autoUpload;
-    }
+	public Boolean getAutoUpload()
+	{
+		return autoUpload;
+	}
 
-    public void setAutoUpload(Boolean autoUpload)
-    {
-        this.autoUpload = autoUpload;
-    }
+	public void setAutoUpload(Boolean autoUpload)
+	{
+		this.autoUpload = autoUpload;
+	}
 
-    public String getAccept()
-    {
-        return accept;
-    }
+	public String getAccept()
+	{
+		return accept;
+	}
 
-    public void setAccept(String accept)
-    {
-        this.accept = accept;
-    }
+	public void setAccept(String accept)
+	{
+		this.accept = accept;
+	}
 
-    public String getBrowseTemplate()
-    {
-        return browseTemplate;
-    }
+	public String getBrowseTemplate()
+	{
+		return browseTemplate;
+	}
 
-    public void setBrowseTemplate(String browseTemplate)
-    {
-        this.browseTemplate = browseTemplate;
-    }
+	public void setBrowseTemplate(String browseTemplate)
+	{
+		this.browseTemplate = browseTemplate;
+	}
 
-    public String getCancelTemplate()
-    {
-        return cancelTemplate;
-    }
+	public String getCancelTemplate()
+	{
+		return cancelTemplate;
+	}
 
-    public void setCancelTemplate(String cancelTemplate)
-    {
-        this.cancelTemplate = cancelTemplate;
-    }
+	public void setCancelTemplate(String cancelTemplate)
+	{
+		this.cancelTemplate = cancelTemplate;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public String getFileInputName()
-    {
-        return fileInputName;
-    }
+	public String getFileInputName()
+	{
+		return fileInputName;
+	}
 
-    public void setFileInputName(String fileInputName)
-    {
-        this.fileInputName = fileInputName;
-    }
+	public void setFileInputName(String fileInputName)
+	{
+		this.fileInputName = fileInputName;
+	}
 
-    public JQXFileUploadLocalization getLocalization()
-    {
-        return localization;
-    }
+	public JQXFileUploadLocalization getLocalization()
+	{
+		return localization;
+	}
 
-    public void setLocalization(JQXFileUploadLocalization localization)
-    {
-        this.localization = localization;
-    }
+	public void setLocalization(JQXFileUploadLocalization localization)
+	{
+		this.localization = localization;
+	}
 
-    public Boolean getMultipleFilesUpload()
-    {
-        return multipleFilesUpload;
-    }
+	public Boolean getMultipleFilesUpload()
+	{
+		return multipleFilesUpload;
+	}
 
-    public void setMultipleFilesUpload(Boolean multipleFilesUpload)
-    {
-        this.multipleFilesUpload = multipleFilesUpload;
-    }
+	public void setMultipleFilesUpload(Boolean multipleFilesUpload)
+	{
+		this.multipleFilesUpload = multipleFilesUpload;
+	}
 
-    public JavascriptFunction getRenderFiles()
-    {
-        return renderFiles;
-    }
+	public JavascriptFunction getRenderFiles()
+	{
+		return renderFiles;
+	}
 
-    public void setRenderFiles(JavascriptFunction renderFiles)
-    {
-        this.renderFiles = renderFiles;
-    }
+	public void setRenderFiles(JavascriptFunction renderFiles)
+	{
+		this.renderFiles = renderFiles;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public String getUploadUrl()
-    {
-        return uploadUrl;
-    }
+	public String getUploadUrl()
+	{
+		return uploadUrl;
+	}
 
-    public void setUploadUrl(String uploadUrl)
-    {
-        this.uploadUrl = uploadUrl;
-    }
+	public void setUploadUrl(String uploadUrl)
+	{
+		this.uploadUrl = uploadUrl;
+	}
 
-    public String getUploadTemplate()
-    {
-        return uploadTemplate;
-    }
+	public String getUploadTemplate()
+	{
+		return uploadTemplate;
+	}
 
-    public void setUploadTemplate(String uploadTemplate)
-    {
-        this.uploadTemplate = uploadTemplate;
-    }
+	public void setUploadTemplate(String uploadTemplate)
+	{
+		this.uploadTemplate = uploadTemplate;
+	}
 
 }

@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Observable Array",
-        description = "The Observable Array wraps a JavaScript Array object and tracks changes in the Array. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxobservablearray/javascript-observable-array.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The Observable Array wraps a JavaScript Array object and tracks changes in the Array. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxobservablearray/javascript-observable-array.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXObservableArray extends Div<JQXObservableArrayChildren, JQXObservableArrayAttributes, JQXObservableArrayFeature, JQXObservableArrayEvents, JQXObservableArray>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXObservableArrayFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXObservableArrayFeature feature;
 
-    public JQXObservableArray()
-    {
-        addFeature(getFeature());
-    }
+	public JQXObservableArray()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXObservableArrayFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXObservableArrayFeature(this);
-        }
-        return feature;
-    }
+	public JQXObservableArrayFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXObservableArrayFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXObservableArrayOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXObservableArrayOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

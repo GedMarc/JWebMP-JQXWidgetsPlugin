@@ -24,13 +24,13 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dragdrop;
  */
 public enum JQXDropAction
 {
-    Default,
-    None;
+	Default,
+	None;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

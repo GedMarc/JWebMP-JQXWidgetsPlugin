@@ -17,16 +17,15 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.complexinput;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXDecimalNotations
 {
-    Default,// - decimal notation, e.g. '330000 - 200i'
+	Default,// - decimal notation, e.g. '330000 - 200i'
 
-    Exponential,//', e.g. '3.3e+5 - 2e+2i'
+	Exponential,//', e.g. '3.3e+5 - 2e+2i'
 
-    Scientific,//', e.g. '3.3×10⁵ - 2×10²i'
+	Scientific,//', e.g. '3.3×10⁵ - 2×10²i'
 
-    Engineering,//', e.g. '330×10³ - 200×10⁰i'
+	Engineering,//', e.g. '330×10³ - 200×10⁰i'
 }

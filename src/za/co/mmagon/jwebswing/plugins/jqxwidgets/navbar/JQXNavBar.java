@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxNavBar is a small widget which is built from UL and LI tags. It can be used for creating responsive horizontal/vertical layouts or simple navigation menus.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Navbar",
-        description = "jqxNavBar is a small widget which is built from UL and LI tags. It can be used for creating responsive horizontal/vertical layouts or simple navigation menus.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavbar/jquery-navbar-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxNavBar is a small widget which is built from UL and LI tags. It can be used for creating responsive horizontal/vertical layouts or simple navigation menus.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavbar/jquery-navbar-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNavBar extends Div<GlobalChildren, JQXNavBarAttributes, JQXNavBarFeatures, JQXNavBarEvents, JQXNavBar>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXNavBarFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXNavBarFeature feature;
 
-    public JQXNavBar()
-    {
-        addFeature(getFeature());
-    }
+	public JQXNavBar()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXNavBarFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXNavBarFeature(this);
-        }
-        return feature;
-    }
+	public JQXNavBarFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXNavBarFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXNavBarOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXNavBarOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

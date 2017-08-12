@@ -17,180 +17,181 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.popover;
 
 import za.co.mmagon.jwebswing.Component;
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
-import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXPopOverOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Integer arrowOffsetValue;// 	Number 	0
-    private Integer animationOpenDelay;// 	String/Number 	'fast'
-    private Integer animationCloseDelay;// 	String/Number 	'fast'
-    private Boolean autoClose;// 	Boolean 	true
-    private JQEasingEffects animationType;// 	String 	'none'
-    private JavascriptFunction initContent;// 	String 	null
-    private Boolean isModal;// 	Boolean 	false
-    private JQXPopOverOffset offset;// 	Object 	null
-    private JQXBoxPositions position;// 	String 	'left'
-    private Boolean rtl;// 	Boolean 	false
-    private String selector;// 	Id/jQuery Selector 	null
-    private Boolean showArrow;// 	Boolean 	true
-    private Boolean showCloseButton;// 	Boolean 	false
-    private String title;// 	String 	""
+	private Integer arrowOffsetValue;// 	Number 	0
+	private Integer animationOpenDelay;// 	String/Number 	'fast'
+	private Integer animationCloseDelay;// 	String/Number 	'fast'
+	private Boolean autoClose;// 	Boolean 	true
+	private JQEasingEffects animationType;// 	String 	'none'
+	private JavascriptFunction initContent;// 	String 	null
+	private Boolean isModal;// 	Boolean 	false
+	private JQXPopOverOffset offset;// 	Object 	null
+	private JQXBoxPositions position;// 	String 	'left'
+	private Boolean rtl;// 	Boolean 	false
+	private String selector;// 	Id/jQuery Selector 	null
+	private Boolean showArrow;// 	Boolean 	true
+	private Boolean showCloseButton;// 	Boolean 	false
+	private String title;// 	String 	""
 
-    public JQXPopOverOptions()
-    {
+	public JQXPopOverOptions()
+	{
 
-    }
+	}
 
-    public Integer getArrowOffsetValue()
-    {
-        return arrowOffsetValue;
-    }
+	public Integer getArrowOffsetValue()
+	{
+		return arrowOffsetValue;
+	}
 
-    public void setArrowOffsetValue(Integer arrowOffsetValue)
-    {
-        this.arrowOffsetValue = arrowOffsetValue;
-    }
+	public void setArrowOffsetValue(Integer arrowOffsetValue)
+	{
+		this.arrowOffsetValue = arrowOffsetValue;
+	}
 
-    public Integer getAnimationOpenDelay()
-    {
-        return animationOpenDelay;
-    }
+	public Integer getAnimationOpenDelay()
+	{
+		return animationOpenDelay;
+	}
 
-    public void setAnimationOpenDelay(Integer animationOpenDelay)
-    {
-        this.animationOpenDelay = animationOpenDelay;
-    }
+	public void setAnimationOpenDelay(Integer animationOpenDelay)
+	{
+		this.animationOpenDelay = animationOpenDelay;
+	}
 
-    public Integer getAnimationCloseDelay()
-    {
-        return animationCloseDelay;
-    }
+	public Integer getAnimationCloseDelay()
+	{
+		return animationCloseDelay;
+	}
 
-    public void setAnimationCloseDelay(Integer animationCloseDelay)
-    {
-        this.animationCloseDelay = animationCloseDelay;
-    }
+	public void setAnimationCloseDelay(Integer animationCloseDelay)
+	{
+		this.animationCloseDelay = animationCloseDelay;
+	}
 
-    public Boolean getAutoClose()
-    {
-        return autoClose;
-    }
+	public Boolean getAutoClose()
+	{
+		return autoClose;
+	}
 
-    public void setAutoClose(Boolean autoClose)
-    {
-        this.autoClose = autoClose;
-    }
+	public void setAutoClose(Boolean autoClose)
+	{
+		this.autoClose = autoClose;
+	}
 
-    public JQEasingEffects getAnimationType()
-    {
-        return animationType;
-    }
+	public JQEasingEffects getAnimationType()
+	{
+		return animationType;
+	}
 
-    public void setAnimationType(JQEasingEffects animationType)
-    {
-        this.animationType = animationType;
-    }
+	public void setAnimationType(JQEasingEffects animationType)
+	{
+		this.animationType = animationType;
+	}
 
-    public JavascriptFunction getInitContent()
-    {
-        return initContent;
-    }
+	public JavascriptFunction getInitContent()
+	{
+		return initContent;
+	}
 
-    public void setInitContent(JavascriptFunction initContent)
-    {
-        this.initContent = initContent;
-    }
+	public void setInitContent(JavascriptFunction initContent)
+	{
+		this.initContent = initContent;
+	}
 
-    public Boolean getIsModal()
-    {
-        return isModal;
-    }
+	public Boolean getIsModal()
+	{
+		return isModal;
+	}
 
-    public void setIsModal(Boolean isModal)
-    {
-        this.isModal = isModal;
-    }
+	public void setIsModal(Boolean isModal)
+	{
+		this.isModal = isModal;
+	}
 
-    public JQXPopOverOffset getOffset()
-    {
-        return offset;
-    }
+	public JQXPopOverOffset getOffset()
+	{
+		return offset;
+	}
 
-    public void setOffset(JQXPopOverOffset offset)
-    {
-        this.offset = offset;
-    }
+	public void setOffset(JQXPopOverOffset offset)
+	{
+		this.offset = offset;
+	}
 
-    public JQXBoxPositions getPosition()
-    {
-        return position;
-    }
+	public JQXBoxPositions getPosition()
+	{
+		return position;
+	}
 
-    public void setPosition(JQXBoxPositions position)
-    {
-        this.position = position;
-    }
+	public void setPosition(JQXBoxPositions position)
+	{
+		this.position = position;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public String getSelector()
-    {
-        return selector;
-    }
+	public String getSelector()
+	{
+		return selector;
+	}
 
-    public void setSelector(Component selector)
-    {
-        this.selector = selector.getID(true);
-    }
+	public void setSelector(Component selector)
+	{
+		this.selector = selector.getID(true);
+	}
 
-    public Boolean getShowArrow()
-    {
-        return showArrow;
-    }
+	public Boolean getShowArrow()
+	{
+		return showArrow;
+	}
 
-    public void setShowArrow(Boolean showArrow)
-    {
-        this.showArrow = showArrow;
-    }
+	public void setShowArrow(Boolean showArrow)
+	{
+		this.showArrow = showArrow;
+	}
 
-    public Boolean getShowCloseButton()
-    {
-        return showCloseButton;
-    }
+	public Boolean getShowCloseButton()
+	{
+		return showCloseButton;
+	}
 
-    public void setShowCloseButton(Boolean showCloseButton)
-    {
-        this.showCloseButton = showCloseButton;
-    }
+	public void setShowCloseButton(Boolean showCloseButton)
+	{
+		this.showCloseButton = showCloseButton;
+	}
 
-    public String getTitle()
-    {
-        return title;
-    }
+	public String getTitle()
+	{
+		return title;
+	}
 
-    public void setTitle(String title)
-    {
-        this.title = title;
-    }
+	public void setTitle(String title)
+	{
+		this.title = title;
+	}
 
 }

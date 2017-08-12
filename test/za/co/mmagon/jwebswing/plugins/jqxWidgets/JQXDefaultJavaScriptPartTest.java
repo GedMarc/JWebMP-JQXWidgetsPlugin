@@ -20,156 +20,157 @@ import org.junit.Assert;
 import org.junit.Test;
 import za.co.mmagon.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
+import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementPercentages;
+import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementTypes;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.themes.JQXWidgetThemes;
-import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.*;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXDefaultJavaScriptPartTest extends BaseTestClass
 {
-
-    public JQXDefaultJavaScriptPartTest()
-    {
-    }
-
-    /**
-     * Test of getTheme method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testGetTheme()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setTheme("theme");
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"theme\" : \"theme\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of setTheme method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testSetTheme_String()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setTheme("theme");
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"theme\" : \"theme\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of setTheme method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testSetTheme_JQXWidgetThemes()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setTheme(JQXWidgetThemes.Black);
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"theme\" : \"black\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of getWidth method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testGetWidth()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setWidth(4090);
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"width\" : \"4090\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of setWidth method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testSetWidth_Integer()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setWidth(4090);
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"width\" : \"4090\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of setWidth method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testSetWidth_MeasurementCSSImpl()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setWidth(MeasurementPercentages.eightyPercent);
-        System.out.println(MeasurementPercentages.eightyPercent);
-        System.out.println(MeasurementPercentages.eightyPercent.toString(false));
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"width\" : \"80%\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of getHeight method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testGetHeight()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setHeight(4090);
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"height\" : \"4090\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of setHeight method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testSetHeight_Integer()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setHeight(4090);
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"height\" : \"4090\"\n"
-                + "}");
-    }
-
-    /**
-     * Test of setHeight method, of class JQXDefaultJavaScriptPart.
-     */
-    @Test
-    public void testSetHeight_MeasurementCSSImpl()
-    {
-        Page p = getInstance();
-        JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
-        derp.setHeight(new MeasurementCSSImpl(5, MeasurementTypes.EM));
-        System.out.println(derp.toString());
-        Assert.assertEquals(derp.toString(), "{\n"
-                + "  \"height\" : \"5em\"\n"
-                + "}");
-    }
-
+	
+	public JQXDefaultJavaScriptPartTest()
+	{
+	}
+	
+	/**
+	 * Test of getTheme method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testGetTheme()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setTheme("theme");
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"theme\" : \"theme\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of setTheme method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testSetTheme_String()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setTheme("theme");
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"theme\" : \"theme\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of setTheme method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testSetTheme_JQXWidgetThemes()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setTheme(JQXWidgetThemes.Black);
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"theme\" : \"black\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of getWidth method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testGetWidth()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setWidth(4090);
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"width\" : \"4090\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of setWidth method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testSetWidth_Integer()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setWidth(4090);
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"width\" : \"4090\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of setWidth method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testSetWidth_MeasurementCSSImpl()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setWidth(MeasurementPercentages.eightyPercent);
+		System.out.println(MeasurementPercentages.eightyPercent);
+		System.out.println(MeasurementPercentages.eightyPercent.toString(false));
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"width\" : \"80%\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of getHeight method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testGetHeight()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setHeight(4090);
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"height\" : \"4090\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of setHeight method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testSetHeight_Integer()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setHeight(4090);
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"height\" : \"4090\"\n"
+				+ "}");
+	}
+	
+	/**
+	 * Test of setHeight method, of class JQXDefaultJavaScriptPart.
+	 */
+	@Test
+	public void testSetHeight_MeasurementCSSImpl()
+	{
+		Page p = getInstance();
+		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
+		derp.setHeight(new MeasurementCSSImpl(5, MeasurementTypes.EM));
+		System.out.println(derp.toString());
+		Assert.assertEquals(derp.toString(), "{\n"
+				+ "  \"height\" : \"5em\"\n"
+				+ "}");
+	}
+	
 }

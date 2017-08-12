@@ -19,7 +19,6 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXDataTableColumns extends JavaScriptPart

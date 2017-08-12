@@ -17,10 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.editor;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXEditorAttributes
 {
-    Visibility;
+	Visibility;
 }

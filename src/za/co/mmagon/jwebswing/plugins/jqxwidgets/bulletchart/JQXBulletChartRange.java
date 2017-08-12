@@ -20,57 +20,56 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- *
  * @author GedMarc
  */
 public class JQXBulletChartRange extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Double startValue;
-    private Double endValue;
-    private ColourHex color;
-    private Double opacity;
+	private Double startValue;
+	private Double endValue;
+	private ColourHex color;
+	private Double opacity;
 
-    public Double getStartValue()
-    {
-        return startValue;
-    }
+	public Double getStartValue()
+	{
+		return startValue;
+	}
 
-    public void setStartValue(Double startValue)
-    {
-        this.startValue = startValue;
-    }
+	public void setStartValue(Double startValue)
+	{
+		this.startValue = startValue;
+	}
 
-    public Double getEndValue()
-    {
-        return endValue;
-    }
+	public Double getEndValue()
+	{
+		return endValue;
+	}
 
-    public void setEndValue(Double endValue)
-    {
-        this.endValue = endValue;
-    }
+	public void setEndValue(Double endValue)
+	{
+		this.endValue = endValue;
+	}
 
-    public ColourHex getColor()
-    {
-        return color;
-    }
+	public ColourHex getColor()
+	{
+		return color;
+	}
 
-    public void setColor(ColourHex color)
-    {
-        this.color = color;
-    }
+	public void setColor(ColourHex color)
+	{
+		this.color = color;
+	}
 
-    public Double getOpacity()
-    {
-        return opacity;
-    }
+	public Double getOpacity()
+	{
+		return opacity;
+	}
 
-    public void setOpacity(Double opacity)
-    {
-        this.opacity = opacity;
-    }
+	public void setOpacity(Double opacity)
+	{
+		this.opacity = opacity;
+	}
 
 }

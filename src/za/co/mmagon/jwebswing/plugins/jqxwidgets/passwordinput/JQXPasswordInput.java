@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxPasswordInput represents a widget which enables you to input passwords with nice visual feedback about the password's strength.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Password Input",
-        description = "jqxPasswordInput represents a widget which enables you to input passwords with nice visual feedback about the password's strength. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpasswordinput/jquery-password-input-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxPasswordInput represents a widget which enables you to input passwords with nice visual feedback about the password's strength. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpasswordinput/jquery-password-input-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXPasswordInput extends InputPasswordType
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXPasswordInputFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXPasswordInputFeature feature;
 
-    public JQXPasswordInput()
-    {
-        addFeature(getFeature());
-    }
+	public JQXPasswordInput()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXPasswordInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXPasswordInputFeature(this);
-        }
-        return feature;
-    }
+	public JQXPasswordInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXPasswordInputFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXPasswordInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXPasswordInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

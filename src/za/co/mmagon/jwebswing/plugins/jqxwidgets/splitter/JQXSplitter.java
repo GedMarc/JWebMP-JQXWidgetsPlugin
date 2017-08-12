@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * AjqxSplitter represents a widget consisting of a moveable split bar(s) that divides a container's display area into two or more resizable and collapsible panels.
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Splitter",
-        description = "jqxSplitter represents a widget consisting of a moveable split bar(s) that divides a container's display area into two or more resizable and collapsible panels. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxsplitter/jquery-splitter-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxSplitter represents a widget consisting of a moveable split bar(s) that divides a container's display area into two or more resizable and collapsible panels. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxsplitter/jquery-splitter-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXSplitter extends Div<JQXSplitterChildren, JQXSplitterAttributes, JQXSplitterFeature, JQXSplitterEvents, JQXSplitter>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXSplitterFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXSplitterFeature feature;
 
-    public JQXSplitter()
-    {
-        addFeature(getFeature());
-    }
+	public JQXSplitter()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXSplitterFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXSplitterFeature(this);
-        }
-        return feature;
-    }
+	public JQXSplitterFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXSplitterFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXSplitterOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXSplitterOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

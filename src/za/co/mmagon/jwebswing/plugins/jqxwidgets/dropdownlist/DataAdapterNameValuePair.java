@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -26,47 +26,47 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataFields;
  * @author GedMarc
  * @since 31 Dec 2015
  */
-public class DataAdapterNameValuePair extends JQXDataAdapter<JQXDropDownListNameValuePair>
+public class DataAdapterNameValuePair extends JQXDataAdapter<JQXDropDownListNameValuePair, DataAdapterNameValuePair>
 {
 
-    private JQXDropDownList list;
+	private JQXDropDownList list;
 
-    public DataAdapterNameValuePair(Component component)
-    {
-        super(component);
-        getOptions().getDatafields().add(new JQXDataFields("name", JQXDataFields.JQXDataFieldTypes.String));
-        getOptions().getDatafields().add(new JQXDataFields("value", JQXDataFields.JQXDataFieldTypes.String));
-    }
+	public DataAdapterNameValuePair(Component component)
+	{
+		super(component);
+		getOptions().getDatafields().add(new JQXDataFields("name", JQXDataFields.JQXDataFieldTypes.String));
+		getOptions().getDatafields().add(new JQXDataFields("value", JQXDataFields.JQXDataFieldTypes.String));
+	}
 
-    public void updateDropDownList(JQXDropDownList list)
-    {
-        list.getOptions().setSource(this);
-        list.getOptions().setDisplayMember("name");
-        list.getOptions().setValueMember("value");
-    }
+	/**
+	 * Assigns the name and value pair to the list for display
+	 *
+	 * @param list
+	 */
+	public DataAdapterNameValuePair(JQXDropDownList list)
+	{
+		super(list);
+		this.list = list;
+	}
 
-    public void updateDropDownListSelectMenu(JQXDropDownListSelectMenu list)
-    {
-        list.getOptions().setSource(this);
-        list.getOptions().setDisplayMember("name");
-        list.getOptions().setValueMember("value");
-    }
+	public static void main(String[] args)
+	{
+		// DataAdapterNameValuePair j = new DataAdapterNameValuePair();
+		// System.out.println(j.renderJavascripts(0));
+	}
 
-    /**
-     * Assigns the name and value pair to the list for display
-     *
-     * @param list
-     */
-    public DataAdapterNameValuePair(JQXDropDownList list)
-    {
-        super(list);
-        this.list = list;
-    }
+	public void updateDropDownList(JQXDropDownList list)
+	{
+		list.getOptions().setSource(this);
+		list.getOptions().setDisplayMember("name");
+		list.getOptions().setValueMember("value");
+	}
 
-    public static void main(String[] args)
-    {
-        // DataAdapterNameValuePair j = new DataAdapterNameValuePair();
-        // System.out.println(j.renderJavascripts(0));
-    }
+	public void updateDropDownListSelectMenu(JQXDropDownListSelectMenu list)
+	{
+		list.getOptions().setSource(this);
+		list.getOptions().setDisplayMember("name");
+		list.getOptions().setValueMember("value");
+	}
 
 }

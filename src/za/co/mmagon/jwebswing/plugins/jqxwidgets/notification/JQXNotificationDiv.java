@@ -19,16 +19,14 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.notification;
 import za.co.mmagon.jwebswing.base.html.Div;
 
 /**
- *
  * @author GedMarc
  * @since 28 Feb 2017
- *
  */
 public class JQXNotificationDiv extends Div implements JQXNotificationChildren
 {
 
-    public JQXNotificationDiv()
-    {
+	public JQXNotificationDiv()
+	{
 
-    }
+	}
 }

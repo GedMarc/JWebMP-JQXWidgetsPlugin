@@ -23,43 +23,44 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 /**
  * The jqxButtonGroup widget creates a set of buttons that can work as normal buttons, radio buttons or checkboxes.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Button Group",
-        description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXButtonGroup extends Button implements JQXNavBarChildren
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXButtonGroupFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXButtonGroupFeature feature;
 
-    public JQXButtonGroup(String text)
-    {
-        super(text);
-        addFeature(getFeature());
-    }
+	public JQXButtonGroup(String text)
+	{
+		super(text);
+		addFeature(getFeature());
+	}
 
-    public JQXButtonGroup()
-    {
-    }
+	public JQXButtonGroup()
+	{
+	}
 
-    public final JQXButtonGroupFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXButtonGroupFeature(this);
-        }
-        return feature;
-    }
+	public final JQXButtonGroupFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXButtonGroupFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXButtonGroupOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXButtonGroupOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

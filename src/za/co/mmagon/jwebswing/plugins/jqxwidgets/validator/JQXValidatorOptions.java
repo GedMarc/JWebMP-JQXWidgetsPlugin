@@ -16,148 +16,150 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.validator;
 
-import java.util.ArrayList;
-import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
+
+import java.util.ArrayList;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXValidatorOptions extends JavaScriptPart
 {
 
-    private Boolean arrow;// 	Boolean 	true
-    private JQEasingEffects animation;// 	String 	'fade'
-    private Integer animationDuration;// 	Number 	150
-    private Boolean closeOnClick;// 	Boolean 	true
-    private Boolean focus;// 	Boolean 	true
-    private JQXValidtorHintTypes hintType;// 	String 	"tooltip"
-    private JavascriptFunction onError;// 	Function 	null
-    private JavascriptFunction onSuccess;// 	Function 	null
-    private JQXValidatorPositions position;// 	String 	'right'
-    private ArrayList<JQXValidatorRules> rules;// 	Array 	[]
-    private Boolean rtl;// 	Boolean 	false
+	private Boolean arrow;// 	Boolean 	true
+	private JQEasingEffects animation;// 	String 	'fade'
+	private Integer animationDuration;// 	Number 	150
+	private Boolean closeOnClick;// 	Boolean 	true
+	private Boolean focus;// 	Boolean 	true
+	private JQXValidtorHintTypes hintType;// 	String 	"tooltip"
+	private JavascriptFunction onError;// 	Function 	null
+	private JavascriptFunction onSuccess;// 	Function 	null
+	private JQXValidatorPositions position;// 	String 	'right'
+	private ArrayList<JQXValidatorRules> rules;// 	Array 	[]
+	private Boolean rtl;// 	Boolean 	false
 
-    public JQXValidatorOptions()
-    {
+	public JQXValidatorOptions()
+	{
 
-    }
+	}
 
-    public Boolean getArrow()
-    {
-        return arrow;
-    }
+	public Boolean getArrow()
+	{
+		return arrow;
+	}
 
-    public void setArrow(Boolean arrow)
-    {
-        this.arrow = arrow;
-    }
+	public void setArrow(Boolean arrow)
+	{
+		this.arrow = arrow;
+	}
 
-    public JQEasingEffects getAnimation()
-    {
-        return animation;
-    }
+	public JQEasingEffects getAnimation()
+	{
+		return animation;
+	}
 
-    public void setAnimation(JQEasingEffects animation)
-    {
-        this.animation = animation;
-    }
+	public void setAnimation(JQEasingEffects animation)
+	{
+		this.animation = animation;
+	}
 
-    public Integer getAnimationDuration()
-    {
-        return animationDuration;
-    }
+	public Integer getAnimationDuration()
+	{
+		return animationDuration;
+	}
 
-    public void setAnimationDuration(Integer animationDuration)
-    {
-        this.animationDuration = animationDuration;
-    }
+	public void setAnimationDuration(Integer animationDuration)
+	{
+		this.animationDuration = animationDuration;
+	}
 
-    public Boolean getCloseOnClick()
-    {
-        return closeOnClick;
-    }
+	public Boolean getCloseOnClick()
+	{
+		return closeOnClick;
+	}
 
-    public void setCloseOnClick(Boolean closeOnClick)
-    {
-        this.closeOnClick = closeOnClick;
-    }
+	public void setCloseOnClick(Boolean closeOnClick)
+	{
+		this.closeOnClick = closeOnClick;
+	}
 
-    public Boolean getFocus()
-    {
-        return focus;
-    }
+	public Boolean getFocus()
+	{
+		return focus;
+	}
 
-    public void setFocus(Boolean focus)
-    {
-        this.focus = focus;
-    }
+	public void setFocus(Boolean focus)
+	{
+		this.focus = focus;
+	}
 
-    public JQXValidtorHintTypes getHintType()
-    {
-        return hintType;
-    }
+	public JQXValidtorHintTypes getHintType()
+	{
+		return hintType;
+	}
 
-    public void setHintType(JQXValidtorHintTypes hintType)
-    {
-        this.hintType = hintType;
-    }
+	public void setHintType(JQXValidtorHintTypes hintType)
+	{
+		this.hintType = hintType;
+	}
 
-    public JavascriptFunction getOnError()
-    {
-        return onError;
-    }
+	public JavascriptFunction getOnError()
+	{
+		return onError;
+	}
 
-    public void setOnError(JavascriptFunction onError)
-    {
-        this.onError = onError;
-    }
+	public void setOnError(JavascriptFunction onError)
+	{
+		this.onError = onError;
+	}
 
-    public JavascriptFunction getOnSuccess()
-    {
-        return onSuccess;
-    }
+	public JavascriptFunction getOnSuccess()
+	{
+		return onSuccess;
+	}
 
-    public void setOnSuccess(JavascriptFunction onSuccess)
-    {
-        this.onSuccess = onSuccess;
-    }
+	public void setOnSuccess(JavascriptFunction onSuccess)
+	{
+		this.onSuccess = onSuccess;
+	}
 
-    public JQXValidatorPositions getPosition()
-    {
-        return position;
-    }
+	public JQXValidatorPositions getPosition()
+	{
+		return position;
+	}
 
-    public void setPosition(JQXValidatorPositions position)
-    {
-        this.position = position;
-    }
+	public void setPosition(JQXValidatorPositions position)
+	{
+		this.position = position;
+	}
 
-    public ArrayList<JQXValidatorRules> getRules()
-    {
-        return rules;
-    }
+	public ArrayList<JQXValidatorRules> getRules()
+	{
+		return rules;
+	}
 
-    public void setRules(ArrayList<JQXValidatorRules> rules)
-    {
-        this.rules = rules;
-    }
+	public void setRules(ArrayList<JQXValidatorRules> rules)
+	{
+		this.rules = rules;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
 }

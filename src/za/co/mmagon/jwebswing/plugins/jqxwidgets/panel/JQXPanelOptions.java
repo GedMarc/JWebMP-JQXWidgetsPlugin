@@ -21,79 +21,80 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXPanelOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Boolean autoUpdate;// 	Boolean 	false
-    private Boolean disabled;// 	Boolean 	false
-    private Boolean rtl;// 	Boolean 	false
-    private JQXPanelSizeModes sizeMode;// 	String 	'fixed'
-    private Integer scrollBarSize;// 	Number 	17
+	private Boolean autoUpdate;// 	Boolean 	false
+	private Boolean disabled;// 	Boolean 	false
+	private Boolean rtl;// 	Boolean 	false
+	private JQXPanelSizeModes sizeMode;// 	String 	'fixed'
+	private Integer scrollBarSize;// 	Number 	17
 
-    public JQXPanelOptions()
-    {
+	public JQXPanelOptions()
+	{
 
-    }
+	}
 
-    public Boolean getAutoUpdate()
-    {
-        return autoUpdate;
-    }
+	public Boolean getAutoUpdate()
+	{
+		return autoUpdate;
+	}
 
-    /**
-     * Automatically updates the panel, if its children size is changed.
-     *
-     * @param autoUpdate
-     */
-    public void setAutoUpdate(Boolean autoUpdate)
-    {
-        this.autoUpdate = autoUpdate;
-    }
+	/**
+	 * Automatically updates the panel, if its children size is changed.
+	 *
+	 * @param autoUpdate
+	 */
+	public void setAutoUpdate(Boolean autoUpdate)
+	{
+		this.autoUpdate = autoUpdate;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
-    public JQXPanelSizeModes getSizeMode()
-    {
-        return sizeMode;
-    }
+	public JQXPanelSizeModes getSizeMode()
+	{
+		return sizeMode;
+	}
 
-    public void setSizeMode(JQXPanelSizeModes sizeMode)
-    {
-        this.sizeMode = sizeMode;
-    }
+	public void setSizeMode(JQXPanelSizeModes sizeMode)
+	{
+		this.sizeMode = sizeMode;
+	}
 
-    public Integer getScrollBarSize()
-    {
-        return scrollBarSize;
-    }
+	public Integer getScrollBarSize()
+	{
+		return scrollBarSize;
+	}
 
-    public void setScrollBarSize(Integer scrollBarSize)
-    {
-        this.scrollBarSize = scrollBarSize;
-    }
+	public void setScrollBarSize(Integer scrollBarSize)
+	{
+		this.scrollBarSize = scrollBarSize;
+	}
 
 }

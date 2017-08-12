@@ -16,124 +16,125 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.radiobutton;
 
-import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXRadioButtonOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Integer animationShowDelay;// 	Number 	250
-    private Integer animationHideDelay;// 	Number 	300
-    private MeasurementCSSImpl boxSize;// 	String 	"13px"
-    private Boolean checked;// 	Boolean 	false
-    private Boolean disabled;// 	Boolean 	false
-    private Boolean enableContainerClick;// 	Boolean 	true
-    private String groupName;// 	String 	""
-    private Boolean hasThreeStates;// 	Boolean 	false
-    private Boolean rtl;// 	Boolean 	false
+	private Integer animationShowDelay;// 	Number 	250
+	private Integer animationHideDelay;// 	Number 	300
+	private MeasurementCSSImpl boxSize;// 	String 	"13px"
+	private Boolean checked;// 	Boolean 	false
+	private Boolean disabled;// 	Boolean 	false
+	private Boolean enableContainerClick;// 	Boolean 	true
+	private String groupName;// 	String 	""
+	private Boolean hasThreeStates;// 	Boolean 	false
+	private Boolean rtl;// 	Boolean 	false
 
-    public JQXRadioButtonOptions()
-    {
+	public JQXRadioButtonOptions()
+	{
 
-    }
+	}
 
-    public Integer getAnimationShowDelay()
-    {
-        return animationShowDelay;
-    }
+	public Integer getAnimationShowDelay()
+	{
+		return animationShowDelay;
+	}
 
-    public void setAnimationShowDelay(Integer animationShowDelay)
-    {
-        this.animationShowDelay = animationShowDelay;
-    }
+	public void setAnimationShowDelay(Integer animationShowDelay)
+	{
+		this.animationShowDelay = animationShowDelay;
+	}
 
-    public Integer getAnimationHideDelay()
-    {
-        return animationHideDelay;
-    }
+	public Integer getAnimationHideDelay()
+	{
+		return animationHideDelay;
+	}
 
-    public void setAnimationHideDelay(Integer animationHideDelay)
-    {
-        this.animationHideDelay = animationHideDelay;
-    }
+	public void setAnimationHideDelay(Integer animationHideDelay)
+	{
+		this.animationHideDelay = animationHideDelay;
+	}
 
-    public MeasurementCSSImpl getBoxSize()
-    {
-        return boxSize;
-    }
+	public MeasurementCSSImpl getBoxSize()
+	{
+		return boxSize;
+	}
 
-    public void setBoxSize(MeasurementCSSImpl boxSize)
-    {
-        this.boxSize = boxSize;
-    }
+	public void setBoxSize(MeasurementCSSImpl boxSize)
+	{
+		this.boxSize = boxSize;
+	}
 
-    public Boolean getChecked()
-    {
-        return checked;
-    }
+	public Boolean getChecked()
+	{
+		return checked;
+	}
 
-    public void setChecked(Boolean checked)
-    {
-        this.checked = checked;
-    }
+	public void setChecked(Boolean checked)
+	{
+		this.checked = checked;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Boolean getEnableContainerClick()
-    {
-        return enableContainerClick;
-    }
+	public Boolean getEnableContainerClick()
+	{
+		return enableContainerClick;
+	}
 
-    public void setEnableContainerClick(Boolean enableContainerClick)
-    {
-        this.enableContainerClick = enableContainerClick;
-    }
+	public void setEnableContainerClick(Boolean enableContainerClick)
+	{
+		this.enableContainerClick = enableContainerClick;
+	}
 
-    public String getGroupName()
-    {
-        return groupName;
-    }
+	public String getGroupName()
+	{
+		return groupName;
+	}
 
-    public void setGroupName(String groupName)
-    {
-        this.groupName = groupName;
-    }
+	public void setGroupName(String groupName)
+	{
+		this.groupName = groupName;
+	}
 
-    public Boolean getHasThreeStates()
-    {
-        return hasThreeStates;
-    }
+	public Boolean getHasThreeStates()
+	{
+		return hasThreeStates;
+	}
 
-    public void setHasThreeStates(Boolean hasThreeStates)
-    {
-        this.hasThreeStates = hasThreeStates;
-    }
+	public void setHasThreeStates(Boolean hasThreeStates)
+	{
+		this.hasThreeStates = hasThreeStates;
+	}
 
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
 
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 
 }

@@ -25,12 +25,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.validator;
 public enum JQXValidtorHintTypes
 {
 
-    tooltip, label;
+	tooltip, label;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

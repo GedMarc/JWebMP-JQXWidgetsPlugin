@@ -24,17 +24,17 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.notification;
  */
 public enum JQXNotificationTemplates
 {
-    Info,
-    Warning,
-    Success,
-    Error,
-    Mail,
-    Time,;
+	Info,
+	Warning,
+	Success,
+	Error,
+	Mail,
+	Time,;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

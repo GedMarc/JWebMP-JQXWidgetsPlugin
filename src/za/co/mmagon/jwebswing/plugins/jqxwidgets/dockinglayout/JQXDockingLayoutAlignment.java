@@ -24,15 +24,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dockinglayout;
  */
 public enum JQXDockingLayoutAlignment
 {
-    Left,
-    Right,
-    Top,
-    Bottom;
+	Left,
+	Right,
+	Top,
+	Bottom;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().toLowerCase();
+	}
 
 }

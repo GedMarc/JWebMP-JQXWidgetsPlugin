@@ -21,34 +21,35 @@ import za.co.mmagon.jwebswing.base.html.Div;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 public class JQXTouchTip extends Div<JQXTouchTipChildren, JQXTouchTipAttributes, JQXTouchTipFeature, JQXTouchTipEvents, JQXTouchTip>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXTouchTipFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXTouchTipFeature feature;
 
-    public JQXTouchTip()
-    {
-        addFeature(getFeature());
-    }
+	public JQXTouchTip()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXTouchTipFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXTouchTipFeature(this);
-        }
-        return feature;
-    }
+	public JQXTouchTipFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXTouchTipFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXTouchTipOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXTouchTipOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

@@ -17,10 +17,9 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.passwordinput;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXPasswordInputAttributes
 {
-    Visibility;
+	Visibility;
 }

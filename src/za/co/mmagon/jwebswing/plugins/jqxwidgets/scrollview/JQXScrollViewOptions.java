@@ -21,118 +21,119 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Dec 24, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Dec 24, 2015
  */
 public class JQXScrollViewOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Integer animationDuration;// 	Number 	30
-    private Boolean bounceEnabled;// 	Boolean 	true
-    private Integer[] buttonsOffset;// 	Array 	[0, 0]
-    private Integer currentPage;// 	Number 	0
-    private Boolean disabled;// 	Boolean 	false
-    private Double moveThreshold;// 	Number 	0.5
-    private Boolean showButtons;// 	Boolean 	true
-    private Boolean slideShow;// 	Boolean 	true
-    private Integer slideDuration;// 	Number 	3000
+	private Integer animationDuration;// 	Number 	30
+	private Boolean bounceEnabled;// 	Boolean 	true
+	private Integer[] buttonsOffset;// 	Array 	[0, 0]
+	private Integer currentPage;// 	Number 	0
+	private Boolean disabled;// 	Boolean 	false
+	private Double moveThreshold;// 	Number 	0.5
+	private Boolean showButtons;// 	Boolean 	true
+	private Boolean slideShow;// 	Boolean 	true
+	private Integer slideDuration;// 	Number 	3000
 
-    public JQXScrollViewOptions()
-    {
+	public JQXScrollViewOptions()
+	{
 
-    }
+	}
 
-    public Integer getAnimationDuration()
-    {
-        return animationDuration;
-    }
+	public Integer getAnimationDuration()
+	{
+		return animationDuration;
+	}
 
-    public void setAnimationDuration(Integer animationDuration)
-    {
-        this.animationDuration = animationDuration;
-    }
+	public void setAnimationDuration(Integer animationDuration)
+	{
+		this.animationDuration = animationDuration;
+	}
 
-    public Boolean getBounceEnabled()
-    {
-        return bounceEnabled;
-    }
+	public Boolean getBounceEnabled()
+	{
+		return bounceEnabled;
+	}
 
-    public void setBounceEnabled(Boolean bounceEnabled)
-    {
-        this.bounceEnabled = bounceEnabled;
-    }
+	public void setBounceEnabled(Boolean bounceEnabled)
+	{
+		this.bounceEnabled = bounceEnabled;
+	}
 
-    public Integer[] getButtonsOffset()
-    {
-        return buttonsOffset;
-    }
+	public Integer[] getButtonsOffset()
+	{
+		return buttonsOffset;
+	}
 
-    public void setButtonsOffset(Integer[] buttonsOffset)
-    {
-        this.buttonsOffset = buttonsOffset;
-    }
+	public void setButtonsOffset(Integer[] buttonsOffset)
+	{
+		this.buttonsOffset = buttonsOffset;
+	}
 
-    public Integer getCurrentPage()
-    {
-        return currentPage;
-    }
+	public Integer getCurrentPage()
+	{
+		return currentPage;
+	}
 
-    public void setCurrentPage(Integer currentPage)
-    {
-        this.currentPage = currentPage;
-    }
+	public void setCurrentPage(Integer currentPage)
+	{
+		this.currentPage = currentPage;
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Double getMoveThreshold()
-    {
-        return moveThreshold;
-    }
+	public Double getMoveThreshold()
+	{
+		return moveThreshold;
+	}
 
-    public void setMoveThreshold(Double moveThreshold)
-    {
-        this.moveThreshold = moveThreshold;
-    }
+	public void setMoveThreshold(Double moveThreshold)
+	{
+		this.moveThreshold = moveThreshold;
+	}
 
-    public Boolean getShowButtons()
-    {
-        return showButtons;
-    }
+	public Boolean getShowButtons()
+	{
+		return showButtons;
+	}
 
-    public void setShowButtons(Boolean showButtons)
-    {
-        this.showButtons = showButtons;
-    }
+	public void setShowButtons(Boolean showButtons)
+	{
+		this.showButtons = showButtons;
+	}
 
-    public Boolean getSlideShow()
-    {
-        return slideShow;
-    }
+	public Boolean getSlideShow()
+	{
+		return slideShow;
+	}
 
-    public void setSlideShow(Boolean slideShow)
-    {
-        this.slideShow = slideShow;
-    }
+	public void setSlideShow(Boolean slideShow)
+	{
+		this.slideShow = slideShow;
+	}
 
-    public Integer getSlideDuration()
-    {
-        return slideDuration;
-    }
+	public Integer getSlideDuration()
+	{
+		return slideDuration;
+	}
 
-    public void setSlideDuration(Integer slideDuration)
-    {
-        this.slideDuration = slideDuration;
-    }
+	public void setSlideDuration(Integer slideDuration)
+	{
+		this.slideDuration = slideDuration;
+	}
 
 }

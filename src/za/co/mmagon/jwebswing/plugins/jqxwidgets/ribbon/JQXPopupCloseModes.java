@@ -17,12 +17,11 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXPopupCloseModes
 {
-    click,
-    mouseLeave,
-    none,;
+	click,
+	mouseLeave,
+	none,;
 }

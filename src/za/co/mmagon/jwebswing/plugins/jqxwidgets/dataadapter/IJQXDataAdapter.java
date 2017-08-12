@@ -20,32 +20,34 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdap
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 
 /**
+ * @param <A>
  *
  * @author GedMarc
- * @param <A>
- * @since Nov 4, 2016
  * @version 1.0
- *
+ * @since Nov 4, 2016
  */
 public interface IJQXDataAdapter<A extends JQXDataAdapterSourceData>
 {
 
-    /**
-     * Returns the JS feature for this data adapter
-     * @return
-     */
-    JQXDataAdapterFeature getFeature();
+	/**
+	 * Returns the JS feature for this data adapter
+	 *
+	 * @return
+	 */
+	JQXDataAdapterFeature getFeature();
 
-    /**
-     * Returns all the options associated with the given feature
-     * @return
-     */
-    JQXDataAdapterOptions<A> getOptions();
+	/**
+	 * Returns all the options associated with the given feature
+	 *
+	 * @return
+	 */
+	JQXDataAdapterOptions<A> getOptions();
 
-    /**
-     * Renders the given JavaScript for the given component
-     * @return
-     */
-    StringBuilder renderJavascript();
-    
+	/**
+	 * Renders the given JavaScript for the given component
+	 *
+	 * @return
+	 */
+	StringBuilder renderJavascript();
+
 }

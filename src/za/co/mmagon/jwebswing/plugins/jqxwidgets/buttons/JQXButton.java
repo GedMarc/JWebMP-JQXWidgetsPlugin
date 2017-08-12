@@ -25,72 +25,73 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 /**
  * The jqxButton represents a jQuery button widget that allows you to display a button on the Web page.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Buttons",
-        description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildren, ListItemChildren
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private JQXButtonFeature feature;
+	private JQXButtonFeature feature;
 
-    /**
-     * Constructs a new button feature with the given text
-     *
-     * @param text
-     */
-    public JQXButton(String text)
-    {
-        super(text);
-        addFeature(getFeature());
-    }
+	/**
+	 * Constructs a new button feature with the given text
+	 *
+	 * @param text
+	 */
+	public JQXButton(String text)
+	{
+		super(text);
+		addFeature(getFeature());
+	}
 
-    /**
-     * Constructs a new JQX Button
-     */
-    public JQXButton()
-    {
-        addFeature(getFeature());
-    }
+	/**
+	 * Constructs a new JQX Button
+	 */
+	public JQXButton()
+	{
+		addFeature(getFeature());
+	}
 
-    @Override
-    public void preConfigure()
-    {
-        if (!isConfigured())
-        {
-        }
-        super.preConfigure();
-    }
+	@Override
+	public void preConfigure()
+	{
+		if (!isConfigured())
+		{
+		}
+		super.preConfigure();
+	}
 
-    /**
-     * Returns the features
-     *
-     * @return
-     */
-    public final JQXButtonFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXButtonFeature(this);
-        }
-        return feature;
-    }
+	/**
+	 * Returns the features
+	 *
+	 * @return
+	 */
+	public final JQXButtonFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXButtonFeature(this);
+		}
+		return feature;
+	}
 
-    /**
-     * Returns the button options
-     *
-     * @return
-     */
-    @Override
-    public JQXButtonOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	/**
+	 * Returns the button options
+	 *
+	 * @return
+	 */
+	@Override
+	public JQXButtonOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

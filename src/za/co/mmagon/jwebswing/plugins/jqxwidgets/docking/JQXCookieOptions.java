@@ -27,37 +27,37 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 public class JQXCookieOptions extends JavaScriptPart
 {
 
-    private String domain;
-    private Integer expires;
+	private String domain;
+	private Integer expires;
 
-    public JQXCookieOptions()
-    {
-    }
+	public JQXCookieOptions()
+	{
+	}
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
-    public String getDomain()
-    {
-        return domain;
-    }
+	public String getDomain()
+	{
+		return domain;
+	}
 
-    public void setDomain(String domain)
-    {
-        this.domain = domain;
-    }
+	public void setDomain(String domain)
+	{
+		this.domain = domain;
+	}
 
-    public Integer getExpires()
-    {
-        return expires;
-    }
+	public Integer getExpires()
+	{
+		return expires;
+	}
 
-    public void setExpires(Integer expires)
-    {
-        this.expires = expires;
-    }
+	public void setExpires(Integer expires)
+	{
+		this.expires = expires;
+	}
 
 }

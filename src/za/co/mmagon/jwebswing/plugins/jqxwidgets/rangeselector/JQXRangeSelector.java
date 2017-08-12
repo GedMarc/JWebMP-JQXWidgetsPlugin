@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxRangeSelector is a widget which can easily be used to select a numeric or date range. The API of jqxRangeSelector allows for a variety of user settings to be applied such as setting the range in
  * numbers, days, weeks, months, years, etc .
  * <p>
+ *
  * @author Marc Magon
- * @since 24 Dec 2015
  * @version 1.0
+ * @since 24 Dec 2015
  */
 @ComponentInformation(name = "JQX Range Selector",
-        description = "jqxRangeSelector is a widget which can easily be used to select a numeric or date range. The API of jqxRangeSelector allows for a variety of user settings to be applied such as setting the range in numbers, days, weeks, months, years, etc ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxrangeselector/jquery-rangeselector-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxRangeSelector is a widget which can easily be used to select a numeric or date range. The API of jqxRangeSelector allows for a variety of user settings to be applied such as setting the range in numbers, days, weeks, months, years, etc ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxrangeselector/jquery-rangeselector-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRangeSelector extends Div<JQXRangeSelectorChildren, JQXRangeSelectorAttributes, JQXRangeSelectorFeature, JQXRangeSelectorEvents, JQXRangeSelector>
 {
-
-    private static final long serialVersionUID = 1L;
-    private JQXRangeSelectorFeature feature;
-
-    public JQXRangeSelector()
-    {
-        addFeature(getFeature());
-    }
-
-    public JQXRangeSelectorFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXRangeSelectorFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public JQXRangeSelectorOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	private JQXRangeSelectorFeature feature;
+	
+	public JQXRangeSelector()
+	{
+		addFeature(getFeature());
+	}
+	
+	public JQXRangeSelectorFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXRangeSelectorFeature(this);
+		}
+		return feature;
+	}
+	
+	@Override
+	public JQXRangeSelectorOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
 }

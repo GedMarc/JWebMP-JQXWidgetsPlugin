@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxPopover is small overlay of content that is used to display secondary information of any element when it is clicked by a user.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Popover",
-        description = "jqxPopover is small overlay of content that is used to display secondary information of any element when it is clicked by a user. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpopover/jquery-popover-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxPopover is small overlay of content that is used to display secondary information of any element when it is clicked by a user. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpopover/jquery-popover-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXPopOver extends Div<JQXPopOverChildren, JQXPopOverAttributes, JQXPopOverFeature, JQXPopOverEvents, JQXPopOver>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXPopOverFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXPopOverFeature feature;
 
-    public JQXPopOver()
-    {
-        addFeature(getFeature());
-    }
+	public JQXPopOver()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXPopOverFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXPopOverFeature(this);
-        }
-        return feature;
-    }
+	public JQXPopOverFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXPopOverFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXPopOverOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXPopOverOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

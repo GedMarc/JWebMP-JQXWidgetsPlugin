@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * The jqxCheckBox widget displays a check box that allows the end-user to select a true, false or indeterminate condition.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX CheckBox",
-        description = "The jqxCheckBox widget displays a check box that allows the end-user to select a true, false or indeterminate condition. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcheckandradio/jquery-checkbox-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The jqxCheckBox widget displays a check box that allows the end-user to select a true, false or indeterminate condition. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcheckandradio/jquery-checkbox-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXCheckBox extends Div<JQXCheckBoxChildren, JQXCheckBoxAttributes, JQXCheckBoxFeature, JQXCheckBoxEvents, JQXCheckBox>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXCheckBoxFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXCheckBoxFeature feature;
 
-    public JQXCheckBox()
-    {
-        addFeature(getFeature());
-    }
+	public JQXCheckBox()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXCheckBoxFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXCheckBoxFeature(this);
-        }
-        return feature;
-    }
+	public JQXCheckBoxFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXCheckBoxFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXCheckBoxOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXCheckBoxOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

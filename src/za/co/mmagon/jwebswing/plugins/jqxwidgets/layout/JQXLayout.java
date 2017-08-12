@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed.
  * <p>
+ *
  * @author Marc Magon
- * @since 15 Dec 2015
  * @version 1.0
+ * @since 15 Dec 2015
  */
 @ComponentInformation(name = "JQX Layout",
-        description = "jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlayout/jquery-layout-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlayout/jquery-layout-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXLayout extends Div<JQXLayoutChildren, JQXLayoutAttributes, JQXLayoutFeature, JQXLayoutEvents, JQXLayout>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXLayoutFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXLayoutFeature feature;
 
-    public JQXLayout()
-    {
-        addFeature(getFeature());
-    }
+	public JQXLayout()
+	{
+		addFeature(getFeature());
+	}
 
-    public final JQXLayoutFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXLayoutFeature(this);
-        }
-        return feature;
-    }
+	public final JQXLayoutFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXLayoutFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXLayoutOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXLayoutOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

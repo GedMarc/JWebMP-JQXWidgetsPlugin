@@ -22,171 +22,172 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 /**
  * jqxDragDrop is a plugin which will make any DOM element draggable. It can be used in combination with many widgets like jqxTree, jqxGrid, jqxListBox and etc.
  * <p>
+ *
  * @author GedMarc
- * @since Dec 13, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Dec 13, 2015
  */
 public class JQXDragDropOptions extends JavaScriptPart
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private String appendTo;// 	String 	'parent'
-    private Boolean disabled;// 	Boolean 	false
-    private Integer distance;// 	Number 	5
-    private JQXDragDropData data;// 	Object 	null
-    private JQXDropAction dropAction;// 	String 	'default'
-    private Component dropTarget;// 	String/Object 	null.
-    private Integer dragZIndex;// 	Number 	99999
-    private JQXDropFeedback feedback;//	String 	'clone'
-//initFeedback 	Function 	null
-    private Double opacity;// 	Number 	0.6
-//onDragEnd 	Function 	null
+	private String appendTo;// 	String 	'parent'
+	private Boolean disabled;// 	Boolean 	false
+	private Integer distance;// 	Number 	5
+	private JQXDragDropData data;// 	Object 	null
+	private JQXDropAction dropAction;// 	String 	'default'
+	private Component dropTarget;// 	String/Object 	null.
+	private Integer dragZIndex;// 	Number 	99999
+	private JQXDropFeedback feedback;//	String 	'clone'
+	//initFeedback 	Function 	null
+	private Double opacity;// 	Number 	0.6
+	//onDragEnd 	Function 	null
 //onDrag 	Function 	null
 //onDragStart 	Function 	null
 //onTargetDrop 	Function 	null
 //onDropTargetEnter 	Function 	null
 //onDropTargetLeave 	Function 	null
-    private String restricter;// 	Object/String 	'document'
-    private Boolean revert;// 	Boolean 	false
-    private Integer revertDuration;// 	Number 	400
-    private JQXDragDropTolerance tolerance;// 	String 	'intersect'
+	private String restricter;// 	Object/String 	'document'
+	private Boolean revert;// 	Boolean 	false
+	private Integer revertDuration;// 	Number 	400
+	private JQXDragDropTolerance tolerance;// 	String 	'intersect'
 
-    public JQXDragDropOptions()
-    {
+	public JQXDragDropOptions()
+	{
 
-    }
+	}
 
-    public String getAppendTo()
-    {
-        return appendTo;
-    }
+	public String getAppendTo()
+	{
+		return appendTo;
+	}
 
-    public void setAppendTo(Component appendTo)
-    {
-        this.appendTo = appendTo.getID(true);
-    }
+	public void setAppendTo(Component appendTo)
+	{
+		this.appendTo = appendTo.getID(true);
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Integer getDistance()
-    {
-        return distance;
-    }
+	public Integer getDistance()
+	{
+		return distance;
+	}
 
-    public void setDistance(Integer distance)
-    {
-        this.distance = distance;
-    }
+	public void setDistance(Integer distance)
+	{
+		this.distance = distance;
+	}
 
-    public JQXDragDropData getData()
-    {
-        return data;
-    }
+	public JQXDragDropData getData()
+	{
+		return data;
+	}
 
-    public void setData(JQXDragDropData data)
-    {
-        this.data = data;
-    }
+	public void setData(JQXDragDropData data)
+	{
+		this.data = data;
+	}
 
-    public JQXDropAction getDropAction()
-    {
-        return dropAction;
-    }
+	public JQXDropAction getDropAction()
+	{
+		return dropAction;
+	}
 
-    public void setDropAction(JQXDropAction dropAction)
-    {
-        this.dropAction = dropAction;
-    }
+	public void setDropAction(JQXDropAction dropAction)
+	{
+		this.dropAction = dropAction;
+	}
 
-    public Component getDropTarget()
-    {
-        return dropTarget;
-    }
+	public Component getDropTarget()
+	{
+		return dropTarget;
+	}
 
-    public void setDropTarget(Component dropTarget)
-    {
-        this.dropTarget = dropTarget;
-    }
+	public void setDropTarget(Component dropTarget)
+	{
+		this.dropTarget = dropTarget;
+	}
 
-    public Integer getDragZIndex()
-    {
-        return dragZIndex;
-    }
+	public Integer getDragZIndex()
+	{
+		return dragZIndex;
+	}
 
-    public void setDragZIndex(Integer dragZIndex)
-    {
-        this.dragZIndex = dragZIndex;
-    }
+	public void setDragZIndex(Integer dragZIndex)
+	{
+		this.dragZIndex = dragZIndex;
+	}
 
-    public JQXDropFeedback getFeedback()
-    {
-        return feedback;
-    }
+	public JQXDropFeedback getFeedback()
+	{
+		return feedback;
+	}
 
-    public void setFeedback(JQXDropFeedback feedback)
-    {
-        this.feedback = feedback;
-    }
+	public void setFeedback(JQXDropFeedback feedback)
+	{
+		this.feedback = feedback;
+	}
 
-    public Double getOpacity()
-    {
-        return opacity;
-    }
+	public Double getOpacity()
+	{
+		return opacity;
+	}
 
-    public void setOpacity(Double opacity)
-    {
-        this.opacity = opacity;
-    }
+	public void setOpacity(Double opacity)
+	{
+		this.opacity = opacity;
+	}
 
-    public String getRestricter()
-    {
-        return restricter;
-    }
+	public String getRestricter()
+	{
+		return restricter;
+	}
 
-    public void setRestricter(Component restricter)
-    {
-        this.restricter = restricter.getID(true);
-    }
+	public void setRestricter(Component restricter)
+	{
+		this.restricter = restricter.getID(true);
+	}
 
-    public Boolean getRevert()
-    {
-        return revert;
-    }
+	public Boolean getRevert()
+	{
+		return revert;
+	}
 
-    public void setRevert(Boolean revert)
-    {
-        this.revert = revert;
-    }
+	public void setRevert(Boolean revert)
+	{
+		this.revert = revert;
+	}
 
-    public Integer getRevertDuration()
-    {
-        return revertDuration;
-    }
+	public Integer getRevertDuration()
+	{
+		return revertDuration;
+	}
 
-    public void setRevertDuration(Integer revertDuration)
-    {
-        this.revertDuration = revertDuration;
-    }
+	public void setRevertDuration(Integer revertDuration)
+	{
+		this.revertDuration = revertDuration;
+	}
 
-    public JQXDragDropTolerance getTolerance()
-    {
-        return tolerance;
-    }
+	public JQXDragDropTolerance getTolerance()
+	{
+		return tolerance;
+	}
 
-    public void setTolerance(JQXDragDropTolerance tolerance)
-    {
-        this.tolerance = tolerance;
-    }
+	public void setTolerance(JQXDragDropTolerance tolerance)
+	{
+		this.tolerance = tolerance;
+	}
 
 }

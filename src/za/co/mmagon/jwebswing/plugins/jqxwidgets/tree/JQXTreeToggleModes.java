@@ -17,11 +17,10 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.tree;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXTreeToggleModes
 {
-    click,
-    dblclick
+	click,
+	dblclick
 }

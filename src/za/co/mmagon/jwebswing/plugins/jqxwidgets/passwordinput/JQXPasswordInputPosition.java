@@ -17,15 +17,14 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.passwordinput;
 
 /**
- *
  * @author Marc Magon
  */
 public enum JQXPasswordInputPosition
 {
 
-    top,
-    bottom,
-    left,
-    right,
+	top,
+	bottom,
+	left,
+	right,
 
 }

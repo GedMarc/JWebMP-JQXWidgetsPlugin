@@ -24,15 +24,15 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.notification;
  */
 public enum JQXNotificationPositions
 {
-    top_left,
-    top_right,
-    bottom_left,
-    bottom_right;
+	top_left,
+	top_right,
+	bottom_left,
+	bottom_right;
 
-    @Override
-    public String toString()
-    {
-        return super.toString().replace('_', '-');
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString().replace('_', '-');
+	}
 
 }

@@ -17,17 +17,16 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXPagerPositions
 {
-    Top, Bottom, Both;
+	Top, Bottom, Both;
 
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
 
 }

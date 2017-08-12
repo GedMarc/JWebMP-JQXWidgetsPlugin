@@ -24,38 +24,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * The jqxPanel widget represents a jQuery Panel widget. This widget is a container for other widgets or elements. It automatically adds horizontal and vertical scrollbars, if the content is not fully
  * visible
  * <p>
+ *
  * @author Marc Magon
- * @since 20 Dec 2015
  * @version 1.0
+ * @since 20 Dec 2015
  */
 @ComponentInformation(name = "JQX Panel",
-        description = "The jqxPanel widget represents a jQuery Panel widget. This widget is a container for other widgets or elements. It automatically adds horizontal and vertical scrollbars, if the content is not fully visible ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpanel/jquery-panel-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "The jqxPanel widget represents a jQuery Panel widget. This widget is a container for other widgets or elements. It automatically adds horizontal and vertical scrollbars, if the content is not fully visible ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpanel/jquery-panel-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXPanel extends Div<GlobalChildren, JQXPanelAttributes, JQXPanelFeatures, JQXPanelEvents, JQXPanel> //JQXPanelChildrenvv
 {
-
-    private static final long serialVersionUID = 1L;
-    private JQXPanelFeature feature;
-
-    public JQXPanel()
-    {
-        addFeature(getFeature());
-        addClass("JQXPanel");
-    }
-
-    public JQXPanelFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXPanelFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public final JQXPanelOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	
+	private static final long serialVersionUID = 1L;
+	private JQXPanelFeature feature;
+	
+	public JQXPanel()
+	{
+		addFeature(getFeature());
+		addClass("JQXPanel");
+	}
+	
+	public JQXPanelFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXPanelFeature(this);
+		}
+		return feature;
+	}
+	
+	@Override
+	public final JQXPanelOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 }

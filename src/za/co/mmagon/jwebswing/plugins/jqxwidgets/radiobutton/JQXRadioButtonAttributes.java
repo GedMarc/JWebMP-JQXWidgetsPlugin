@@ -19,18 +19,17 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.radiobutton;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXRadioButtonAttributes implements AttributeDefinitions
 {
-    Value,
-    Checked,
-    Visibility;
+	Value,
+	Checked,
+	Visibility;
 
-    @Override
-    public boolean isKeyword()
-    {
-        return false;
-    }
+	@Override
+	public boolean isKeyword()
+	{
+		return false;
+	}
 }

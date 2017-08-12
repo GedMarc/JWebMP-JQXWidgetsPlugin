@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX List Menu",
-        description = "jqxListMenu displays a collection of Unordered and Ordered Lists. By nesting child ul or ol inside list items, you can create nested lists. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlistmenu/jquery-listmenu-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxListMenu displays a collection of Unordered and Ordered Lists. By nesting child ul or ol inside list items, you can create nested lists. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlistmenu/jquery-listmenu-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXListMenu extends Div<JQXListMenuChildren, JQXListMenuAttributes, JQXListMenuFeature, JQXListMenuEvents, JQXListMenu>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXListMenuFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXListMenuFeature feature;
 
-    public JQXListMenu()
-    {
-        addFeature(getFeature());
-    }
+	public JQXListMenu()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXListMenuFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXListMenuFeature(this);
-        }
-        return feature;
-    }
+	public JQXListMenuFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXListMenuFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXListMenuOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXListMenuOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

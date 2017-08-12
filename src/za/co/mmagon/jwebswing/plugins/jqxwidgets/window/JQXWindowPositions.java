@@ -25,12 +25,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.window;
 public enum JQXWindowPositions
 {
 
-    center, topleft, left;
+	center, topleft, left;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

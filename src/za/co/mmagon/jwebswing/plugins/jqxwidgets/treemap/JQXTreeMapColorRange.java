@@ -27,51 +27,51 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXTreeMapColorRange extends JavaScriptPart
 {
-
-    private static final long serialVersionUID = 1L;
-
-    private ColourHex color;
-    private Integer min;
-    private Integer max;
-
-    public JQXTreeMapColorRange()
-    {
-    }
-
-    public ColourHex getColor()
-    {
-        return color;
-    }
-
-    public void setColor(ColourHex color)
-    {
-        this.color = color;
-    }
-
-    public Integer getMin()
-    {
-        return min;
-    }
-
-    public void setMin(Integer min)
-    {
-        this.min = min;
-    }
-
-    public Integer getMax()
-    {
-        return max;
-    }
-
-    public void setMax(Integer max)
-    {
-        this.max = max;
-    }
-
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	private ColourHex color;
+	private Integer min;
+	private Integer max;
+	
+	public JQXTreeMapColorRange()
+	{
+	}
+	
+	public ColourHex getColor()
+	{
+		return color;
+	}
+	
+	public void setColor(ColourHex color)
+	{
+		this.color = color;
+	}
+	
+	public Integer getMin()
+	{
+		return min;
+	}
+	
+	public void setMin(Integer min)
+	{
+		this.min = min;
+	}
+	
+	public Integer getMax()
+	{
+		return max;
+	}
+	
+	public void setMax(Integer max)
+	{
+		this.max = max;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
+	
 }

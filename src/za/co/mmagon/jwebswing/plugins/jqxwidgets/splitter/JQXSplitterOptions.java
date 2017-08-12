@@ -16,96 +16,98 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.splitter;
 
-import java.util.ArrayList;
 import za.co.mmagon.jwebswing.base.servlets.enumarations.Orientation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
+
+import java.util.ArrayList;
 
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXSplitterOptions extends JQXDefaultJavaScriptPart
 {
 
-    private Boolean disabled;// 	Boolean 	false
-    private Orientation orientation;// 	String 	'vertical'
-    private ArrayList<JQXSplitterPanel> panels;// 	Array 	[]
-    private Boolean resizable;// 	Boolean 	true
-    private Integer splitBarSize;// 	Number/String 	5
-    private Boolean showSplitBar;// 	Boolean 	true
+	private Boolean disabled;// 	Boolean 	false
+	private Orientation orientation;// 	String 	'vertical'
+	private ArrayList<JQXSplitterPanel> panels;// 	Array 	[]
+	private Boolean resizable;// 	Boolean 	true
+	private Integer splitBarSize;// 	Number/String 	5
+	private Boolean showSplitBar;// 	Boolean 	true
 
-    public JQXSplitterOptions()
-    {
+	public JQXSplitterOptions()
+	{
 
-    }
+	}
 
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
 
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
 
-    public Orientation getOrientation()
-    {
-        return orientation;
-    }
+	public Orientation getOrientation()
+	{
+		return orientation;
+	}
 
-    public void setOrientation(Orientation orientation)
-    {
-        this.orientation = orientation;
-    }
+	public void setOrientation(Orientation orientation)
+	{
+		this.orientation = orientation;
+	}
 
-    public ArrayList<JQXSplitterPanel> getPanels()
-    {
-        if (panels == null)
-        {
-            panels = new ArrayList<>();
-        }
-        return panels;
-    }
+	public ArrayList<JQXSplitterPanel> getPanels()
+	{
+		if (panels == null)
+		{
+			panels = new ArrayList<>();
+		}
+		return panels;
+	}
 
-    public void setPanels(ArrayList<JQXSplitterPanel> panels)
-    {
-        this.panels = panels;
-    }
+	public void setPanels(ArrayList<JQXSplitterPanel> panels)
+	{
+		this.panels = panels;
+	}
 
-    public Boolean getResizable()
-    {
-        return resizable;
-    }
+	public Boolean getResizable()
+	{
+		return resizable;
+	}
 
-    public void setResizable(Boolean resizable)
-    {
-        this.resizable = resizable;
-    }
+	public void setResizable(Boolean resizable)
+	{
+		this.resizable = resizable;
+	}
 
-    public Integer getSplitBarSize()
-    {
-        return splitBarSize;
-    }
+	public Integer getSplitBarSize()
+	{
+		return splitBarSize;
+	}
 
-    public void setSplitBarSize(Integer splitBarSize)
-    {
-        this.splitBarSize = splitBarSize;
-    }
+	public void setSplitBarSize(Integer splitBarSize)
+	{
+		this.splitBarSize = splitBarSize;
+	}
 
-    public Boolean getShowSplitBar()
-    {
-        return showSplitBar;
-    }
+	public Boolean getShowSplitBar()
+	{
+		return showSplitBar;
+	}
 
-    public void setShowSplitBar(Boolean showSplitBar)
-    {
-        this.showSplitBar = showSplitBar;
-    }
+	public void setShowSplitBar(Boolean showSplitBar)
+	{
+		this.showSplitBar = showSplitBar;
+	}
 
 }

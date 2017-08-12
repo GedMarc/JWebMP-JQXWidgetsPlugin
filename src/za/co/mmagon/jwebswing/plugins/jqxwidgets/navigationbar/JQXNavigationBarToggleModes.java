@@ -25,14 +25,14 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.navigationbar;
 public enum JQXNavigationBarToggleModes
 {
 
-    click,
-    dblclick,
-    none;
+	click,
+	dblclick,
+	none;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

@@ -24,14 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.slider;
  */
 public enum JQXSliderButtonPositions
 {
-    both, left, right;
+	both, left, right;;
 
-    ;
-
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

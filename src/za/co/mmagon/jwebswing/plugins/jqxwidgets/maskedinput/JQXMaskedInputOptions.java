@@ -21,96 +21,97 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 /**
  * All the options for the tooltip library
  * <p>
+ *
  * @author GedMarc
- * @since Mar 4, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 4, 2015
  */
 public class JQXMaskedInputOptions extends JQXDefaultJavaScriptPart
 {
-
-    private Boolean disabled;// 	Boolean 	false
-    private String mask;// 	String 	'#####'
-    private String promptChar;// 	String 	"_"
-    private Boolean readOnly;// 	Boolean 	false
-    private Boolean rtl;// 	Boolean 	false
-    private String textAlign;// 	String 	left
-    private String value;// 	String 	null
-
-    public JQXMaskedInputOptions()
-    {
-
-    }
-
-    public Boolean getDisabled()
-    {
-        return disabled;
-    }
-
-    public void setDisabled(Boolean disabled)
-    {
-        this.disabled = disabled;
-    }
-
-    public String getMask()
-    {
-        return mask;
-    }
-
-    public void setMask(String mask)
-    {
-        this.mask = mask;
-    }
-
-    public String getPromptChar()
-    {
-        return promptChar;
-    }
-
-    public void setPromptChar(String promptChar)
-    {
-        this.promptChar = promptChar;
-    }
-
-    public Boolean getReadOnly()
-    {
-        return readOnly;
-    }
-
-    public void setReadOnly(Boolean readOnly)
-    {
-        this.readOnly = readOnly;
-    }
-
-    public Boolean getRtl()
-    {
-        return rtl;
-    }
-
-    public void setRtl(Boolean rtl)
-    {
-        this.rtl = rtl;
-    }
-
-    public String getTextAlign()
-    {
-        return textAlign;
-    }
-
-    public void setTextAlign(String textAlign)
-    {
-        this.textAlign = textAlign;
-    }
-
-    public String getValue()
-    {
-        return value;
-    }
-
-    public void setValue(String value)
-    {
-        this.value = value;
-    }
-
+	
+	private Boolean disabled;// 	Boolean 	false
+	private String mask;// 	String 	'#####'
+	private String promptChar;// 	String 	"_"
+	private Boolean readOnly;// 	Boolean 	false
+	private Boolean rtl;// 	Boolean 	false
+	private String textAlign;// 	String 	left
+	private String value;// 	String 	null
+	
+	public JQXMaskedInputOptions()
+	{
+	
+	}
+	
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
+	
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
+	
+	public String getMask()
+	{
+		return mask;
+	}
+	
+	public void setMask(String mask)
+	{
+		this.mask = mask;
+	}
+	
+	public String getPromptChar()
+	{
+		return promptChar;
+	}
+	
+	public void setPromptChar(String promptChar)
+	{
+		this.promptChar = promptChar;
+	}
+	
+	public Boolean getReadOnly()
+	{
+		return readOnly;
+	}
+	
+	public void setReadOnly(Boolean readOnly)
+	{
+		this.readOnly = readOnly;
+	}
+	
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
+	
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
+	
+	public String getTextAlign()
+	{
+		return textAlign;
+	}
+	
+	public void setTextAlign(String textAlign)
+	{
+		this.textAlign = textAlign;
+	}
+	
+	public String getValue()
+	{
+		return value;
+	}
+	
+	public void setValue(String value)
+	{
+		this.value = value;
+	}
+	
 }

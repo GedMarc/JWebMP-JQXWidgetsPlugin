@@ -22,38 +22,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Drag Drop",
-        description = "jqxDragDrop is a plugin which will make any DOM element draggable. It can be used in combination with many widgets like jqxTree, jqxGrid, jqxListBox and etc. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdragdrop/jquery-dragdrop-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxDragDrop is a plugin which will make any DOM element draggable. It can be used in combination with many widgets like jqxTree, jqxGrid, jqxListBox and etc. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdragdrop/jquery-dragdrop-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDragDrop extends Div<JQXDragDropChildren, JQXDragDropAttributes, JQXDragDropFeature, JQXDragDropEvents, JQXDragDrop>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXDragDropFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXDragDropFeature feature;
 
-    public JQXDragDrop()
-    {
-        addFeature(getFeature());
-    }
+	public JQXDragDrop()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXDragDropFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDragDropFeature(this);
-        }
-        return feature;
-    }
+	public JQXDragDropFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDragDropFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXDragDropOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXDragDropOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

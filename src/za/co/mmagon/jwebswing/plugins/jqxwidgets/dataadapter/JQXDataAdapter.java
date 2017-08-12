@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,6 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import java.util.logging.*;
 import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.components.DataAdapter;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
@@ -26,105 +25,110 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdap
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * A Data Adapter Component
  * <p>
- * @author Marc Magon
+ *
  * @param <A> The attribute
- * @since 29 Aug 2015
+ *
+ * @author Marc Magon
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Data Adapter",
-        description = "jqxDataAdapter represents a jQuery plug-in which simplifies data binding and data operations and supports binding to local and remote data",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdataadapter/jquery-data-adapter.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxDataAdapter represents a jQuery plug-in which simplifies data binding and data operations and supports binding to local and remote data",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdataadapter/jquery-data-adapter.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 
-public class JQXDataAdapter<A extends JQXDataAdapterSourceData>
-        extends DataAdapter<JQXDataAdapterChildren, JQXDataAdapterAttributes, JQXDataAdapterFeature, JQXDataAdapterEvents, JQXDataAdapter> implements IJQXDataAdapter<A>
+public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDataAdapter<A, J>>
+		extends DataAdapter<JQXDataAdapterChildren, JQXDataAdapterAttributes, JQXDataAdapterFeature, JQXDataAdapterEvents, J> implements IJQXDataAdapter<A>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXDataAdapterFeature<A> feature;
+	private static final long serialVersionUID = 1L;
+	private JQXDataAdapterFeature<A> feature;
 
-    /**
-     * Constructs a new Data Adapter
-     *
-     * @param component
-     */
-    public JQXDataAdapter(Component component)
-    {
-        super(component);
-        addFeature(getFeature());
-        if (component != null)
-        {
-            component.getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
-        }
-    }
+	/**
+	 * Constructs a new Data Adapter
+	 *
+	 * @param component
+	 */
+	public JQXDataAdapter(Component component)
+	{
+		super(component);
+		addFeature(getFeature());
+		if (component != null)
+		{
+			component.getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
+		}
+	}
 
-    /**
-     * Returns a cleaner version of me
-     *
-     * @return
-     */
-    public IJQXDataAdapter asMe()
-    {
-        return this;
-    }
+	/**
+	 * Returns a cleaner version of me
+	 *
+	 * @return
+	 */
+	public IJQXDataAdapter asMe()
+	{
+		return this;
+	}
 
-    /**
-     * Returns the JS feature for this data adapter
-     *
-     * @return
-     */
-    @Override
-    public final JQXDataAdapterFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDataAdapterFeature(this);
-        }
-        return feature;
-    }
+	/**
+	 * Returns the JS feature for this data adapter
+	 *
+	 * @return
+	 */
+	@Override
+	public final JQXDataAdapterFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDataAdapterFeature(this);
+		}
+		return feature;
+	}
 
-    /**
-     * Returns all the options associated with the given feature
-     *
-     * @return
-     */
-    @Override
-    public JQXDataAdapterOptions<A> getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	/**
+	 * Returns all the options associated with the given feature
+	 *
+	 * @return
+	 */
+	@Override
+	public JQXDataAdapterOptions<A> getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
-    /**
-     * Renders the given JavaScript for the given component
-     *
-     * @return
-     */
-    @Override
-    public StringBuilder renderJavascript()
-    {
-        JQXDataAdapterSourceData dataPacket = getOptions().getLocaldata();
-        try
-        {
-            //if (dataPacket == null)
-            //{
-            //    log.log(Level.SEVERE,"No Data Packet", new ServletException("There Is No Data Packet To Send"));
-            //}
-            return new StringBuilder(JavaScriptPart.getJsonObjectMapper().writeValueAsString(dataPacket));
-        }
-        catch (JsonProcessingException ex)
-        {
-            Logger.getLogger(JQXDataAdapter.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return new StringBuilder();
-    }
+	/**
+	 * Renders the given JavaScript for the given component
+	 *
+	 * @return
+	 */
+	@Override
+	public StringBuilder renderJavascript()
+	{
+		JQXDataAdapterSourceData dataPacket = getOptions().getLocaldata();
+		try
+		{
+			//if (dataPacket == null)
+			//{
+			//    log.log(Level.SEVERE,"No Data Packet", new ServletException("There Is No Data Packet To Send"));
+			//}
+			return new StringBuilder(JavaScriptPart.getJsonObjectMapper().writeValueAsString(dataPacket));
+		}
+		catch (JsonProcessingException ex)
+		{
+			Logger.getLogger(JQXDataAdapter.class.getName()).log(Level.SEVERE, null, ex);
+		}
+		return new StringBuilder();
+	}
 
-    @Override
-    protected StringBuilder renderHTML(int tabCount)
-    {
-        return new StringBuilder();
-    }
+	@Override
+	protected StringBuilder renderHTML(int tabCount)
+	{
+		return new StringBuilder();
+	}
 
 }

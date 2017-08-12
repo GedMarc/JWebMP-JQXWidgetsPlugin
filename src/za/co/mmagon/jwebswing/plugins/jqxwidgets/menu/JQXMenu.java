@@ -23,61 +23,62 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context menus, or
  * application-style menu bars with just a small amount of scripting.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Menu",
-        description = "jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context menus, or application-style menu bars with just a small amount of scripting. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxmenu/jquery-menu-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context menus, or application-style menu bars with just a small amount of scripting. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxmenu/jquery-menu-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeature, JQXMenuEvents, JQXMenu>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXMenuFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXMenuFeature feature;
 
-    private JQXMenuList menuList;
+	private JQXMenuList menuList;
 
-    public JQXMenu()
-    {
-        addFeature(getFeature());
-        add(menuList = new JQXMenuList());
-    }
+	public JQXMenu()
+	{
+		addFeature(getFeature());
+		add(menuList = new JQXMenuList());
+	}
 
-    public JQXMenuFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXMenuFeature(this);
-        }
-        return feature;
-    }
+	public JQXMenuFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXMenuFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXMenuOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXMenuOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
-    /**
-     * Gets the menu list for this
-     *
-     * @return
-     */
-    public JQXMenuList getMenuList()
-    {
-        return menuList;
-    }
+	/**
+	 * Gets the menu list for this
+	 *
+	 * @return
+	 */
+	public JQXMenuList getMenuList()
+	{
+		return menuList;
+	}
 
-    /**
-     * Sets the list for this menu
-     *
-     * @param menuList
-     */
-    public void setMenuList(JQXMenuList menuList)
-    {
-        this.menuList = menuList;
-    }
+	/**
+	 * Sets the list for this menu
+	 *
+	 * @param menuList
+	 */
+	public void setMenuList(JQXMenuList menuList)
+	{
+		this.menuList = menuList;
+	}
 
 }

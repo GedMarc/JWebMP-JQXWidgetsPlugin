@@ -17,33 +17,32 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
 /**
- *
  * @author MXM3727
  */
 public enum JQXRoundedCornerTypes
 {
-    All,
-    Top,//- for top corners
-
-    Bottom,//' - for bottom corners
-
-    Left,// - for left corners
-
-    Right,// - for right corners
-
-    Top_right,// - for top right corners
-
-    Top_left,// - for top left corners
-
-    Bottom_right,// - for bottom right corners
-
-    Bottom_left,// - for bottom left corners
-    ;
-
-    @Override
-    public String toString()
-    {
-        return "jqx-rc-" + name().toLowerCase().replace('_', '-');
-    }
-
+	All,
+	Top,//- for top corners
+	
+	Bottom,//' - for bottom corners
+	
+	Left,// - for left corners
+	
+	Right,// - for right corners
+	
+	Top_right,// - for top right corners
+	
+	Top_left,// - for top left corners
+	
+	Bottom_right,// - for bottom right corners
+	
+	Bottom_left,// - for bottom left corners
+	;
+	
+	@Override
+	public String toString()
+	{
+		return "jqx-rc-" + name().toLowerCase().replace('_', '-');
+	}
+	
 }

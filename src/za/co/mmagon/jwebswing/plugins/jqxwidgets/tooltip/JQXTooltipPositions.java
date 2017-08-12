@@ -24,46 +24,46 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.tooltip;
  */
 public enum JQXTooltipPositions
 {
-    /**
-     * - the tooltip shows above the host element
-     */
-    top,
-    /**
-     * - the tooltip shows below the host element
-     */
-    bottom,
-    /**
-     * - the tooltip shows at the left of the host element
-     */
-    left,
-    /**
-     * - the tooltip shows at the right of the host element
-     */
-    right,
-    /**
-     * - the tooltip shows at the top-left side of the host element
-     */
-    top_left,
-    /**
-     * - the tooltip shows at the bottom-left side of the host element
-     */
-    bottom_left,
-    /**
-     * - the tooltip shows at the top-right side of the host element
-     */
-    top_right,
-    /**
-     * - the tooltip shows at the bottom-right side of the host element
-     */
-    bottom_right,
-    /**
-     * the tooltip shows at an absolute position on screen, defined by the coordinate properties absolutePositionX and absolutePositionY
-     */
-    absolute,;
+	/**
+	 * - the tooltip shows above the host element
+	 */
+	top,
+	/**
+	 * - the tooltip shows below the host element
+	 */
+	bottom,
+	/**
+	 * - the tooltip shows at the left of the host element
+	 */
+	left,
+	/**
+	 * - the tooltip shows at the right of the host element
+	 */
+	right,
+	/**
+	 * - the tooltip shows at the top-left side of the host element
+	 */
+	top_left,
+	/**
+	 * - the tooltip shows at the bottom-left side of the host element
+	 */
+	bottom_left,
+	/**
+	 * - the tooltip shows at the top-right side of the host element
+	 */
+	top_right,
+	/**
+	 * - the tooltip shows at the bottom-right side of the host element
+	 */
+	bottom_right,
+	/**
+	 * the tooltip shows at an absolute position on screen, defined by the coordinate properties absolutePositionX and absolutePositionY
+	 */
+	absolute,;
 
-    @Override
-    public String toString()
-    {
-        return name().replace('_', '-');
-    }
+	@Override
+	public String toString()
+	{
+		return name().replace('_', '-');
+	}
 }

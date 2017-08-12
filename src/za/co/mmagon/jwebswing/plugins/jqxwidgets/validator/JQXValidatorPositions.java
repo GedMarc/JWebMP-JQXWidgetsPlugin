@@ -24,12 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.validator;
  */
 public enum JQXValidatorPositions
 {
-    right, left, topcenter, bottomcenter, topleft, topright, bottomleft, bottomright;
+	right, left, topcenter, bottomcenter, topleft, topright, bottomleft, bottomright;
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }

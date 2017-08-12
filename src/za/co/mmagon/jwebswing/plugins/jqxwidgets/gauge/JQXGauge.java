@@ -24,38 +24,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * <p>
  * Gauges can be used in a table or matrix to show the relative value of a field in a range of values in the data region, for example, as a KPI. It supports SVG and VML rendering.
  * <p>
+ *
  * @author Marc Magon
- * @since 15 Dec 2015
  * @version 1.0
+ * @since 15 Dec 2015
  */
 @ComponentInformation(name = "JQX Gauge",
-        description = "jqxGauge displays an indicator within a range of values. Gauges can be used in a table or matrix to show the relative value of a field in a range of values in the data region, for example, as a KPI.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgauge/jquery-gauge-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxGauge displays an indicator within a range of values. Gauges can be used in a table or matrix to show the relative value of a field in a range of values in the data region, for example, as a KPI.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgauge/jquery-gauge-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXGauge extends Div<JQXGaugeChildren, JQXGaugeAttributes, JQXGaugeFeature, JQXGaugeEvents, JQXGauge>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXGaugeFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXGaugeFeature feature;
 
-    public JQXGauge()
-    {
-        addFeature(getFeature());
-    }
+	public JQXGauge()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXGaugeFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXGaugeFeature(this);
-        }
-        return feature;
-    }
+	public JQXGaugeFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXGaugeFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXGaugeOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXGaugeOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

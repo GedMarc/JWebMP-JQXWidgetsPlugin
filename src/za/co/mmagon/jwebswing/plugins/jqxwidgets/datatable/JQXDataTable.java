@@ -22,39 +22,40 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * An implementation of the jsTree project.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Data Table",
-        description = "qxDataTable is a lightweight jQuery Table widget built to easily replace your HTML Tables.",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdatatable/jquery-datatable-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "qxDataTable is a lightweight jQuery Table widget built to easily replace your HTML Tables.",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdatatable/jquery-datatable-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 
 public class JQXDataTable extends Div<JQXDataTableChildren, JQXDataTableAttributes, JQXDataTableFeature, JQXDataTableEvents, JQXDataTable>
 {
-
-    private static final long serialVersionUID = 1L;
-    private JQXDataTableFeature feature;
-
-    public JQXDataTable()
-    {
-        addFeature(getFeature());
-    }
-
-    public final JQXDataTableFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXDataTableFeature(this);
-        }
-        return feature;
-    }
-
-    @Override
-    public JQXDataTableOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	private JQXDataTableFeature feature;
+	
+	public JQXDataTable()
+	{
+		addFeature(getFeature());
+	}
+	
+	public final JQXDataTableFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXDataTableFeature(this);
+		}
+		return feature;
+	}
+	
+	@Override
+	public JQXDataTableOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
 }

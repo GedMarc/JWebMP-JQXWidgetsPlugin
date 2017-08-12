@@ -23,40 +23,41 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 /**
  * jqxInput represents an Input widget with auto-complete capabilities.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Input",
-        description = "jqxInput represents an Input widget with auto-complete capabilities. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxinput/jquery-input-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxInput represents an Input widget with auto-complete capabilities. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxinput/jquery-input-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXInput extends Div<JQXInputChildren, JQXInputAttributes, JQXInputFeature, JQXInputEvents, JQXInput> implements NoClosingTag
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXInputFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXInputFeature feature;
 
-    public JQXInput()
-    {
-        setTag("input");
-        addAttribute(JQXInputAttributes.Type, "text");
-        addFeature(getFeature());
-    }
+	public JQXInput()
+	{
+		setTag("input");
+		addAttribute(JQXInputAttributes.Type, "text");
+		addFeature(getFeature());
+	}
 
-    public JQXInputFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXInputFeature(this);
-        }
-        return feature;
-    }
+	public JQXInputFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXInputFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXInputOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXInputOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

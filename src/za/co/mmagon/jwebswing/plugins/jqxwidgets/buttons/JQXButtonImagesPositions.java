@@ -17,26 +17,26 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons;
 
 /**
- * Sets or gets the button's text position. Possible values: "left", "top", "center", "bottom", "right", "topLeft", "bottomLeft", "topRight", "bottomRight". 
+ * Sets or gets the button's text position. Possible values: "left", "top", "center", "bottom", "right", "topLeft", "bottomLeft", "topRight", "bottomRight".
+ *
  * @author GedMarc
- * @since Nov 7, 2016
  * @version 1.0
- * 
+ * @since Nov 7, 2016
  */
-public enum JQXButtonImagesPositions 
+public enum JQXButtonImagesPositions
 {
-    left,
-    top,
-    center,
-    bottom,
-    right,
-    topLeft,
-    bottomLeft,
-    topRight,
-    bottomRight
-    ;
-    private JQXButtonImagesPositions ()
-    {
-        
-    }
+	left,
+	top,
+	center,
+	bottom,
+	right,
+	topLeft,
+	bottomLeft,
+	topRight,
+	bottomRight;
+
+	private JQXButtonImagesPositions()
+	{
+
+	}
 }

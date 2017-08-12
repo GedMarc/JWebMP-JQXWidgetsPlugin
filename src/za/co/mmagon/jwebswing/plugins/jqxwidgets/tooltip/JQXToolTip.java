@@ -23,38 +23,39 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the
  * html element as parameter.
  * <p>
+ *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 @ComponentInformation(name = "JQX Tooltip",
-        description = "jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the html element as parameter. ",
-        url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtooltip/jquery-tooltip-getting-started.htm?search=",
-        wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		description = "jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the html element as parameter. ",
+		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtooltip/jquery-tooltip-getting-started.htm?search=",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXToolTip extends Div<JQXToolTipChildren, JQXToolTipAttributes, JQXToolTipFeature, JQXToolTipEvents, JQXToolTip>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQXToolTipFeature feature;
+	private static final long serialVersionUID = 1L;
+	private JQXToolTipFeature feature;
 
-    public JQXToolTip()
-    {
-        addFeature(getFeature());
-    }
+	public JQXToolTip()
+	{
+		addFeature(getFeature());
+	}
 
-    public JQXToolTipFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQXToolTipFeature(this);
-        }
-        return feature;
-    }
+	public JQXToolTipFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQXToolTipFeature(this);
+		}
+		return feature;
+	}
 
-    @Override
-    public JQXToolTipOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
+	@Override
+	public JQXToolTipOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
 
 }

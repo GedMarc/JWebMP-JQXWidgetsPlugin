@@ -17,19 +17,18 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.datatable;
 
 /**
- *
  * @author GedMarc
  */
 public enum JQXDataTableFilterModes
 {
-    Default,
-    Simple,
-    Advanced;
+	Default,
+	Simple,
+	Advanced;
 
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase();
-    }
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase();
+	}
 
 }

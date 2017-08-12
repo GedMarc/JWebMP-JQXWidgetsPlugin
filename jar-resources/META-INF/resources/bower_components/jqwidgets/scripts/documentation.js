@@ -1,7 +1,6 @@
 ﻿try {
     $(document).ready(function () {
-        if (navigator.userAgent.indexOf('MSIE 7.0') >= 0 || navigator.userAgent.indexOf('MSIE 8.0') >= 0)
-        {
+        if (navigator.userAgent.indexOf('MSIE 7.0') >= 0 || navigator.userAgent.indexOf('MSIE 8.0') >= 0) {
             $("em").hide();
             $("em").next().hide();
         }
@@ -14,7 +13,7 @@
         }
         else {
             var link = $('<link rel="stylesheet" href="' + url + '" media="screen" />');
-            $(document).find('head').append(link);           
+            $(document).find('head').append(link);
             var link = $('<link rel="stylesheet" href="' + bootstrapUrl + '" media="screen" />');
             $(document).find('head').append(link);
         }
@@ -25,8 +24,7 @@
             $("<label>I am searching for</label><br/>").prependTo(document.body);
         }
         var timer = null;
-        input.focus(function()
-        {
+        input.focus(function () {
             input.addClass('jqx-fill-state-focus jqx-fill-state-focus-bootstrap');
         });
         input.blur(function () {
@@ -34,8 +32,7 @@
         });
 
         var updateHeightUtility = function () {
-            try
-            {
+            try {
                 var tables = $('.documentation-table');
                 var h = 0;
                 $.each(tables, function () {
@@ -54,10 +51,10 @@
                             maxHeight = frameHeight + 250 + $(window.top.document).find(".doc_menu").height();
                         }
 
-                        $(window.top.document).find(".doc_content").css('min-height',60+ maxHeight + "px");
+                        $(window.top.document).find(".doc_content").css('min-height', 60 + maxHeight + "px");
 
 
-                        $(window.top.document).find('#tabs-3').css({ height: maxHeight + 'px' });
+                        $(window.top.document).find('#tabs-3').css({height: maxHeight + 'px'});
                         if ($(window.frameElement).length > 0) {
                             $(window.frameElement).height(maxHeight);
                         }
@@ -81,8 +78,7 @@
                             if (window.top.document) {
                                 setTimeout(function () {
                                     document.body.style.overflowY = "hidden";
-                                    $(window.top.document).find('#tab3').on('click', function (event)
-                                    {
+                                    $(window.top.document).find('#tab3').on('click', function (event) {
                                         updateHeightUtility();
                                     });
 

@@ -19,16 +19,14 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon;
 import za.co.mmagon.jwebswing.base.html.Div;
 
 /**
- *
  * @author GedMarc
  * @since 28 Feb 2017
- *
  */
 public class JQXRibbonContent extends Div implements JQXRibbonChildren
 {
 
-    public JQXRibbonContent()
-    {
+	public JQXRibbonContent()
+	{
 
-    }
+	}
 }

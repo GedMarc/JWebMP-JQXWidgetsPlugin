@@ -16,10 +16,11 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter;
 
+import com.armineasy.injection.GuiceContext;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.components.DataAdapter;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
@@ -116,7 +117,7 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 			//{
 			//    log.log(Level.SEVERE,"No Data Packet", new ServletException("There Is No Data Packet To Send"));
 			//}
-			return new StringBuilder(JavaScriptPart.getJsonObjectMapper().writeValueAsString(dataPacket));
+			return new StringBuilder(GuiceContext.getInstance(ObjectMapper.class).writeValueAsString(dataPacket));
 		}
 		catch (JsonProcessingException ex)
 		{

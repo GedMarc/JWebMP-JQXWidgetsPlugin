@@ -112,7 +112,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 *
 	 * @return
 	 */
-	public String getOwnerId()
+	public String getReferenceId()
 	{
 		return id;
 	}
@@ -122,7 +122,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 *
 	 * @param id
 	 */
-	public void setOwnerId(String id)
+	public void setReferenceId(String id)
 	{
 		this.id = id;
 	}

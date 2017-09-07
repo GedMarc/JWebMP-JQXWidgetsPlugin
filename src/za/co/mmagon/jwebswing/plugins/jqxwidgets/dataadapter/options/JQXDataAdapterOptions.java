@@ -192,12 +192,12 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 		this.type = type;
 	}
 
-	public String getOwnerId()
+	public String getReferenceId()
 	{
 		return id;
 	}
 
-	public void setOwnerId(String id)
+	public void setReferenceId(String id)
 	{
 		this.id = id;
 	}

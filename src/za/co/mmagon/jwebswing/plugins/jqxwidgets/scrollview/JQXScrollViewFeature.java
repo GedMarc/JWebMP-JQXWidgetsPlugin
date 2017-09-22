@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXScrollViewFeature extends Feature<JQXScrollViewOptions, JQXScrollViewFeature> implements JQXScrollViewFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXScrollView forComponent;
 	private JQXScrollViewOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -51,7 +51,7 @@ public class JQXScrollViewFeature extends Feature<JQXScrollViewOptions, JQXScrol
 		getJavascriptReferences().add(JQXReferencePool.ScrollView.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,7 +67,7 @@ public class JQXScrollViewFeature extends Feature<JQXScrollViewOptions, JQXScrol
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -76,6 +76,6 @@ public class JQXScrollViewFeature extends Feature<JQXScrollViewOptions, JQXScrol
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

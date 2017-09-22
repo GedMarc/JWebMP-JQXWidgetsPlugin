@@ -34,15 +34,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 public class JQXDateTimeInput extends Div<JQXDateTimeInputChildren, JQXDateTimeInputAttributes, JQXDateTimeInputFeature, JQXDateTimeInputEvents, JQXDateTimeInput>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXDateTimeInputFeature feature;
-
+	
 	public JQXDateTimeInput()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXDateTimeInputFeature getFeature()
 	{
 		if (feature == null)
@@ -51,11 +51,11 @@ public class JQXDateTimeInput extends Div<JQXDateTimeInputChildren, JQXDateTimeI
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXDateTimeInputOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

@@ -56,11 +56,11 @@ public enum JQXValidationRuleTypes
 	 * - restricts the input length to a specific range.
 	 */
 	length;
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

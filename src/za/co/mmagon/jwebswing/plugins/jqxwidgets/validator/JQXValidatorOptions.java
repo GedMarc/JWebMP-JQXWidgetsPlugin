@@ -34,7 +34,7 @@ import java.util.ArrayList;
  */
 public class JQXValidatorOptions extends JavaScriptPart
 {
-
+	
 	private Boolean arrow;// 	Boolean 	true
 	private JQEasingEffects animation;// 	String 	'fade'
 	private Integer animationDuration;// 	Number 	150
@@ -46,120 +46,120 @@ public class JQXValidatorOptions extends JavaScriptPart
 	private JQXValidatorPositions position;// 	String 	'right'
 	private ArrayList<JQXValidatorRules> rules;// 	Array 	[]
 	private Boolean rtl;// 	Boolean 	false
-
+	
 	public JQXValidatorOptions()
 	{
-
+	
 	}
-
+	
 	public Boolean getArrow()
 	{
 		return arrow;
 	}
-
+	
 	public void setArrow(Boolean arrow)
 	{
 		this.arrow = arrow;
 	}
-
+	
 	public JQEasingEffects getAnimation()
 	{
 		return animation;
 	}
-
+	
 	public void setAnimation(JQEasingEffects animation)
 	{
 		this.animation = animation;
 	}
-
+	
 	public Integer getAnimationDuration()
 	{
 		return animationDuration;
 	}
-
+	
 	public void setAnimationDuration(Integer animationDuration)
 	{
 		this.animationDuration = animationDuration;
 	}
-
+	
 	public Boolean getCloseOnClick()
 	{
 		return closeOnClick;
 	}
-
+	
 	public void setCloseOnClick(Boolean closeOnClick)
 	{
 		this.closeOnClick = closeOnClick;
 	}
-
+	
 	public Boolean getFocus()
 	{
 		return focus;
 	}
-
+	
 	public void setFocus(Boolean focus)
 	{
 		this.focus = focus;
 	}
-
+	
 	public JQXValidtorHintTypes getHintType()
 	{
 		return hintType;
 	}
-
+	
 	public void setHintType(JQXValidtorHintTypes hintType)
 	{
 		this.hintType = hintType;
 	}
-
+	
 	public JavascriptFunction getOnError()
 	{
 		return onError;
 	}
-
+	
 	public void setOnError(JavascriptFunction onError)
 	{
 		this.onError = onError;
 	}
-
+	
 	public JavascriptFunction getOnSuccess()
 	{
 		return onSuccess;
 	}
-
+	
 	public void setOnSuccess(JavascriptFunction onSuccess)
 	{
 		this.onSuccess = onSuccess;
 	}
-
+	
 	public JQXValidatorPositions getPosition()
 	{
 		return position;
 	}
-
+	
 	public void setPosition(JQXValidatorPositions position)
 	{
 		this.position = position;
 	}
-
+	
 	public ArrayList<JQXValidatorRules> getRules()
 	{
 		return rules;
 	}
-
+	
 	public void setRules(ArrayList<JQXValidatorRules> rules)
 	{
 		this.rules = rules;
 	}
-
+	
 	public Boolean getRtl()
 	{
 		return rtl;
 	}
-
+	
 	public void setRtl(Boolean rtl)
 	{
 		this.rtl = rtl;
 	}
-
+	
 }

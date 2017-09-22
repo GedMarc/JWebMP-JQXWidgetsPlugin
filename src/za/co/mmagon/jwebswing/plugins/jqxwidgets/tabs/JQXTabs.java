@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTabs extends Div<JQXTabsChildren, JQXTabsAttributes, JQXTabsFeature, JQXTabsEvents, JQXTabs>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXTabsFeature feature;
-
+	
 	public JQXTabs()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXTabsFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,11 @@ public class JQXTabs extends Div<JQXTabsChildren, JQXTabsAttributes, JQXTabsFeat
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXTabsOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

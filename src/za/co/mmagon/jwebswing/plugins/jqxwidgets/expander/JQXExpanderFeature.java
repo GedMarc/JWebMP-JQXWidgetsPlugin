@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXExpanderFeature extends Feature<JQXExpanderOptions, JQXExpanderFeature> implements JQXExpanderFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXExpander forComponent;
 	private JQXExpanderOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -51,7 +51,7 @@ public class JQXExpanderFeature extends Feature<JQXExpanderOptions, JQXExpanderF
 		getJavascriptReferences().add(JQXReferencePool.Expander.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,7 +67,7 @@ public class JQXExpanderFeature extends Feature<JQXExpanderOptions, JQXExpanderF
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -76,6 +76,6 @@ public class JQXExpanderFeature extends Feature<JQXExpanderOptions, JQXExpanderF
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

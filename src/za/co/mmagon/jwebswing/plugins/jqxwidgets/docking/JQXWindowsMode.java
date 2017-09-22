@@ -26,11 +26,11 @@ public enum JQXWindowsMode
 {
 	Docked,
 	Floating;
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString().toLowerCase();
 	}
-
+	
 }

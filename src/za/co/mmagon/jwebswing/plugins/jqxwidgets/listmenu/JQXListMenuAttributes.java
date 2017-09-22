@@ -24,7 +24,7 @@ import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 public enum JQXListMenuAttributes implements AttributeDefinitions
 {
 	Visibility;
-
+	
 	@Override
 	public boolean isKeyword()
 	{

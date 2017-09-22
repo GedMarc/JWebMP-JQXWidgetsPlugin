@@ -24,7 +24,7 @@ import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 public enum JQXResponseAttributes implements AttributeDefinitions
 {
 	Visibility;
-
+	
 	@Override
 	public boolean isKeyword()
 	{

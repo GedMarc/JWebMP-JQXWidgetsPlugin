@@ -24,27 +24,30 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXBulletChartTarget extends JavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private Double value;
 	private String label;
 	private ColourHex color;
 	private Integer thickness;
-
+	
 	public JQXBulletChartTarget()
 	{
 	}
+	
 	public JQXBulletChartTarget(Double value, String label)
 	{
 		this.value = value;
 		this.label = label;
 	}
+	
 	public JQXBulletChartTarget(Double value, String label, ColourHex color)
 	{
 		this.value = value;
 		this.label = label;
 		this.color = color;
 	}
+	
 	public JQXBulletChartTarget(Double value, String label, ColourHex color, Integer thickness)
 	{
 		this.value = value;
@@ -52,45 +55,45 @@ public class JQXBulletChartTarget extends JavaScriptPart
 		this.color = color;
 		this.thickness = thickness;
 	}
-
+	
 	public Double getValue()
 	{
 		return value;
 	}
-
+	
 	public void setValue(Double value)
 	{
 		this.value = value;
 	}
-
+	
 	public String getLabel()
 	{
 		return label;
 	}
-
+	
 	public void setLabel(String label)
 	{
 		this.label = label;
 	}
-
+	
 	public ColourHex getColor()
 	{
 		return color;
 	}
-
+	
 	public void setColor(ColourHex color)
 	{
 		this.color = color;
 	}
-
+	
 	public Integer getThickness()
 	{
 		return thickness;
 	}
-
+	
 	public void setThickness(Integer thickness)
 	{
 		this.thickness = thickness;
 	}
-
+	
 }

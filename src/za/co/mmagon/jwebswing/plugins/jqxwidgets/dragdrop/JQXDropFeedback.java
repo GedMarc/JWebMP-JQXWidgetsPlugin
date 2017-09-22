@@ -26,11 +26,11 @@ public enum JQXDropFeedback
 {
 	Clone,
 	Original;
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString().toLowerCase();
 	}
-
+	
 }

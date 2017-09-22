@@ -33,17 +33,17 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXEditor extends TextArea
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXEditorFeature feature;
-
+	
 	public JQXEditor()
 	{
 		super("");
 		addFeature(getFeature());
-
+		
 	}
-
+	
 	public JQXEditorFeature getFeature()
 	{
 		if (feature == null)
@@ -52,11 +52,11 @@ public class JQXEditor extends TextArea
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXEditorOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

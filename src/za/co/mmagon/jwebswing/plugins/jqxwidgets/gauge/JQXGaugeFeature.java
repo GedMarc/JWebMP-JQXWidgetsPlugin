@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXGaugeFeature extends Feature<JQXGaugeOptions, JQXGaugeFeature> implements JQXGaugeFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXGauge forComponent;
 	private JQXGaugeOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -52,7 +52,7 @@ public class JQXGaugeFeature extends Feature<JQXGaugeOptions, JQXGaugeFeature> i
 		getJavascriptReferences().add(JQXReferencePool.Gauge.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -68,7 +68,7 @@ public class JQXGaugeFeature extends Feature<JQXGaugeOptions, JQXGaugeFeature> i
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -77,6 +77,6 @@ public class JQXGaugeFeature extends Feature<JQXGaugeOptions, JQXGaugeFeature> i
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

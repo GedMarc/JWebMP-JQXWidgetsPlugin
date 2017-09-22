@@ -28,9 +28,9 @@ public enum JQXButtonTextImageRelation
 	textAboveImage,
 	textBeforeImage,
 	overlay;
-
-	private JQXButtonTextImageRelation()
+	
+	JQXButtonTextImageRelation()
 	{
-
+	
 	}
 }

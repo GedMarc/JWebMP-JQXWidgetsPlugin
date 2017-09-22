@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXDateTimeInputFeature extends Feature<JQXDateTimeInputOptions, JQXDateTimeInputFeature> implements JQXDateTimeInputFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXDateTimeInput forComponent;
 	private JQXDateTimeInputOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -53,7 +53,7 @@ public class JQXDateTimeInputFeature extends Feature<JQXDateTimeInputOptions, JQ
 		getJavascriptReferences().add(JQXReferencePool.Globalization.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -69,7 +69,7 @@ public class JQXDateTimeInputFeature extends Feature<JQXDateTimeInputOptions, JQ
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -78,6 +78,6 @@ public class JQXDateTimeInputFeature extends Feature<JQXDateTimeInputOptions, JQ
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

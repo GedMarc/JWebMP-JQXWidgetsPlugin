@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXResponse extends Div<JQXResponseChildren, JQXResponseAttributes, JQXResponseFeature, JQXResponseEvents, JQXResponse>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXResponseFeature feature;
-
+	
 	public JQXResponse()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXResponseFeature getFeature()
 	{
 		if (feature == null)
@@ -50,7 +50,7 @@ public class JQXResponse extends Div<JQXResponseChildren, JQXResponseAttributes,
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXResponseOptions getOptions()
 	{

@@ -24,11 +24,11 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.numberinput.JQXNumberInputOptio
  */
 public class JQXNumberInputOptionsTest
 {
-
+	
 	public JQXNumberInputOptionsTest()
 	{
 	}
-
+	
 	@Test
 	public void testSomeMethod()
 	{
@@ -37,5 +37,5 @@ public class JQXNumberInputOptionsTest
 		nio.setDecimal(1.0);
 		System.out.println(nio);
 	}
-
+	
 }

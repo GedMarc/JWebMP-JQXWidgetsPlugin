@@ -31,6 +31,7 @@ public class JQXRanges extends JavaScriptPart
 	
 	private String from;
 	private String to;
+
 	public JQXRanges(String from, String to)
 	{
 		this.from = from;
@@ -48,6 +49,11 @@ public class JQXRanges extends JavaScriptPart
 		return from;
 	}
 	
+	public void setFrom(Integer from)
+	{
+		this.from = from.toString();
+	}
+	
 	public void setFrom(SimpleDateFormat from)
 	{
 		this.from = from.toPattern();
@@ -63,6 +69,11 @@ public class JQXRanges extends JavaScriptPart
 		return to;
 	}
 	
+	public void setTo(Integer to)
+	{
+		this.to = to.toString();
+	}
+	
 	public void setTo(SimpleDateFormat to)
 	{
 		this.to = to.toPattern();
@@ -71,16 +82,6 @@ public class JQXRanges extends JavaScriptPart
 	public void setTo(String to)
 	{
 		this.to = to;
-	}
-	
-	public void setFrom(Integer from)
-	{
-		this.from = from.toString();
-	}
-	
-	public void setTo(Integer to)
-	{
-		this.to = to.toString();
 	}
 	
 }

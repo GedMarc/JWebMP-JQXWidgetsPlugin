@@ -26,11 +26,11 @@ public enum JQXDragDropTolerance
 {
 	Fit,
 	Intersect;
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString().toLowerCase();
 	}
-
+	
 }

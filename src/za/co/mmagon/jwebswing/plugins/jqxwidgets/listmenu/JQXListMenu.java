@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXListMenu extends Div<JQXListMenuChildren, JQXListMenuAttributes, JQXListMenuFeature, JQXListMenuEvents, JQXListMenu>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXListMenuFeature feature;
-
+	
 	public JQXListMenu()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXListMenuFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,11 @@ public class JQXListMenu extends Div<JQXListMenuChildren, JQXListMenuAttributes,
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXListMenuOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

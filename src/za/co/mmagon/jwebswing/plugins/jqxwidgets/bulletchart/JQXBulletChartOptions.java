@@ -34,9 +34,9 @@ import java.util.ArrayList;
  */
 public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's animationDuration.
 	 */
@@ -93,28 +93,28 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	 * "vertical"
 	 */
 	private Orientation orientation;// 	String 	"horizontal"
-
+	
 	private JQXBulletChartPointer pointer;// 	Object 	{ value: 65, label: "Value", size: "25%", color: "" }
-
+	
 	private Boolean rtl;// 	Boolean 	false
-
+	
 	private ArrayList<JQXBulletChartRange> ranges;// 	Array 	[{ startValue: 0, endValue: 50, color: "#000000", opacity: 0.7 }, { startValue: 50, endValue: 80, color: "#000000", opacity: 0.5 }, { startValue: 80, endValue: 100, color: "#000000", opacity: 0.3}]
-
+	
 	private Boolean showTooltip;// 	Boolean 	true
-
+	
 	private JQXBulletChartTarget target;// 	Object 	{ value: 85, label: "Target", size: 4, color: "" };
-
+	
 	private JQXBulletChartTicks ticks;// 	Object 	{ position: "far", interval: 20, size: 10 }
-
+	
 	private String title;// 	String 	'Title'
-
+	
 	private JavascriptFunction tooltipFormatFunction;// 	Function 	null
-
+	
 	public JQXBulletChartOptions()
 	{
-
+	
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's animationDuration. Possible values
 	 * <p>
@@ -130,7 +130,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return animationDuration;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's animationDuration. Possible values
 	 * <p>
@@ -146,7 +146,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.animationDuration = animationDuration;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's bar size.
 	 *
@@ -156,7 +156,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return barSize;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's bar size.
 	 *
@@ -166,7 +166,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.barSize = barSize;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's description.
 	 *
@@ -176,7 +176,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return description;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's description.
 	 *
@@ -186,7 +186,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.description = description;
 	}
-
+	
 	/**
 	 * Disables the bullet chart.
 	 *
@@ -196,7 +196,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return disabled;
 	}
-
+	
 	/**
 	 * Disables the bullet chart.
 	 *
@@ -206,7 +206,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.disabled = disabled;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's labelsFormat. Possible values:
 	 * <p>
@@ -228,7 +228,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return labelsFormat;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's labelsFormat. Possible values:
 	 * <p>
@@ -250,7 +250,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.labelsFormat = labelsFormat;
 	}
-
+	
 	/**
 	 * Set the labelsFormatFunction property.
 	 *
@@ -260,7 +260,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return labelsFormatFunction;
 	}
-
+	
 	/**
 	 * Set the labelsFormatFunction property.
 	 *
@@ -270,7 +270,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.labelsFormatFunction = labelsFormatFunction;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's orientation. Possible values:
 	 * <p>
@@ -284,7 +284,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return orientation;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's orientation. Possible values:
 	 * <p>
@@ -298,7 +298,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.orientation = orientation;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's pointer.
 	 *
@@ -312,7 +312,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 		}
 		return pointer;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's pointer.
 	 *
@@ -322,7 +322,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.pointer = pointer;
 	}
-
+	
 	/**
 	 * Gets or sets right to left display
 	 *
@@ -332,7 +332,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return rtl;
 	}
-
+	
 	/**
 	 * Gets or sets right to left display
 	 *
@@ -342,7 +342,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.rtl = rtl;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's range. Possible values
 	 * <p>
@@ -364,7 +364,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 		}
 		return ranges;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's range. Possible values
 	 * <p>
@@ -382,7 +382,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.ranges = ranges;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's showTooltip.Requires jqxtooltip.js
 	 *
@@ -392,7 +392,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return showTooltip;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's showTooltip.Requires jqxtooltip.js
 	 *
@@ -402,7 +402,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.showTooltip = showTooltip;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's target.
 	 *
@@ -416,7 +416,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 		}
 		return target;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's target.
 	 *
@@ -426,7 +426,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.target = target;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's ticks. Possible values for ticks.position
 	 * <p>
@@ -448,7 +448,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 		}
 		return ticks;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's ticks. Possible values for ticks.position
 	 * <p>
@@ -466,7 +466,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.ticks = ticks;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's title.
 	 *
@@ -476,7 +476,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return title;
 	}
-
+	
 	/**
 	 * Sets ot gets the bulletcharts's title.
 	 *
@@ -486,7 +486,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.title = title;
 	}
-
+	
 	/**
 	 * Sets the tooltip format function
 	 *
@@ -496,7 +496,7 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		return tooltipFormatFunction;
 	}
-
+	
 	/**
 	 * Gets the tooltip format function
 	 *
@@ -506,5 +506,5 @@ public class JQXBulletChartOptions extends JQXDefaultJavaScriptPart
 	{
 		this.tooltipFormatFunction = tooltipFormatFunction;
 	}
-
+	
 }

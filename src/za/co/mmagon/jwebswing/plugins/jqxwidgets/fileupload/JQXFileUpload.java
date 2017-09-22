@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXFileUpload extends Div//<JQXFileUploadChildren, JQXFileUploadAttributes, JQXFileUploadFeature, JQXFileUploadEvents, JQXFileUpload>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXFileUploadFeature feature;
-
+	
 	public JQXFileUpload()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXFileUploadFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,11 @@ public class JQXFileUpload extends Div//<JQXFileUploadChildren, JQXFileUploadAtt
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXFileUploadOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

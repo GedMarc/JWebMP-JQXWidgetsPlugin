@@ -31,16 +31,16 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  */
 public class JQXTouchOptions extends JavaScriptPart
 {
-
+	
 	public JQXTouchOptions()
 	{
-
+	
 	}
-
+	
 	@Override
 	public JavascriptPartType getJavascriptType()
 	{
 		return JavascriptPartType.Javascript;
 	}
-
+	
 }

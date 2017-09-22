@@ -45,23 +45,23 @@ public enum JQXWidgetThemes
 	Summer(new SummerTheme()),
 	Web(new WebTheme()),
 	WindowsPhone(new WindowsPhoneTheme());
-
+	
 	private Theme theme;
-
-	private JQXWidgetThemes(Theme theme)
+	
+	JQXWidgetThemes(Theme theme)
 	{
 		this.theme = theme;
 	}
-
+	
 	public Theme getTheme()
 	{
 		return theme;
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString().toLowerCase();
 	}
-
+	
 }

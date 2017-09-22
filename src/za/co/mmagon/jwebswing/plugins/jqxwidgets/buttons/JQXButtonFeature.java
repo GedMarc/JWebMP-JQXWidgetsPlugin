@@ -30,11 +30,11 @@ import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
  */
 public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature> implements JQXButtonFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private JQXButtonOptions options;
-
+	
 	/**
 	 * Constructs a new JQX Button ComponentFeatureBase for a component.
 	 * <p>
@@ -49,7 +49,7 @@ public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 	}
-
+	
 	/**
 	 * Returns all the buttons options
 	 * <p>
@@ -65,7 +65,7 @@ public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{

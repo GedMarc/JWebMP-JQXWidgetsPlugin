@@ -31,9 +31,9 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXRoundedCornerTypes;
  */
 public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	/**
 	 * Specifies the interval between two Click events. This property is available only in the jqxRepeatButton. The jqxRepeatButton raises Click events repeatedly when the button is pressed.
 	 */
@@ -91,21 +91,21 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	 */
 	private JQXButtonTemplates template;// 	String 	'default'
 	private Boolean toggled;// 	Boolean 	false
-
+	
 	private String imgSrc;
 	private Integer imgWidth;
 	private Integer imgHeight;
 	private JQXButtonImagesPositions imgPosition;
 	private JQXButtonImagesPositions textPosition;
 	private JQXButtonTextImageRelation textImageRelation;
-
+	
 	private String value;
-
+	
 	public JQXButtonOptions()
 	{
-
+	
 	}
-
+	
 	/**
 	 * Specifies the interval between two Click events. This property is available only in the jqxRepeatButton. The jqxRepeatButton raises Click events repeatedly when the button is pressed.
 	 *
@@ -115,7 +115,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return delay;
 	}
-
+	
 	/**
 	 * Specifies the interval between two Click events. This property is available only in the jqxRepeatButton. The jqxRepeatButton raises Click events repeatedly when the button is pressed.
 	 *
@@ -125,7 +125,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.delay = delay;
 	}
-
+	
 	/**
 	 * Enables or disables the button.
 	 *
@@ -135,7 +135,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return disabled;
 	}
-
+	
 	/**
 	 * Enables or disables the button.
 	 *
@@ -145,7 +145,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.disabled = disabled;
 	}
-
+	
 	/**
 	 * Enables or disables the rounded corners functionality. This property setting has effect in browsers which support CSS border-radius.
 	 * Possible Values:
@@ -174,7 +174,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return roundedCorners;
 	}
-
+	
 	/**
 	 * Enables or disables the rounded corners functionality. This property setting has effect in browsers which support CSS border-radius.
 	 * Possible Values:
@@ -203,7 +203,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.roundedCorners = roundedCorners;
 	}
-
+	
 	/**
 	 * Sets or gets a value indicating whether widget's elements are aligned to support locales using right-to-left fonts.
 	 *
@@ -213,7 +213,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return rtl;
 	}
-
+	
 	/**
 	 * Sets or gets a value indicating whether widget's elements are aligned to support locales using right-to-left fonts.
 	 *
@@ -223,7 +223,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.rtl = rtl;
 	}
-
+	
 	/**
 	 * etermines the button's template as an alternative of the default styles.
 	 * Possible Values:
@@ -250,7 +250,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return template;
 	}
-
+	
 	/**
 	 * etermines the button's template as an alternative of the default styles.
 	 * Possible Values:
@@ -277,7 +277,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.template = template;
 	}
-
+	
 	/**
 	 * Sets or gets the button's toggle state. ( available in jqxToggleButton ).
 	 *
@@ -287,7 +287,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return toggled;
 	}
-
+	
 	/**
 	 * Sets or gets the button's toggle state. ( available in jqxToggleButton ).
 	 *
@@ -297,7 +297,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.toggled = toggled;
 	}
-
+	
 	/**
 	 * Set the imgSrc property.
 	 * <p>
@@ -309,7 +309,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return imgSrc;
 	}
-
+	
 	/**
 	 * Set the imgSrc property.
 	 * <p>
@@ -321,7 +321,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.imgSrc = imgSrc;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image width.
 	 *
@@ -331,7 +331,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return imgWidth;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image width.
 	 *
@@ -341,7 +341,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.imgWidth = imgWidth;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image height.
 	 *
@@ -351,7 +351,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return imgHeight;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image height.
 	 *
@@ -361,7 +361,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.imgHeight = imgHeight;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image position. Possible values: "left", "top", "center", "bottom", "right", "topLeft", "bottomLeft", "topRight", "bottomRight".
 	 *
@@ -371,7 +371,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return imgPosition;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image position. Possible values: "left", "top", "center", "bottom", "right", "topLeft", "bottomLeft", "topRight", "bottomRight".
 	 *
@@ -381,7 +381,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.imgPosition = imgPosition;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image position. Possible values: "left", "top", "center", "bottom", "right", "topLeft", "bottomLeft", "topRight", "bottomRight".
 	 *
@@ -391,7 +391,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return textPosition;
 	}
-
+	
 	/**
 	 * Sets or gets the button's image position. Possible values: "left", "top", "center", "bottom", "right", "topLeft", "bottomLeft", "topRight", "bottomRight".
 	 *
@@ -401,7 +401,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.textPosition = textPosition;
 	}
-
+	
 	/**
 	 * Sets or gets the button's text image relation. Possible values: "imageBeforeText", "imageAboveText", "textAboveImage", "textBeforeImage" and "overlay".
 	 *
@@ -411,7 +411,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return textImageRelation;
 	}
-
+	
 	/**
 	 * Sets or gets the button's text image relation. Possible values: "imageBeforeText", "imageAboveText", "textAboveImage", "textBeforeImage" and "overlay".
 	 *
@@ -421,7 +421,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.textImageRelation = textImageRelation;
 	}
-
+	
 	/**
 	 * Sets or gets the button's value.
 	 *
@@ -431,7 +431,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		return value;
 	}
-
+	
 	/**
 	 * Sets or gets the button's value.
 	 *
@@ -441,6 +441,6 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	{
 		this.value = value;
 	}
-
-
+	
+	
 }

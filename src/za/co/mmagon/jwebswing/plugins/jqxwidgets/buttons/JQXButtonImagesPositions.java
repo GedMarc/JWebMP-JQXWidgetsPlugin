@@ -34,9 +34,9 @@ public enum JQXButtonImagesPositions
 	bottomLeft,
 	topRight,
 	bottomRight;
-
-	private JQXButtonImagesPositions()
+	
+	JQXButtonImagesPositions()
 	{
-
+	
 	}
 }

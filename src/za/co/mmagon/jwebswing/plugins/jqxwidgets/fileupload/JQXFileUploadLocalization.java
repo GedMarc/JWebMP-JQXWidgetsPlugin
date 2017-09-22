@@ -26,15 +26,15 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXFileUploadLocalization extends JavaScriptPart
 {
-
+	
 	public JQXFileUploadLocalization()
 	{
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

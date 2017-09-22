@@ -52,6 +52,16 @@ public class JQXDefaultJavaScriptPart extends JavaScriptPart
 	}
 	
 	/**
+	 * Sets the theme name for the JQX Library
+	 *
+	 * @param theme
+	 */
+	public void setTheme(String theme)
+	{
+		this.theme = theme;
+	}
+	
+	/**
 	 * Sets the theme for the JQX Library
 	 *
 	 * @param theme
@@ -62,16 +72,6 @@ public class JQXDefaultJavaScriptPart extends JavaScriptPart
 		{
 			this.theme = theme.toString();
 		}
-	}
-	
-	/**
-	 * Sets the theme name for the JQX Library
-	 *
-	 * @param theme
-	 */
-	public void setTheme(String theme)
-	{
-		this.theme = theme;
 	}
 	
 	/**
@@ -89,9 +89,9 @@ public class JQXDefaultJavaScriptPart extends JavaScriptPart
 	 *
 	 * @param width
 	 */
-	public void setWidth(MeasurementCSSImpl width)
+	public void setWidth(Integer width)
 	{
-		this.width = width.toString(false);
+		this.width = width.toString();
 	}
 	
 	/**
@@ -99,9 +99,9 @@ public class JQXDefaultJavaScriptPart extends JavaScriptPart
 	 *
 	 * @param width
 	 */
-	public void setWidth(Integer width)
+	public void setWidth(MeasurementCSSImpl width)
 	{
-		this.width = width.toString();
+		this.width = width.toString(false);
 	}
 	
 	/**
@@ -119,9 +119,9 @@ public class JQXDefaultJavaScriptPart extends JavaScriptPart
 	 *
 	 * @param height
 	 */
-	public void setHeight(MeasurementCSSImpl height)
+	public void setHeight(Integer height)
 	{
-		this.height = height.toString(false);
+		this.height = height.toString();
 	}
 	
 	/**
@@ -129,8 +129,8 @@ public class JQXDefaultJavaScriptPart extends JavaScriptPart
 	 *
 	 * @param height
 	 */
-	public void setHeight(Integer height)
+	public void setHeight(MeasurementCSSImpl height)
 	{
-		this.height = height.toString();
+		this.height = height.toString(false);
 	}
 }

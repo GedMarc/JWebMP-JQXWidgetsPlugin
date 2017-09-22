@@ -26,17 +26,17 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 class JQXGridRowDetailsTemplate extends JavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	public JQXGridRowDetailsTemplate()
 	{
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

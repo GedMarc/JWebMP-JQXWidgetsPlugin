@@ -30,17 +30,20 @@ public class JQXBulletChartPointer extends JavaScriptPart
 	private String label;
 	private Integer thickness;
 	private ColourHex color;
+	
 	public JQXBulletChartPointer(Double value, String label, Integer thickness)
 	{
 		this.value = value;
 		this.label = label;
 		this.thickness = thickness;
 	}
+	
 	public JQXBulletChartPointer(Double value, ColourHex color)
 	{
 		this.value = value;
 		this.color = color;
 	}
+	
 	public JQXBulletChartPointer(Double value, String label, ColourHex color)
 	{
 		this.value = value;

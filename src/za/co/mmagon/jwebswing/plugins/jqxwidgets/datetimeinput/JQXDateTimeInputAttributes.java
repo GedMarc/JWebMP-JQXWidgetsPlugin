@@ -24,7 +24,7 @@ import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 public enum JQXDateTimeInputAttributes implements AttributeDefinitions
 {
 	Visibility;
-
+	
 	@Override
 	public boolean isKeyword()
 	{

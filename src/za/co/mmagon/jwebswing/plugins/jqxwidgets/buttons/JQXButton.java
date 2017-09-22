@@ -36,11 +36,11 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildren, ListItemChildren
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private JQXButtonFeature feature;
-
+	
 	/**
 	 * Constructs a new button feature with the given text
 	 *
@@ -51,7 +51,7 @@ public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildr
 		super(text);
 		addFeature(getFeature());
 	}
-
+	
 	/**
 	 * Constructs a new JQX Button
 	 */
@@ -59,7 +59,7 @@ public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildr
 	{
 		addFeature(getFeature());
 	}
-
+	
 	@Override
 	public void preConfigure()
 	{
@@ -68,7 +68,7 @@ public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildr
 		}
 		super.preConfigure();
 	}
-
+	
 	/**
 	 * Returns the features
 	 *
@@ -82,7 +82,7 @@ public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildr
 		}
 		return feature;
 	}
-
+	
 	/**
 	 * Returns the button options
 	 *
@@ -93,5 +93,5 @@ public class JQXButton extends Button implements JQXNavBarChildren, GlobalChildr
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDocking extends Div<JQXDockingChildren, JQXDockingAttributes, JQXDockingFeature, JQXDockingEvents, JQXDocking>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXDockingFeature feature;
-
+	
 	public JQXDocking()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXDockingFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,11 @@ public class JQXDocking extends Div<JQXDockingChildren, JQXDockingAttributes, JQ
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXDockingOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

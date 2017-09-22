@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXExpander extends Div<JQXExpanderChildren, JQXExpanderAttributes, JQXExpanderFeature, JQXExpanderEvents, JQXExpander>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXExpanderFeature feature;
-
+	
 	public JQXExpander()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXExpanderFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,11 @@ public class JQXExpander extends Div<JQXExpanderChildren, JQXExpanderAttributes,
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXExpanderOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

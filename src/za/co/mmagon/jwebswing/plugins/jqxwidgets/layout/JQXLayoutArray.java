@@ -194,14 +194,14 @@ public class JQXLayoutArray extends JavaScriptPart
 		return contentContainer;
 	}
 
-	public void setContentContainer(String contentContainer)
-	{
-		this.contentContainer = contentContainer;
-	}
-
 	public void setContentContainer(Component contentContainer)
 	{
 		this.contentContainer = contentContainer.getID();
+	}
+	
+	public void setContentContainer(String contentContainer)
+	{
+		this.contentContainer = contentContainer;
 	}
 
 	public String getHeight()
@@ -209,12 +209,12 @@ public class JQXLayoutArray extends JavaScriptPart
 		return height;
 	}
 
-	public void setHeight(MeasurementCSSImpl height)
+	public void setHeight(Integer height)
 	{
 		this.height = height.toString();
 	}
-
-	public void setHeight(Integer height)
+	
+	public void setHeight(MeasurementCSSImpl height)
 	{
 		this.height = height.toString();
 	}
@@ -244,12 +244,12 @@ public class JQXLayoutArray extends JavaScriptPart
 		return minWidth;
 	}
 
-	public void setMinWidth(MeasurementCSSImpl minWidth)
+	public void setMinWidth(Integer minWidth)
 	{
 		this.minWidth = minWidth.toString();
 	}
-
-	public void setMinWidth(Integer minWidth)
+	
+	public void setMinWidth(MeasurementCSSImpl minWidth)
 	{
 		this.minWidth = minWidth.toString();
 	}
@@ -329,12 +329,12 @@ public class JQXLayoutArray extends JavaScriptPart
 		return width;
 	}
 
-	public void setWidth(MeasurementCSSImpl width)
+	public void setWidth(Integer width)
 	{
 		this.width = width.toString();
 	}
-
-	public void setWidth(Integer width)
+	
+	public void setWidth(MeasurementCSSImpl width)
 	{
 		this.width = width.toString();
 	}

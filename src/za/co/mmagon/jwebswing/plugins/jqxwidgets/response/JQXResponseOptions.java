@@ -30,7 +30,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXResponseOptions extends JavaScriptPart
 {
-
+	
 	private String browser;// 	Returns information about the Browser.
 	private String device;// 	Returns information about the Device.
 	private String document;// 	Returns information about the document.
@@ -42,120 +42,120 @@ public class JQXResponseOptions extends JavaScriptPart
 	private String refresh;// 	Refreshes the plug-in properties.
 	private String scroll;// 	Returns information about the Scrollbars position.
 	private String viewPort;// 	Returns information about the view port.
-
+	
 	public JQXResponseOptions()
 	{
-
+	
 	}
-
+	
 	public String getBrowser()
 	{
 		return browser;
 	}
-
+	
 	public void setBrowser(String browser)
 	{
 		this.browser = browser;
 	}
-
+	
 	public String getDevice()
 	{
 		return device;
 	}
-
+	
 	public void setDevice(String device)
 	{
 		this.device = device;
 	}
-
+	
 	public String getDocument()
 	{
 		return document;
 	}
-
+	
 	public void setDocument(String document)
 	{
 		this.document = document;
 	}
-
+	
 	public String getDestroy()
 	{
 		return destroy;
 	}
-
+	
 	public void setDestroy(String destroy)
 	{
 		this.destroy = destroy;
 	}
-
+	
 	public String getResize()
 	{
 		return resize;
 	}
-
+	
 	public void setResize(String resize)
 	{
 		this.resize = resize;
 	}
-
+	
 	public String getIsHidden()
 	{
 		return isHidden;
 	}
-
+	
 	public void setIsHidden(String isHidden)
 	{
 		this.isHidden = isHidden;
 	}
-
+	
 	public String getInViewPort()
 	{
 		return inViewPort;
 	}
-
+	
 	public void setInViewPort(String inViewPort)
 	{
 		this.inViewPort = inViewPort;
 	}
-
+	
 	public String getOs()
 	{
 		return os;
 	}
-
+	
 	public void setOs(String os)
 	{
 		this.os = os;
 	}
-
+	
 	public String getRefresh()
 	{
 		return refresh;
 	}
-
+	
 	public void setRefresh(String refresh)
 	{
 		this.refresh = refresh;
 	}
-
+	
 	public String getScroll()
 	{
 		return scroll;
 	}
-
+	
 	public void setScroll(String scroll)
 	{
 		this.scroll = scroll;
 	}
-
+	
 	public String getViewPort()
 	{
 		return viewPort;
 	}
-
+	
 	public void setViewPort(String viewPort)
 	{
 		this.viewPort = viewPort;
 	}
-
+	
 }

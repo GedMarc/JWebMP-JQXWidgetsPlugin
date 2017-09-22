@@ -26,17 +26,17 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 class JQXSelectedRowIndexes extends JavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	public JQXSelectedRowIndexes()
 	{
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

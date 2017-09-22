@@ -57,15 +57,15 @@ public enum JQXDockingLayoutType
 	 * A floating group that can contain a tabbedGroup or a layoutPanel. It is represented by a jqxWindow. Initial floatGroups have to be defined after the root layoutGroup in the layout array.
 	 */
 	floatGroup,;
-
-	private JQXDockingLayoutType()
+	
+	JQXDockingLayoutType()
 	{
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

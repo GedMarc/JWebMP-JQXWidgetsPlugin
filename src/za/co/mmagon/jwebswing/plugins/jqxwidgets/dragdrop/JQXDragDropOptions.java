@@ -31,9 +31,9 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXDragDropOptions extends JavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private String appendTo;// 	String 	'parent'
 	private Boolean disabled;// 	Boolean 	false
 	private Integer distance;// 	Number 	5
@@ -54,140 +54,140 @@ public class JQXDragDropOptions extends JavaScriptPart
 	private Boolean revert;// 	Boolean 	false
 	private Integer revertDuration;// 	Number 	400
 	private JQXDragDropTolerance tolerance;// 	String 	'intersect'
-
+	
 	public JQXDragDropOptions()
 	{
-
+	
 	}
-
+	
 	public String getAppendTo()
 	{
 		return appendTo;
 	}
-
+	
 	public void setAppendTo(Component appendTo)
 	{
 		this.appendTo = appendTo.getID(true);
 	}
-
+	
 	public Boolean getDisabled()
 	{
 		return disabled;
 	}
-
+	
 	public void setDisabled(Boolean disabled)
 	{
 		this.disabled = disabled;
 	}
-
+	
 	public Integer getDistance()
 	{
 		return distance;
 	}
-
+	
 	public void setDistance(Integer distance)
 	{
 		this.distance = distance;
 	}
-
+	
 	public JQXDragDropData getData()
 	{
 		return data;
 	}
-
+	
 	public void setData(JQXDragDropData data)
 	{
 		this.data = data;
 	}
-
+	
 	public JQXDropAction getDropAction()
 	{
 		return dropAction;
 	}
-
+	
 	public void setDropAction(JQXDropAction dropAction)
 	{
 		this.dropAction = dropAction;
 	}
-
+	
 	public Component getDropTarget()
 	{
 		return dropTarget;
 	}
-
+	
 	public void setDropTarget(Component dropTarget)
 	{
 		this.dropTarget = dropTarget;
 	}
-
+	
 	public Integer getDragZIndex()
 	{
 		return dragZIndex;
 	}
-
+	
 	public void setDragZIndex(Integer dragZIndex)
 	{
 		this.dragZIndex = dragZIndex;
 	}
-
+	
 	public JQXDropFeedback getFeedback()
 	{
 		return feedback;
 	}
-
+	
 	public void setFeedback(JQXDropFeedback feedback)
 	{
 		this.feedback = feedback;
 	}
-
+	
 	public Double getOpacity()
 	{
 		return opacity;
 	}
-
+	
 	public void setOpacity(Double opacity)
 	{
 		this.opacity = opacity;
 	}
-
+	
 	public String getRestricter()
 	{
 		return restricter;
 	}
-
+	
 	public void setRestricter(Component restricter)
 	{
 		this.restricter = restricter.getID(true);
 	}
-
+	
 	public Boolean getRevert()
 	{
 		return revert;
 	}
-
+	
 	public void setRevert(Boolean revert)
 	{
 		this.revert = revert;
 	}
-
+	
 	public Integer getRevertDuration()
 	{
 		return revertDuration;
 	}
-
+	
 	public void setRevertDuration(Integer revertDuration)
 	{
 		this.revertDuration = revertDuration;
 	}
-
+	
 	public JQXDragDropTolerance getTolerance()
 	{
 		return tolerance;
 	}
-
+	
 	public void setTolerance(JQXDragDropTolerance tolerance)
 	{
 		this.tolerance = tolerance;
 	}
-
+	
 }

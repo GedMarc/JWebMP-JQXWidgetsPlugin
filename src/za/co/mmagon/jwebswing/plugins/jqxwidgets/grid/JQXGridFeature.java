@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXGridFeature extends Feature<JQXGridOptions, JQXGridFeature> implements JQXGridFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXGrid forComponent;
 	private JQXGridOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -66,7 +66,7 @@ public class JQXGridFeature extends Feature<JQXGridOptions, JQXGridFeature> impl
 		getJavascriptReferences().add(JQXReferencePool.GridAggregatesPlugIn.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -82,7 +82,7 @@ public class JQXGridFeature extends Feature<JQXGridOptions, JQXGridFeature> impl
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -91,6 +91,6 @@ public class JQXGridFeature extends Feature<JQXGridOptions, JQXGridFeature> impl
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

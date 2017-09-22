@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXDragDropFeature extends Feature<JQXDragDropOptions, JQXDragDropFeature> implements JQXDragDropFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXDragDrop forComponent;
 	private JQXDragDropOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -51,7 +51,7 @@ public class JQXDragDropFeature extends Feature<JQXDragDropOptions, JQXDragDropF
 		getJavascriptReferences().add(JQXReferencePool.DragDrop.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,7 +67,7 @@ public class JQXDragDropFeature extends Feature<JQXDragDropOptions, JQXDragDropF
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -76,6 +76,6 @@ public class JQXDragDropFeature extends Feature<JQXDragDropOptions, JQXDragDropF
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

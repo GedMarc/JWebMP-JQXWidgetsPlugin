@@ -31,7 +31,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
  */
 public class JQXTabsOptions extends JQXDefaultJavaScriptPart
 {
-
+	
 	private JQXTabsAnimationTypes animationType;// 	String 	none
 	private Boolean autoHeight;// 	Boolean 	true
 	private Integer closeButtonSize;// 	Number 	16
@@ -53,220 +53,220 @@ public class JQXTabsOptions extends JQXDefaultJavaScriptPart
 	private Integer scrollStep;// 	Number 	70
 	private Boolean showCloseButtons;// 	Boolean 	false
 	private JQXTabsToggleModes toggleMode;// 	String 	click
-
+	
 	public JQXTabsOptions()
 	{
-
+	
 	}
-
+	
 	public JQXTabsAnimationTypes getAnimationType()
 	{
 		return animationType;
 	}
-
+	
 	public void setAnimationType(JQXTabsAnimationTypes animationType)
 	{
 		this.animationType = animationType;
 	}
-
+	
 	public Boolean getAutoHeight()
 	{
 		return autoHeight;
 	}
-
+	
 	public void setAutoHeight(Boolean autoHeight)
 	{
 		this.autoHeight = autoHeight;
 	}
-
+	
 	public Integer getCloseButtonSize()
 	{
 		return closeButtonSize;
 	}
-
+	
 	public void setCloseButtonSize(Integer closeButtonSize)
 	{
 		this.closeButtonSize = closeButtonSize;
 	}
-
+	
 	public Boolean getCollapsible()
 	{
 		return collapsible;
 	}
-
+	
 	public void setCollapsible(Boolean collapsible)
 	{
 		this.collapsible = collapsible;
 	}
-
+	
 	public Integer getContentTransitionDuration()
 	{
 		return contentTransitionDuration;
 	}
-
+	
 	public void setContentTransitionDuration(Integer contentTransitionDuration)
 	{
 		this.contentTransitionDuration = contentTransitionDuration;
 	}
-
+	
 	public Boolean getDisabled()
 	{
 		return disabled;
 	}
-
+	
 	public void setDisabled(Boolean disabled)
 	{
 		this.disabled = disabled;
 	}
-
+	
 	public Boolean getEnabledHover()
 	{
 		return enabledHover;
 	}
-
+	
 	public void setEnabledHover(Boolean enabledHover)
 	{
 		this.enabledHover = enabledHover;
 	}
-
+	
 	public Boolean getEnableScrollAnimation()
 	{
 		return enableScrollAnimation;
 	}
-
+	
 	public void setEnableScrollAnimation(Boolean enableScrollAnimation)
 	{
 		this.enableScrollAnimation = enableScrollAnimation;
 	}
-
+	
 	public JavascriptFunction getInitTabContent()
 	{
 		return initTabContent;
 	}
-
+	
 	public void setInitTabContent(JavascriptFunction initTabContent)
 	{
 		this.initTabContent = initTabContent;
 	}
-
+	
 	public Boolean getKeyboardNavigation()
 	{
 		return keyboardNavigation;
 	}
-
+	
 	public void setKeyboardNavigation(Boolean keyboardNavigation)
 	{
 		this.keyboardNavigation = keyboardNavigation;
 	}
-
+	
 	public JQXTabPositions getPosition()
 	{
 		return position;
 	}
-
+	
 	public void setPosition(JQXTabPositions position)
 	{
 		this.position = position;
 	}
-
+	
 	public Boolean getReorder()
 	{
 		return reorder;
 	}
-
+	
 	public void setReorder(Boolean reorder)
 	{
 		this.reorder = reorder;
 	}
-
+	
 	public Boolean getRtl()
 	{
 		return rtl;
 	}
-
+	
 	public void setRtl(Boolean rtl)
 	{
 		this.rtl = rtl;
 	}
-
+	
 	public Integer getScrollAnimationDuration()
 	{
 		return scrollAnimationDuration;
 	}
-
+	
 	public void setScrollAnimationDuration(Integer scrollAnimationDuration)
 	{
 		this.scrollAnimationDuration = scrollAnimationDuration;
 	}
-
+	
 	public Integer getSelectedItem()
 	{
 		return selectedItem;
 	}
-
+	
 	public void setSelectedItem(Integer selectedItem)
 	{
 		this.selectedItem = selectedItem;
 	}
-
+	
 	public Boolean getSelectionTracker()
 	{
 		return selectionTracker;
 	}
-
+	
 	public void setSelectionTracker(Boolean selectionTracker)
 	{
 		this.selectionTracker = selectionTracker;
 	}
-
+	
 	public Boolean getScrollable()
 	{
 		return scrollable;
 	}
-
+	
 	public void setScrollable(Boolean scrollable)
 	{
 		this.scrollable = scrollable;
 	}
-
+	
 	public JQXTabsScrollPositions getScrollPosition()
 	{
 		return scrollPosition;
 	}
-
+	
 	public void setScrollPosition(JQXTabsScrollPositions scrollPosition)
 	{
 		this.scrollPosition = scrollPosition;
 	}
-
+	
 	public Integer getScrollStep()
 	{
 		return scrollStep;
 	}
-
+	
 	public void setScrollStep(Integer scrollStep)
 	{
 		this.scrollStep = scrollStep;
 	}
-
+	
 	public Boolean getShowCloseButtons()
 	{
 		return showCloseButtons;
 	}
-
+	
 	public void setShowCloseButtons(Boolean showCloseButtons)
 	{
 		this.showCloseButtons = showCloseButtons;
 	}
-
+	
 	public JQXTabsToggleModes getToggleMode()
 	{
 		return toggleMode;
 	}
-
+	
 	public void setToggleMode(JQXTabsToggleModes toggleMode)
 	{
 		this.toggleMode = toggleMode;
 	}
-
+	
 }

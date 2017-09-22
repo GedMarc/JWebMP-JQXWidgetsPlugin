@@ -26,11 +26,11 @@ public enum JQXDropAction
 {
 	Default,
 	None;
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

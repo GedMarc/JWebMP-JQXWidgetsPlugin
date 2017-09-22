@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXDockingFeature extends Feature<JQXDockingOptions, JQXDockingFeature> implements JQXDockingFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXDocking forComponent;
 	private JQXDockingOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -52,7 +52,7 @@ public class JQXDockingFeature extends Feature<JQXDockingOptions, JQXDockingFeat
 		getJavascriptReferences().add(JQXReferencePool.Window.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -68,7 +68,7 @@ public class JQXDockingFeature extends Feature<JQXDockingOptions, JQXDockingFeat
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -77,6 +77,6 @@ public class JQXDockingFeature extends Feature<JQXDockingOptions, JQXDockingFeat
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

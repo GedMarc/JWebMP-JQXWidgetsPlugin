@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXGrid extends Div<JQXGridChildren, JQXGridAttributes, JQXGridFeature, JQXGridEvents, JQXGrid>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private JQXGridFeature feature;
-
+	
 	public JQXGrid()
 	{
 		addFeature(getFeature());
 	}
-
+	
 	public JQXGridFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,11 @@ public class JQXGrid extends Div<JQXGridChildren, JQXGridAttributes, JQXGridFeat
 		}
 		return feature;
 	}
-
+	
 	@Override
 	public JQXGridOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

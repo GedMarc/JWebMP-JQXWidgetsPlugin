@@ -31,12 +31,12 @@ import java.util.ArrayList;
  */
 public class JQXSplitterFeature extends Feature<JQXSplitterOptions, JQXSplitterFeature> implements JQXSplitterFeatures, GlobalFeatures
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	private final JQXSplitter forComponent;
 	private JQXSplitterOptions options;
-
+	
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -52,7 +52,7 @@ public class JQXSplitterFeature extends Feature<JQXSplitterOptions, JQXSplitterF
 		getJavascriptReferences().add(JQXReferencePool.Splitter.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-
+	
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -68,7 +68,7 @@ public class JQXSplitterFeature extends Feature<JQXSplitterOptions, JQXSplitterF
 		}
 		return options;
 	}
-
+	
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -77,6 +77,6 @@ public class JQXSplitterFeature extends Feature<JQXSplitterOptions, JQXSplitterF
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-
+		
 	}
 }

@@ -16,7 +16,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.buttons;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import za.co.mmagon.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXRoundedCornerTypes;
@@ -25,7 +25,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButtonOptions;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButtonTemplates;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButtonTextImageRelation;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author GedMarc

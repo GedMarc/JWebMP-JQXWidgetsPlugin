@@ -16,8 +16,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.dataadapter;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist.JQXDropDownListNameValuePair;
@@ -32,12 +31,8 @@ public class JQXDataAdapterTest
 	public JQXDataAdapterTest()
 	{
 	}
-
-	@Before
-	public void setUp()
-	{
-	}
-
+	
+	
 	@Test
 	public void testSomeMethod()
 	{

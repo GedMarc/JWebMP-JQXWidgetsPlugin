@@ -16,8 +16,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.buttons;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButton;
 
 /**
@@ -29,12 +28,8 @@ public class JQXButtonTest
 	public JQXButtonTest()
 	{
 	}
-
-	@Before
-	public void setUp()
-	{
-	}
-
+	
+	
 	@Test
 	public void testHtml()
 	{

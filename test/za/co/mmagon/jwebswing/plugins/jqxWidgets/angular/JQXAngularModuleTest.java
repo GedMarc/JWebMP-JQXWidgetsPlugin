@@ -16,8 +16,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.angular;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import za.co.mmagon.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.angular.JQXAngularModule;
@@ -31,12 +30,8 @@ public class JQXAngularModuleTest extends BaseTestClass
 	public JQXAngularModuleTest()
 	{
 	}
-
-	@Before
-	public void setUp()
-	{
-	}
-
+	
+	
 	@Test
 	public void testSomeMethod()
 	{

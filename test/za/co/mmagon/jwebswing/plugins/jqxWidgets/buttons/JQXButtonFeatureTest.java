@@ -16,12 +16,12 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.buttons;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButton;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButtonTemplates;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.themes.JQXWidgetThemes;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author GedMarc

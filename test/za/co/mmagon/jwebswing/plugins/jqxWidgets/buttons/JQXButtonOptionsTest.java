@@ -17,7 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxWidgets.buttons;
 
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.BaseTestClass;
+import za.co.mmagon.jwebswing.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXRoundedCornerTypes;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButtonImagesPositions;

@@ -80,6 +80,34 @@ public class JQXRibbonFeature extends Feature<JQXRibbonOptions, JQXRibbonFeature
 		addQuery(requiredString);
 
 		addQuery("jqxWidgetPostCallClassFix('" + getComponent().getID() + "');" + getNewLine());
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXRibbonFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXRibbonFeature that = (JQXRibbonFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

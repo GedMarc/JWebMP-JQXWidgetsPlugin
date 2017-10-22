@@ -19,8 +19,6 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.editor;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
-import java.io.Serializable;
-
 /**
  * All the options for the JQXEditor library
  * <p>
@@ -38,7 +36,7 @@ public class JQXEditorOptions extends JQXDefaultJavaScriptPart
 	private Boolean disabled;// 	Boolean 	false
 	private Boolean editable;// 	Boolean 	true
 	private String lineBreak;// 	String 	"default"
-	private Serializable localization;// 	Object 	{ "bold": "Bold", "italic": "Italic", "underline": "Underline", "format": "Format Block", "font": "Font Name", "size": "Font Size", "color": "Text Color", "background": "Fill Color", "left": "Align Left", "center": "Align Center", "right": "Align Right", "outdent": "Indent Less", "indent": "Indent More", "ul": "Insert unordered list", "ol": "Insert ordered list", "image": "Insert image", "link": "Insert link", "html": "View source", "clean": "Remove Formatting" }
+	private JQXEditorLocalizationOptions localization;
 	private String pasteMode;// 	String 	"html"
 	private Boolean rtl;// 	Boolean 	false
 	//stylesheets 	Array 	[]
@@ -130,4 +128,17 @@ public class JQXEditorOptions extends JQXDefaultJavaScriptPart
 		this.tools = tools;
 	}
 
+	public JQXEditorLocalizationOptions getLocalization()
+	{
+		if (localization == null)
+		{
+			localization = new JQXEditorLocalizationOptions();
+		}
+		return localization;
+	}
+
+	public void setLocalization(JQXEditorLocalizationOptions localization)
+	{
+		this.localization = localization;
+	}
 }

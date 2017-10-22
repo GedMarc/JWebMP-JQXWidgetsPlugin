@@ -22,6 +22,7 @@ import za.co.mmagon.jwebswing.base.html.attributes.NoAttributes;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.panel.JQXPanel;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -152,8 +153,10 @@ public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFea
 		return result;
 	}
 
-	public static class JQXRibbonItem
+	public static class JQXRibbonItem implements Serializable
 	{
+
+		private static final long serialVersionUID = 1L;
 
 		private ListItem header;
 		private Div content;

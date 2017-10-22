@@ -82,4 +82,33 @@ public class JQXTreeFeature extends Feature<JQXTreeOptions, JQXTreeFeature> impl
 			addQuery(getComponent().getJQueryID() + "jqxTree(" + "'expandAll'" + ");" + getNewLine());
 		}
 	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXTreeFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXTreeFeature that = (JQXTreeFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
+	}
 }

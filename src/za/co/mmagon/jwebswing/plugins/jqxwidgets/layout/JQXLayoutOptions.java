@@ -19,6 +19,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.layout;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -26,15 +27,15 @@ import java.util.ArrayList;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXLayoutOptions extends JQXDefaultJavaScriptPart
 {
 
 	private Boolean contextMenu;// 	Boolean 	false
-	private ArrayList<JQXLayoutArray> layout;// 	Array 	[]
+	private List<JQXLayoutArray> layout;// 	Array 	[]
 	private Integer minGroupHeight;// 	Number 	100
 	private Integer minGroupWidth;// 	Number 	100
 	private Boolean resizable;// 	Boolean 	true
@@ -42,7 +43,7 @@ public class JQXLayoutOptions extends JQXDefaultJavaScriptPart
 
 	public JQXLayoutOptions()
 	{
-
+		//Nothing Needed
 	}
 
 	public Boolean getContextMenu()
@@ -55,7 +56,7 @@ public class JQXLayoutOptions extends JQXDefaultJavaScriptPart
 		this.contextMenu = contextMenu;
 	}
 
-	public ArrayList<JQXLayoutArray> getLayout()
+	public List<JQXLayoutArray> getLayout()
 	{
 		if (layout == null)
 		{
@@ -64,7 +65,7 @@ public class JQXLayoutOptions extends JQXDefaultJavaScriptPart
 		return layout;
 	}
 
-	public void setLayout(ArrayList<JQXLayoutArray> layout)
+	public void setLayout(List<JQXLayoutArray> layout)
 	{
 		this.layout = layout;
 	}

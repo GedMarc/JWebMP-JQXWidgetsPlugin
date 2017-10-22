@@ -20,17 +20,19 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class
+ * Object 	{ size: '10%', style: { stroke: '#cccccc'}, visible: true, showGradient: true }
  *
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGaugeBorder extends JavaScriptPart
+public class JQXGaugeBorder extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public JQXGaugeBorder()
 	{
+		//Nothing Needed
 	}
 
 	@Override

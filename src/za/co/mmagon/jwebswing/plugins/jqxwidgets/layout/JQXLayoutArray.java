@@ -24,6 +24,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dockinglayout.JQXDockingLayoutAlignment;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This Class
@@ -127,10 +128,11 @@ public class JQXLayoutArray extends JavaScriptPart
 	/**
 	 * - an array of item objects with the fields described above. N/A to panels.
 	 */
-	private ArrayList<JQXLayoutArray> items;
+	private List<JQXLayoutArray> items;
 
 	public JQXLayoutArray()
 	{
+		//Nothing Needed
 	}
 
 	@Override
@@ -198,7 +200,7 @@ public class JQXLayoutArray extends JavaScriptPart
 	{
 		this.contentContainer = contentContainer.getID();
 	}
-	
+
 	public void setContentContainer(String contentContainer)
 	{
 		this.contentContainer = contentContainer;
@@ -213,7 +215,7 @@ public class JQXLayoutArray extends JavaScriptPart
 	{
 		this.height = height.toString();
 	}
-	
+
 	public void setHeight(MeasurementCSSImpl height)
 	{
 		this.height = height.toString();
@@ -248,7 +250,7 @@ public class JQXLayoutArray extends JavaScriptPart
 	{
 		this.minWidth = minWidth.toString();
 	}
-	
+
 	public void setMinWidth(MeasurementCSSImpl minWidth)
 	{
 		this.minWidth = minWidth.toString();
@@ -333,13 +335,13 @@ public class JQXLayoutArray extends JavaScriptPart
 	{
 		this.width = width.toString();
 	}
-	
+
 	public void setWidth(MeasurementCSSImpl width)
 	{
 		this.width = width.toString();
 	}
 
-	public ArrayList<JQXLayoutArray> getItems()
+	public List<JQXLayoutArray> getItems()
 	{
 		if (items == null)
 		{
@@ -348,7 +350,7 @@ public class JQXLayoutArray extends JavaScriptPart
 		return items;
 	}
 
-	public void setItems(ArrayList<JQXLayoutArray> items)
+	public void setItems(List<JQXLayoutArray> items)
 	{
 		this.items = items;
 	}

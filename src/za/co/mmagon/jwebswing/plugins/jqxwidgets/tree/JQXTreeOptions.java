@@ -22,6 +22,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -29,15 +30,15 @@ import java.util.ArrayList;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer animationShowDuration;// 	Number 	350
 	private Integer animationHideDuration;// 	Number 	fast
 	private Boolean allowDrag;// 	Boolean 	false
@@ -52,22 +53,22 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	private Boolean incrementalSearch;// 	Boolean 	true
 	private Boolean keyboardNavigation;// 	Boolean 	true
 	private Boolean rtl;// 	Boolean 	false
-	private ArrayList<JQXTreeItem> source;// 	Object 	null
+	private List<JQXTreeItem> source;// 	Object 	null
 	private JQXDataAdapter<JQXTreeItem, ? extends JQXDataAdapter> sourceAdapter;
 	private Integer toggleIndicatorSize;// 	Number 	16
 	private JQXTreeToggleModes toggleMode;// 	String 	dblclick
-	
+
 	/**
 	 * Runs the expand all method
 	 */
 	@JsonIgnore
 	private boolean expandAll;
-	
+
 	public JQXTreeOptions()
 	{
-	
+		//Nothing Needed
 	}
-	
+
 	/**
 	 * Gets the show animation duration
 	 *
@@ -77,7 +78,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return animationShowDuration;
 	}
-	
+
 	/**
 	 * Sets the show animation duration
 	 *
@@ -87,7 +88,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.animationShowDuration = animationShowDuration;
 	}
-	
+
 	/**
 	 * Gets the animation hide duration
 	 *
@@ -97,7 +98,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return animationHideDuration;
 	}
-	
+
 	/**
 	 * Sets the animation Hide Duration
 	 *
@@ -107,7 +108,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.animationHideDuration = animationHideDuration;
 	}
-	
+
 	/**
 	 * Gets if the tree can be dragged and dropped
 	 *
@@ -117,7 +118,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return allowDrag;
 	}
-	
+
 	/**
 	 * Sets if to allow drag
 	 *
@@ -127,7 +128,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.allowDrag = allowDrag;
 	}
-	
+
 	/**
 	 * Gets allow drop
 	 *
@@ -137,7 +138,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return allowDrop;
 	}
-	
+
 	/**
 	 * Sets allow drop
 	 *
@@ -147,7 +148,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.allowDrop = allowDrop;
 	}
-	
+
 	/**
 	 * Gets check-boxes
 	 *
@@ -157,7 +158,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return checkboxes;
 	}
-	
+
 	/**
 	 * Sets if must allow check-boxes
 	 *
@@ -167,7 +168,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.checkboxes = checkboxes;
 	}
-	
+
 	/**
 	 * Sets the drag start?
 	 *
@@ -177,7 +178,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return dragStart;
 	}
-	
+
 	/**
 	 * Sets the drag start?
 	 *
@@ -187,7 +188,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.dragStart = dragStart;
 	}
-	
+
 	/**
 	 * Sets the drag end
 	 *
@@ -197,7 +198,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return dragEnd;
 	}
-	
+
 	/**
 	 * Sets the drag end
 	 *
@@ -207,7 +208,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.dragEnd = dragEnd;
 	}
-	
+
 	/**
 	 * Sets if disabled
 	 *
@@ -217,7 +218,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return disabled;
 	}
-	
+
 	/**
 	 * Gets if disabled
 	 *
@@ -227,7 +228,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.disabled = disabled;
 	}
-	
+
 	/**
 	 * Sets easing
 	 *
@@ -237,7 +238,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return easing;
 	}
-	
+
 	/**
 	 * Gets easing
 	 *
@@ -247,7 +248,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.easing = easing;
 	}
-	
+
 	/**
 	 * Whether to enable hover selected
 	 *
@@ -257,7 +258,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return enableHover;
 	}
-	
+
 	/**
 	 * Sets to enable hover selected
 	 *
@@ -267,7 +268,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.enableHover = enableHover;
 	}
-	
+
 	/**
 	 * Whether or not the tree has three states
 	 *
@@ -277,7 +278,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return hasThreeStates;
 	}
-	
+
 	/**
 	 * If the tree has 3 states
 	 *
@@ -287,7 +288,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.hasThreeStates = hasThreeStates;
 	}
-	
+
 	/**
 	 * Sets if there must be an incremental search
 	 *
@@ -297,7 +298,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return incrementalSearch;
 	}
-	
+
 	/**
 	 * Sets if there must be an incremental search
 	 *
@@ -307,7 +308,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.incrementalSearch = incrementalSearch;
 	}
-	
+
 	/**
 	 * Gets the keyboard navigation
 	 *
@@ -317,7 +318,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return keyboardNavigation;
 	}
-	
+
 	/**
 	 * Sets the keyboard navigation
 	 *
@@ -327,7 +328,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.keyboardNavigation = keyboardNavigation;
 	}
-	
+
 	/**
 	 * Gets the RTL
 	 *
@@ -337,7 +338,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return rtl;
 	}
-	
+
 	/**
 	 * Sets the Right to left
 	 *
@@ -347,13 +348,13 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.rtl = rtl;
 	}
-	
+
 	/**
 	 * Gets in-line source
 	 *
 	 * @return
 	 */
-	public ArrayList<JQXTreeItem> getSource()
+	public List<JQXTreeItem> getSource()
 	{
 		if (source == null)
 		{
@@ -361,17 +362,17 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 		}
 		return source;
 	}
-	
+
 	/**
 	 * Sets the source to a tree item list
 	 *
 	 * @param source
 	 */
-	public void setSource(ArrayList<JQXTreeItem> source)
+	public void setSource(List<JQXTreeItem> source)
 	{
 		this.source = source;
 	}
-	
+
 	/**
 	 * Gets an ajax adapter for the source
 	 *
@@ -381,7 +382,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return sourceAdapter;
 	}
-	
+
 	/**
 	 * Sets the ajax adapter for the source
 	 *
@@ -391,7 +392,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.sourceAdapter = sourceAdapter;
 	}
-	
+
 	/**
 	 * Gets the toggle indicator size
 	 *
@@ -401,7 +402,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return toggleIndicatorSize;
 	}
-	
+
 	/**
 	 * Sets the toggle indicator size
 	 *
@@ -411,7 +412,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.toggleIndicatorSize = toggleIndicatorSize;
 	}
-	
+
 	/**
 	 * Gets the toggle mode
 	 *
@@ -421,7 +422,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return toggleMode;
 	}
-	
+
 	/**
 	 * Sets the toggle mode
 	 *
@@ -431,7 +432,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.toggleMode = toggleMode;
 	}
-	
+
 	/**
 	 * Runs the expand all method
 	 *
@@ -441,7 +442,7 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		return expandAll;
 	}
-	
+
 	/**
 	 * Runs the expand all method
 	 *
@@ -451,5 +452,5 @@ public class JQXTreeOptions extends JQXDefaultJavaScriptPart
 	{
 		this.expandAll = expandAll;
 	}
-	
+
 }

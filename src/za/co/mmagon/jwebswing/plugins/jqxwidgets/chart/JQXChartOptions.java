@@ -21,21 +21,22 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options for the JQX Chart library
  * <p>
+ * TODO complete this
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXChartOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public JQXChartOptions()
 	{
-	
+		//Nothing Needed
 	}
-	
+
 }

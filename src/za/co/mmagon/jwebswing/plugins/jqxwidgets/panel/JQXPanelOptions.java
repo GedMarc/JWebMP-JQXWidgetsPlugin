@@ -24,8 +24,8 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXPanelOptions extends JQXDefaultJavaScriptPart
@@ -39,7 +39,7 @@ public class JQXPanelOptions extends JQXDefaultJavaScriptPart
 
 	public JQXPanelOptions()
 	{
-
+		//Nothing Needed
 	}
 
 	public Boolean getAutoUpdate()

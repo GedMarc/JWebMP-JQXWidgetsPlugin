@@ -20,17 +20,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class
+ * <p>
+ * Object 	{ size: '10%', interval: 5, style: { stroke: '#898989'}, visible: true }
  *
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGaugeTick extends JavaScriptPart
+public class JQXGaugeTick extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public JQXGaugeTick()
 	{
+		//Nothing Needed
 	}
 
 	@Override

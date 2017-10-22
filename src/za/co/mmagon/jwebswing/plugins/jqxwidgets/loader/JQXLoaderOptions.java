@@ -28,8 +28,8 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXLoaderOptions extends JavaScriptPart
@@ -48,7 +48,7 @@ public class JQXLoaderOptions extends JavaScriptPart
 
 	public JQXLoaderOptions()
 	{
-
+		//Nothing Needed
 	}
 
 	@Override

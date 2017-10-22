@@ -24,28 +24,28 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXDrawOptions extends JavaScriptPart
 {
-	
+
 	private String renderEngine;// 	String 	'' vv
-	
+
 	public JQXDrawOptions()
 	{
-	
+		//Draw options
 	}
-	
+
 	public String getRenderEngine()
 	{
 		return renderEngine;
 	}
-	
+
 	public void setRenderEngine(String renderEngine)
 	{
 		this.renderEngine = renderEngine;
 	}
-	
+
 }

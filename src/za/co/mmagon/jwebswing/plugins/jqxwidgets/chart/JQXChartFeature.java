@@ -29,12 +29,12 @@ import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
  */
 public class JQXChartFeature extends Feature<JQXChartOptions, JQXChartFeature> implements JQXChartFeatures, GlobalFeatures
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private final JQXChart forComponent;
 	private JQXChartOptions options;
-	
+
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -51,7 +51,7 @@ public class JQXChartFeature extends Feature<JQXChartOptions, JQXChartFeature> i
 		getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-	
+
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,7 +67,7 @@ public class JQXChartFeature extends Feature<JQXChartOptions, JQXChartFeature> i
 		}
 		return options;
 	}
-	
+
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -75,5 +75,39 @@ public class JQXChartFeature extends Feature<JQXChartOptions, JQXChartFeature> i
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXChartFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXChartFeature that = (JQXChartFeature) o;
+
+		if (!forComponent.equals(that.forComponent))
+		{
+			return false;
+		}
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + forComponent.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

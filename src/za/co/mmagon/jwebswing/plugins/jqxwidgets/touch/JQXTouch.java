@@ -57,4 +57,32 @@ public class JQXTouch extends Div<JQXTouchChildren, JQXTouchAttributes, JQXTouch
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXTouch))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXTouch jqxTouch = (JQXTouch) o;
+
+		return getFeature().equals(jqxTouch.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

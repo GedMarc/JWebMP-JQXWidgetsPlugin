@@ -20,17 +20,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class
+ * <p>
+ * Object 	{ pointerType: 'default', style: { fill: 'theme-specific-color', stroke: 'theme-specific-color' }, length: '70%', width: '2%', visible: true }
  *
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGaugePointer extends JavaScriptPart
+public class JQXGaugePointer extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public JQXGaugePointer()
 	{
+		//Nothing Needed
 	}
 
 	@Override

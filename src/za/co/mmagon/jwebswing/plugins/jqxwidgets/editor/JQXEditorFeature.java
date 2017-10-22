@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -33,8 +31,6 @@ public class JQXEditorFeature extends Feature<JQXEditorOptions, JQXEditorFeature
 {
 
 	private static final long serialVersionUID = 1L;
-
-	private final JQXEditor forComponent;
 	private JQXEditorOptions options;
 
 	/**
@@ -46,7 +42,7 @@ public class JQXEditorFeature extends Feature<JQXEditorOptions, JQXEditorFeature
 	public JQXEditorFeature(JQXEditor forComponent)
 	{
 		super("JQXEditorFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
@@ -80,11 +76,44 @@ public class JQXEditorFeature extends Feature<JQXEditorOptions, JQXEditorFeature
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxEditor(";
+		String requiredString = getComponent().getJQueryID() + "jqxEditor(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
 
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXEditorFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXEditorFeature that = (JQXEditorFeature) o;
+
+		if (!getComponent().equals(that.getComponent()))
+		{
+			return false;
+		}
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getComponent().hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

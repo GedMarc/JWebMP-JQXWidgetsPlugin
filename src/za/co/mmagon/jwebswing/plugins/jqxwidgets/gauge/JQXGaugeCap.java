@@ -20,17 +20,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class
+ * <p>
+ * Object 	{ size: '4%', style: { fill: 'theme-specific-color', stroke: 'theme-specific-color' } , visible: true }
  *
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGaugeCap extends JavaScriptPart
+public class JQXGaugeCap extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public JQXGaugeCap()
 	{
+		//Nothing Needed
 	}
 
 	@Override

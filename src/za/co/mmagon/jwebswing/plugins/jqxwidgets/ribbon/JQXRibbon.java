@@ -23,6 +23,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.panel.JQXPanel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * jqxRibbon represents a jQuery widget which can be used as a tabbed toolbar or mega menu.
@@ -38,14 +39,14 @@ import java.util.ArrayList;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFeature, JQXRibbonEvents, JQXRibbon>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXRibbonFeature feature;
-	
+
 	private JQXRibbonList unorderedList;
 	private JQXRibbonContent itemDivs;
-	private ArrayList<JQXRibbonItem> ribbonItems;
-	
+	private List<JQXRibbonItem> ribbonItems;
+
 	public JQXRibbon()
 	{
 		addFeature(getFeature());
@@ -54,13 +55,13 @@ public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFea
 		add(unorderedList);
 		add(itemDivs);
 	}
-	
+
 	private JQXRibbonItem addRibbonItem(ListItem item, JQXPanel componentToDisplay)
 	{
 		JQXRibbonItem rib = new JQXRibbonItem(item, componentToDisplay);
 		return addRibbonItem(rib);
 	}
-	
+
 	public JQXRibbonItem addRibbonItem(JQXRibbonItem ribbon)
 	{
 		unorderedList.add(ribbon.getHeader());
@@ -68,12 +69,12 @@ public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFea
 		getRibbonItems().add(ribbon);
 		return ribbon;
 	}
-	
+
 	public JQXRibbonItem addRibbonItem(String itemHeader, JQXPanel componentToDisplay)
 	{
 		return addRibbonItem(new ListItem(itemHeader), componentToDisplay);
 	}
-	
+
 	public JQXRibbonFeature getFeature()
 	{
 		if (feature == null)
@@ -82,14 +83,47 @@ public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFea
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXRibbonOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
-	public ArrayList<JQXRibbonItem> getRibbonItems()
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXRibbon))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXRibbon jqxRibbon = (JQXRibbon) o;
+
+		if (!getFeature().equals(jqxRibbon.getFeature()))
+		{
+			return false;
+		}
+		if (!unorderedList.equals(jqxRibbon.unorderedList))
+		{
+			return false;
+		}
+		if (!itemDivs.equals(jqxRibbon.itemDivs))
+		{
+			return false;
+		}
+		return getRibbonItems().equals(jqxRibbon.getRibbonItems());
+	}
+
+	public List<JQXRibbonItem> getRibbonItems()
 	{
 		if (ribbonItems == null)
 		{
@@ -97,8 +131,8 @@ public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFea
 		}
 		return ribbonItems;
 	}
-	
-	public void setRibbonItems(ArrayList<JQXRibbonItem> ribbonItems)
+
+	public void setRibbonItems(List<JQXRibbonItem> ribbonItems)
 	{
 		if (this.ribbonItems == null)
 		{
@@ -106,39 +140,50 @@ public class JQXRibbon extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFea
 		}
 		this.ribbonItems = ribbonItems;
 	}
-	
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + unorderedList.hashCode();
+		result = 31 * result + itemDivs.hashCode();
+		result = 31 * result + getRibbonItems().hashCode();
+		return result;
+	}
+
 	public static class JQXRibbonItem
 	{
-		
+
 		private ListItem header;
 		private Div content;
-		
+
 		public JQXRibbonItem(ListItem header, Div content)
 		{
 			this.header = header;
 			this.content = content;
 		}
-		
+
 		public JQXRibbonItem(ListItem header)
 		{
 			this(header, null);
 		}
-		
+
 		public ListItem getHeader()
 		{
 			return header;
 		}
-		
+
 		public void setHeader(ListItem header)
 		{
 			this.header = header;
 		}
-		
+
 		public Div getContent()
 		{
 			return content;
 		}
-		
+
 		public void setContent(Div content)
 		{
 			this.content = content;

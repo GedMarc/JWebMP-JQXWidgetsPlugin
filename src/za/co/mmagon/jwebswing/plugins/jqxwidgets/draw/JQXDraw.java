@@ -28,15 +28,15 @@ import za.co.mmagon.jwebswing.base.html.Div;
  */
 public class JQXDraw extends Div<JQXDrawChildren, JQXDrawAttributes, JQXDrawFeature, JQXDrawEvents, JQXDraw>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXDrawFeature feature;
-	
+
 	public JQXDraw()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public JQXDrawFeature getFeature()
 	{
 		if (feature == null)
@@ -45,11 +45,39 @@ public class JQXDraw extends Div<JQXDrawChildren, JQXDrawAttributes, JQXDrawFeat
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXDrawOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXDraw))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDraw jqxDraw = (JQXDraw) o;
+
+		return getFeature().equals(jqxDraw.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

@@ -59,4 +59,32 @@ public class JQXGauge extends Div<JQXGaugeChildren, JQXGaugeAttributes, JQXGauge
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXGauge))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXGauge jqxGauge = (JQXGauge) o;
+
+		return getFeature().equals(jqxGauge.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

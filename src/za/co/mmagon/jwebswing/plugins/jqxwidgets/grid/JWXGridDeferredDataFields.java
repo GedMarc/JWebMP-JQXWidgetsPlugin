@@ -26,17 +26,18 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 class JWXGridDeferredDataFields extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public JWXGridDeferredDataFields()
 	{
+		//Nothing Needed
 	}
-	
+
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-	
+
 }

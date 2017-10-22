@@ -25,22 +25,22 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXTouchOptions extends JavaScriptPart
 {
-	
+
 	public JQXTouchOptions()
 	{
-	
+		//Nothing Needed
 	}
-	
+
 	@Override
 	public JavascriptPartType getJavascriptType()
 	{
 		return JavascriptPartType.Javascript;
 	}
-	
+
 }

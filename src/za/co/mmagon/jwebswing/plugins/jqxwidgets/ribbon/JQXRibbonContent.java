@@ -27,6 +27,6 @@ public class JQXRibbonContent extends Div implements JQXRibbonChildren
 
 	public JQXRibbonContent()
 	{
-
+		//Nothing Needed
 	}
 }

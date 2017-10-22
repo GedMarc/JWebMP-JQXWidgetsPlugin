@@ -21,6 +21,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.buttons.JQXButtonTemplates;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -28,15 +29,15 @@ import java.util.ArrayList;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private JQXSliderButtonPositions buttonsPosition;// 	String 	both
 	private Boolean disabled;// 	Boolean 	false
 	private JQXSliderLayouts layout;// 	String 	"normal"
@@ -62,14 +63,14 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	private JQXSliderPositions tooltipPosition;// 	String 	"near"
 	private JavascriptFunction tooltipFormatFunction;// 	Function 	null
 	private Integer value;// 	Number/Object 	0
-	private ArrayList<Integer> values;// 	Array 	[0, 10]
+	private List<Integer> values;// 	Array 	[0, 10]
 	private JQXButtonTemplates template;
-	
+
 	public JQXSliderOptions()
 	{
-	
+		//Nothing Needed
 	}
-	
+
 	/**
 	 * Sets or gets scroll buttons position.
 	 * Possible Values:
@@ -86,7 +87,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return buttonsPosition;
 	}
-	
+
 	/**
 	 * Sets or gets scroll buttons position.
 	 * Possible Values:
@@ -103,7 +104,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.buttonsPosition = buttonsPosition;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider is disabled.
 	 *
@@ -113,7 +114,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return disabled;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider is disabled.
 	 *
@@ -123,7 +124,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.disabled = disabled;
 	}
-	
+
 	/**
 	 * Sets or gets the slider's layout.
 	 *
@@ -133,7 +134,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return layout;
 	}
-	
+
 	/**
 	 * Sets or gets the slider's layout.
 	 *
@@ -143,7 +144,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.layout = layout;
 	}
-	
+
 	/**
 	 * Sets or gets slider's mode.
 	 * Possible Values:
@@ -158,7 +159,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return mode;
 	}
-	
+
 	/**
 	 * Sets or gets slider's mode.
 	 * Possible Values:
@@ -173,7 +174,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.mode = mode;
 	}
-	
+
 	/**
 	 * Set the minorTicksFrequency property.
 	 *
@@ -183,7 +184,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return minorTicksFrequency;
 	}
-	
+
 	/**
 	 * Set the minorTicksFrequency property.
 	 *
@@ -193,7 +194,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.minorTicksFrequency = minorTicksFrequency;
 	}
-	
+
 	/**
 	 * Sets or gets slider's minor ticks size.
 	 *
@@ -203,7 +204,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return minorTickSize;
 	}
-	
+
 	/**
 	 * Sets or gets slider's minor ticks size.
 	 *
@@ -213,7 +214,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.minorTickSize = minorTickSize;
 	}
-	
+
 	/**
 	 * Sets or gets slider's maximum value.
 	 *
@@ -223,7 +224,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return max;
 	}
-	
+
 	/**
 	 * Sets or gets slider's maximum value.
 	 *
@@ -233,7 +234,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.max = max;
 	}
-	
+
 	/**
 	 * Sets or gets slider's minimum value.
 	 *
@@ -243,7 +244,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return min;
 	}
-	
+
 	/**
 	 * Sets or gets slider's minimum value.
 	 *
@@ -253,7 +254,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.min = min;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider is displayed as a range slider and has 2 thumbs. This allows the user to select a range of values. By default, end-users can select only a single value.
 	 *
@@ -263,7 +264,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return rangeSlider;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider is displayed as a range slider and has 2 thumbs. This allows the user to select a range of values. By default, end-users can select only a single value.
 	 *
@@ -273,7 +274,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.rangeSlider = rangeSlider;
 	}
-	
+
 	/**
 	 * Gets RTL
 	 *
@@ -283,7 +284,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return rtl;
 	}
-	
+
 	/**
 	 * Sets RTL
 	 *
@@ -293,7 +294,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.rtl = rtl;
 	}
-	
+
 	/**
 	 * Sets or gets the slider's step when the user is using the keyboard arrows, slider increment and decrement buttons or the mouse wheel for changing the slider's value.
 	 *
@@ -303,7 +304,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return step;
 	}
-	
+
 	/**
 	 * Sets or gets the slider's step when the user is using the keyboard arrows, slider increment and decrement buttons or the mouse wheel for changing the slider's value.
 	 *
@@ -313,7 +314,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.step = step;
 	}
-	
+
 	/**
 	 * Sets or gets whether ticks will be shown.
 	 *
@@ -323,7 +324,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return showTicks;
 	}
-	
+
 	/**
 	 * Sets or gets whether ticks will be shown.
 	 *
@@ -333,7 +334,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.showTicks = showTicks;
 	}
-	
+
 	/**
 	 * Sets or gets whether minor ticks will be shown.
 	 *
@@ -343,7 +344,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return showMinorTicks;
 	}
-	
+
 	/**
 	 * Sets or gets whether minor ticks will be shown.
 	 *
@@ -353,7 +354,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.showMinorTicks = showMinorTicks;
 	}
-	
+
 	/**
 	 * Sets or gets whether major tick labels will be shown.
 	 *
@@ -363,7 +364,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return showTickLabels;
 	}
-	
+
 	/**
 	 * Sets or gets whether major tick labels will be shown.
 	 *
@@ -373,7 +374,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.showTickLabels = showTickLabels;
 	}
-	
+
 	/**
 	 * Sets or gets whether the scroll buttons will be shown.
 	 *
@@ -383,7 +384,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return showButtons;
 	}
-	
+
 	/**
 	 * Sets or gets whether the scroll buttons will be shown.
 	 *
@@ -393,7 +394,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.showButtons = showButtons;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider range background is displayed. This is the fill between the slider's left button and the slider's thumb to indicate the selected value. In range slider mode, the
 	 * space between the handles is filled to indicate the selected values.
@@ -404,7 +405,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return showRange;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider range background is displayed. This is the fill between the slider's left button and the slider's thumb to indicate the selected value. In range slider mode, the
 	 * space between the handles is filled to indicate the selected values.
@@ -415,7 +416,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.showRange = showRange;
 	}
-	
+
 	/**
 	 * Sets or gets slider's ticks position.
 	 *
@@ -425,7 +426,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return ticksPosition;
 	}
-	
+
 	/**
 	 * Sets or gets slider's ticks position.
 	 *
@@ -435,7 +436,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.ticksPosition = ticksPosition;
 	}
-	
+
 	/**
 	 * Sets or gets slider's major ticks frequency.
 	 *
@@ -445,7 +446,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return ticksFrequency;
 	}
-	
+
 	/**
 	 * Sets or gets slider's major ticks frequency.
 	 *
@@ -455,7 +456,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.ticksFrequency = ticksFrequency;
 	}
-	
+
 	/**
 	 * Sets or gets slider's major ticks size.
 	 *
@@ -465,7 +466,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return tickSize;
 	}
-	
+
 	/**
 	 * Sets or gets slider's major ticks size.
 	 *
@@ -475,7 +476,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.tickSize = tickSize;
 	}
-	
+
 	/**
 	 * Sets or gets the major ticks labels formatting function.
 	 *
@@ -485,7 +486,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return tickLabelFormatFunction;
 	}
-	
+
 	/**
 	 * Sets or gets the major ticks labels formatting function.
 	 *
@@ -495,7 +496,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.tickLabelFormatFunction = tickLabelFormatFunction;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider tooltip will be shown.
 	 *
@@ -505,7 +506,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return tooltip;
 	}
-	
+
 	/**
 	 * Sets or gets whether the slider tooltip will be shown.
 	 *
@@ -515,7 +516,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.tooltip = tooltip;
 	}
-	
+
 	/**
 	 * Sets or gets the tooltip's hide delay.
 	 *
@@ -525,7 +526,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return tooltipHideDelay;
 	}
-	
+
 	/**
 	 * Sets or gets the tooltip's hide delay.
 	 *
@@ -535,7 +536,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.tooltipHideDelay = tooltipHideDelay;
 	}
-	
+
 	/**
 	 * Sets or gets the tooltip's position. Possible values: "near", "far"
 	 *
@@ -545,7 +546,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return tooltipPosition;
 	}
-	
+
 	/**
 	 * Sets or gets the tooltip's position. Possible values: "near", "far"
 	 *
@@ -555,17 +556,17 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.tooltipPosition = tooltipPosition;
 	}
-	
+
 	public JavascriptFunction getTooltipFormatFunction()
 	{
 		return tooltipFormatFunction;
 	}
-	
+
 	public void setTooltipFormatFunction(JavascriptFunction tooltipFormatFunction)
 	{
 		this.tooltipFormatFunction = tooltipFormatFunction;
 	}
-	
+
 	/**
 	 * Sets or gets slider's value. This poperty will be an object with the following structure { rangeStart: range_start, rangeEnd: range_end } if the slider is range slider otherwise it's going to
 	 * be a number.
@@ -576,7 +577,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return value;
 	}
-	
+
 	/**
 	 * Sets or gets slider's value. This poperty will be an object with the following structure { rangeStart: range_start, rangeEnd: range_end } if the slider is range slider otherwise it's going to
 	 * be a number.
@@ -587,13 +588,13 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.value = value;
 	}
-	
+
 	/**
 	 * Sets or gets range slider's values.The 'rangeSlider' property should be set to true.
 	 *
 	 * @return
 	 */
-	public ArrayList<Integer> getValues()
+	public List<Integer> getValues()
 	{
 		if (values == null)
 		{
@@ -601,17 +602,17 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 		}
 		return values;
 	}
-	
+
 	/**
 	 * Sets or gets range slider's values.The 'rangeSlider' property should be set to true.
 	 *
 	 * @param values
 	 */
-	public void setValues(ArrayList<Integer> values)
+	public void setValues(List<Integer> values)
 	{
 		this.values = values;
 	}
-	
+
 	/**
 	 * Determines the template as an alternative of the default styles.
 	 * Possible Values:
@@ -634,7 +635,7 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		return template;
 	}
-	
+
 	/**
 	 * Determines the template as an alternative of the default styles.
 	 * Possible Values:
@@ -657,5 +658,5 @@ public class JQXSliderOptions extends JQXDefaultJavaScriptPart
 	{
 		this.template = template;
 	}
-	
+
 }

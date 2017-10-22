@@ -20,6 +20,7 @@ import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author GedMarc
@@ -38,12 +39,13 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	private Boolean checked;// - sets whether the item is checked/unchecked(when checkboxes are enabled).
 	private Boolean expanded;// - sets whether the item is expanded or collapsed.
 	private Boolean selected;// - sets whether the item is selected.
-	private ArrayList<JQXTreeItem> items;// - sets an array of sub items.
+	private List<JQXTreeItem> items;// - sets an array of sub items.
 	private String icon;// - sets the item's icon(url is expected).
 	private Integer iconsize;// - sets the size of the item's icon.
 
 	public JQXTreeItem()
 	{
+		//Nothing Needed
 	}
 
 	/**
@@ -104,7 +106,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 */
 	public void setHtml(Component html)
 	{
-		this.html = html.toString().toString();
+		this.html = html.toString(0);
 	}
 
 	/**
@@ -112,6 +114,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 *
 	 * @return
 	 */
+	@Override
 	public String getReferenceId()
 	{
 		return id;
@@ -122,6 +125,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 *
 	 * @param id
 	 */
+	@Override
 	public void setReferenceId(String id)
 	{
 		this.id = id;
@@ -212,7 +216,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 *
 	 * @return
 	 */
-	public ArrayList<JQXTreeItem> getItems()
+	public List<JQXTreeItem> getItems()
 	{
 		if (items == null)
 		{
@@ -226,7 +230,7 @@ public class JQXTreeItem extends JQXDataAdapterSourceData
 	 *
 	 * @param items
 	 */
-	public void setItems(ArrayList<JQXTreeItem> items)
+	public void setItems(List<JQXTreeItem> items)
 	{
 		this.items = items;
 	}

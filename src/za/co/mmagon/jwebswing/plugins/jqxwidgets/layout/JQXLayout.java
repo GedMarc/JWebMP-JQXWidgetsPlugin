@@ -57,4 +57,32 @@ public class JQXLayout extends Div<JQXLayoutChildren, JQXLayoutAttributes, JQXLa
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXLayout))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXLayout jqxLayout = (JQXLayout) o;
+
+		return getFeature().equals(jqxLayout.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

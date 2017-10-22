@@ -43,7 +43,7 @@ public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeat
 	public JQXMenu()
 	{
 		addFeature(getFeature());
-		add(menuList = new JQXMenuList());
+		add(getMenuList());
 	}
 
 	public JQXMenuFeature getFeature()
@@ -68,6 +68,10 @@ public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeat
 	 */
 	public JQXMenuList getMenuList()
 	{
+		if (menuList == null)
+		{
+			menuList = new JQXMenuList();
+		}
 		return menuList;
 	}
 
@@ -81,4 +85,37 @@ public class JQXMenu extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeat
 		this.menuList = menuList;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXMenu))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXMenu jqxMenu = (JQXMenu) o;
+
+		if (!getFeature().equals(jqxMenu.getFeature()))
+		{
+			return false;
+		}
+		return getMenuList().equals(jqxMenu.getMenuList());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + getMenuList().hashCode();
+		return result;
+	}
 }

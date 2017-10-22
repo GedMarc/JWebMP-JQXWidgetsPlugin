@@ -37,7 +37,6 @@ public class JQXTree extends Div<JQXTreeChildren, JQXTreeAttributes, JQXTreeFeat
 
 	private static final long serialVersionUID = 1L;
 	private JQXTreeFeature feature;
-	// private JQXPanelFeature panelFeature;
 
 	public JQXTree()
 	{
@@ -57,5 +56,34 @@ public class JQXTree extends Div<JQXTreeChildren, JQXTreeAttributes, JQXTreeFeat
 	public JQXTreeOptions getOptions()
 	{
 		return getFeature().getOptions();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXTree))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXTree jqxTree = (JQXTree) o;
+
+		return getFeature().equals(jqxTree.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
 	}
 }

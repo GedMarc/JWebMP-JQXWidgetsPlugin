@@ -24,8 +24,8 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXRatingOptions extends JavaScriptPart
@@ -43,7 +43,7 @@ public class JQXRatingOptions extends JavaScriptPart
 
 	public JQXRatingOptions()
 	{
-
+		//Nothing Needed
 	}
 
 	public Integer getCount()

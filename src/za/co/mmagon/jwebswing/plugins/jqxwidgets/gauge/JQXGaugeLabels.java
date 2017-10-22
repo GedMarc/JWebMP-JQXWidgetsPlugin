@@ -20,17 +20,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class
+ * <p>
+ * \Object 	{ distance: '38%', position: 'none', interval: 20, offset: [0, -10], visible: true, formatValue: function (value) { return value; }}
  *
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGaugeLabels extends JavaScriptPart
+public class JQXGaugeLabels extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public JQXGaugeLabels()
 	{
+		//Nothing Needed
 	}
 
 	@Override

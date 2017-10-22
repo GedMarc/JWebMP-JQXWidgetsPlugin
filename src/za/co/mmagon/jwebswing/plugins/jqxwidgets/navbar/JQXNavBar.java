@@ -58,4 +58,32 @@ public class JQXNavBar extends Div<GlobalChildren, JQXNavBarAttributes, JQXNavBa
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXNavBar))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXNavBar jqxNavBar = (JQXNavBar) o;
+
+		return getFeature().equals(jqxNavBar.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

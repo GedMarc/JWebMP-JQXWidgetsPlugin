@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.references.jqxwidgets;
+package za.co.mmagon.jwebswing.plugins.pools.jqxwidgets;
 
 import za.co.mmagon.jwebswing.base.references.JavascriptReference;
 
@@ -23,9 +23,9 @@ import za.co.mmagon.jwebswing.base.references.JavascriptReference;
  * <p>
  *
  * @author MMagon
- * <p>
- * I have moved these from the features to make it easier to specify remote or local references.
- * <p>
+ * 		<p>
+ * 		I have moved these from the features to make it easier to specify remote or local references.
+ * 		<p>
  * @version 1.0
  * @since 2014/12/09
  */

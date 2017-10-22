@@ -21,8 +21,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -35,7 +33,6 @@ public class JQXTreeFeature extends Feature<JQXTreeOptions, JQXTreeFeature> impl
 
 	private static final long serialVersionUID = 1L;
 
-	private final Component forComponent;
 	private JQXTreeOptions options;
 
 	/**
@@ -47,13 +44,12 @@ public class JQXTreeFeature extends Feature<JQXTreeOptions, JQXTreeFeature> impl
 	public JQXTreeFeature(Component forComponent)
 	{
 		super("JQXTreeFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
-		//getJavascriptReferences().add(JQXReferencePool.Panel.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Tree.getJavaScriptReference());
 	}
 
@@ -76,16 +72,14 @@ public class JQXTreeFeature extends Feature<JQXTreeOptions, JQXTreeFeature> impl
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxTree(";
+		String requiredString = getComponent().getJQueryID() + "jqxTree(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
 
 		if (getOptions().isExpandAll())
 		{
-			addQuery(forComponent.getJQueryID() + "jqxTree(" + "'expandAll'" + ");" + getNewLine());
+			addQuery(getComponent().getJQueryID() + "jqxTree(" + "'expandAll'" + ");" + getNewLine());
 		}
-
 	}
 }

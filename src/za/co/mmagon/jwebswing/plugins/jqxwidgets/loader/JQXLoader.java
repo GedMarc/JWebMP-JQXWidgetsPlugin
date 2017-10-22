@@ -46,7 +46,8 @@ public class JQXLoader extends Div<GlobalChildren, NoAttributes, GlobalFeatures,
 	public JQXLoader()
 	{
 		setID("JWLoader");
-		addFeature(feature = new JQXLoaderFeature(this));
+		feature = new JQXLoaderFeature(this);
+		addFeature(feature);
 	}
 
 	@Override
@@ -55,4 +56,32 @@ public class JQXLoader extends Div<GlobalChildren, NoAttributes, GlobalFeatures,
 		return feature.getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXLoader))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXLoader jqxLoader = (JQXLoader) o;
+
+		return feature.equals(jqxLoader.feature);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + feature.hashCode();
+		return result;
+	}
 }

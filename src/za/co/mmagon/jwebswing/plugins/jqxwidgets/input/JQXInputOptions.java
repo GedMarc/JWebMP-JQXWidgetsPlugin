@@ -21,6 +21,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXSearchModes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -28,8 +29,8 @@ import java.util.ArrayList;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXInputOptions extends JQXDefaultJavaScriptPart
@@ -50,12 +51,12 @@ public class JQXInputOptions extends JQXDefaultJavaScriptPart
 	private JavascriptFunction renderer;// 	function 	null
 	private Boolean rtl;// 	Boolean 	false
 	private JQXSearchModes searchMode;// 	String 	'default'
-	private ArrayList<String> source;// 	Array, function 	[]
+	private List<String> source;// 	Array, function 	[]
 	private String valueMember;// 	String 	""
 
 	public JQXInputOptions()
 	{
-
+		//Nothing Needed
 	}
 
 	/**
@@ -364,7 +365,7 @@ public class JQXInputOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<String> getSource()
+	public List<String> getSource()
 	{
 		if (source == null)
 		{
@@ -379,7 +380,7 @@ public class JQXInputOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @param source
 	 */
-	public void setSource(ArrayList<String> source)
+	public void setSource(List<String> source)
 	{
 		this.source = source;
 	}

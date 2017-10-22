@@ -43,14 +43,14 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 )
 public class JQXWidgetsPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public JQXWidgetsPageConfigurator()
 	{
-	
+		//Nothing Needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{

@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -31,12 +29,11 @@ import java.util.ArrayList;
  */
 public class JQXMenuFeature extends Feature<JQXMenuOptions, JQXMenuFeature> implements JQXMenuFeatures, GlobalFeatures
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
-	private final JQXMenu forComponent;
+
 	private JQXMenuOptions options;
-	
+
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -46,12 +43,12 @@ public class JQXMenuFeature extends Feature<JQXMenuOptions, JQXMenuFeature> impl
 	public JQXMenuFeature(JQXMenu forComponent)
 	{
 		super("JQXMenuFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Menu.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-	
+
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,15 +64,42 @@ public class JQXMenuFeature extends Feature<JQXMenuOptions, JQXMenuFeature> impl
 		}
 		return options;
 	}
-	
+
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxMenu(";
+		String requiredString = getComponent().getJQueryID() + "jqxMenu(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
-		
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXMenuFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXMenuFeature that = (JQXMenuFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

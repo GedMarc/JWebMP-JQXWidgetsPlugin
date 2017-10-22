@@ -57,4 +57,32 @@ public class JQXRating extends Div<JQXRatingChildren, JQXRatingAttributes, JQXRa
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXRating))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXRating jqxRating = (JQXRating) o;
+
+		return getFeature().equals(jqxRating.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

@@ -20,17 +20,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class
+ * <p>
+ * Object 	{ value: '', position: 'bottom', offset: [0, 0], visible: true }
  *
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGaugeCaption extends JavaScriptPart
+public class JQXGaugeCaption extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public JQXGaugeCaption()
 	{
+		//Nothing Needed
 	}
 
 	@Override

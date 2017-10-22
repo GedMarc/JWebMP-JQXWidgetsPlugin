@@ -47,6 +47,6 @@ public abstract class JQXTreeSelectEvent extends SelectAdapter implements JQXTre
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		addQuery(new StringBuilder(getComponent().getJQueryID().toString() + "jqxSelectItem();" + getNewLine()));
+		addQuery(new StringBuilder(getComponent().getJQueryID() + "jqxSelectItem();" + getNewLine()));
 	}
 }

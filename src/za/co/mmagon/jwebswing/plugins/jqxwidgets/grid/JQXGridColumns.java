@@ -24,19 +24,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXGridColumns extends JavaScriptPart
+public class JQXGridColumns extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public JQXGridColumns()
 	{
+		//Nothing Needed
 	}
-	
+
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-	
+
 }

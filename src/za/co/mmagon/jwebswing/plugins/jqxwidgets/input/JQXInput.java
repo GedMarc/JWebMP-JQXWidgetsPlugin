@@ -60,4 +60,32 @@ public class JQXInput extends Div<JQXInputChildren, JQXInputAttributes, JQXInput
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXInput))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXInput jqxInput = (JQXInput) o;
+
+		return getFeature().equals(jqxInput.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

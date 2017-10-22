@@ -19,7 +19,6 @@ package za.co.mmagon.jwebswing.plugins.pools.jqxwidgets;
 import za.co.mmagon.jwebswing.base.references.CSSReference;
 import za.co.mmagon.jwebswing.base.references.JavascriptReference;
 import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
-import za.co.mmagon.jwebswing.components.references.jqxwidgets.JQXCoreJavaScriptReference;
 
 /**
  * @author GedMarc
@@ -135,16 +134,11 @@ public enum JQXReferencePool implements ReferencePool
 	ToolTip(new JavascriptReference("JQXToolTipJS", 3.91, "bower_components/jqwidgets/jqwidgets/jqxtooltip.js", "https://jqwidgets.com/public/jqwidgets/jqxtooltip.js")),
 	Validator(new JavascriptReference("JQXValidatorJS", 3.91, "bower_components/jqwidgets/jqwidgets/jqxvalidator.js", "https://jqwidgets.com/public/jqwidgets/jqxvalidator.js")),
 	Window(new JavascriptReference("JQXWindowJS", 3.91, "bower_components/jqwidgets/jqwidgets/jqxwindow.js", "https://jqwidgets.com/public/jqwidgets/jqxwindow.js"));
-	
+
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
-	
-	private JQXReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
-	{
-		this(javaScriptReference, cssReference, 500000);
-	}
-	
-	private JQXReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference, int sortOrder)
+
+	JQXReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference, int sortOrder)
 	{
 		this.javaScriptReference = javaScriptReference;
 		this.cssReference = cssReference;
@@ -157,13 +151,13 @@ public enum JQXReferencePool implements ReferencePool
 			this.cssReference.setSortOrder(sortOrder);
 		}
 	}
-	
-	private JQXReferencePool(JavascriptReference javaScriptReference)
+
+	JQXReferencePool(JavascriptReference javaScriptReference)
 	{
 		this(javaScriptReference, 500000);
 	}
-	
-	private JQXReferencePool(JavascriptReference javaScriptReference, int sortOrder)
+
+	JQXReferencePool(JavascriptReference javaScriptReference, int sortOrder)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (javaScriptReference != null)
@@ -175,29 +169,29 @@ public enum JQXReferencePool implements ReferencePool
 			this.cssReference.setSortOrder(sortOrder);
 		}
 	}
-	
+
 	@Override
 	public JavascriptReference getJavaScriptReference()
 	{
 		return javaScriptReference;
 	}
-	
+
 	@Override
 	public void setJavaScriptReference(JavascriptReference javaScriptReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 	}
-	
+
 	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
 	}
-	
+
 	@Override
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
 	}
-	
+
 }

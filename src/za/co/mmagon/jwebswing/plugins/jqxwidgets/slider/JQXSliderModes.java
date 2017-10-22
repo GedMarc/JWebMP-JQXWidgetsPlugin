@@ -24,12 +24,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.slider;
  */
 public enum JQXSliderModes
 {
-	Default, Fixed;;
-	
+	Default, Fixed;
+
 	@Override
 	public String toString()
 	{
 		return super.toString().toLowerCase();
 	}
-	
+
 }

@@ -24,19 +24,20 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  * @author GedMarc
  * @since 15 Dec 2015
  */
-class JQXSelectedRowIndexes extends JavaScriptPart
+public class JQXSelectedRowIndexes extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public JQXSelectedRowIndexes()
 	{
+		//Nothing Needed
 	}
-	
+
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-	
+
 }

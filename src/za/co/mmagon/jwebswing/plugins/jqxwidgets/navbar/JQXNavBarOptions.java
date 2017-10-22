@@ -21,6 +21,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -28,8 +29,8 @@ import java.util.ArrayList;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXNavBarOptions extends JQXDefaultJavaScriptPart
@@ -38,7 +39,7 @@ public class JQXNavBarOptions extends JQXDefaultJavaScriptPart
 	/**
 	 * Defines the layout of the widget's elements. Each Array item should be a Percentage Value and the total should be "100%".
 	 */
-	private ArrayList<MeasurementCSSImpl> columns;// 	Array 	[]
+	private List<MeasurementCSSImpl> columns;// 	Array 	[]
 	private Boolean disabled;// 	Boolean 	false
 	private Boolean minimized;// 	Boolean 	false
 	private String minimizeButtonPosition;// 	String 	'left'
@@ -52,10 +53,10 @@ public class JQXNavBarOptions extends JQXDefaultJavaScriptPart
 
 	public JQXNavBarOptions()
 	{
-
+		//Nothing Needed
 	}
 
-	public ArrayList<MeasurementCSSImpl> getColumns()
+	public List<MeasurementCSSImpl> getColumns()
 	{
 		if (columns == null)
 		{
@@ -64,7 +65,7 @@ public class JQXNavBarOptions extends JQXDefaultJavaScriptPart
 		return columns;
 	}
 
-	public void setColumns(ArrayList<MeasurementCSSImpl> columns)
+	public void setColumns(List<MeasurementCSSImpl> columns)
 	{
 		this.columns = columns;
 	}

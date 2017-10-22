@@ -35,16 +35,16 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXPanel extends Div<GlobalChildren, JQXPanelAttributes, JQXPanelFeatures, JQXPanelEvents, JQXPanel> //JQXPanelChildrenvv
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXPanelFeature feature;
-	
+
 	public JQXPanel()
 	{
 		addFeature(getFeature());
 		addClass("JQXPanel");
 	}
-	
+
 	public JQXPanelFeature getFeature()
 	{
 		if (feature == null)
@@ -53,10 +53,39 @@ public class JQXPanel extends Div<GlobalChildren, JQXPanelAttributes, JQXPanelFe
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public final JQXPanelOptions getOptions()
 	{
 		return getFeature().getOptions();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXPanel))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXPanel jqxPanel = (JQXPanel) o;
+
+		return getFeature().equals(jqxPanel.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
 	}
 }

@@ -34,15 +34,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXSlider extends Div<JQXSliderChildren, JQXSliderAttributes, JQXSliderFeature, JQXSliderEvents, JQXSlider>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXSliderFeature feature;
-	
+
 	public JQXSlider()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public JQXSliderFeature getFeature()
 	{
 		if (feature == null)
@@ -51,11 +51,39 @@ public class JQXSlider extends Div<JQXSliderChildren, JQXSliderAttributes, JQXSl
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXSliderOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXSlider))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXSlider jqxSlider = (JQXSlider) o;
+
+		return getFeature().equals(jqxSlider.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

@@ -29,10 +29,10 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.ribbon.JQXRibbon;
  */
 public class JQXInitContent extends JavascriptLiteralFunction
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private StringBuilder function;
-	
+
 	public JQXInitContent(JQXRibbon ribbon)
 	{
 		getFunctionArugments().add("index");
@@ -40,29 +40,21 @@ public class JQXInitContent extends JavascriptLiteralFunction
 		String ifString = "if (index == ";
 		String ifStart2 = ") {";
 		String ifEnd = "}";
-		
-		ribbon.getRibbonItems().stream().forEach((ribbonScreen) ->
-		                                         {
-			                                         int indexNumber = ribbon.getRibbonItems().indexOf(ribbonScreen);
-			                                         String start = ifString + indexNumber;
-			                                         start += ifStart2;
-			                                         start += ribbonScreen.getContent().renderJavascriptAll();
-			                                         start += ifEnd;
-			
-			                                         indexInits.append(start);
-			
-			                                         ribbonScreen.getContent().getChildrenHierarchy().stream().filter((child) -> (child instanceof Component)).forEach((child) ->
-			                                                                                                                                                           {
-				                                                                                                                                                           Component.class.cast(child).setJavascriptRenderedElsewhere(true);
-			                                                                                                                                                           });
-			
-		                                         });
-		
-		//indexInits.append("resizeLayouts();");
+
+		ribbon.getRibbonItems().forEach(ribbonScreen ->
+		                                {
+			                                int indexNumber = ribbon.getRibbonItems().indexOf(ribbonScreen);
+			                                String start = ifString + indexNumber;
+			                                start += ifStart2;
+			                                start += ribbonScreen.getContent().renderJavascriptAll();
+			                                start += ifEnd;
+			                                indexInits.append(start);
+			                                ribbonScreen.getContent().getChildrenHierarchy().forEach(child -> Component.class.cast(child).setJavascriptRenderedElsewhere(true));
+		                                });
 		indexInits.append("$(window).resize();");
 		function = indexInits;
 	}
-	
+
 	/**
 	 * Configures a function to run the Init content
 	 *
@@ -75,34 +67,30 @@ public class JQXInitContent extends JavascriptLiteralFunction
 		String ifString = "if (index == ";
 		String ifStart2 = ") {";
 		String ifEnd = "}";
-		
-		navBar.getGroups().stream().forEach((ribbonScreen) ->
-		                                    {
-			                                    int indexNumber = navBar.getGroups().indexOf(ribbonScreen);
-			                                    String start = ifString + indexNumber;
-			                                    start += ifStart2;
-			                                    start += ribbonScreen.getContent().renderJavascriptAll();
-			                                    start += ifEnd;
-			                                    indexInits.append(start);
-			
-			                                    ribbonScreen.getContent().getChildrenHierarchy().stream().filter((child) -> (child instanceof Component)).forEach((child) ->
-			                                                                                                                                                      {
-				                                                                                                                                                      Component.class.cast(child).setJavascriptRenderedElsewhere(true);
-			                                                                                                                                                      });
-		                                    });
+
+		navBar.getGroups().forEach(ribbonScreen ->
+		                           {
+			                           int indexNumber = navBar.getGroups().indexOf(ribbonScreen);
+			                           String start = ifString + indexNumber;
+			                           start += ifStart2;
+			                           start += ribbonScreen.getContent().renderJavascriptAll();
+			                           start += ifEnd;
+			                           indexInits.append(start);
+			                           ribbonScreen.getContent().getChildrenHierarchy().forEach(child -> Component.class.cast(child).setJavascriptRenderedElsewhere(true));
+		                           });
 		function = indexInits;
 	}
-	
+
 	@Override
 	public StringBuilder getLiteralFunction()
 	{
 		return function;
 	}
-	
+
 	@Override
 	public String toString()
 	{
 		return function.toString();
 	}
-	
+
 }

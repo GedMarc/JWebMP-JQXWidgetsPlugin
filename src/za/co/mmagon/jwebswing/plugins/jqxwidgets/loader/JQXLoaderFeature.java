@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXLoaderFeature extends Feature<JQXLoaderOptions, JQXLoaderFeature
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXLoader forComponent;
 	private JQXLoaderOptions options;
 
 	/**
@@ -46,7 +43,7 @@ public class JQXLoaderFeature extends Feature<JQXLoaderOptions, JQXLoaderFeature
 	public JQXLoaderFeature(JQXLoader forComponent)
 	{
 		super("JQXLoaderFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Loader.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
@@ -72,11 +69,38 @@ public class JQXLoaderFeature extends Feature<JQXLoaderOptions, JQXLoaderFeature
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxLoader(";
+		String requiredString = getComponent().getJQueryID() + "jqxLoader(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQXLoaderFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXLoaderFeature that = (JQXLoaderFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

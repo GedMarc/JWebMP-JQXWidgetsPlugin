@@ -44,7 +44,7 @@ public class JQXBulletChartFeature extends Feature<JQXBulletChartOptions, JQXBul
 	public JQXBulletChartFeature(JQXBulletChart forComponent)
 	{
 		super("JQXBulletChartFeature");
-		setComponent(component);
+		setComponent(forComponent);
 		this.forComponent = forComponent;
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());

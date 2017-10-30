@@ -20,9 +20,9 @@ import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.html.Paragraph;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.utilities.ComponentUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -43,7 +43,7 @@ public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttrib
 
 	private static final long serialVersionUID = 1L;
 	private JQXNavigationBarFeature feature;
-	private ArrayList<NavigationBarGroup> groups;
+	private List<NavigationBarGroup> groups;
 
 	public JQXNavigationBar()
 	{
@@ -72,7 +72,7 @@ public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttrib
 		add(group.getContent());
 	}
 
-	public ArrayList<NavigationBarGroup> getGroups()
+	public List<NavigationBarGroup> getGroups()
 	{
 		if (groups == null)
 		{
@@ -81,7 +81,7 @@ public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttrib
 		return groups;
 	}
 
-	public void setGroups(ArrayList<NavigationBarGroup> groups)
+	public void setGroups(List<NavigationBarGroup> groups)
 	{
 		this.groups = groups;
 	}
@@ -106,10 +106,7 @@ public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttrib
 		public NavigationBarGroup(String header, Div content)
 		{
 			this.header = new Div();
-			ComponentUtils.removeAllMargins(this.header);
-			ComponentUtils.removeAllMargins(content);
 			Paragraph p = new Paragraph(header);
-			ComponentUtils.removeAllMargins(p);
 			this.header.add(p);
 			setName(header);
 			this.content = content;

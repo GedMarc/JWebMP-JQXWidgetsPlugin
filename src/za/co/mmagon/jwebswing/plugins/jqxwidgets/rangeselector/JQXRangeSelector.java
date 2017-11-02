@@ -34,15 +34,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXRangeSelector extends Div<JQXRangeSelectorChildren, JQXRangeSelectorAttributes, JQXRangeSelectorFeature, JQXRangeSelectorEvents, JQXRangeSelector>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXRangeSelectorFeature feature;
-	
+
 	public JQXRangeSelector()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public JQXRangeSelectorFeature getFeature()
 	{
 		if (feature == null)
@@ -51,11 +51,39 @@ public class JQXRangeSelector extends Div<JQXRangeSelectorChildren, JQXRangeSele
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXRangeSelectorOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXRangeSelector that = (JQXRangeSelector) o;
+
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

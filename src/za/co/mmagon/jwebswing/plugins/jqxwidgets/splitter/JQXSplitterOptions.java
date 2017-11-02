@@ -20,6 +20,7 @@ import za.co.mmagon.jwebswing.base.servlets.enumarations.Orientation;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -36,14 +37,14 @@ public class JQXSplitterOptions extends JQXDefaultJavaScriptPart
 
 	private Boolean disabled;// 	Boolean 	false
 	private Orientation orientation;// 	String 	'vertical'
-	private ArrayList<JQXSplitterPanel> panels;// 	Array 	[]
+	private List<JQXSplitterPanel> panels;// 	Array 	[]
 	private Boolean resizable;// 	Boolean 	true
 	private Integer splitBarSize;// 	Number/String 	5
 	private Boolean showSplitBar;// 	Boolean 	true
 
 	public JQXSplitterOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getDisabled()
@@ -66,7 +67,7 @@ public class JQXSplitterOptions extends JQXDefaultJavaScriptPart
 		this.orientation = orientation;
 	}
 
-	public ArrayList<JQXSplitterPanel> getPanels()
+	public List<JQXSplitterPanel> getPanels()
 	{
 		if (panels == null)
 		{
@@ -75,7 +76,7 @@ public class JQXSplitterOptions extends JQXDefaultJavaScriptPart
 		return panels;
 	}
 
-	public void setPanels(ArrayList<JQXSplitterPanel> panels)
+	public void setPanels(List<JQXSplitterPanel> panels)
 	{
 		this.panels = panels;
 	}

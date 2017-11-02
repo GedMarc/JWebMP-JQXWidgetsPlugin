@@ -31,6 +31,7 @@ public class JQXDragDropData extends JavaScriptPart
 	
 	public JQXDragDropData()
 	{
+		//Not done
 	}
 	
 	@Override

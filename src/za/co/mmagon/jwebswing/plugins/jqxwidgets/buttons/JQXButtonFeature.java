@@ -30,11 +30,11 @@ import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
  */
 public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature> implements JQXButtonFeatures, GlobalFeatures
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private JQXButtonOptions options;
-	
+
 	/**
 	 * Constructs a new JQX Button ComponentFeatureBase for a component.
 	 * <p>
@@ -49,7 +49,7 @@ public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 	}
-	
+
 	/**
 	 * Returns all the buttons options
 	 * <p>
@@ -65,7 +65,7 @@ public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature
 		}
 		return options;
 	}
-	
+
 	@Override
 	public void assignFunctionsToComponent()
 	{
@@ -73,5 +73,34 @@ public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXButtonFeature that = (JQXButtonFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

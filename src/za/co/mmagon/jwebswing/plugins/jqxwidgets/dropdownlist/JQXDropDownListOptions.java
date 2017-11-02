@@ -74,7 +74,7 @@ public class JQXDropDownListOptions extends JQXDefaultJavaScriptPart
 
 	public JQXDropDownListOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getAutoOpen()

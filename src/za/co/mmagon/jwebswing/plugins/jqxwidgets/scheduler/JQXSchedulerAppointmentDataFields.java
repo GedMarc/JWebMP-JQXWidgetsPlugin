@@ -73,6 +73,7 @@ public class JQXSchedulerAppointmentDataFields
 
 	public JQXSchedulerAppointmentDataFields()
 	{
+		//Nothing needed
 	}
 
 	@Override

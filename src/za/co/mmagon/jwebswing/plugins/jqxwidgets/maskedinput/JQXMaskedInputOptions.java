@@ -41,7 +41,7 @@ public class JQXMaskedInputOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXMaskedInputOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public Boolean getDisabled()

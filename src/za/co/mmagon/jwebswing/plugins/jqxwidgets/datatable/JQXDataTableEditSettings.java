@@ -37,6 +37,7 @@ public class JQXDataTableEditSettings extends JavaScriptPart
 
 	public JQXDataTableEditSettings()
 	{
+		//Nothing needed
 	}
 
 	public Boolean getSaveOnPageChange()

@@ -19,7 +19,9 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist;
 import com.fasterxml.jackson.annotation.JsonValue;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This Class
@@ -30,10 +32,11 @@ import java.util.ArrayList;
 public class JQXDropDownListNameValuePair extends JQXDataAdapterSourceData
 {
 
-	private ArrayList<JQXDropDownListData> values;
+	private List<JQXDropDownListData> values;
 
 	public JQXDropDownListNameValuePair()
 	{
+		//No config needed
 	}
 
 	@Override
@@ -43,7 +46,7 @@ public class JQXDropDownListNameValuePair extends JQXDataAdapterSourceData
 	}
 
 	@JsonValue
-	public ArrayList<JQXDropDownListData> getValues()
+	public List<JQXDropDownListData> getValues()
 	{
 		if (values == null)
 		{
@@ -52,12 +55,12 @@ public class JQXDropDownListNameValuePair extends JQXDataAdapterSourceData
 		return values;
 	}
 
-	public void setValues(ArrayList<JQXDropDownListData> values)
+	public void setValues(List<JQXDropDownListData> values)
 	{
 		this.values = values;
 	}
 
-	public static class JQXDropDownListData
+	public static class JQXDropDownListData implements Serializable
 	{
 
 		private String name;

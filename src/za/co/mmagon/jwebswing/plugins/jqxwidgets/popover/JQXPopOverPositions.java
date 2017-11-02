@@ -27,6 +27,7 @@ class JQXPopOverPositions
 
 	public JQXPopOverPositions()
 	{
+		//Nothing needed
 	}
 
 

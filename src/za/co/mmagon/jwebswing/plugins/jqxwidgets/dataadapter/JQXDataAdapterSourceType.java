@@ -25,7 +25,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter;
 public enum JQXDataAdapterSourceType
 {
 
-	XML, JSON, JSONP, TSV, CSV, Local, Array, ObservableArray;;
+	XML, JSON, JSONP, TSV, CSV, Local, Array, ObservableArray;
 
 	@Override
 	public String toString()

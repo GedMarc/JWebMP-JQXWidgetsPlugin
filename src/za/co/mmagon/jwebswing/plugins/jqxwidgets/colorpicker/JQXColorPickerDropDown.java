@@ -92,5 +92,68 @@ public class JQXColorPickerDropDown extends JQXDropDownButton
 					         + "$('" + dropDown.getID(true) + "').jqxDropDownButton('setContent', getTextElementByColor(event.args.color));" + getNewLine()
 					         + "});" + getNewLine());
 		}
+
+		@Override
+		public boolean equals(Object o)
+		{
+			if (this == o)
+			{
+				return true;
+			}
+			if (o == null || getClass() != o.getClass())
+			{
+				return false;
+			}
+			if (!super.equals(o))
+			{
+				return false;
+			}
+
+			ColourPickerDropDownUpdate that = (ColourPickerDropDownUpdate) o;
+
+			return dropDown.equals(that.dropDown);
+		}
+
+		@Override
+		public int hashCode()
+		{
+			int result = super.hashCode();
+			result = 31 * result + dropDown.hashCode();
+			return result;
+		}
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXColorPickerDropDown that = (JQXColorPickerDropDown) o;
+
+		if (!getColourPicker().equals(that.getColourPicker()))
+		{
+			return false;
+		}
+		return getColour().equals(that.getColour());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getColourPicker().hashCode();
+		result = 31 * result + getColour().hashCode();
+		return result;
 	}
 }

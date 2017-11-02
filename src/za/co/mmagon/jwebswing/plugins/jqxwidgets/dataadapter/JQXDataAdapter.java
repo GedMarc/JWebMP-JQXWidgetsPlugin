@@ -33,7 +33,8 @@ import java.util.logging.Logger;
  * A Data Adapter Component
  * <p>
  *
- * @param <A> The attribute
+ * @param <A>
+ * 		The attribute
  *
  * @author Marc Magon
  * @version 1.0
@@ -113,10 +114,6 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 		JQXDataAdapterSourceData dataPacket = getOptions().getLocaldata();
 		try
 		{
-			//if (dataPacket == null)
-			//{
-			//    log.log(Level.SEVERE,"No Data Packet", new ServletException("There Is No Data Packet To Send"));
-			//}
 			return new StringBuilder(GuiceContext.getInstance(ObjectMapper.class).writeValueAsString(dataPacket));
 		}
 		catch (JsonProcessingException ex)
@@ -132,4 +129,32 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 		return new StringBuilder();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDataAdapter<?, ?> that = (JQXDataAdapter<?, ?>) o;
+
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

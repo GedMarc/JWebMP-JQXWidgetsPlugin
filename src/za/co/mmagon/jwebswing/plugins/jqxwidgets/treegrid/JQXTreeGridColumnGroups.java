@@ -44,6 +44,7 @@ public class JQXTreeGridColumnGroups extends JavaScriptPart
 
 	public JQXTreeGridColumnGroups()
 	{
+		//nothing needed
 	}
 
 	public String getParentGroup()

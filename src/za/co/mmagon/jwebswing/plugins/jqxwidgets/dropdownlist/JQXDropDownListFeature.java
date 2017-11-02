@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXDropDownListFeature extends Feature<JQXDropDownListOptions, JQXD
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXDropDownList forComponent;
 	private JQXDropDownListOptions options;
 	private String setContentMethod;
 
@@ -47,7 +44,7 @@ public class JQXDropDownListFeature extends Feature<JQXDropDownListOptions, JQXD
 	public JQXDropDownListFeature(JQXDropDownList forComponent)
 	{
 		super("JQXDropDownListFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
@@ -75,14 +72,13 @@ public class JQXDropDownListFeature extends Feature<JQXDropDownListOptions, JQXD
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxDropDownList(";
+		String requiredString = getComponent().getJQueryID() + "jqxDropDownList(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
 		if (setContentMethod != null)
 		{
-			addQuery(forComponent.getJQueryID() + "jqxDropDownList('setContent'," + setContentMethod + ");");
+			addQuery(getComponent().getJQueryID() + "jqxDropDownList('setContent'," + setContentMethod + ");");
 		}
 
 	}
@@ -97,4 +93,37 @@ public class JQXDropDownListFeature extends Feature<JQXDropDownListOptions, JQXD
 		this.setContentMethod = setContentMethod;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDropDownListFeature that = (JQXDropDownListFeature) o;
+
+		if (!getOptions().equals(that.getOptions()))
+		{
+			return false;
+		}
+		return getSetContentMethod().equals(that.getSetContentMethod());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		result = 31 * result + getSetContentMethod().hashCode();
+		return result;
+	}
 }

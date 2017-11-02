@@ -26,8 +26,8 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXListMenuOptions extends JQXDefaultJavaScriptPart
@@ -40,7 +40,7 @@ public class JQXListMenuOptions extends JQXDefaultJavaScriptPart
 	private String backLabel;// 	String 	"Back"
 	private Boolean disabled;// 	Boolean 	false
 	private Boolean enableScrolling;// 	Boolean 	true
-	private Boolean filterCallback;// 	Function 	function (text, searchValue){return text.toString().toLowerCase().indexOf(searchValue.toLowerCase()) >= 0;};
+	private Boolean filterCallback;
 	private Integer headerAnimationDuration;// 	Number 	0
 	private String placeHolder;// 	String 	'Filter list items...'
 	private Boolean readOnly;// 	Boolean 	false
@@ -53,7 +53,7 @@ public class JQXListMenuOptions extends JQXDefaultJavaScriptPart
 
 	public JQXListMenuOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getAlwaysShowNavigationArrows()

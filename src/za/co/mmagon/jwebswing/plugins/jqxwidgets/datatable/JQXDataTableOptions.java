@@ -20,7 +20,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXLocalization;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXPagerPositions;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the JQX Data Library library
@@ -42,24 +42,24 @@ public class JQXDataTableOptions extends JQXDefaultJavaScriptPart
 	private Integer aggregatesHeight;// 	Number 	34
 	private Boolean autoShowLoadElement;// 	Boolean 	true
 	private Integer columnsHeight;// 	Number 	30
-	private ArrayList<JQXDataTableColumns> columns;// 	Array 	[]
+	private List<JQXDataTableColumns> columns;// 	Array 	[]
 	private JQXDataTableColumnGroups columnGroups;// 	Array 	[]
 	private Boolean columnsResize;// 	Boolean 	false
 	private Boolean columnsReorder;// 	Boolean 	false
 	private Boolean disabled;// 	Boolean 	false
 	private Boolean editable;// 	Boolean 	false
-	private JQXDataTableEditSettings editSettings;// 	Object 	{ saveOnPageChange: true, saveOnBlur: true, saveOnSelectionChange: true, cancelOnEsc: true, saveOnEnter: true, editSingleCell: false, editOnDoubleClick: true, editOnF2: true }
-	private JQXDataTableExportSettings exportSettings;// 	Object 	{ columnsHeader: true, hiddenColumns: false, serverURL: null, characterSet: null, recordsInView: true, fileName: "jqxDataTable"}
+	private JQXDataTableEditSettings editSettings;
+	private JQXDataTableExportSettings exportSettings;
 	private Boolean enableHover;// 	Boolean 	true
 	private Boolean enableBrowserSelection;// 	Boolean 	false
 	private Boolean filterable;// 	Boolean 	false
 	private Integer filterHeight;// 	Number 	30
 	private JQXDataTableFilterModes filterMode;// 	String 	"default"
-	private ArrayList<String> groups;// 	Array 	[]
+	private List<String> groups;// 	Array 	[]
 	private String groupsRenderer;// 	Function 	null
 	private String initRowDetails;// 	Function 	null
 	private Boolean incrementalSearch;// 	Boolean 	trued
-	private JQXLocalization localization;// 	Object 	default localization strings.
+	private JQXLocalization localization;
 	private Integer pagerHeight;// 	Number 	28
 	private Integer pageSize;// 	Number 	10
 	private Integer[] pageSizeOptions;// 	Array 	['5', '10', '20']
@@ -89,7 +89,7 @@ public class JQXDataTableOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXDataTableOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public Boolean getAltRows()
@@ -142,12 +142,12 @@ public class JQXDataTableOptions extends JQXDefaultJavaScriptPart
 		this.columnsHeight = columnsHeight;
 	}
 	
-	public ArrayList<JQXDataTableColumns> getColumns()
+	public List<JQXDataTableColumns> getColumns()
 	{
 		return columns;
 	}
 	
-	public void setColumns(ArrayList<JQXDataTableColumns> columns)
+	public void setColumns(List<JQXDataTableColumns> columns)
 	{
 		this.columns = columns;
 	}
@@ -272,12 +272,12 @@ public class JQXDataTableOptions extends JQXDefaultJavaScriptPart
 		this.filterMode = filterMode;
 	}
 	
-	public ArrayList<String> getGroups()
+	public List<String> getGroups()
 	{
 		return groups;
 	}
 	
-	public void setGroups(ArrayList<String> groups)
+	public void setGroups(List<String> groups)
 	{
 		this.groups = groups;
 	}

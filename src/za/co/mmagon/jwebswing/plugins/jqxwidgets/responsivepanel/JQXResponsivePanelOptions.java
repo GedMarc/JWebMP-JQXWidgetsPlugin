@@ -51,7 +51,7 @@ public class JQXResponsivePanelOptions extends JQXDefaultJavaScriptPart
 
 	public JQXResponsivePanelOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public JQXAnimationDirection getAnimationDirection()

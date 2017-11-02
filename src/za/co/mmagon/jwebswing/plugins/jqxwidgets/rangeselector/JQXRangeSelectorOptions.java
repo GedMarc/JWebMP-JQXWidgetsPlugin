@@ -49,7 +49,7 @@ public class JQXRangeSelectorOptions extends JQXDefaultJavaScriptPart
 	private Date max;// 	Number/Date object/Date string 	100
 	private Date min;// 	Number/Date object/Date string 	0
 	private Integer padding;// 	Number/String 	"auto"
-	private JQXRanges range;// 	Object 	{ from: 0, to: Infinity, min: 0, max: Infinity }
+	private JQXRanges range;
 	private Boolean resizable;// 	Boolean 	true
 	private Boolean rtl;// 	Boolean 	false
 	private Boolean showMinorTicks;// 	Boolean 	false
@@ -59,7 +59,7 @@ public class JQXRangeSelectorOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXRangeSelectorOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public Integer getAnimationDuration()

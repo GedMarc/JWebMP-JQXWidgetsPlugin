@@ -26,9 +26,6 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  */
 public class JQXDataAdapterSourceData extends JavaScriptPart
 {
-
-	;
-
 	@Override
 	public String toString()
 	{

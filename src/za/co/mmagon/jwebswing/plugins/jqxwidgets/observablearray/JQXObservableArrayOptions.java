@@ -34,7 +34,7 @@ public class JQXObservableArrayOptions extends JavaScriptPart
 
 	public JQXObservableArrayOptions()
 	{
-
+		//No config needed
 	}
 
 	@Override

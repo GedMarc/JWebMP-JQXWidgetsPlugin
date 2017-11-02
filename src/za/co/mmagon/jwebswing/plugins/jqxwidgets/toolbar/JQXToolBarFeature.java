@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXToolBarFeature extends Feature<JQXToolBarOptions, JQXToolBarFeat
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXToolBar forComponent;
 	private JQXToolBarOptions options;
 
 	/**
@@ -46,7 +43,7 @@ public class JQXToolBarFeature extends Feature<JQXToolBarOptions, JQXToolBarFeat
 	public JQXToolBarFeature(JQXToolBar forComponent)
 	{
 		super("JQXToolBarFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
@@ -77,11 +74,38 @@ public class JQXToolBarFeature extends Feature<JQXToolBarOptions, JQXToolBarFeat
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxToolBar(";
+		String requiredString = getComponent().getJQueryID() + "jqxToolBar(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXToolBarFeature that = (JQXToolBarFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

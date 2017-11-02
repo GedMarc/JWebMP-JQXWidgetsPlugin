@@ -18,7 +18,7 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.combobox;
 
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -63,14 +63,14 @@ public class JQXComboBoxOptions extends JQXDefaultJavaScriptPart
 	private Boolean showCloseButtons;// Boolean 	true
 	private String searchMode;// String;// 	startswith
 	private String search;// 	function 	null
-	private ArrayList<String> source;// Array 	null
+	private List<String> source;// Array 	null
 	private Integer scrollBarSize;// Number 	17
 	private String validateSelection;// Function 	null
 	private String valueMember;// String 	""
 
 	public JQXComboBoxOptions()
 	{
-
+		//Not required
 	}
 
 	public JQXComboBoxAnimationTypes getAnimationType()
@@ -373,12 +373,12 @@ public class JQXComboBoxOptions extends JQXDefaultJavaScriptPart
 		this.search = search;
 	}
 
-	public ArrayList<String> getSource()
+	public List<String> getSource()
 	{
 		return source;
 	}
 
-	public void setSource(ArrayList<String> source)
+	public void setSource(List<String> source)
 	{
 		this.source = source;
 	}

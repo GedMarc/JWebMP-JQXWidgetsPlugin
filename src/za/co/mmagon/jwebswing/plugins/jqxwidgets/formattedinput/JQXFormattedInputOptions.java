@@ -49,7 +49,7 @@ public class JQXFormattedInputOptions extends JQXDefaultJavaScriptPart
 
 	public JQXFormattedInputOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getDisabled()

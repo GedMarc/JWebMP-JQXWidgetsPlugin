@@ -24,8 +24,8 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Dec144, 2015
  */
 public class JQXDockingLayoutOptions extends JQXDefaultJavaScriptPart
@@ -40,7 +40,66 @@ public class JQXDockingLayoutOptions extends JQXDefaultJavaScriptPart
 
 	public JQXDockingLayoutOptions()
 	{
-
+		//Nothing needed
 	}
 
+	public Boolean getContextMenu()
+	{
+		return contextMenu;
+	}
+
+	public void setContextMenu(Boolean contextMenu)
+	{
+		this.contextMenu = contextMenu;
+	}
+
+	public JQXDockingLayoutArray getLayout()
+	{
+		return layout;
+	}
+
+	public void setLayout(JQXDockingLayoutArray layout)
+	{
+		this.layout = layout;
+	}
+
+	public Integer getMinGroupHeight()
+	{
+		return minGroupHeight;
+	}
+
+	public void setMinGroupHeight(Integer minGroupHeight)
+	{
+		this.minGroupHeight = minGroupHeight;
+	}
+
+	public Integer getMinGroupWidth()
+	{
+		return minGroupWidth;
+	}
+
+	public void setMinGroupWidth(Integer minGroupWidth)
+	{
+		this.minGroupWidth = minGroupWidth;
+	}
+
+	public Boolean getResizable()
+	{
+		return resizable;
+	}
+
+	public void setResizable(Boolean resizable)
+	{
+		this.resizable = resizable;
+	}
+
+	public Boolean getRtl()
+	{
+		return rtl;
+	}
+
+	public void setRtl(Boolean rtl)
+	{
+		this.rtl = rtl;
+	}
 }

@@ -20,7 +20,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXSelectionModes;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -41,8 +41,8 @@ public class JQXTreeGridOptions extends JQXDefaultJavaScriptPart
 	private Boolean autoShowLoadElement;// Boolean 	true
 	private Boolean checkboxes;// Boolean 	false
 	private Integer columnsHeight;// Number 	30
-	private ArrayList<JQXTreeGridColumns> columns;// Array[]
-	private ArrayList<JQXTreeGridColumnGroups> columnGroups;// Array[]
+	private List<JQXTreeGridColumns> columns;// Array[]
+	private List<JQXTreeGridColumnGroups> columnGroups;// Array[]
 	private Boolean columnsResize;// Boolean 	false
 	private Boolean columnsReorder;// Boolean 	false
 	private Boolean disabled;// Boolean 	false
@@ -62,7 +62,7 @@ public class JQXTreeGridOptions extends JQXDefaultJavaScriptPart
 	private String localization;// Object 	default localization strings
 	private Integer pagerHeight;// Number 	28
 	private Integer pageSize;// Number 	10
-	private ArrayList<Integer> pageSizeOptions;// Array['5', '10', '20']
+	private List<Integer> pageSizeOptions;// Array['5', '10', '20']
 	private Boolean pageable;// Boolean 	false
 	private String pagerPosition;// String 	"bottom"
 	private String pagerMode;// String 	"default"
@@ -93,7 +93,7 @@ public class JQXTreeGridOptions extends JQXDefaultJavaScriptPart
 
 	public JQXTreeGridOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getAltRows()
@@ -156,22 +156,22 @@ public class JQXTreeGridOptions extends JQXDefaultJavaScriptPart
 		this.columnsHeight = columnsHeight;
 	}
 
-	public ArrayList<JQXTreeGridColumns> getColumns()
+	public List<JQXTreeGridColumns> getColumns()
 	{
 		return columns;
 	}
 
-	public void setColumns(ArrayList<JQXTreeGridColumns> columns)
+	public void setColumns(List<JQXTreeGridColumns> columns)
 	{
 		this.columns = columns;
 	}
 
-	public ArrayList<JQXTreeGridColumnGroups> getColumnGroups()
+	public List<JQXTreeGridColumnGroups> getColumnGroups()
 	{
 		return columnGroups;
 	}
 
-	public void setColumnGroups(ArrayList<JQXTreeGridColumnGroups> columnGroups)
+	public void setColumnGroups(List<JQXTreeGridColumnGroups> columnGroups)
 	{
 		this.columnGroups = columnGroups;
 	}
@@ -346,12 +346,12 @@ public class JQXTreeGridOptions extends JQXDefaultJavaScriptPart
 		this.pageSize = pageSize;
 	}
 
-	public ArrayList<Integer> getPageSizeOptions()
+	public List<Integer> getPageSizeOptions()
 	{
 		return pageSizeOptions;
 	}
 
-	public void setPageSizeOptions(ArrayList<Integer> pageSizeOptions)
+	public void setPageSizeOptions(List<Integer> pageSizeOptions)
 	{
 		this.pageSizeOptions = pageSizeOptions;
 	}

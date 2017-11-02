@@ -29,12 +29,11 @@ import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
  */
 public class JQXCalendarFeature extends Feature<JQXCalendarOptions, JQXCalendarFeature> implements JQXCalendarFeatures, GlobalFeatures
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
-	private final JQXCalendar forComponent;
+
 	private JQXCalendarOptions options;
-	
+
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -44,14 +43,14 @@ public class JQXCalendarFeature extends Feature<JQXCalendarOptions, JQXCalendarF
 	public JQXCalendarFeature(JQXCalendar forComponent)
 	{
 		super("JWTooltip");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.DateTimeInput.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Calendar.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Globalization.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
-	
+
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -67,13 +66,42 @@ public class JQXCalendarFeature extends Feature<JQXCalendarOptions, JQXCalendarF
 		}
 		return options;
 	}
-	
+
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		String requiredString = forComponent.getJQueryID() + "jqxCalendar(";
+		String requiredString = getComponent().getJQueryID() + "jqxCalendar(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXCalendarFeature that = (JQXCalendarFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

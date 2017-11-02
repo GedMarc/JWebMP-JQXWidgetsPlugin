@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXPasswordInputFeature extends Feature<JQXPasswordInputOptions, JQ
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXPasswordInput forComponent;
 	private JQXPasswordInputOptions options;
 
 	/**
@@ -46,7 +43,7 @@ public class JQXPasswordInputFeature extends Feature<JQXPasswordInputOptions, JQ
 	public JQXPasswordInputFeature(JQXPasswordInput forComponent)
 	{
 		super("JQXPasswordInputFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.PasswordInput.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
@@ -71,11 +68,38 @@ public class JQXPasswordInputFeature extends Feature<JQXPasswordInputOptions, JQ
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxPasswordInput(";
+		String requiredString = getComponent().getJQueryID() + "jqxPasswordInput(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXPasswordInputFeature that = (JQXPasswordInputFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

@@ -27,6 +27,7 @@ public class JQXSchedulerViewParts
 
 	public JQXSchedulerViewParts()
 	{
+		//Nothing needed
 	}
 
 

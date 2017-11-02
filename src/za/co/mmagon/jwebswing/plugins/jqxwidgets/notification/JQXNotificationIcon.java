@@ -33,6 +33,7 @@ public class JQXNotificationIcon extends JavaScriptPart
 
 	public JQXNotificationIcon()
 	{
+		//Nothing needed
 	}
 
 	public String getHeight()

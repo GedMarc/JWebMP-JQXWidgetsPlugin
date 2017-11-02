@@ -138,6 +138,7 @@ public enum JQXReferencePool implements ReferencePool
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
 
+	@SuppressWarnings("unused")
 	JQXReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference, int sortOrder)
 	{
 		this.javaScriptReference = javaScriptReference;

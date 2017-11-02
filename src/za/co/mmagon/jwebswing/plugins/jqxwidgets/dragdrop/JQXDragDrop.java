@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDragDrop extends Div<JQXDragDropChildren, JQXDragDropAttributes, JQXDragDropFeature, JQXDragDropEvents, JQXDragDrop>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXDragDropFeature feature;
-	
+
 	public JQXDragDrop()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public JQXDragDropFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,39 @@ public class JQXDragDrop extends Div<JQXDragDropChildren, JQXDragDropAttributes,
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXDragDropOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDragDrop that = (JQXDragDrop) o;
+
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

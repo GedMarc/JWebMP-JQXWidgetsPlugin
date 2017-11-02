@@ -53,7 +53,7 @@ public class JQXToolTipOptions extends JQXDefaultJavaScriptPart
 
 	public JQXToolTipOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Integer getAbsolutePositionX()

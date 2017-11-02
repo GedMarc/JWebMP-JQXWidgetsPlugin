@@ -20,7 +20,7 @@ import za.co.mmagon.jwebswing.base.html.Div;
 import za.co.mmagon.jwebswing.base.servlets.enumarations.Orientation;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This Class
@@ -126,10 +126,11 @@ public class JQXDockingLayoutArray extends JavaScriptPart
 	/**
 	 * an array of item objects with the fields described above. N/A to panels.
 	 */
-	private ArrayList<JQXDockingLayoutArray> items;
+	private List<JQXDockingLayoutArray> items;
 
 	public JQXDockingLayoutArray()
 	{
+		//Nothing needed
 	}
 
 	@Override
@@ -318,12 +319,12 @@ public class JQXDockingLayoutArray extends JavaScriptPart
 		this.width = width;
 	}
 
-	public ArrayList<JQXDockingLayoutArray> getItems()
+	public List<JQXDockingLayoutArray> getItems()
 	{
 		return items;
 	}
 
-	public void setItems(ArrayList<JQXDockingLayoutArray> items)
+	public void setItems(List<JQXDockingLayoutArray> items)
 	{
 		this.items = items;
 	}

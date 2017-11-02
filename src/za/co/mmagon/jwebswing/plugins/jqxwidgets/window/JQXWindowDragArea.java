@@ -36,6 +36,7 @@ public class JQXWindowDragArea extends JavaScriptPart
 
 	public JQXWindowDragArea()
 	{
+		//Nothing needed
 	}
 
 	public Integer getX()

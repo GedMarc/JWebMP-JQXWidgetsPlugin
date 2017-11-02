@@ -64,7 +64,7 @@ public class JQXSchedulerOptions extends JavaScriptPart
      * "S"
      * , resourcesInMultipleICSFiles:
      * false
-     * }
+     *
      * legendPosition String "bottom"
      * legendHeight Number 34
      * localization Object
@@ -84,7 +84,7 @@ public class JQXSchedulerOptions extends JavaScriptPart
      * showLegend Boolean false
      * scrollBarSize Number 15
      * source Object null
-     * private JQXSchedulerStatus statuses;
+     * JQXSchedulerStatus statuses
      * touchRowsHeight Number 37
      * touchAppointmentsMinHeight Number 27
      * touchScrollBarSize Number 18
@@ -109,7 +109,7 @@ public class JQXSchedulerOptions extends JavaScriptPart
 
 	public JQXSchedulerOptions()
 	{
-
+		//Nothing needd
 	}
 
 }

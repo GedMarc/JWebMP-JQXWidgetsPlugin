@@ -53,7 +53,7 @@ public class JQXNotificationOptions extends JQXDefaultJavaScriptPart
 
 	public JQXNotificationOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public String getAppendContainer()

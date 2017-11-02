@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist;
 
 import za.co.mmagon.jwebswing.Component;
+import za.co.mmagon.jwebswing.base.html.attributes.GlobalAttributes;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataFields;
 
@@ -34,8 +35,8 @@ public class DataAdapterNameValuePair extends JQXDataAdapter<JQXDropDownListName
 	public DataAdapterNameValuePair(Component component)
 	{
 		super(component);
-		getOptions().getDatafields().add(new JQXDataFields("name", JQXDataFields.JQXDataFieldTypes.String));
-		getOptions().getDatafields().add(new JQXDataFields("value", JQXDataFields.JQXDataFieldTypes.String));
+		getOptions().getDatafields().add(new JQXDataFields(GlobalAttributes.Name.toString(), JQXDataFields.JQXDataFieldTypes.String));
+		getOptions().getDatafields().add(new JQXDataFields(GlobalAttributes.Value.toString(), JQXDataFields.JQXDataFieldTypes.String));
 	}
 
 	/**
@@ -49,24 +50,47 @@ public class DataAdapterNameValuePair extends JQXDataAdapter<JQXDropDownListName
 		this.list = list;
 	}
 
-	public static void main(String[] args)
-	{
-		// DataAdapterNameValuePair j = new DataAdapterNameValuePair();
-		// System.out.println(j.renderJavascripts(0));
-	}
 
 	public void updateDropDownList(JQXDropDownList list)
 	{
 		list.getOptions().setSource(this);
-		list.getOptions().setDisplayMember("name");
-		list.getOptions().setValueMember("value");
+		list.getOptions().setDisplayMember(GlobalAttributes.Name.toString());
+		list.getOptions().setValueMember(GlobalAttributes.Value.toString());
 	}
 
 	public void updateDropDownListSelectMenu(JQXDropDownListSelectMenu list)
 	{
 		list.getOptions().setSource(this);
-		list.getOptions().setDisplayMember("name");
-		list.getOptions().setValueMember("value");
+		list.getOptions().setDisplayMember(GlobalAttributes.Name.toString());
+		list.getOptions().setValueMember(GlobalAttributes.Value.toString());
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		DataAdapterNameValuePair that = (DataAdapterNameValuePair) o;
+
+		return list.equals(that.list);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + list.hashCode();
+		return result;
+	}
 }

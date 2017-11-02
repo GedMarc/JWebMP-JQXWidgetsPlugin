@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXBulletChart extends Div<JQXBulletChartChildren, JQXBulletChartAttributes, JQXBulletChartFeatures, JQXBulletChartEvents, JQXBulletChart>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXBulletChartFeature feature;
-	
+
 	public JQXBulletChart()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public final JQXBulletChartFeature getFeature()
 	{
 		if (feature == null)
@@ -50,12 +50,40 @@ public class JQXBulletChart extends Div<JQXBulletChartChildren, JQXBulletChartAt
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXBulletChartOptions getOptions()
 	{
-		
+
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXBulletChart that = (JQXBulletChart) o;
+
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

@@ -25,17 +25,17 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXDockingOptions extends JQXDefaultJavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Boolean cookies;// 	Boolean 	false
-	private JQXCookieOptions cookieOptions;// 	Object 	{}
+	private JQXCookieOptions cookieOptions;
 	private Boolean disabled;// 	Boolean 	false
 	private Double floatingWindowOpacity;// 	Number 	0.3
 	private Boolean keyboardNavigation;// 	Boolean 	false
@@ -44,110 +44,110 @@ public class JQXDockingOptions extends JQXDefaultJavaScriptPart
 	private Boolean rtl;// 	Boolean 	false
 	private JQXWindowsMode windowsMode;// 	Object 	null
 	private Integer windowsOffset;// 	Number 	5
-	
+
 	public JQXDockingOptions()
 	{
-	
+		//Nothing needed
 	}
-	
+
 	public Boolean getCookies()
 	{
 		return cookies;
 	}
-	
+
 	public void setCookies(Boolean cookies)
 	{
 		this.cookies = cookies;
 	}
-	
+
 	public JQXCookieOptions getCookieOptions()
 	{
 		return cookieOptions;
 	}
-	
+
 	public void setCookieOptions(JQXCookieOptions cookieOptions)
 	{
 		this.cookieOptions = cookieOptions;
 	}
-	
+
 	public Boolean getDisabled()
 	{
 		return disabled;
 	}
-	
+
 	public void setDisabled(Boolean disabled)
 	{
 		this.disabled = disabled;
 	}
-	
+
 	public Double getFloatingWindowOpacity()
 	{
 		return floatingWindowOpacity;
 	}
-	
+
 	public void setFloatingWindowOpacity(Double floatingWindowOpacity)
 	{
 		this.floatingWindowOpacity = floatingWindowOpacity;
 	}
-	
+
 	public Boolean getKeyboardNavigation()
 	{
 		return keyboardNavigation;
 	}
-	
+
 	public void setKeyboardNavigation(Boolean keyboardNavigation)
 	{
 		this.keyboardNavigation = keyboardNavigation;
 	}
-	
+
 	public JQXDockingModes getMode()
 	{
 		return mode;
 	}
-	
+
 	public void setMode(JQXDockingModes mode)
 	{
 		this.mode = mode;
 	}
-	
+
 	public Orientation getOrientation()
 	{
 		return orientation;
 	}
-	
+
 	public void setOrientation(Orientation orientation)
 	{
 		this.orientation = orientation;
 	}
-	
+
 	public Boolean getRtl()
 	{
 		return rtl;
 	}
-	
+
 	public void setRtl(Boolean rtl)
 	{
 		this.rtl = rtl;
 	}
-	
+
 	public JQXWindowsMode getWindowsMode()
 	{
 		return windowsMode;
 	}
-	
+
 	public void setWindowsMode(JQXWindowsMode windowsMode)
 	{
 		this.windowsMode = windowsMode;
 	}
-	
+
 	public Integer getWindowsOffset()
 	{
 		return windowsOffset;
 	}
-	
+
 	public void setWindowsOffset(Integer windowsOffset)
 	{
 		this.windowsOffset = windowsOffset;
 	}
-	
+
 }

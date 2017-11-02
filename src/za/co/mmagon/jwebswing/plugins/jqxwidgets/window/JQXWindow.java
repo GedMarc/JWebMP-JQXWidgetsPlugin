@@ -61,4 +61,32 @@ public class JQXWindow extends Div<JQXWindowChildren, JQXWindowAttributes, JQXWi
 		return getFeature().getOptions();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXWindow jqxWindow = (JQXWindow) o;
+
+		return getFeature().equals(jqxWindow.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

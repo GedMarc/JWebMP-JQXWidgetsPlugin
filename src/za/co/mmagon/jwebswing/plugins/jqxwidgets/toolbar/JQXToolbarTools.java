@@ -29,6 +29,7 @@ public class JQXToolbarTools extends JavaScriptPart
 
 	public JQXToolbarTools()
 	{
+		//Nothing needed
 	}
 
 	@Override

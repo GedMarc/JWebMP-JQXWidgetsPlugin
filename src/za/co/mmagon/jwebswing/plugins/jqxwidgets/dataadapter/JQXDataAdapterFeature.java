@@ -38,7 +38,6 @@ public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXDataAdapter forComponent;
 	private JQXDataAdapterOptions<A> options;
 
 	/**
@@ -50,11 +49,10 @@ public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
 	public JQXDataAdapterFeature(JQXDataAdapter forComponent)
 	{
 		super("JQXDataApapterFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
-
 	}
 
 	/**
@@ -93,7 +91,7 @@ public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
 	 */
 	private String getDAID()
 	{
-		return forComponent.getDAID();
+		return JQXDataAdapter.class.cast(getComponent()).getDAID();
 	}
 
 }

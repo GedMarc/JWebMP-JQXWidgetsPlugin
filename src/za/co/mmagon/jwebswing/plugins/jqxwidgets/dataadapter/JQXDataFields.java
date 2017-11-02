@@ -213,7 +213,7 @@ public class JQXDataFields extends JavaScriptPart
 	/**
 	 * The specified data field type
 	 */
-	public static enum JQXDataFieldTypes
+	public enum JQXDataFieldTypes
 	{
 		/**
 		 * A string field

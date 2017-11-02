@@ -57,7 +57,7 @@ public class JQXDragDropOptions extends JavaScriptPart
 	
 	public JQXDragDropOptions()
 	{
-	
+			//Not needed
 	}
 	
 	public String getAppendTo()

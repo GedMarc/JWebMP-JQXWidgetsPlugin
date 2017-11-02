@@ -47,7 +47,7 @@ public class JQXFileUploadOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXFileUploadOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public Boolean getAutoUpload()

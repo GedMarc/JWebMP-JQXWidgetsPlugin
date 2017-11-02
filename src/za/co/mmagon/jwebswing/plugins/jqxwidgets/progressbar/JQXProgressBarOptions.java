@@ -44,7 +44,7 @@ public class JQXProgressBarOptions extends JQXDefaultJavaScriptPart
 
 	public JQXProgressBarOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Integer getAnimationDuration()

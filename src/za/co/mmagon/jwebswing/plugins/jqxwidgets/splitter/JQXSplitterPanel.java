@@ -16,14 +16,18 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.splitter;
 
+import java.io.Serializable;
+
 /**
  * This Class
  *
  * @author GedMarc
  * @since 24 Dec 2015
  */
-public class JQXSplitterPanel
+public class JQXSplitterPanel implements Serializable
 {
+
+	private static final long serialVersionUID = 1L;
 
 	private Integer size;// - sets the panel's size.
 	private Integer min;// - sets the panel's minimum size.
@@ -32,6 +36,7 @@ public class JQXSplitterPanel
 
 	public JQXSplitterPanel()
 	{
+		//Nothing needed
 	}
 
 	@Override

@@ -37,6 +37,7 @@ public class JQXValidatorRules
 
 	public JQXValidatorRules()
 	{
+		//nothing needed
 	}
 
 	@Override

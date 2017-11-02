@@ -17,7 +17,6 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.touchtip;
 
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
 
 /**
  * All the options for the tooltip library
@@ -25,8 +24,8 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class JQXTouchTipOptions extends JavaScriptPart
@@ -34,13 +33,7 @@ public class JQXTouchTipOptions extends JavaScriptPart
 
 	public JQXTouchTipOptions()
 	{
-
-	}
-
-	@Override
-	public JavascriptPartType getJavascriptType()
-	{
-		return JavascriptPartType.Javascript;
+		//Nothing needed
 	}
 
 }

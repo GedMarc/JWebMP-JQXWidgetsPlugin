@@ -39,6 +39,7 @@ class JQXTreeGridExportSettings extends JavaScriptPart
 
 	public JQXTreeGridExportSettings()
 	{
+		//nothing needed
 	}
 
 	public Boolean getColumnsHeader()

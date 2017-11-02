@@ -66,7 +66,7 @@ public class JQXGauge extends Div<JQXGaugeChildren, JQXGaugeAttributes, JQXGauge
 		{
 			return true;
 		}
-		if (!(o instanceof JQXGauge))
+		if (o == null || getClass() != o.getClass())
 		{
 			return false;
 		}

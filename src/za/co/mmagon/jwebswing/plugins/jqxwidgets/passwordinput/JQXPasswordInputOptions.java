@@ -46,7 +46,7 @@ public class JQXPasswordInputOptions extends JQXDefaultJavaScriptPart
 
 	public JQXPasswordInputOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getDisabled()

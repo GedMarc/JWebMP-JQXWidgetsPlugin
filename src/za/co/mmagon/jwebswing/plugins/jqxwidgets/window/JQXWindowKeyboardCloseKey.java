@@ -22,11 +22,12 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.window;
  * @author GedMarc
  * @since 25 Dec 2015
  */
-class JQXWindowKeyboardCloseKey
+public class JQXWindowKeyboardCloseKey
 {
 
 	public JQXWindowKeyboardCloseKey()
 	{
+		//nothing needed
 	}
 
 

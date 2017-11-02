@@ -29,6 +29,7 @@ public class JQXFileUploadLocalization extends JavaScriptPart
 	
 	public JQXFileUploadLocalization()
 	{
+		//Nothing needed
 	}
 	
 	@Override

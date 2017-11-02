@@ -43,7 +43,7 @@ public class JQXScrollViewOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXScrollViewOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public Integer getAnimationDuration()

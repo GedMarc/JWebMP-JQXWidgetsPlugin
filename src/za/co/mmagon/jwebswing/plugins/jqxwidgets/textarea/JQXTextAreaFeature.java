@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXTextAreaFeature extends Feature<JQXTextAreaOptions, JQXTextAreaF
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXTextArea forComponent;
 	private JQXTextAreaOptions options;
 
 	/**
@@ -46,7 +43,7 @@ public class JQXTextAreaFeature extends Feature<JQXTextAreaOptions, JQXTextAreaF
 	public JQXTextAreaFeature(JQXTextArea forComponent)
 	{
 		super("JQXTextAreaFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
@@ -73,11 +70,38 @@ public class JQXTextAreaFeature extends Feature<JQXTextAreaOptions, JQXTextAreaF
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxTextArea(";
+		String requiredString = getComponent().getJQueryID() + "jqxTextArea(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXTextAreaFeature that = (JQXTextAreaFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

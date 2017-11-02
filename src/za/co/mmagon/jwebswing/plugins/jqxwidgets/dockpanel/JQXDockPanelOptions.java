@@ -38,7 +38,46 @@ public class JQXDockPanelOptions extends JavaScriptPart
 
 	public JQXDockPanelOptions()
 	{
-
+	//Nothing needed
 	}
 
+	public Boolean getDisabled()
+	{
+		return disabled;
+	}
+
+	public void setDisabled(Boolean disabled)
+	{
+		this.disabled = disabled;
+	}
+
+	public Integer getHeight()
+	{
+		return height;
+	}
+
+	public void setHeight(Integer height)
+	{
+		this.height = height;
+	}
+
+	public Boolean getLastchildfill()
+	{
+		return lastchildfill;
+	}
+
+	public void setLastchildfill(Boolean lastchildfill)
+	{
+		this.lastchildfill = lastchildfill;
+	}
+
+	public Integer getWidth()
+	{
+		return width;
+	}
+
+	public void setWidth(Integer width)
+	{
+		this.width = width;
+	}
 }

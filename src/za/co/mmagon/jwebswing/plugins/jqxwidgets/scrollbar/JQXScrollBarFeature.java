@@ -22,8 +22,6 @@ import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -36,7 +34,6 @@ public class JQXScrollBarFeature extends Feature<JavaScriptPart, JQXScrollBarFea
 
 	private static final long serialVersionUID = 1L;
 
-	private final Component forComponent;
 	private JQXScrollBarOptions options;
 
 	/**
@@ -48,7 +45,7 @@ public class JQXScrollBarFeature extends Feature<JavaScriptPart, JQXScrollBarFea
 	public JQXScrollBarFeature(Component forComponent)
 	{
 		super("JQXScrollBarFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
@@ -74,11 +71,38 @@ public class JQXScrollBarFeature extends Feature<JavaScriptPart, JQXScrollBarFea
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxScrollBar(";
+		String requiredString = getComponent().getJQueryID() + "jqxScrollBar(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXScrollBarFeature that = (JQXScrollBarFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

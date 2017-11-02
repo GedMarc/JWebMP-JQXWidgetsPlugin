@@ -23,6 +23,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXSelectionModes;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * All the options for the JQX Calendar library
@@ -60,7 +61,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	private Integer navigationDelay;// Number 	400
 	private Integer rowHeaderWidth;// Number 	25
 	private Boolean readOnly;// Boolean 	false
-	private ArrayList<Date> restrictedDates;// Array[]
+	private List<Date> restrictedDates;// Array[]
 	private Boolean rtl;// Boolean 	false
 	private Integer stepMonths;// Number 	1
 	private Boolean showWeekNumbers;// Boolean 	true
@@ -68,15 +69,15 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	private Boolean showOtherMonthDays;// Boolean 	true
 	private Boolean showFooter;// Boolean 	false
 	private JQXSelectionModes selectionMode;// String    'default'
-	private ArrayList<Date> specialDates;// Array    new Array()
+	private List<Date> specialDates;// Array    new Array()
 	private Integer titleHeight;// 	Number 	25
-	private ArrayList<String> titleFormat;// 	Array 	["MMMM yyyy", "yyyy", "yyyy"]
+	private List<String> titleFormat;// 	Array 	["MMMM yyyy", "yyyy", "yyyy"]
 	private String todayString;// 	String 	'Today'
 	private Date value;// 	Date 	Today
 
 	public JQXCalendarOptions()
 	{
-
+		//No config required
 	}
 
 	/**
@@ -508,7 +509,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<Date> getRestrictedDates()
+	public List<Date> getRestrictedDates()
 	{
 		if (restrictedDates == null)
 		{
@@ -522,7 +523,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @param restrictedDates
 	 */
-	public void setRestrictedDates(ArrayList<Date> restrictedDates)
+	public void setRestrictedDates(List<Date> restrictedDates)
 	{
 		this.restrictedDates = restrictedDates;
 	}
@@ -686,7 +687,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<Date> getSpecialDates()
+	public List<Date> getSpecialDates()
 	{
 		if (specialDates == null)
 		{
@@ -700,7 +701,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @param specialDates
 	 */
-	public void setSpecialDates(ArrayList<Date> specialDates)
+	public void setSpecialDates(List<Date> specialDates)
 	{
 		this.specialDates = specialDates;
 	}
@@ -775,7 +776,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @return
 	 */
-	public ArrayList<String> getTitleFormat()
+	public List<String> getTitleFormat()
 	{
 		if (titleFormat == null)
 		{
@@ -834,7 +835,7 @@ public class JQXCalendarOptions extends JQXDefaultJavaScriptPart
 	 *
 	 * @param titleFormat
 	 */
-	public void setTitleFormat(ArrayList<String> titleFormat)
+	public void setTitleFormat(List<String> titleFormat)
 	{
 		this.titleFormat = titleFormat;
 	}

@@ -51,7 +51,7 @@ public class JQXPopOverOptions extends JQXDefaultJavaScriptPart
 
 	public JQXPopOverOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Integer getArrowOffsetValue()

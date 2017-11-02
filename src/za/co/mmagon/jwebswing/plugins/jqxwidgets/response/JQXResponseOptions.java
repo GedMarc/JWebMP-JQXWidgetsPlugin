@@ -45,7 +45,7 @@ public class JQXResponseOptions extends JavaScriptPart
 	
 	public JQXResponseOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public String getBrowser()

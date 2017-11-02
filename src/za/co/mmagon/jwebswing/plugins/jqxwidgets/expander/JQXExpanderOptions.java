@@ -46,7 +46,7 @@ public class JQXExpanderOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXExpanderOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public String getAnimationType()

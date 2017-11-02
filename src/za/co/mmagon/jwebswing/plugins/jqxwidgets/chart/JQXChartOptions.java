@@ -21,7 +21,8 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options for the JQX Chart library
  * <p>
- * TODO complete this
+ *
+ * complete this!
  *
  * @author GedMarc
  * @version 1.0

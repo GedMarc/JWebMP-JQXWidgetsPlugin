@@ -21,7 +21,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHex;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -37,14 +37,14 @@ public class JQXTreeMapOptions extends JavaScriptPart
 {
 	
 	private ColourHex baseColor;// 	String 	'#C2EEFF'
-	private ArrayList<JQXTreeMapColorRange> colorRanges;// 	Array 	[ { color: '#aa9988', min: 0, max: 10 }, { color: '#ccbbcc', min: 11, max: 50 }, { color: '#000', min: 50, max: 100 } ];
+	private List<JQXTreeMapColorRange> colorRanges;
 	private Integer colorRange;// 	Number 	100
 	private JQXTreeMapColorModes colorMode;// 	String 	'parent'
 	private String displayMember;// 	String 	""
 	private Boolean hoverEnabled;// 	Boolean 	false
 	private Integer headerHeight;// 	Number 	25
 	private String legendLabel;// 	String 	"Legend"
-	private XYObject legendPosition; //	Object 	{ x: 0, y: -5 }
+	private XYObject legendPosition;
 	private JavascriptFunction legendScaleCallback;// 	Object 	null
 	private JavascriptFunction renderCallbacks;// 	Object 	null
 	private Boolean selectionEnabled;// 	Boolean 	true
@@ -54,7 +54,7 @@ public class JQXTreeMapOptions extends JavaScriptPart
 	
 	public JQXTreeMapOptions()
 	{
-	
+		//nothing needed
 	}
 	
 	public ColourHex getBaseColor()
@@ -67,12 +67,12 @@ public class JQXTreeMapOptions extends JavaScriptPart
 		this.baseColor = baseColor;
 	}
 	
-	public ArrayList<JQXTreeMapColorRange> getColorRanges()
+	public List<JQXTreeMapColorRange> getColorRanges()
 	{
 		return colorRanges;
 	}
 	
-	public void setColorRanges(ArrayList<JQXTreeMapColorRange> colorRanges)
+	public void setColorRanges(List<JQXTreeMapColorRange> colorRanges)
 	{
 		this.colorRanges = colorRanges;
 	}

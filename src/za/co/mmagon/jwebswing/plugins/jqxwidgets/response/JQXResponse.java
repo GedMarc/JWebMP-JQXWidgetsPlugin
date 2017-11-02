@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXResponse extends Div<JQXResponseChildren, JQXResponseAttributes, JQXResponseFeature, JQXResponseEvents, JQXResponse>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXResponseFeature feature;
-	
+
 	public JQXResponse()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public JQXResponseFeature getFeature()
 	{
 		if (feature == null)
@@ -50,10 +50,39 @@ public class JQXResponse extends Div<JQXResponseChildren, JQXResponseAttributes,
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXResponseOptions getOptions()
 	{
 		return getFeature().getOptions();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXResponse that = (JQXResponse) o;
+
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
 	}
 }

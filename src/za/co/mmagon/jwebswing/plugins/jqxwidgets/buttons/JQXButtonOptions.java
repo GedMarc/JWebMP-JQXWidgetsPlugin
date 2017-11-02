@@ -103,7 +103,7 @@ public class JQXButtonOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXButtonOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	/**

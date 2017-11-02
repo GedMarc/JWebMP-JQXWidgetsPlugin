@@ -51,7 +51,7 @@ public class JQXTagCloudOptions extends JQXDefaultJavaScriptPart
 	private Boolean rtl;// 	Boolean 	false
 	private String sortBy;// 	String 	'none'
 	private JQXSortOrders sortOrder;// 	String 	'ascending'
-	//source 	Object 	{}
+	//source
 	private JavascriptFunction tagRenderer;// 	function 	null
 	private Boolean takeTopWeightedItems;// 	Boolean 	false
 	private ColourHex textColor;// 	Color String 	null
@@ -61,7 +61,7 @@ public class JQXTagCloudOptions extends JQXDefaultJavaScriptPart
 
 	public JQXTagCloudOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public String getAlterTextCase()

@@ -33,15 +33,15 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXDockingLayout extends Div<JQXDockingLayoutChildren, JQXDockingLayoutAttributes, JQXDockingLayoutFeature, JQXDockingLayoutEvents, JQXDockingLayout>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private JQXDockingLayoutFeature feature;
-	
+
 	public JQXDockingLayout()
 	{
 		addFeature(getFeature());
 	}
-	
+
 	public JQXDockingLayoutFeature getFeature()
 	{
 		if (feature == null)
@@ -50,11 +50,39 @@ public class JQXDockingLayout extends Div<JQXDockingLayoutChildren, JQXDockingLa
 		}
 		return feature;
 	}
-	
+
 	@Override
 	public JQXDockingLayoutOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDockingLayout that = (JQXDockingLayout) o;
+
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

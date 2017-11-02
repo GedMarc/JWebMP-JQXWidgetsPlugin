@@ -32,6 +32,7 @@ public class JQXCookieOptions extends JavaScriptPart
 	
 	public JQXCookieOptions()
 	{
+		//Not needed
 	}
 	
 	@Override

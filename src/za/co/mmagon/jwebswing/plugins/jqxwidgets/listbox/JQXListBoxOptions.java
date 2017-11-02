@@ -64,7 +64,7 @@ public class JQXListBoxOptions extends JQXDefaultJavaScriptPart
 
 	public JQXListBoxOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getAutoHeight()

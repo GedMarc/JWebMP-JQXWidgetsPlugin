@@ -40,6 +40,7 @@ public class JQXTreeGridEditSettings extends JavaScriptPart
 
 	public JQXTreeGridEditSettings()
 	{
+		//Nothing needed
 	}
 
 	public Boolean getSaveOnPageChange()

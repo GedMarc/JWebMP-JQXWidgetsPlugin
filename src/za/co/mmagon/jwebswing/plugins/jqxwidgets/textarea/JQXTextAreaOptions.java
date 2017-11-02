@@ -20,7 +20,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXSearchModes;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -50,12 +50,12 @@ public class JQXTextAreaOptions extends JQXDefaultJavaScriptPart
 	private Boolean rtl;// 	Boolean 	false
 	private Integer scrollBarSize;// 	Number 	15
 	private JQXSearchModes searchMode;// 	String 	'default'
-	private ArrayList<String> source;// 	Array, function 	[]
+	private List<String> source;// 	Array, function 	[]
 	private String valueMember;// 	String 	''
 
 	public JQXTextAreaOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getDisabled()
@@ -208,12 +208,12 @@ public class JQXTextAreaOptions extends JQXDefaultJavaScriptPart
 		this.searchMode = searchMode;
 	}
 
-	public ArrayList<String> getSource()
+	public List<String> getSource()
 	{
 		return source;
 	}
 
-	public void setSource(ArrayList<String> source)
+	public void setSource(List<String> source)
 	{
 		this.source = source;
 	}

@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXCheckBoxFeature extends Feature<JQXCheckBoxOptions, JQXCheckBoxF
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXCheckBox forComponent;
 	private JQXCheckBoxOptions options;
 
 	/**
@@ -46,7 +43,7 @@ public class JQXCheckBoxFeature extends Feature<JQXCheckBoxOptions, JQXCheckBoxF
 	public JQXCheckBoxFeature(JQXCheckBox forComponent)
 	{
 		super("JQXCheckBoxFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.CheckBox.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
@@ -71,11 +68,38 @@ public class JQXCheckBoxFeature extends Feature<JQXCheckBoxOptions, JQXCheckBoxF
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxCheckBox(";
+		String requiredString = getComponent().getJQueryID() + "jqxCheckBox(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXCheckBoxFeature that = (JQXCheckBoxFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

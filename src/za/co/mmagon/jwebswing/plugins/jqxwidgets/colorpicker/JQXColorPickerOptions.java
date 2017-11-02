@@ -41,7 +41,7 @@ public class JQXColorPickerOptions extends JQXDefaultJavaScriptPart
 
 	public JQXColorPickerOptions()
 	{
-
+		//nothing
 	}
 
 	@Override

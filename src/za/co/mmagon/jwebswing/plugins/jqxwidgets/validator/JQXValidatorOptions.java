@@ -20,7 +20,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
 import za.co.mmagon.jwebswing.plugins.easingeffects.JQEasingEffects;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the tooltip library
@@ -44,12 +44,12 @@ public class JQXValidatorOptions extends JavaScriptPart
 	private JavascriptFunction onError;// 	Function 	null
 	private JavascriptFunction onSuccess;// 	Function 	null
 	private JQXValidatorPositions position;// 	String 	'right'
-	private ArrayList<JQXValidatorRules> rules;// 	Array 	[]
+	private List<JQXValidatorRules> rules;// 	Array 	[]
 	private Boolean rtl;// 	Boolean 	false
 	
 	public JQXValidatorOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public Boolean getArrow()
@@ -142,12 +142,12 @@ public class JQXValidatorOptions extends JavaScriptPart
 		this.position = position;
 	}
 	
-	public ArrayList<JQXValidatorRules> getRules()
+	public List<JQXValidatorRules> getRules()
 	{
 		return rules;
 	}
 	
-	public void setRules(ArrayList<JQXValidatorRules> rules)
+	public void setRules(List<JQXValidatorRules> rules)
 	{
 		this.rules = rules;
 	}

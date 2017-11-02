@@ -43,7 +43,7 @@ public class JQXComplexInputOptions extends JQXDefaultJavaScriptPart
 
 	public JQXComplexInputOptions()
 	{
-
+		//Nothing
 	}
 
 	public JQXDecimalNotations getDecimalNotation()

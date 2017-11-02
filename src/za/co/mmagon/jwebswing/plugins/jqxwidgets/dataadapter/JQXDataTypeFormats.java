@@ -46,6 +46,7 @@ public class JQXDataTypeFormats extends JavaScriptPart
 	 */
 	public JQXDataTypeFormats()
 	{
+		//No config needed
 	}
 
 	@Override

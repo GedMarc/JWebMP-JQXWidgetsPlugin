@@ -36,6 +36,7 @@ public class JQXTreeMapColorRange extends JavaScriptPart
 	
 	public JQXTreeMapColorRange()
 	{
+		//Nothing Needed
 	}
 	
 	public ColourHex getColor()

@@ -23,6 +23,7 @@ import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataAdapterSourc
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter.JQXDataFields;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the Data Adapter library
@@ -48,7 +49,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 	/**
 	 * Array []
 	 */
-	private ArrayList<JQXDataFields> datafields;//
+	private List<JQXDataFields> datafields;//
 	private A data;// Object
 	@JsonIgnore
 	private A localdata;// Object
@@ -67,7 +68,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 
 	public JQXDataAdapterOptions()
 	{
-
+		//nothing needed
 	}
 
 	/**
@@ -95,7 +96,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 	 *
 	 * @return
 	 */
-	public ArrayList<JQXDataFields> getDatafields()
+	public List<JQXDataFields> getDatafields()
 	{
 		if (datafields == null)
 		{
@@ -109,7 +110,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 	 *
 	 * @param datafields
 	 */
-	public void setDatafields(ArrayList<JQXDataFields> datafields)
+	public void setDatafields(List<JQXDataFields> datafields)
 	{
 		this.datafields = datafields;
 	}
@@ -192,11 +193,12 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 		this.type = type;
 	}
 
+	@Override
 	public String getReferenceId()
 	{
 		return id;
 	}
-
+	@Override
 	public void setReferenceId(String id)
 	{
 		this.id = id;

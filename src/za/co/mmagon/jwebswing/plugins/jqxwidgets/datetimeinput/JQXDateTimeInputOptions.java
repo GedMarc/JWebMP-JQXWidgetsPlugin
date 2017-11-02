@@ -66,7 +66,7 @@ public class JQXDateTimeInputOptions extends JQXDefaultJavaScriptPart
 	
 	public JQXDateTimeInputOptions()
 	{
-	
+		//Nothing needed
 	}
 	
 	public String getAnimationType()

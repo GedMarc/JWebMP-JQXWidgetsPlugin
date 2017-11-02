@@ -44,7 +44,7 @@ public class JQXScrollBarOptions extends JQXDefaultJavaScriptPart
 
 	public JQXScrollBarOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getDisabled()

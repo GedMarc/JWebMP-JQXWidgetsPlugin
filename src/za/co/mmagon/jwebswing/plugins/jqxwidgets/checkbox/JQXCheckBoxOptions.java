@@ -46,7 +46,7 @@ public class JQXCheckBoxOptions extends JQXDefaultJavaScriptPart
 
 	public JQXCheckBoxOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Integer getAnimationShowDelay()

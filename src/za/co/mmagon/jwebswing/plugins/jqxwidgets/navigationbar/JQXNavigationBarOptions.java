@@ -47,7 +47,7 @@ public class JQXNavigationBarOptions extends JQXDefaultJavaScriptPart
 
 	public JQXNavigationBarOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public JQEasingEffects getAnimationType()

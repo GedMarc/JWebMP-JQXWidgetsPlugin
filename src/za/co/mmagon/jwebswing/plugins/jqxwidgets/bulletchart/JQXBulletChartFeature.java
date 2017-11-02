@@ -29,12 +29,11 @@ import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
  */
 public class JQXBulletChartFeature extends Feature<JQXBulletChartOptions, JQXBulletChartFeature> implements JQXBulletChartFeatures, GlobalFeatures
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
-	private final JQXBulletChart forComponent;
+
 	private JQXBulletChartOptions options;
-	
+
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
 	 * <p>
@@ -45,15 +44,14 @@ public class JQXBulletChartFeature extends Feature<JQXBulletChartOptions, JQXBul
 	{
 		super("JQXBulletChartFeature");
 		setComponent(forComponent);
-		this.forComponent = forComponent;
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
-		
+
 		getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.BulletChart.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ToolTip.getJavaScriptReference());
 	}
-	
+
 	/**
 	 * Returns all the tooltip options
 	 * <p>
@@ -69,13 +67,42 @@ public class JQXBulletChartFeature extends Feature<JQXBulletChartOptions, JQXBul
 		}
 		return options;
 	}
-	
+
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		String requiredString = forComponent.getJQueryID() + "jqxBulletChart(";
+		String requiredString = getComponent().getJQueryID() + "jqxBulletChart(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXBulletChartFeature that = (JQXBulletChartFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

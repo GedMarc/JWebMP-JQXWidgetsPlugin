@@ -55,7 +55,7 @@ public class JQXButtonGroupOptions extends JQXDefaultJavaScriptPart
 
 	public JQXButtonGroupOptions()
 	{
-
+		//Nothing needed
 	}
 
 	/**

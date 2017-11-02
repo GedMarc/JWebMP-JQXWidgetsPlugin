@@ -34,6 +34,7 @@ public class JQXPopOverOffset extends JavaScriptPart
 
 	public JQXPopOverOffset()
 	{
+		//Nothing needed
 	}
 
 	public Integer getLeft()

@@ -60,4 +60,37 @@ public class JQXDropDownButton extends Div<JQXDropDownListChildren, JQXDropDownL
 		return list;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDropDownButton that = (JQXDropDownButton) o;
+
+		if (!getList().equals(that.getList()))
+		{
+			return false;
+		}
+		return getFeature().equals(that.getFeature());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getList().hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
 }

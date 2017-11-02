@@ -27,6 +27,6 @@ public class JQXNotificationDiv extends Div implements JQXNotificationChildren
 
 	public JQXNotificationDiv()
 	{
-
+		//Nothing needed
 	}
 }

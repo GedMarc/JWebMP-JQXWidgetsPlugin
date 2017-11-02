@@ -22,8 +22,6 @@ import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.panel.JQXPanelFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -36,7 +34,6 @@ public class JQXNotificationFeature extends Feature<JQXNotificationOptions, JQXN
 
 	private static final long serialVersionUID = 1L;
 
-	private final Component forComponent;
 	private JQXNotificationOptions options;
 
 	/**
@@ -48,7 +45,7 @@ public class JQXNotificationFeature extends Feature<JQXNotificationOptions, JQXN
 	public JQXNotificationFeature(Component forComponent)
 	{
 		super("JQXNotificationFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Notification.getJavaScriptReference());
 		getCssReferences().add(JQXReferencePool.Core.getCssReference());
@@ -67,11 +64,38 @@ public class JQXNotificationFeature extends Feature<JQXNotificationOptions, JQXN
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxNotification(";
+		String requiredString = getComponent().getJQueryID() + "jqxNotification(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXNotificationFeature that = (JQXNotificationFeature) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
 	}
 }

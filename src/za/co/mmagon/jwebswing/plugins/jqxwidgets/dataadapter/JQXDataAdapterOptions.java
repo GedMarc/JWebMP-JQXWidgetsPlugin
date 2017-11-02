@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * All the options for the Data Adapter library
@@ -45,7 +46,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 	/**
 	 * Array []
 	 */
-	private ArrayList<JQXDataFields> datafields;//
+	private List<JQXDataFields> datafields;//
 	private A data;// Object
 	@JsonIgnore
 	private A localdata;// Object
@@ -64,7 +65,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 
 	public JQXDataAdapterOptions()
 	{
-
+		//Not needed
 	}
 
 	public String getColumnDelimiter()
@@ -77,7 +78,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 		this.columnDelimiter = columnDelimiter;
 	}
 
-	public ArrayList<JQXDataFields> getDatafields()
+	public List<JQXDataFields> getDatafields()
 	{
 		if (datafields == null)
 		{
@@ -86,7 +87,7 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 		return datafields;
 	}
 
-	public void setDatafields(ArrayList<JQXDataFields> datafields)
+	public void setDatafields(List<JQXDataFields> datafields)
 	{
 		this.datafields = datafields;
 	}
@@ -137,12 +138,12 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData> extends J
 	{
 		this.type = type;
 	}
-
+	@Override
 	public String getReferenceId()
 	{
 		return id;
 	}
-
+	@Override
 	public void setReferenceId(String id)
 	{
 		this.id = id;

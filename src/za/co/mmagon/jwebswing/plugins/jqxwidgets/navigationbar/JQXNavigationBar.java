@@ -21,6 +21,7 @@ import za.co.mmagon.jwebswing.base.html.Paragraph;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalChildren;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -86,7 +87,41 @@ public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttrib
 		this.groups = groups;
 	}
 
-	public static class NavigationBarGroup
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXNavigationBar that = (JQXNavigationBar) o;
+
+		if (!getFeature().equals(that.getFeature()))
+		{
+			return false;
+		}
+		return getGroups().equals(that.getGroups());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + getGroups().hashCode();
+		return result;
+	}
+
+	public static class NavigationBarGroup implements Serializable
 	{
 
 		private Div header;
@@ -156,11 +191,7 @@ public class JQXNavigationBar extends Div<GlobalChildren, JQXNavigationBarAttrib
 				return false;
 			}
 			final NavigationBarGroup other = (NavigationBarGroup) obj;
-			if (!Objects.equals(this.name, other.name))
-			{
-				return false;
-			}
-			return true;
+			return Objects.equals(this.name, other.name);
 		}
 
 	}

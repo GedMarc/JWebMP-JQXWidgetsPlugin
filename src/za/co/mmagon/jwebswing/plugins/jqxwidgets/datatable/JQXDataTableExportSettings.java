@@ -35,6 +35,7 @@ public class JQXDataTableExportSettings extends JavaScriptPart
 
 	public JQXDataTableExportSettings()
 	{
+		//Nothing needed
 	}
 
 	public Boolean getColumnsHeader()

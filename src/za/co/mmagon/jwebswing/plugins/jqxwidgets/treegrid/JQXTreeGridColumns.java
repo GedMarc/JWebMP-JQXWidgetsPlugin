@@ -70,6 +70,7 @@ public class JQXTreeGridColumns extends JavaScriptPart
 
 	public JQXTreeGridColumns()
 	{
+		//nothing needed
 	}
 
 	public String getText()

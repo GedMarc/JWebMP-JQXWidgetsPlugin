@@ -44,7 +44,7 @@ public class JQXRadioButtonOptions extends JQXDefaultJavaScriptPart
 
 	public JQXRadioButtonOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Integer getAnimationShowDelay()

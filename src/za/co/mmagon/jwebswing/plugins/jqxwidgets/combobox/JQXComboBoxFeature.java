@@ -20,8 +20,6 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
 
-import java.util.ArrayList;
-
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
@@ -34,7 +32,6 @@ public class JQXComboBoxFeature extends Feature<JQXComboBoxOptions, JQXComboBoxF
 
 	private static final long serialVersionUID = 1L;
 
-	private final JQXComboBox forComponent;
 	private JQXComboBoxOptions options;
 
 	/**
@@ -46,7 +43,7 @@ public class JQXComboBoxFeature extends Feature<JQXComboBoxOptions, JQXComboBoxF
 	public JQXComboBoxFeature(JQXComboBox forComponent)
 	{
 		super("JQXComboBoxFeature");
-		this.forComponent = forComponent;
+		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());
@@ -74,11 +71,21 @@ public class JQXComboBoxFeature extends Feature<JQXComboBoxOptions, JQXComboBoxF
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		ArrayList<String> queries = new ArrayList();
-		String requiredString = forComponent.getJQueryID() + "jqxComboBox(";
+		String requiredString = getComponent().getJQueryID() + "jqxComboBox(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);
+	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 }

@@ -20,15 +20,18 @@ import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.generics.XYObject;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.events.enumerations.EventTypes;
 
+import java.io.Serializable;
+
 /**
  * This Class
  *
  * @author GedMarc
  * @since 25 Dec 2015
  */
-public class JQXValidatorRules
+public class JQXValidatorRules implements Serializable
 {
 
+	private static final long serialVersionUID = 1L;
 	private Component input;
 	private String message;
 	private JQXValidationRuleTypes rule;

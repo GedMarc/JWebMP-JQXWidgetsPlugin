@@ -94,4 +94,32 @@ public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
 		return JQXDataAdapter.class.cast(getComponent()).getDAID();
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDataAdapterFeature<?> that = (JQXDataAdapterFeature<?>) o;
+
+		return getOptions().equals(that.getOptions());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getOptions().hashCode();
+		return result;
+	}
 }

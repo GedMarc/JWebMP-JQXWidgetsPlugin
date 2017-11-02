@@ -69,7 +69,7 @@ public class JQXWindowOptions extends JavaScriptPart
 
 	public JQXWindowOptions()
 	{
-
+		//Nothing needed
 	}
 
 	public Boolean getAutoOpen()

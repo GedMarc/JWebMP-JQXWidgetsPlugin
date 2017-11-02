@@ -55,4 +55,32 @@ public class JQXDataThemeFeature extends Feature<JavaScriptPart, JQXDataThemeFea
 		this.globalTheme = theme;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQXDataThemeFeature that = (JQXDataThemeFeature) o;
+
+		return globalTheme == that.globalTheme;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + globalTheme.hashCode();
+		return result;
+	}
 }

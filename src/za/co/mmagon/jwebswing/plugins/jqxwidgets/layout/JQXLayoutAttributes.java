@@ -17,6 +17,7 @@
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.layout;
 
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
 
 /**
  * @author GedMarc
@@ -29,7 +30,7 @@ public enum JQXLayoutAttributes implements AttributeDefinitions
 	@Override
 	public String toString()
 	{
-		return super.toString().toLowerCase().replace('_', '-');
+		return super.toString().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
 
 	@Override

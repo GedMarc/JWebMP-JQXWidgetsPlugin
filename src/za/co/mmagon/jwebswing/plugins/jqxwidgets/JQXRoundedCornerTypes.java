@@ -16,6 +16,8 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets;
 
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
+
 /**
  * @author MXM3727
  */
@@ -42,7 +44,7 @@ public enum JQXRoundedCornerTypes
 	@Override
 	public String toString()
 	{
-		return "jqx-rc-" + name().toLowerCase().replace('_', '-');
+		return "jqx-rc-" + name().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
 	
 }

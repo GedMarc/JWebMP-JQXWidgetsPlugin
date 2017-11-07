@@ -16,6 +16,8 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.notification;
 
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
+
 /**
  * This Class
  *
@@ -32,7 +34,7 @@ public enum JQXNotificationPositions
 	@Override
 	public String toString()
 	{
-		return super.toString().replace('_', '-');
+		return super.toString().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
 
 }

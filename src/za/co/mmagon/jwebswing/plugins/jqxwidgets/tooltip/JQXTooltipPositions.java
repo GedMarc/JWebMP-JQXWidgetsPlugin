@@ -16,6 +16,8 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.tooltip;
 
+import za.co.mmagon.jwebswing.utilities.StaticStrings;
+
 /**
  * This Class
  *
@@ -64,6 +66,6 @@ public enum JQXTooltipPositions
 	@Override
 	public String toString()
 	{
-		return name().replace('_', '-');
+		return name().replace(StaticStrings.CHAR_UNDERSCORE, '-');
 	}
 }

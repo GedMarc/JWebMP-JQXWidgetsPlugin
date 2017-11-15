@@ -44,7 +44,7 @@ public class JQXColorPickerDropDown extends JQXDropDownButton
 		colourPicker = new JQXColorPicker();
 		colour = new ColourHex("ffaabb");
 		getFeature().setSetContentMethod("getTextElementByColor(new $.jqx.color({ hex: '" + colour + "' }))");
-		getFeatures().add(0, colourPicker.getFeature());
+		getFeatures().add(colourPicker.getFeature());
 		getFeatures().add(new ColourPickerDropDownUpdate(this));
 		colourPicker.getOptions().setHeight(220);
 		colourPicker.getOptions().setWidth(220);

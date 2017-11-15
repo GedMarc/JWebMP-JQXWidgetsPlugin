@@ -57,6 +57,7 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 	 *
 	 * @param component
 	 */
+	@SuppressWarnings("unchecked")
 	public JQXDataAdapter(Component component)
 	{
 		super(component);
@@ -83,6 +84,7 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 	 * @return
 	 */
 	@Override
+	@SuppressWarnings("unchecked")
 	public final JQXDataAdapterFeature getFeature()
 	{
 		if (feature == null)
@@ -98,6 +100,7 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 	 * @return
 	 */
 	@Override
+	@SuppressWarnings("unchecked")
 	public JQXDataAdapterOptions<A> getOptions()
 	{
 		return getFeature().getOptions();
@@ -109,6 +112,7 @@ public class JQXDataAdapter<A extends JQXDataAdapterSourceData, J extends JQXDat
 	 * @return
 	 */
 	@Override
+
 	public StringBuilder renderJavascript()
 	{
 		JQXDataAdapterSourceData dataPacket = getOptions().getLocaldata();

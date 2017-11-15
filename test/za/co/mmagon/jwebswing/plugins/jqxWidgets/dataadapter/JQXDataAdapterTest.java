@@ -34,6 +34,7 @@ public class JQXDataAdapterTest
 	
 	
 	@Test
+	@SuppressWarnings("unchecked")
 	public void testSomeMethod()
 	{
 		Div d = new Div();

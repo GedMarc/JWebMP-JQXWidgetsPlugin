@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.calendar;
 
-import za.co.mmagon.jwebswing.components.globalize.cultures.GlobalizeCultures;
+import za.co.mmagon.jwebswing.plugins.globalize.cultures.GlobalizeCultures;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDayNameFormats;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import za.co.mmagon.jwebswing.plugins.jqxwidgets.JQXSelectionModes;

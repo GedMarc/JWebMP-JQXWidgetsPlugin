@@ -53,10 +53,10 @@ public class JQXButtonFeatureTest
 		but.getFeature().getOptions().setTemplate(JQXButtonTemplates.Default);
 		System.out.println(but.renderJavascript());
 		// System.out.println(but.renderJavascript());
-		assertEquals("$('#id').jqxButton({\n"
-				             + "  \"template\" : \"default\",\n"
-				             + "  \"toggled\" : true\n"
-				             + "});\n", but.renderJavascript().toString());
+		assertEquals("$(\"#id\").jqxButton({\n" +
+				             "  \"template\" : \"default\",\n" +
+				             "  \"toggled\" : true\n" +
+				             "});\n", but.renderJavascript().toString());
 
 	}
 
@@ -69,10 +69,10 @@ public class JQXButtonFeatureTest
 		but.getOptions().setTemplate(JQXButtonTemplates.Default);
 		//   System.out.println(but.renderJavascript());
 		System.out.println(but.renderJavascript());
-		assertEquals("$('#id').jqxButton({\n"
-				             + "  \"template\" : \"default\",\n"
-				             + "  \"toggled\" : true\n"
-				             + "});\n", but.renderJavascript().toString());
+		assertEquals("$(\"#id\").jqxButton({\n" +
+				             "  \"template\" : \"default\",\n" +
+				             "  \"toggled\" : true\n" +
+				             "});\n", but.renderJavascript().toString());
 	}
 
 	@Test
@@ -83,10 +83,9 @@ public class JQXButtonFeatureTest
 		but.getOptions().setTheme(JQXWidgetThemes.Fresh);
 		// System.out.println(but.renderJavascript());
 		System.out.println(but.renderJavascript());
-		assertEquals("$('#id').jqxButton({\n"
-				             + "  \"theme\" : \"fresh\"\n"
-				             + "});\n"
-				             + "", but.renderJavascript().toString());
+		assertEquals("$(\"#id\").jqxButton({\n" +
+				             "  \"theme\" : \"fresh\"\n" +
+				             "});\n", but.renderJavascript().toString());
 	}
 
 	@Test
@@ -98,9 +97,8 @@ public class JQXButtonFeatureTest
 		but.toString(true);
 		//    System.out.println(but.renderJavascript());
 		System.out.println(but.renderJavascript());
-		assertEquals("$('#id').jqxButton({\n"
-				             + "  \"theme\" : \"fresh\"\n"
-				             + "});\n"
-				             + "", but.renderJavascript().toString());
+		assertEquals("$(\"#id\").jqxButton({\n" +
+				             "  \"theme\" : \"fresh\"\n" +
+				             "});\n", but.renderJavascript().toString());
 	}
 }

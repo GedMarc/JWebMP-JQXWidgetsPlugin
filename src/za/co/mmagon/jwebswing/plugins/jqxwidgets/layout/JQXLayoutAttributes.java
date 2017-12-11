@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,6 +19,8 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.layout;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 import za.co.mmagon.jwebswing.utilities.StaticStrings;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.CHAR_DASH;
+
 /**
  * @author GedMarc
  */
@@ -30,7 +32,7 @@ public enum JQXLayoutAttributes implements AttributeDefinitions
 	@Override
 	public String toString()
 	{
-		return super.toString().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, '-');
+		return super.toString().toLowerCase().replace(StaticStrings.CHAR_UNDERSCORE, CHAR_DASH);
 	}
 
 	@Override

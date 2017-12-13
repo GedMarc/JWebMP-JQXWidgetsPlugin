@@ -16,9 +16,9 @@
  */
 package za.co.mmagon.jwebswing.plugins.jqxwidgets.dataadapter;
 
-import com.armineasy.injection.GuiceContext;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import za.co.mmagon.guiceinjection.GuiceContext;
 import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.components.DataAdapter;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;

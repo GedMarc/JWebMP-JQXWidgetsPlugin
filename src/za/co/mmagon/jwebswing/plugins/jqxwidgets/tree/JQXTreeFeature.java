@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -20,6 +20,8 @@ import za.co.mmagon.jwebswing.Component;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
+
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
 
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
@@ -79,7 +81,7 @@ public class JQXTreeFeature extends Feature<JQXTreeOptions, JQXTreeFeature> impl
 
 		if (getOptions().isExpandAll())
 		{
-			addQuery(getComponent().getJQueryID() + "jqxTree(" + "'expandAll'" + ");" + getNewLine());
+			addQuery(getComponent().getJQueryID() + "jqxTree(" + "'expandAll'" + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
 		}
 	}
 

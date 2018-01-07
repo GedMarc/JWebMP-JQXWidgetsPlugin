@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,6 +19,8 @@ package za.co.mmagon.jwebswing.plugins.jqxwidgets.dropdownlist;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
 import za.co.mmagon.jwebswing.plugins.pools.jqxwidgets.JQXReferencePool;
+
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
 
 /**
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
@@ -78,7 +80,7 @@ public class JQXDropDownListFeature extends Feature<JQXDropDownListOptions, JQXD
 		addQuery(requiredString);
 		if (setContentMethod != null)
 		{
-			addQuery(getComponent().getJQueryID() + "jqxDropDownList('setContent'," + setContentMethod + ");");
+			addQuery(getComponent().getJQueryID() + "jqxDropDownList('setContent'," + setContentMethod + STRING_CLOSING_BRACKET_SEMICOLON);
 		}
 
 	}

@@ -48,7 +48,6 @@ public class JQXTreeFeature extends Feature<JQXTreeOptions, JQXTreeFeature> impl
 		super("JQXTreeFeature");
 		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
-		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.ScrollBar.getJavaScriptReference());

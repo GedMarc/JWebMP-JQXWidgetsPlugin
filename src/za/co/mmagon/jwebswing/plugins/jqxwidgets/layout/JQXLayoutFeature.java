@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -46,7 +46,6 @@ public class JQXLayoutFeature extends Feature<JQXLayoutOptions, JQXLayoutFeature
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Ribbon.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Layout.getJavaScriptReference());
-		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
 
 	/**

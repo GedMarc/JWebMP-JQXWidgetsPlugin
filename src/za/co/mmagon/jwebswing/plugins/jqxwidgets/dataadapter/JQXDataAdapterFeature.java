@@ -52,7 +52,6 @@ public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
 		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
 		getJavascriptReferences().add(JQXReferencePool.Data.getJavaScriptReference());
-		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 	}
 
 	/**

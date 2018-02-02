@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -46,7 +46,6 @@ public class JQXButtonFeature extends Feature<JQXButtonOptions, JQXButtonFeature
 		super("JQXButtonsFeature");
 		setComponent(forComponent);
 		getJavascriptReferences().add(JQXReferencePool.Core.getJavaScriptReference());
-		getCssReferences().add(JQXReferencePool.Core.getCssReference());
 		getJavascriptReferences().add(JQXReferencePool.Button.getJavaScriptReference());
 	}
 

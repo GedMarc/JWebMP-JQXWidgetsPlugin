@@ -16,7 +16,6 @@
  */
 package com.jwebmp.plugins.jqxWidgets.buttons;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import com.jwebmp.plugins.jqxwidgets.JQXRoundedCornerTypes;
 import com.jwebmp.plugins.jqxwidgets.buttons.JQXButtonImagesPositions;
@@ -31,7 +30,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @author GedMarc
  */
 public class JQXButtonOptionsTest
-		extends BaseTestClass
+
 {
 
 	public JQXButtonOptionsTest()
@@ -44,7 +43,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetDelay()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setDelay(500);
 		System.out.println(jpo.toString());
@@ -57,7 +56,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetDelay()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setDelay(600);
 		System.out.println(jpo.toString());
@@ -70,7 +69,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetDisabled()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setDisabled(true);
 		System.out.println(jpo.toString());
@@ -83,7 +82,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetDisabled()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setDisabled(true);
 		System.out.println(jpo.toString());
@@ -96,7 +95,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetRoundedCorners()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setRoundedCorners(JQXRoundedCornerTypes.Bottom);
 		System.out.println(jpo.toString());
@@ -109,7 +108,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetRoundedCorners()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setRoundedCorners(JQXRoundedCornerTypes.Top);
 		System.out.println(jpo.toString());
@@ -122,7 +121,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetRtl()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setRtl(true);
 		System.out.println(jpo.toString());
@@ -135,7 +134,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetRtl()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setRtl(true);
 		System.out.println(jpo.toString());
@@ -148,7 +147,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetTemplate()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setTemplate(JQXButtonTemplates.Info);
 		System.out.println(jpo.toString());
@@ -161,7 +160,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetTemplate()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setTemplate(JQXButtonTemplates.Info);
 		System.out.println(jpo.toString());
@@ -174,7 +173,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetToggled()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setToggled(true);
 		System.out.println(jpo.toString());
@@ -187,7 +186,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetToggled()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setToggled(false);
 		System.out.println(jpo.toString());
@@ -200,7 +199,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetImgSrc()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgSrc("src");
 		System.out.println(jpo.toString());
@@ -213,7 +212,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetImgSrc()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgSrc("src");
 		System.out.println(jpo.toString());
@@ -226,7 +225,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetImgWidth()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgWidth(500);
 		System.out.println(jpo.toString());
@@ -239,7 +238,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetImgWidth()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgWidth(500);
 		System.out.println(jpo.toString());
@@ -252,7 +251,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetImgHeight()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgHeight(500);
 		System.out.println(jpo.toString());
@@ -265,7 +264,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetImgHeight()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgHeight(500);
 		System.out.println(jpo.toString());
@@ -278,7 +277,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetImgPosition()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgPosition(JQXButtonImagesPositions.bottom);
 		System.out.println(jpo.toString());
@@ -291,7 +290,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetImgPosition()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setImgPosition(JQXButtonImagesPositions.bottom);
 		System.out.println(jpo.toString());
@@ -304,7 +303,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetTextPosition()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setTextPosition(JQXButtonImagesPositions.bottom);
 		System.out.println(jpo.toString());
@@ -317,7 +316,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetTextPosition()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setTextPosition(JQXButtonImagesPositions.bottom);
 		System.out.println(jpo.toString());
@@ -330,7 +329,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testGetTextImageRelation()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setTextImageRelation(JQXButtonTextImageRelation.textAboveImage);
 		System.out.println(jpo.toString());
@@ -343,7 +342,7 @@ public class JQXButtonOptionsTest
 	@Test
 	public void testSetTextImageRelation()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXButtonOptions jpo = new JQXButtonOptions();
 		jpo.setTextImageRelation(JQXButtonTextImageRelation.textAboveImage);
 		System.out.println(jpo.toString());

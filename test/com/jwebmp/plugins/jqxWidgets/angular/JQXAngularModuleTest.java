@@ -16,7 +16,6 @@
  */
 package com.jwebmp.plugins.jqxWidgets.angular;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import com.jwebmp.plugins.jqxwidgets.angular.JQXAngularModule;
 import org.junit.jupiter.api.Test;
@@ -25,7 +24,7 @@ import org.junit.jupiter.api.Test;
  * @author GedMarc
  */
 public class JQXAngularModuleTest
-		extends BaseTestClass
+
 {
 
 	public JQXAngularModuleTest()
@@ -36,7 +35,7 @@ public class JQXAngularModuleTest
 	@Test
 	public void testSomeMethod()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXAngularModule mod = new JQXAngularModule(p.getBody());
 		System.out.println(p.toString(true));
 		System.out.println(p.getAngular()

@@ -16,7 +16,6 @@
  */
 package com.jwebmp.plugins.jqxWidgets;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.htmlbuilder.css.measurement.MeasurementPercentages;
@@ -30,7 +29,7 @@ import org.junit.jupiter.api.Test;
  * @author GedMarc
  */
 public class JQXDefaultJavaScriptPartTest
-		extends BaseTestClass
+
 {
 
 	public JQXDefaultJavaScriptPartTest()
@@ -43,7 +42,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testGetTheme()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setTheme("theme");
 		System.out.println(derp.toString());
@@ -56,7 +55,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testSetTheme_String()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setTheme("theme");
 		System.out.println(derp.toString());
@@ -69,7 +68,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testSetTheme_JQXWidgetThemes()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setTheme(JQXWidgetThemes.Black);
 		System.out.println(derp.toString());
@@ -82,7 +81,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testGetWidth()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setWidth(4090);
 		System.out.println(derp.toString());
@@ -95,7 +94,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testSetWidth_Integer()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setWidth(4090);
 		System.out.println(derp.toString());
@@ -108,7 +107,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testSetWidth_MeasurementCSSImpl()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setWidth(MeasurementPercentages.eightyPercent);
 		System.out.println(MeasurementPercentages.eightyPercent);
@@ -123,7 +122,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testGetHeight()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setHeight(4090);
 		System.out.println(derp.toString());
@@ -136,7 +135,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testSetHeight_Integer()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setHeight(4090);
 		System.out.println(derp.toString());
@@ -149,7 +148,7 @@ public class JQXDefaultJavaScriptPartTest
 	@Test
 	public void testSetHeight_MeasurementCSSImpl()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		JQXDefaultJavaScriptPart derp = new JQXDefaultJavaScriptPart();
 		derp.setHeight(new MeasurementCSSImpl(5, MeasurementTypes.EM));
 		System.out.println(derp.toString());

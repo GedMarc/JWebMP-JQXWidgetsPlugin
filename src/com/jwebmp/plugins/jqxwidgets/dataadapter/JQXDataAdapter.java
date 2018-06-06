@@ -20,11 +20,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jwebmp.Component;
 import com.jwebmp.components.DataAdapter;
+import com.jwebmp.guiceinjection.GuiceContext;
 import com.jwebmp.plugins.ComponentInformation;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
-import za.co.mmagon.guiceinjection.GuiceContext;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

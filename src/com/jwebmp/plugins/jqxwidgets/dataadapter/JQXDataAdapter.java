@@ -20,7 +20,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jwebmp.Component;
 import com.jwebmp.components.DataAdapter;
-import com.jwebmp.guiceinjection.GuiceContext;
+import com.jwebmp.guicedinjection.GuiceContext;
 import com.jwebmp.plugins.ComponentInformation;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
@@ -143,7 +143,6 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 		return getFeature().getOptions();
 	}
 
-
 	/**
 	 * Renders the given JavaScript for the given component
 	 *
@@ -166,6 +165,5 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 		}
 		return new StringBuilder();
 	}
-
 
 }

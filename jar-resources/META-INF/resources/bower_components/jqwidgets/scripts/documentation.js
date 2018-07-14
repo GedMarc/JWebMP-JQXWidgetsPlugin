@@ -63,7 +63,7 @@
             }
             catch (error) {
             }
-        }
+        };
 
         var updateHeight = function () {
             try {
@@ -94,7 +94,7 @@
             }
             catch (er) {
             }
-        }
+        };
 
         $(".documentation-option-type-click").mouseup(function (event) {
             updateHeight();
@@ -122,7 +122,7 @@
                 });
 
                 updateHeight();
-            }
+            };
 
             timer = setTimeout(function () {
                 search();

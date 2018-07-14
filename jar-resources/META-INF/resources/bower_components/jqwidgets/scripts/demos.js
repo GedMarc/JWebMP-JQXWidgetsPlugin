@@ -1,5 +1,5 @@
 ﻿function getDemoTheme() {
-    var theme = document.body ? $.data(document.body, 'theme') : null
+    var theme = document.body ? $.data(document.body, 'theme') : null;
     if (theme == null) {
         theme = '';
     }
@@ -68,15 +68,14 @@
                 if ($.jqx && $.jqx.ready) {
                     $.jqx.ready();
                 }
-                ;
-            }
+            };
             $(document).find('head').append(link);
         }
     }
     $.jqx = $.jqx || {};
     $.jqx.theme = theme;
     return theme;
-};
+}
 var theme = '';
 try {
     if (jQuery) {

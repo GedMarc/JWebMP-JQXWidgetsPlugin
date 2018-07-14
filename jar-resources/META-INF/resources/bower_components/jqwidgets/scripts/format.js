@@ -1,3 +1,4 @@
+
 //Colour constants
 var fc_cmt = "#080";
 var fc_html = "#11a";
@@ -57,7 +58,7 @@ var colourKeywordsCustom = function (keywords, codeline) {
         }
     }
     return newString;
-}
+};
 
 var colourCodeKeywordsCustom = function (keywords, codeline) {
     var words = keywords.split("|");
@@ -68,10 +69,9 @@ var colourCodeKeywordsCustom = function (keywords, codeline) {
         }
     }
     return newString;
-}
+};
 
 function colourKeywords(keywords, codeline) {
     var wordre = new RegExp("(" + keywords + ") ", "gi");
     return codeline.replace(wordre, "<span style=\"color: " + fc_kwds + ";\">$1 </span>");
 }
-  

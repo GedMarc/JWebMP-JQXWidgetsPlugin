@@ -6,14 +6,14 @@
     function j(w) {
         throw w;
     }
-
     var m = !0, p = null, r = !1;
-
     function u(w) {
         return function () {
             return w
         }
-    };var x = window, y = document, ga = navigator, F = window.jQuery, I = void 0;
+    }
+
+    var x = window, y = document, ga = navigator, F = window.jQuery, I = void 0;
 
     function L(w) {
         function ha(a, d, c, e, f) {
@@ -57,15 +57,7 @@
             h = [];
             v = [];
             l = n;
-            for (q = s; l || q;) s = k[l][q] - 1, q && s === k[l][q - 1] ? h.push(g[g.length] = {
-                status: c,
-                value: b[--q],
-                index: q
-            }) : l && s === k[l - 1][q] ? v.push(g[g.length] = {
-                status: e,
-                value: a[--l],
-                index: l
-            }) : (g.push({status: "retained", value: b[--q]}), --l);
+            for (q = s; l || q;) s = k[l][q] - 1, q && s === k[l][q - 1] ? h.push(g[g.length] = {status: c, value: b[--q], index: q}) : l && s === k[l - 1][q] ? v.push(g[g.length] = {status: e, value: a[--l], index: l}) : (g.push({status: "retained", value: b[--q]}), --l);
             if (h.length && v.length) {
                 a = 10 * n;
                 var t;
@@ -160,7 +152,7 @@
                 var n = c && c instanceof b.z ? c : new b.z(b.a.d(c)), q = n.$data;
                 e && b.eb(a, n);
                 if (k = ("function" == typeof d ?
-                        d(n, a) : d) || b.J.instance.getBindings(a, n)) {
+                    d(n, a) : d) || b.J.instance.getBindings(a, n)) {
                     if (0 === h) {
                         h = 1;
                         for (var s in k) {
@@ -623,7 +615,7 @@
             b.a.ka(a);
             d = b.a.d(d);
             if (d !== p && d !== I) if ("string" != typeof d && (d = d.toString()),
-                "undefined" != typeof F) F(a).html(d); else for (var c = b.a.ta(d), e = 0; e < c.length; e++) a.appendChild(c[e])
+            "undefined" != typeof F) F(a).html(d); else for (var c = b.a.ta(d), e = 0; e < c.length; e++) a.appendChild(c[e])
         };
         b.b("utils.parseHtmlFragment", b.a.ta);
         b.b("utils.setHtml", b.a.ca);
@@ -919,8 +911,7 @@
             var l, n = r, q = r, s = a;
             s && "object" == typeof s ? (c = s, s = c.read) : (c = c || {}, s || (s = c.read));
             "function" != typeof s && j(Error("Pass a function that returns the value of the ko.computed"));
-            var v = c.write, G = c.disposeWhenNodeIsRemoved || c.W || p, w = c.disposeWhen || c.Ka || u(r), A = e,
-                z = [], t = p;
+            var v = c.write, G = c.disposeWhenNodeIsRemoved || c.W || p, w = c.disposeWhen || c.Ka || u(r), A = e, z = [], t = p;
             d || (d = c.owner);
             h.t = function () {
                 n || g();
@@ -1016,8 +1007,7 @@
         b.b("selectExtensions", b.k);
         b.b("selectExtensions.readValue", b.k.q);
         b.b("selectExtensions.writeValue", b.k.T);
-        var ka = /\@ko_token_(\d+)\@/g, na = ["true", "false"],
-            oa = /^(?:[$_a-z][$\w]*|(.+)(\.\s*[$_a-z][$\w]*|\[.+\]))$/i;
+        var ka = /\@ko_token_(\d+)\@/g, na = ["true", "false"], oa = /^(?:[$_a-z][$\w]*|(.+)(\.\s*[$_a-z][$\w]*|\[.+\]))$/i;
         b.g = {
             Q: [], aa: function (a) {
                 var d = b.a.D(a);
@@ -1035,8 +1025,7 @@
                     } else if (g == e && "\\" !== d.charAt(f - 1)) {
                         g = d.substring(c, f + 1);
                         a.push(g);
-                        var h = "@ko_token_" + (a.length - 1) + "@", d = d.substring(0, c) + h + d.substring(f + 1),
-                            f = f - (g.length - h.length), c = p
+                        var h = "@ko_token_" + (a.length - 1) + "@", d = d.substring(0, c) + h + d.substring(f + 1), f = f - (g.length - h.length), c = p
                     }
                 }
                 e = c = p;
@@ -1062,10 +1051,7 @@
                 e = [];
                 d = d.split(",");
                 c = 0;
-                for (f = d.length; c < f; c++) k = d[c], l = k.indexOf(":"), 0 < l && l < k.length - 1 ? (g = k.substring(l + 1), e.push({
-                    key: P(k.substring(0, l), a),
-                    value: P(g, a)
-                })) : e.push({unknown: P(k, a)});
+                for (f = d.length; c < f; c++) k = d[c], l = k.indexOf(":"), 0 < l && l < k.length - 1 ? (g = k.substring(l + 1), e.push({key: P(k.substring(0, l), a), value: P(g, a)})) : e.push({unknown: P(k, a)});
                 return e
             }, ba: function (a) {
                 var d = "string" === typeof a ? b.g.aa(a) : a, c = [];
@@ -1110,10 +1096,8 @@
         b.b("expressionRewriting.preProcessBindings", b.g.ba);
         b.b("jsonExpressionRewriting", b.g);
         b.b("jsonExpressionRewriting.insertPropertyAccessorsIntoJson", b.g.ba);
-        var K = "\x3c!--test--\x3e" === y.createComment("test").text,
-            ja = K ? /^\x3c!--\s*ko(?:\s+(.+\s*\:[\s\S]*))?\s*--\x3e$/ : /^\s*ko(?:\s+(.+\s*\:[\s\S]*))?\s*$/,
-            ia = K ? /^\x3c!--\s*\/ko\s*--\x3e$/ :
-                /^\s*\/ko\s*$/, pa = {ul: m, ol: m};
+        var K = "\x3c!--test--\x3e" === y.createComment("test").text, ja = K ? /^\x3c!--\s*ko(?:\s+(.+\s*\:[\s\S]*))?\s*--\x3e$/ : /^\s*ko(?:\s+(.+\s*\:[\s\S]*))?\s*$/, ia = K ? /^\x3c!--\s*\/ko\s*--\x3e$/ :
+            /^\s*\/ko\s*$/, pa = {ul: m, ol: m};
         b.e = {
             I: {}, childNodes: function (a) {
                 return B(a) ? aa(a) : a.childNodes
@@ -1337,17 +1321,7 @@
                     var d = a(), c = b.a.ua(d);
                     if (!c || "number" == typeof c.length) return {foreach: d, templateEngine: b.C.oa};
                     b.a.d(d);
-                    return {
-                        foreach: c.data,
-                        as: c.as,
-                        includeDestroyed: c.includeDestroyed,
-                        afterAdd: c.afterAdd,
-                        beforeRemove: c.beforeRemove,
-                        afterRender: c.afterRender,
-                        beforeMove: c.beforeMove,
-                        afterMove: c.afterMove,
-                        templateEngine: b.C.oa
-                    }
+                    return {foreach: c.data, as: c.as, includeDestroyed: c.includeDestroyed, afterAdd: c.afterAdd, beforeRemove: c.beforeRemove, afterRender: c.afterRender, beforeMove: c.beforeMove, afterMove: c.afterMove, templateEngine: b.C.oa}
                 }
             }, init: function (a, d) {
                 return b.c.template.init(a, b.c.foreach.Sa(d))
@@ -1572,8 +1546,7 @@
             a.data("isRewritten", m)
         };
         b.b("templateEngine", b.v);
-        var qa = /(<[a-z]+\d*(\s+(?!data-bind=)[a-z0-9\-]+(=(\"[^\"]*\"|\'[^\']*\'))?)*\s+)data-bind=(["'])([\s\S]*?)\5/gi,
-            ra = /\x3c!--\s*ko\b\s*([\s\S]*?)\s*--\x3e/g;
+        var qa = /(<[a-z]+\d*(\s+(?!data-bind=)[a-z0-9\-]+(=(\"[^\"]*\"|\'[^\']*\'))?)*\s+)data-bind=(["'])([\s\S]*?)\5/gi, ra = /\x3c!--\s*ko\b\s*([\s\S]*?)\s*--\x3e/g;
         b.za = {
             vb: function (a,
                           d, c) {
@@ -1639,8 +1612,7 @@
             if (e) {
                 var g = N(e);
                 return b.j(function () {
-                    var h = d && d instanceof b.z ? d : new b.z(b.a.d(d)),
-                        k = "function" == typeof a ? a(h.$data, h) : a, h = T(e, f, k, h, c);
+                    var h = d && d instanceof b.z ? d : new b.z(b.a.d(d)), k = "function" == typeof a ? a(h.$data, h) : a, h = T(e, f, k, h, c);
                     "replaceNode" == f && (e = h, g = N(e))
                 }, p, {
                     Ka: function () {
@@ -1727,11 +1699,9 @@
 
             d = d || [];
             e = e || {};
-            var k = b.a.f.get(a, "setDomNodeChildrenFromArrayMapping_lastMappingResult") === I,
-                l = b.a.f.get(a, "setDomNodeChildrenFromArrayMapping_lastMappingResult") || [],
-                n = b.a.V(l, function (a) {
-                    return a.U
-                }), q = b.a.Ja(n, d), s = [], v = 0, w = 0, B = [], A = [];
+            var k = b.a.f.get(a, "setDomNodeChildrenFromArrayMapping_lastMappingResult") === I, l = b.a.f.get(a, "setDomNodeChildrenFromArrayMapping_lastMappingResult") || [], n = b.a.V(l, function (a) {
+                return a.U
+            }), q = b.a.Ja(n, d), s = [], v = 0, w = 0, B = [], A = [];
             d = [];
             for (var z = [], n = [], t, D = 0, C, E; C = q[D]; D++) switch (E = C.moved, C.status) {
                 case "deleted":

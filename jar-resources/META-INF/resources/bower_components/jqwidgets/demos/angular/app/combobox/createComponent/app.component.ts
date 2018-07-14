@@ -1,41 +1,34 @@
-/// <reference path="../../../jqwidgets-ts/jqwidgets.d.ts" /> 
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+﻿import {AfterViewInit, Component, ViewChild} from '@angular/core';
 
-import { jqxComboBoxComponent } from '../../../../../jqwidgets-ts/angular_jqxcombobox';
+import {jqxComboBoxComponent} from '../../../../../jqwidgets-ts/angular_jqxcombobox';
 
 @Component({
-    selector: 'my-app',
-    template: `<jqxComboBox #comboBoxReference [auto-create]='false'></jqxComboBox>`
-}) 
+    selector: 'app-root',
+    templateUrl: './app.component.html'
+})
 
-export class AppComponent implements AfterViewInit
-{ 
-    @ViewChild('comboBoxReference') myComboBox: jqxComboBoxComponent;
-
-    ngAfterViewInit(): void
-    {
-        this.myComboBox.createComponent(this.settings);
-    }   
-
+export class AppComponent implements AfterViewInit {
+    @ViewChild('myComboBox') myComboBox: jqxComboBoxComponent;
     settings: jqwidgets.ComboBoxOptions =
     {
         source: this.generateHTML(),
         selectedIndex: 0,
-        width: '250',
+        width: '250px',
         height: '25px'
+    };
+
+    ngAfterViewInit(): void {
+        this.myComboBox.createComponent(this.settings);
     }
 
-    generateHTML()
-    {
-        let source = new Array();
+    generateHTML() {
+        let source = [];
 
-        for (let i = 0; i < 10; i++)
-        {
+        for (let i = 0; i < 10; i++) {
             let movie = 'avatar.png';
             let title = 'Avatar';
             let year = 2009;
-            switch (i)
-            {
+            switch (i) {
                 case 1:
                     movie = 'endgame.png';
                     title = 'End Game';
@@ -69,7 +62,7 @@ export class AppComponent implements AfterViewInit
                 case 7:
                     movie = 'knockout.png';
                     title = 'Knockout';
-                    year = 2011
+                    year = 2011;
                     break;
                 case 8:
                     movie = 'theplane.png';

@@ -1,14 +1,10 @@
-﻿ 
-import { Component } from '@angular/core';
-
-import { jqxPanelComponent } from '../../../../../jqwidgets-ts/angular_jqxpanel';
+﻿import {Component} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: '../app/panel/defaultfunctionality/app.component.htm'
+    selector: 'app-root',
+    templateUrl: './app.component.html'
 })
 
-export class AppComponent
-{
+export class AppComponent {
 
 }

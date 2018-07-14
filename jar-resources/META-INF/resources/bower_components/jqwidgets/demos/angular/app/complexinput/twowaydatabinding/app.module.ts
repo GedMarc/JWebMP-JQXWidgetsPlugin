@@ -1,15 +1,21 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+﻿import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
-import { AppComponent } from './app.component';
-
-import { jqxComplexInputComponent } from '../../../../../jqwidgets-ts/angular_jqxcomplexinput';
+import {AppComponent} from './app.component';
+import {ComplexInputModule} from '../../modules/complexinput.module';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
-    declarations: [AppComponent, jqxComplexInputComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, FormsModule, ComplexInputModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
 

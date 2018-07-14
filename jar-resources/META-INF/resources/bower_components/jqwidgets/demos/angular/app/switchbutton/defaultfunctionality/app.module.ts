@@ -1,14 +1,17 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxSwitchButtonComponent } from '../../../../../jqwidgets-ts/angular_jqxswitchbutton';
+import {SwitchButtonModule} from '../../modules/switchbutton.module';
+import {AppComponent} from './app.component';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxSwitchButtonComponent],
+    imports: [BrowserModule, CommonModule, SwitchButtonModule],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
 

@@ -1,16 +1,18 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
-
-import { AppComponent } from './app.component';
-
-import { jqxCalendarComponent } from '../../../../../jqwidgets-ts/angular_jqxcalendar';
+import {CalendarModule} from '../../modules/calendar.module';
+import {AppComponent} from './app.component';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
-    declarations: [AppComponent, jqxCalendarComponent],
+    imports: [BrowserModule, CommonModule, FormsModule, CalendarModule],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
 

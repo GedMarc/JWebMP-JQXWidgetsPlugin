@@ -1,14 +1,20 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+﻿import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-
-import { jqxSchedulerComponent } from '../../../../../jqwidgets-ts/angular_jqxscheduler';
+import {AppComponent} from './app.component';
+import {SchedulerModule} from '../../modules/scheduler.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxSchedulerComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, SchedulerModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
 

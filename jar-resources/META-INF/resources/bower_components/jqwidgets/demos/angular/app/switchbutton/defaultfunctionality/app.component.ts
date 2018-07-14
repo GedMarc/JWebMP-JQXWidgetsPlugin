@@ -1,33 +1,28 @@
-﻿ 
-import { Component } from '@angular/core';
-
-import { jqxSwitchButtonComponent } from '../../../../../jqwidgets-ts/angular_jqxswitchbutton';
-
+﻿import {Component, ElementRef, ViewChild, ViewEncapsulation} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: '../app/switchbutton/defaultfunctionality/app.component.htm',
-    styleUrls: ['../app/switchbutton/defaultfunctionality/app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent
-{
-    onChecked(event: any): void
-    {
-        (<HTMLElement>document.getElementById('events')).innerHTML = this.label[event.target.parentElement.id] + ': Unchecked';
-    }
-
-    onUnchecked(event: any): void 
-    {
-        (<HTMLElement>document.getElementById('events')).innerHTML = this.label[event.target.parentElement.id] + ': Checked';
-    }
-
+export class AppComponent {
+    @ViewChild('events') events: ElementRef;
     label: any =
     {
-        'button1': 'New Mail',
-        'button2': 'Sent Mail',
-        'button3': 'Calendar Alerts',
-        'button4': 'Lock Sounds',
-        'button5': 'Keyboard clicks'
+        '1': 'New Mail',
+        '2': 'Sent Mail',
+        '3': 'Calendar Alerts',
+        '4': 'Lock Sounds',
+        '5': 'Keyboard clicks'
+    }
+
+    onChecked(buttonNumber: number): void {
+        this.events.nativeElement.innerHTML = this.label[buttonNumber] + ': Unchecked';
+    }
+
+    onUnchecked(buttonNumber: number): void {
+        this.events.nativeElement.innerHTML = this.label[buttonNumber] + ': Checked';
     }
 }

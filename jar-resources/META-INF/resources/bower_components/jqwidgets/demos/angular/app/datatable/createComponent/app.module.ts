@@ -1,14 +1,21 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+﻿import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxDataTableComponent } from '../../../../../jqwidgets-ts/angular_jqxdatatable';
+import {AppComponent} from './app.component';
+import {DataTableModule} from '../../modules/datatable.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxDataTableComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, DataTableModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
 

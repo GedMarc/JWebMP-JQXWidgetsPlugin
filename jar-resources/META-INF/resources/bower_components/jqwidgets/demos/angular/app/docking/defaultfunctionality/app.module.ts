@@ -1,18 +1,28 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxDockingComponent }  from '../../../../../jqwidgets-ts/angular_jqxdocking';
-import { jqxCalendarComponent } from '../../../../../jqwidgets-ts/angular_jqxcalendar';
-import { jqxTabsComponent }     from '../../../../../jqwidgets-ts/angular_jqxtabs';
-import { jqxListBoxComponent }  from '../../../../../jqwidgets-ts/angular_jqxlistbox';
-import { jqxPanelComponent }    from '../../../../../jqwidgets-ts/angular_jqxpanel';
+import {AppComponent} from './app.component';
+import {DockingModule} from '../../modules/docking.module';
+import {CalendarModule} from '../../modules/calendar.module';
+import {TabsModule} from '../../modules/tabs.module';
+import {ListBoxModule} from '../../modules/listbox.module';
+import {PanelModule} from '../../modules/panel.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxDockingComponent, jqxCalendarComponent, jqxTabsComponent, jqxListBoxComponent, jqxPanelComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, DockingModule,
+        CalendarModule, TabsModule, ListBoxModule, PanelModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+
+
 

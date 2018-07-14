@@ -1,20 +1,12 @@
-﻿ 
-import { Component } from '@angular/core';
-
-import { jqxListBoxComponent } from '../../../../../jqwidgets-ts/angular_jqxlistbox';
+﻿import {Component,} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: 
-        `<jqxListBox
-            [width]='200' [height]='250' [selectedIndex]='3' [source]='source'>
-        </jqxListBox>`
+    selector: 'app-root',
+    templateUrl: './app.component.html'
 })
 
-export class AppComponent
-{
-    source: string[] =
-    [
+export class AppComponent {
+    source: string[] = [
         "Affogato",
         "Americano",
         "Bicerin",

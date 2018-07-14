@@ -1,23 +1,30 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
+﻿import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms'
 
-import { AppComponent } from './app.component';
-
-import { jqxExpanderComponent }      from '../../../../../jqwidgets-ts/angular_jqxexpander';
-import { jqxValidatorComponent }     from '../../../../../jqwidgets-ts/angular_jqxvalidator';
-import { jqxInputComponent }         from '../../../../../jqwidgets-ts/angular_jqxinput';
-import { jqxPasswordInputComponent } from '../../../../../jqwidgets-ts/angular_jqxpasswordinput';
-import { jqxDateTimeInputComponent } from '../../../../../jqwidgets-ts/angular_jqxdatetimeinput';
-import { jqxMaskedInputComponent }   from '../../../../../jqwidgets-ts/angular_jqxmaskedinput';
-import { jqxButtonComponent }        from '../../../../../jqwidgets-ts/angular_jqxbuttons';
-import { jqxCheckBoxComponent }      from '../../../../../jqwidgets-ts/angular_jqxcheckbox';
+import {AppComponent} from './app.component';
+import {ValidatorModule} from '../../modules/validator.module';
+import {ButtonModule} from '../../modules/button.module';
+import {CheckBoxModule} from '../../modules/checkbox.module';
+import {DateTimeInputModule} from '../../modules/datetimeinput.module';
+import {ExpanderModule} from '../../modules/expander.module';
+import {InputModule} from '../../modules/input.module';
+import {MaskedInputModule} from '../../modules/maskedinput.module';
+import {PasswordInputModule} from '../../modules/passwordinput.module';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
-    declarations: [AppComponent, jqxExpanderComponent, jqxValidatorComponent, jqxInputComponent, jqxPasswordInputComponent,
-                    jqxDateTimeInputComponent, jqxMaskedInputComponent, jqxButtonComponent, jqxCheckBoxComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, FormsModule, ValidatorModule, ButtonModule, CheckBoxModule,
+        DateTimeInputModule, ExpanderModule, InputModule, MaskedInputModule, PasswordInputModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
 

@@ -1,14 +1,21 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+﻿import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxBarGaugeComponent } from '../../../../../jqwidgets-ts/angular_jqxbargauge';
+import {AppComponent} from './app.component';
+import {BarGaugeModule} from '../../modules/bargauge.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxBarGaugeComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, BarGaugeModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
 

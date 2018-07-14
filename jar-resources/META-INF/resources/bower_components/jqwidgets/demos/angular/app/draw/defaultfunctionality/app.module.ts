@@ -1,14 +1,19 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+﻿import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxDrawComponent } from '../../../../../jqwidgets-ts/angular_jqxdraw';;
+import {AppComponent} from './app.component';
+import {DrawModule} from '../../modules/draw.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxDrawComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, DrawModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
 
+export class AppModule { }

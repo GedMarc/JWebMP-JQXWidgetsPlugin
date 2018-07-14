@@ -1,26 +1,15 @@
- 
-import { Component, ElementRef } from '@angular/core';
-
-import { jqxDockingLayoutComponent } from '../../../../../jqwidgets-ts/angular_jqxdockinglayout';
-import { jqxTreeComponent } from '../../../../../jqwidgets-ts/angular_jqxtree';
+﻿import {Component} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: `../app/dockinglayout/defaultfunctionality/app.component.htm`,
-    styles: [`
-        .jqx-layout-group-auto-hide-content-vertical
-        {
-            width: 200px;
-        }
-    `]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 
-export class AppComponent
-{ 
+export class AppComponent {
     layout: any[] = this.generateLayout();
 
-    generateLayout(): any[]
-    {
+    generateLayout(): any[] {
         let layout = [
             {
                 type: 'layoutGroup',
@@ -35,10 +24,10 @@ export class AppComponent
                         title: 'Toolbox',
                         contentContainer: 'ToolboxPanel'
                     }, {
-                            type: 'layoutPanel',
-                            title: 'Help',
-                            contentContainer: 'HelpPanel'
-                        }]
+                        type: 'layoutPanel',
+                        title: 'Help',
+                        contentContainer: 'HelpPanel'
+                    }]
                 },
                     {
                         type: 'layoutGroup',
@@ -79,8 +68,7 @@ export class AppComponent
                                 type: 'layoutPanel',
                                 title: 'Solution Explorer',
                                 contentContainer: 'SolutionExplorerPanel',
-                                initContent: () =>
-                                {
+                                initContent: () => {
                                     // initialize a jqxTree inside the Solution Explorer Panel
                                     let source = [{
                                         icon: '../../../../images/earth.png',
@@ -124,8 +112,7 @@ export class AppComponent
                                             }]
                                     }];
 
-                                    let myTree: jqxTreeComponent = new jqxTreeComponent(new ElementRef(document.getElementsByTagName('angularTree')[0]));
-                                    myTree.createComponent({ width: 190, source: source });
+                                    jqwidgets.createInstance('#treeContainer', 'jqxTree', {width: '100%', height: '99%', source: source})
                                 }
                             },
                             {

@@ -1,35 +1,21 @@
-/// <reference path="../../../jqwidgets-ts/jqwidgets.d.ts" /> 
-import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
+﻿import {AfterViewInit, Component, ViewChild} from '@angular/core';
 
-import { jqxDockingLayoutComponent } from '../../../../../jqwidgets-ts/angular_jqxdockinglayout';
-import { jqxTreeComponent } from '../../../../../jqwidgets-ts/angular_jqxtree';
+import {jqxDockingLayoutComponent} from '../../../../../jqwidgets-ts/angular_jqxdockinglayout';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: `../app/dockinglayout/defaultfunctionality/app.component.htm`,
-    styles: [`
-        .jqx-layout-group-auto-hide-content-vertical
-        {
-            width: 200px;
-        }
-    `]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements AfterViewInit
-{ 
-    @ViewChild('dockingLayoutReference') myDockingLayout: jqxDockingLayoutComponent;
-    
-    ngAfterViewInit(): void
-    {
-        this.myDockingLayout.createComponent(this.dockingLayoutSettings);
-    } 
+export class AppComponent {
+    @ViewChild('myDockingLayout') myDockingLayout: jqxDockingLayoutComponent;
 
-    dockingLayoutSettings: jqwidgets.DockingLayoutOptions = {
-        width: 800, height: 600, layout: this.generateLayout()
+    ngAfterViewInit(): void {
+        this.myDockingLayout.createComponent({width: 800, height: 600, layout: this.layout()})
     }
 
-    generateLayout(): any
-    {
+    layout(): any[] {
         let layout = [
             {
                 type: 'layoutGroup',
@@ -44,10 +30,10 @@ export class AppComponent implements AfterViewInit
                         title: 'Toolbox',
                         contentContainer: 'ToolboxPanel'
                     }, {
-                            type: 'layoutPanel',
-                            title: 'Help',
-                            contentContainer: 'HelpPanel'
-                        }]
+                        type: 'layoutPanel',
+                        title: 'Help',
+                        contentContainer: 'HelpPanel'
+                    }]
                 },
                     {
                         type: 'layoutGroup',
@@ -88,8 +74,7 @@ export class AppComponent implements AfterViewInit
                                 type: 'layoutPanel',
                                 title: 'Solution Explorer',
                                 contentContainer: 'SolutionExplorerPanel',
-                                initContent: () =>
-                                {
+                                initContent: () => {
                                     // initialize a jqxTree inside the Solution Explorer Panel
                                     let source = [{
                                         icon: '../../../../images/earth.png',
@@ -133,8 +118,7 @@ export class AppComponent implements AfterViewInit
                                             }]
                                     }];
 
-                                    let myTree: jqxTreeComponent = new jqxTreeComponent(new ElementRef(document.getElementsByTagName('angularTree')[0]));
-                                    myTree.createComponent({ width: 190, source: source });
+                                    jqwidgets.createInstance('#treeContainer', 'jqxTree', {width: '100%', height: '99%', source: source})
                                 }
                             },
                             {
@@ -159,7 +143,6 @@ export class AppComponent implements AfterViewInit
                     selected: true
                 }]
             }];
-
         return layout;
     }
 }

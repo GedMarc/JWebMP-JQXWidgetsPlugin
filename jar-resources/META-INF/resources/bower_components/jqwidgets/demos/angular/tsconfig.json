@@ -8,9 +8,23 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "core-js",
+      "node",
+      "jquery"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
+    ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "aot",
+    "temp"
   ]
 }

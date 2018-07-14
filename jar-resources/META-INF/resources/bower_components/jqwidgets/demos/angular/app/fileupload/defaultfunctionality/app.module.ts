@@ -1,14 +1,22 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxFileUploadComponent } from '../../../../../jqwidgets-ts/angular_jqxfileupload';
+import {AppComponent} from './app.component';
+import {FileUploadModule} from '../../modules/fileupload.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxFileUploadComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, FileUploadModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
 

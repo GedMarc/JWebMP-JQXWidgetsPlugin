@@ -1,14 +1,22 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-
-import { jqxExpanderComponent } from '../../../../../jqwidgets-ts/angular_jqxexpander';
+import {AppComponent} from './app.component';
+import {ExpanderModule} from '../../modules/expander.module';
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, jqxExpanderComponent],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, CommonModule, ExpanderModule
+    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
 

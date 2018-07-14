@@ -1,32 +1,11 @@
- 
-import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
-
-import { jqxDockingComponent } from '../../../../../jqwidgets-ts/angular_jqxdocking';
-import { jqxCalendarComponent } from '../../../../../jqwidgets-ts/angular_jqxcalendar';
-import { jqxTabsComponent } from '../../../../../jqwidgets-ts/angular_jqxtabs';
-import { jqxListBoxComponent } from '../../../../../jqwidgets-ts/angular_jqxlistbox';
-import { jqxPanelComponent } from '../../../../../jqwidgets-ts/angular_jqxpanel';
+﻿import {Component} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: `../app/docking/defaultfunctionality/app.component.htm`
+    selector: 'app-root',
+    templateUrl: './app.component.html'
 })
 
-export class AppComponent implements AfterViewInit
-{ 
-    @ViewChild('dockingReference') myDocking: jqxDockingComponent;
-
-    ngAfterViewInit(): void
-    {
-        setTimeout(() =>
-        {
-            this.myDocking.disableWindowResize('window1');
-            this.myDocking.disableWindowResize('window2');
-            this.myDocking.disableWindowResize('window3');
-            this.myDocking.disableWindowResize('window4');
-        });
-    }   
-
+export class AppComponent {
     source: string[] =
     [
         'JavaScript Certification - Welcome to our network',

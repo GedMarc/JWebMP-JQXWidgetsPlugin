@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.popover;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class

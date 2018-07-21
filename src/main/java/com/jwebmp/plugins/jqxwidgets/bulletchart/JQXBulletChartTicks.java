@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.bulletchart;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * @author MXM3727

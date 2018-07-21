@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tabs;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxTabs represents a jQuery Tabs widget. jqxTabs is breaking the content into multiple sections. You can populate it from 'LI' elements for the tab titles and 'DIV' elements for

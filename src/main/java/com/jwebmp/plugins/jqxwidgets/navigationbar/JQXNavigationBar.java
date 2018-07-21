@@ -16,10 +16,10 @@
  */
 package com.jwebmp.plugins.jqxwidgets.navigationbar;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.Paragraph;
-import com.jwebmp.base.html.interfaces.GlobalChildren;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.Paragraph;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 import java.io.Serializable;
 import java.util.ArrayList;

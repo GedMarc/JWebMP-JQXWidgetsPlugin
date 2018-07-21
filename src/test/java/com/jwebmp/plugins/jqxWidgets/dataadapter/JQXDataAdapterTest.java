@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxWidgets.dataadapter;
 
-import com.jwebmp.base.html.Div;
+import com.jwebmp.core.base.html.Div;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import com.jwebmp.plugins.jqxwidgets.dropdownlist.JQXDropDownListNameValuePair;
 import com.jwebmp.plugins.jqxwidgets.tree.JQXTreeItem;

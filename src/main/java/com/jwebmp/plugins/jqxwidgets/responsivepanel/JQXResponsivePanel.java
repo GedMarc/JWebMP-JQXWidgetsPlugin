@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.responsivepanel;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxResponsivePanel represents a panel widget with a responsive behaviour. The responsive panel collapses when the browser window's width becomes less than a set value

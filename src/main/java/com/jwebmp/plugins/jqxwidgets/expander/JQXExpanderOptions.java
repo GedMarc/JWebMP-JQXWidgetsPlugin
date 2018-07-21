@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.expander;
 
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**

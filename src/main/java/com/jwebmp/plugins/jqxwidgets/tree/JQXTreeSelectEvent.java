@@ -16,10 +16,10 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tree;
 
-import com.jwebmp.Component;
-import com.jwebmp.base.ajax.AjaxCall;
-import com.jwebmp.base.ajax.AjaxResponse;
-import com.jwebmp.events.select.SelectAdapter;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.base.ajax.AjaxCall;
+import com.jwebmp.core.base.ajax.AjaxResponse;
+import com.jwebmp.core.events.select.SelectAdapter;
 
 /**
  * Highlights the select event with the objects return values

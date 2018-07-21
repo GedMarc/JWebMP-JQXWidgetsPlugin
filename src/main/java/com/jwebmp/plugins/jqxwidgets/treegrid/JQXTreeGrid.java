@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.treegrid;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxTreeGrid is a lightweight jQuery widget which represents data in a tree-like structure.

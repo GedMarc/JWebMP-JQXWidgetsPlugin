@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.splitter;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * AjqxSplitter represents a widget consisting of a moveable split bar(s) that divides a container's display area into two or more resizable and collapsible panels.

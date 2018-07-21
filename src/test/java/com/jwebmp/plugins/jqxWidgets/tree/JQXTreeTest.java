@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxWidgets.tree;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import com.jwebmp.plugins.jqxwidgets.tree.JQXTree;
 import org.junit.jupiter.api.Test;
 

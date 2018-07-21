@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tagcloud;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website. Each tag

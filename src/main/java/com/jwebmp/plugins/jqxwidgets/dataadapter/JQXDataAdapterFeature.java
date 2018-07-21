@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dataadapter;
 
-import com.jwebmp.Feature;
-import com.jwebmp.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;

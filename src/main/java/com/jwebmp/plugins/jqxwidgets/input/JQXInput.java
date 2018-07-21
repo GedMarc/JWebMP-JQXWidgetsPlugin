@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.input;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.interfaces.NoClosingTag;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.interfaces.NoClosingTag;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxInput represents an Input widget with auto-complete capabilities.

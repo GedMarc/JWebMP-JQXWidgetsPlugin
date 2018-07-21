@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.buttongroup;
 
-import com.jwebmp.base.html.Button;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Button;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 
 /**

@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.toolbar;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxToolBar is a jQuery widget which represents a toolbar where different tools (including widgets) can be automatically added. By default, jqxToolBar supports the widgets

@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.window;
 
-import com.jwebmp.Component;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 
 /**

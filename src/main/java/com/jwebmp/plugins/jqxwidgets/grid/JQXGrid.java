@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.grid;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The Grid is a powerful jQuery widget that displays tabular data. It offers rich support for interacting with data, including paging, grouping, sorting, filtering and editing.

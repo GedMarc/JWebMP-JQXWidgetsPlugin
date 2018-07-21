@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.colorpicker;
 
-import com.jwebmp.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.jqxwidgets.dropdownlist.JQXDropDownListFeatures;
 
 /**

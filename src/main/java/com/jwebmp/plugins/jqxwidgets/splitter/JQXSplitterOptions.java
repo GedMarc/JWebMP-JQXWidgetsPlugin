@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.splitter;
 
-import com.jwebmp.base.servlets.enumarations.Orientation;
+import com.jwebmp.core.base.servlets.enumarations.Orientation;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 import java.util.ArrayList;

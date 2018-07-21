@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.layout;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed.

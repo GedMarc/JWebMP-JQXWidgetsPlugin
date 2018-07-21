@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.touchtip;
 
-import com.jwebmp.base.html.Div;
+import com.jwebmp.core.base.html.Div;
 
 /**
  * An implementation of the jsTree project.

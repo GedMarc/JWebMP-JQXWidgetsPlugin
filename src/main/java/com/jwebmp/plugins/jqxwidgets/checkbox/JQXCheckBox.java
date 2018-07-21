@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.checkbox;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The jqxCheckBox widget displays a check box that allows the end-user to select a true, false or indeterminate condition.

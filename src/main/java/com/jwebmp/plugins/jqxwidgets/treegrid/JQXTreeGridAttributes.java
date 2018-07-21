@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.treegrid;
 
-import com.jwebmp.base.html.interfaces.AttributeDefinitions;
+import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
 
 /**
  * @author GedMarc

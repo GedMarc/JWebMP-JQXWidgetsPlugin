@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.validator;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxValidator is jQWidgets plugin used for validating html forms using JavaScript. It has a set of build in rules (for required inputs, e-mail, SSN, ZIP, max value, min value,

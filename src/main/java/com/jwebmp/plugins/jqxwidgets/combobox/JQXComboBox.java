@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.combobox;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxComboBox represents a jQuery combobox widget that contains an input field with auto-complete functionality and a list of selectable items displayed in a drop-down.

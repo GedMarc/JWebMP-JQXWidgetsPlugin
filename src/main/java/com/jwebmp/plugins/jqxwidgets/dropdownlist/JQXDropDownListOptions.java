@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.jqxwidgets.dropdownlist;
 
 import com.fasterxml.jackson.annotation.JsonRawValue;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import com.jwebmp.plugins.jqxwidgets.JQXHorizontalAlignments;

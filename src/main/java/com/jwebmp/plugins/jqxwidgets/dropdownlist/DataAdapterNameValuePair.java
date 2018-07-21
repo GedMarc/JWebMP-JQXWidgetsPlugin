@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dropdownlist;
 
-import com.jwebmp.Component;
-import com.jwebmp.base.html.attributes.GlobalAttributes;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.base.html.attributes.GlobalAttributes;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataFields;
 

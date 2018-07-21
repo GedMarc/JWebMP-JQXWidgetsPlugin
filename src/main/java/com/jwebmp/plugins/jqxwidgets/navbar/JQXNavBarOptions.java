@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.navbar;
 
-import com.jwebmp.base.servlets.enumarations.Orientation;
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import com.jwebmp.core.base.servlets.enumarations.Orientation;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 import java.util.ArrayList;

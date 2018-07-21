@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dropdownlist;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.List;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.List;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxDropDownList represents a jQuery widget that contains a list of selectable items displayed in a drop-down.

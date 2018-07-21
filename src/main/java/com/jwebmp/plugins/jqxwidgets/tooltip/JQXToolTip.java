@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tooltip;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add'

@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.expander;
 
-import com.jwebmp.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
 /**
  * @author Marc Magon

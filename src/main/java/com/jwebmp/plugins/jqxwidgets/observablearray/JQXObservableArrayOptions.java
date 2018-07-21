@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.observablearray;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
 
 /**
  * All the options for the tooltip library

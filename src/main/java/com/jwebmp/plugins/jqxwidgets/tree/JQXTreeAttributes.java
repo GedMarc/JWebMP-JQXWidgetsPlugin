@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tree;
 
-import com.jwebmp.base.html.interfaces.AttributeDefinitions;
-import com.jwebmp.utilities.StaticStrings;
+import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
+import com.jwebmp.core.utilities.StaticStrings;
 
 /**
  * @author GedMarc

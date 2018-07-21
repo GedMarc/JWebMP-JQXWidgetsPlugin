@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.notification;
 
-import com.jwebmp.Component;
+import com.jwebmp.core.Component;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**

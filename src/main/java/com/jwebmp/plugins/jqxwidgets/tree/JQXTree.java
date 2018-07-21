@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tree;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.jqxwidgets.layout.JQXLayoutChildren;
 
 /**

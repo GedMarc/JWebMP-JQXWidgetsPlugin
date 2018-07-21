@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dataadapter;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * The data type format options available

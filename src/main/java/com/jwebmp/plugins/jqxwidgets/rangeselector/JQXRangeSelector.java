@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.rangeselector;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxRangeSelector is a widget which can easily be used to select a numeric or date range. The API of jqxRangeSelector allows for a variety of user settings to be applied such as

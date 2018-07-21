@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.expander;
 
-import com.jwebmp.base.html.interfaces.events.GlobalEvents;
+import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
 
 /**
  * @author Marc Magon

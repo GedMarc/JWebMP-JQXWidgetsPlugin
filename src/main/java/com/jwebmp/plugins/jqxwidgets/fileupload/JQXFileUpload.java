@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.fileupload;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxFileUpload is a widget which can be used to select files and upload them to a server. The file upload widget supports automatic upload and multiple files upload.

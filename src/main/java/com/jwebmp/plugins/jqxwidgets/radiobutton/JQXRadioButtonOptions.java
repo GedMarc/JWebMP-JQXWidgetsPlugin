@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.radiobutton;
 
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 /**

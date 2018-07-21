@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.rangeselector;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 import java.text.SimpleDateFormat;
 

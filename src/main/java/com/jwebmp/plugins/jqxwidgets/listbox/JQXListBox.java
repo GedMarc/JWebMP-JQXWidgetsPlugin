@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.listbox;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The jqxListBox represents a jQuery listbox widget that contains a list of selectable items.

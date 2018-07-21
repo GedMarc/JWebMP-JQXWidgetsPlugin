@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.combobox;
 
-import com.jwebmp.base.html.interfaces.AttributeDefinitions;
+import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
 
 /**
  * @author GedMarc

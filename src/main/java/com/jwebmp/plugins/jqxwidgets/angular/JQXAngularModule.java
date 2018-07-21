@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.angular;
 
-import com.jwebmp.base.ComponentHierarchyBase;
-import com.jwebmp.base.angular.modules.AngularModuleBase;
+import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**

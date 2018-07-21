@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.validator;
 
-import com.jwebmp.Component;
-import com.jwebmp.generics.XYObject;
-import com.jwebmp.htmlbuilder.javascript.events.enumerations.EventTypes;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.generics.XYObject;
+import com.jwebmp.core.htmlbuilder.javascript.events.enumerations.EventTypes;
 
 import java.io.Serializable;
 

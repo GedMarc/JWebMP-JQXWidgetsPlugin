@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.menu;
 
-import com.jwebmp.base.html.List;
+import com.jwebmp.core.base.html.List;
 
 /**
  * @author GedMarc

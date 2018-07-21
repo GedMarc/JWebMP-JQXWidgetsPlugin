@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.bulletchart;
 
-import com.jwebmp.base.servlets.enumarations.Orientation;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.base.servlets.enumarations.Orientation;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 
 import java.util.ArrayList;

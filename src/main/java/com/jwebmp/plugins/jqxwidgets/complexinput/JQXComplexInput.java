@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.complexinput;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxComplexInput represents an input widget for entering complex numbers and getting their real and imaginary parts. The complex input also supports on-keydown and on-change

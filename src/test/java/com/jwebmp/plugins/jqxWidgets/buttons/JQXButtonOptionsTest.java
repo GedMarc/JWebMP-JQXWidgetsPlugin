@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxWidgets.buttons;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import com.jwebmp.plugins.jqxwidgets.JQXRoundedCornerTypes;
 import com.jwebmp.plugins.jqxwidgets.buttons.JQXButtonImagesPositions;
 import com.jwebmp.plugins.jqxwidgets.buttons.JQXButtonOptions;

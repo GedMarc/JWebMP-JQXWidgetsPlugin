@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.themes;
 
-import com.jwebmp.base.references.CSSReference;
-import com.jwebmp.htmlbuilder.css.themes.Theme;
+import com.jwebmp.core.base.references.CSSReference;
+import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
  * A default theme for a web site Very monochrome stock standard stuff

@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.jqxwidgets.dataadapter.options;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapterSourceType;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataFields;

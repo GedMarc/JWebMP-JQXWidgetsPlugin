@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.panel;
 
-import com.jwebmp.Component;
-import com.jwebmp.Feature;
-import com.jwebmp.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.jqxwidgets.tree.JQXTreeFeatures;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 

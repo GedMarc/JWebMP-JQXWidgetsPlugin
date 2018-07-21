@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dockpanel;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The jqxDockPanel widget represents a container for other widgets or elements.

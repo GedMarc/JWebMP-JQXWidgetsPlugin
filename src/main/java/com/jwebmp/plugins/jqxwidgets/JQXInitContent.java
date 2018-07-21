@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets;
 
-import com.jwebmp.Component;
-import com.jwebmp.htmlbuilder.javascript.JavascriptLiteralFunction;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptLiteralFunction;
 import com.jwebmp.plugins.jqxwidgets.navigationbar.JQXNavigationBar;
 import com.jwebmp.plugins.jqxwidgets.ribbon.JQXRibbon;
 

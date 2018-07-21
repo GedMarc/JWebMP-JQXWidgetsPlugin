@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.editor;
 
-import com.jwebmp.base.html.TextArea;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.TextArea;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas.

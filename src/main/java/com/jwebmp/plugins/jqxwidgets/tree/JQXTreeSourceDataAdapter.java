@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tree;
 
-import com.jwebmp.Component;
+import com.jwebmp.core.Component;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 
 /**

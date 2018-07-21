@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets;
 
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqxwidgets.themes.JQXWidgetThemes;
 
 /**

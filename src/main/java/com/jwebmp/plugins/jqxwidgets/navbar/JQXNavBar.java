@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.navbar;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.interfaces.GlobalChildren;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxNavBar is a small widget which is built from UL and LI tags. It can be used for creating responsive horizontal/vertical layouts or simple navigation menus.

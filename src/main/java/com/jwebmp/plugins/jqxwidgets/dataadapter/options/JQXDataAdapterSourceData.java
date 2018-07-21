@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dataadapter.options;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class states itself as a raw source data object

@@ -17,10 +17,10 @@
 package com.jwebmp.plugins.jqxwidgets.layout;
 
 import com.fasterxml.jackson.annotation.JsonRawValue;
-import com.jwebmp.Component;
-import com.jwebmp.base.servlets.enumarations.Orientation;
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.base.servlets.enumarations.Orientation;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqxwidgets.dockinglayout.JQXDockingLayoutAlignment;
 
 import java.util.ArrayList;

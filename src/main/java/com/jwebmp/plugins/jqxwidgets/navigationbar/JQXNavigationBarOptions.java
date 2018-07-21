@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.navigationbar;
 
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 

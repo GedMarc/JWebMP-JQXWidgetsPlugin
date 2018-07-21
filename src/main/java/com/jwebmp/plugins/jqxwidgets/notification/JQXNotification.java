@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.notification;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.interfaces.GlobalChildren;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time.

@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.draw;
 
-import com.jwebmp.base.html.Div;
+import com.jwebmp.core.base.html.Div;
 
 /**
  * jqxDraw is a small jQuery-based plugin which allows you to draw shapes and texts using VML, SVG and HTML5.

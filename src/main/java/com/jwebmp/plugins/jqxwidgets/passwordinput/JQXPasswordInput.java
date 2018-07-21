@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.passwordinput;
 
-import com.jwebmp.base.html.inputs.InputPasswordType;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.inputs.InputPasswordType;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxPasswordInput represents a widget which enables you to input passwords with nice visual feedback about the password's strength.

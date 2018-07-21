@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.pools.jqxwidgets;
 
-import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.core.base.references.JavascriptReference;
 
 /**
  * The JQuery JavaScript Reference

@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.combobox;
 
-import com.jwebmp.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
 /**
  * @author Marc Magon

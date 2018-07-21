@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dragdrop;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * This Class can be used to store data inside the drag drop function

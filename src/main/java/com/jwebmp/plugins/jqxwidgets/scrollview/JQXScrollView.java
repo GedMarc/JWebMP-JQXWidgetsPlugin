@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.scrollview;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxScrollView represents a widget which can be used for viewing content which is wider than the visible area outlined by the device's screen. Specific item can be chosen using

@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.bulletchart;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * An implementation of the JQX Bullet Chart

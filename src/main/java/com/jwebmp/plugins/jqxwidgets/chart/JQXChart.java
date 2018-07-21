@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.chart;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxChart is a lightweight and powerful chart widget written 100% in javascript. It offers many advanced features and supports three different rendering technologies - SVG, HTML5

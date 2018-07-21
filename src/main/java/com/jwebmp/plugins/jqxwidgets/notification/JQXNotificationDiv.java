@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.notification;
 
-import com.jwebmp.base.html.Div;
+import com.jwebmp.core.base.html.Div;
 
 /**
  * @author GedMarc

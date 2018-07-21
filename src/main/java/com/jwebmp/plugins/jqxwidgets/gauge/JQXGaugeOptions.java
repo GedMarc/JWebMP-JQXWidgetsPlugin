@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.gauge;
 
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 
 import java.util.List;

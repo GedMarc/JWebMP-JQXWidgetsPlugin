@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.themes;
 
-import com.jwebmp.htmlbuilder.css.themes.Theme;
+import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
  * This Class

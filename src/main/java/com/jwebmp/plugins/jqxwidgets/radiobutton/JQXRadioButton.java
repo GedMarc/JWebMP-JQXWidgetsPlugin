@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.radiobutton;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * With the jqxRadioButton, users make a choice among a set of mutually exclusive, related options. Users can choose one and only one option.

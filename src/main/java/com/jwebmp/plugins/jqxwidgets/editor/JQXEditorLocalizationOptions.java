@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.jqxwidgets.editor;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Object 	{ "bold": "Bold", "italic": "Italic", "underline": "Underline", "format": "Format Block", "font": "Font Name", "size": "Font Size", "color": "Text Color", "background":

@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.progressbar;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxProgressBar represents a jQuery widget that visually indicates the progress of a lengthy operation.

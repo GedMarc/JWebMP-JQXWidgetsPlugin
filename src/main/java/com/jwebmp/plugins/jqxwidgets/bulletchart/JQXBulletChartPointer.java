@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.bulletchart;
 
-import com.jwebmp.htmlbuilder.css.colours.ColourHex;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.css.colours.ColourHex;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * @author mmagon

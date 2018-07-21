@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.popover;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxPopover is small overlay of content that is used to display secondary information of any element when it is clicked by a user.

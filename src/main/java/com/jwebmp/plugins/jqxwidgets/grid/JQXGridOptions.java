@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.grid;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
-import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
 
 import java.io.Serializable;
 

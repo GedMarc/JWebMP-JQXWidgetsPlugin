@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.rating;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxRating represents a jQuery UI widget that allows you to choose a rating. You can configure the jqxRating items size, image and the number of displayed items

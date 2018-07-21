@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.response;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML

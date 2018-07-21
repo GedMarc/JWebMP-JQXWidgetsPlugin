@@ -16,16 +16,16 @@
  */
 package com.jwebmp.plugins.jqxwidgets.loader;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.attributes.NoAttributes;
-import com.jwebmp.base.html.interfaces.GlobalChildren;
-import com.jwebmp.base.html.interfaces.GlobalFeatures;
-import com.jwebmp.base.html.interfaces.NoNewLineBeforeClosingTag;
-import com.jwebmp.base.html.interfaces.NoNewLineForRawText;
-import com.jwebmp.base.html.interfaces.children.BodyChildren;
-import com.jwebmp.base.html.interfaces.events.GlobalEvents;
-import com.jwebmp.base.servlets.interfaces.Loader;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.attributes.NoAttributes;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.base.html.interfaces.NoNewLineBeforeClosingTag;
+import com.jwebmp.core.base.html.interfaces.NoNewLineForRawText;
+import com.jwebmp.core.base.html.interfaces.children.BodyChildren;
+import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
+import com.jwebmp.core.base.servlets.interfaces.Loader;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The jqxLoader represents a jQuery widget which displays the built-in loading element. The loading element can be icon only, text only or combination of icon and text.

@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.panel;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.html.interfaces.GlobalChildren;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The jqxPanel widget represents a jQuery Panel widget. This widget is a container for other widgets or elements. It automatically adds horizontal and vertical scrollbars, if the

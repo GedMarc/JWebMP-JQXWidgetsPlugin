@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.scheduler;
 
-import com.jwebmp.htmlbuilder.css.colours.ColourHex;
+import com.jwebmp.core.htmlbuilder.css.colours.ColourHex;
 
 /**
  * This Class

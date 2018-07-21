@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.colorpicker;
 
-import com.jwebmp.htmlbuilder.css.colours.ColourHex;
-import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
+import com.jwebmp.core.htmlbuilder.css.colours.ColourHex;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
 import com.jwebmp.plugins.jqxwidgets.JQXColourModes;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 

@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dockinglayout;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.base.servlets.enumarations.Orientation;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.servlets.enumarations.Orientation;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 import java.util.List;
 

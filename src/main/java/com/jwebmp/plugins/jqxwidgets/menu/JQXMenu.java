@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.menu;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context

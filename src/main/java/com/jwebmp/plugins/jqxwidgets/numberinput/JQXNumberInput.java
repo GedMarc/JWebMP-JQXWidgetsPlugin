@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.numberinput;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxNumberInput represents a jQuery widget that allows you to input currency, percentages and any type of numeric data.

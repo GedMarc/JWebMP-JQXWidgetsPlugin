@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxwidgets.menu;
 
-import com.jwebmp.base.servlets.enumarations.Orientation;
+import com.jwebmp.core.base.servlets.enumarations.Orientation;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 

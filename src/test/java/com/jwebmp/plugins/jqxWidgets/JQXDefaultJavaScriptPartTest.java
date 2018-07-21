@@ -16,10 +16,10 @@
  */
 package com.jwebmp.plugins.jqxWidgets;
 
-import com.jwebmp.Page;
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementCSSImpl;
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementPercentages;
-import com.jwebmp.htmlbuilder.css.measurement.MeasurementTypes;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementCSSImpl;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementPercentages;
+import com.jwebmp.core.htmlbuilder.css.measurement.MeasurementTypes;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 import com.jwebmp.plugins.jqxwidgets.themes.JQXWidgetThemes;
 import org.junit.jupiter.api.Assertions;

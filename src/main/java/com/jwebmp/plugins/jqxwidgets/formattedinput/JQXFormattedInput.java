@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.formattedinput;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxFormattedInput represents an input widget for entering numbers in the binary, octal, decimal or hexadecimal numeral systems.

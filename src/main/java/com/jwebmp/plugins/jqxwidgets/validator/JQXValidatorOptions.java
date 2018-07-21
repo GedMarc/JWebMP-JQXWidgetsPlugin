@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.validator;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 
 import java.util.List;

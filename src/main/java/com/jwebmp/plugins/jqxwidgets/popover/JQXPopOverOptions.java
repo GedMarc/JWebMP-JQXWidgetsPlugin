@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.popover;
 
-import com.jwebmp.Component;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.plugins.easingeffects.JQEasingEffects;
 import com.jwebmp.plugins.jqxwidgets.JQXDefaultJavaScriptPart;
 

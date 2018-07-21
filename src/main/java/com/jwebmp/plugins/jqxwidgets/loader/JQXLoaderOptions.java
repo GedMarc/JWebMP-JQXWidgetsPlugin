@@ -16,11 +16,11 @@
  */
 package com.jwebmp.plugins.jqxwidgets.loader;
 
-import com.jwebmp.Component;
-import com.jwebmp.htmlbuilder.css.text.VerticalAlignments;
-import com.jwebmp.htmlbuilder.css.themes.Theme;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.htmlbuilder.css.text.VerticalAlignments;
+import com.jwebmp.core.htmlbuilder.css.themes.Theme;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
 
 /**
  * All the options for the Loader

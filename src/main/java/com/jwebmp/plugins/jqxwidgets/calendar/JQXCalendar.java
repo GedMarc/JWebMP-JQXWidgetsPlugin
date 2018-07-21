@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.calendar;
 
-import com.jwebmp.base.html.Div;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * jqxCalendar represents a jQuery calendar widget that enables the user to select a date using a visual monthly calendar display.

@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.jqxwidgets.dragdrop;
 
-import com.jwebmp.Component;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * jqxDragDrop is a plugin which will make any DOM element draggable. It can be used in combination with many widgets like jqxTree, jqxGrid, jqxListBox and etc.

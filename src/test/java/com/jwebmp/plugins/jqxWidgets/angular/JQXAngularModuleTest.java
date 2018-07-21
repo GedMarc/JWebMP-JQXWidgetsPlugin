@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.jqxWidgets.angular;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import com.jwebmp.plugins.jqxwidgets.angular.JQXAngularModule;
 import org.junit.jupiter.api.Test;
 

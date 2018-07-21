@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.jqxwidgets.tooltip;
 
-import com.jwebmp.utilities.StaticStrings;
+import com.jwebmp.core.utilities.StaticStrings;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * This Class

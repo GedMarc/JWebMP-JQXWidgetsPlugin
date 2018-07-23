@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.jqxwidgets.JQXWidgetsPageConfigurator;
+
 module com.jwebmp.plugins.jqxwidgets {
 
 	exports com.jwebmp.plugins.jqxwidgets;
@@ -13,4 +16,7 @@ module com.jwebmp.plugins.jqxwidgets {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.plugins.easingeffects;
 	requires com.jwebmp.plugins.globalize.cultures;
+
+	provides IPageConfigurator with JQXWidgetsPageConfigurator;
+
 }

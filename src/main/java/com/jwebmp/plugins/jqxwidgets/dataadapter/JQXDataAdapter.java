@@ -26,6 +26,7 @@ import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
+import javax.validation.constraints.NotNull;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -97,6 +98,7 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 	}
 
 	@Override
+	@NotNull
 	protected StringBuilder renderHTML(int tabCount)
 	{
 		return new StringBuilder();

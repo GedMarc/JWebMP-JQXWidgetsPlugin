@@ -27,8 +27,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @since 22 Dec 2015
  */
 public class JQXDataThemeFeature
-		extends Feature<JavaScriptPart, JQXDataThemeFeature>
-		implements GlobalFeatures
+		extends Feature<GlobalFeatures, JavaScriptPart, JQXDataThemeFeature>
 {
 
 	private JQXWidgetThemes globalTheme;
@@ -56,30 +55,13 @@ public class JQXDataThemeFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + globalTheme.hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXDataThemeFeature that = (JQXDataThemeFeature) o;
-
-		return globalTheme == that.globalTheme;
+		return super.equals(obj);
 	}
 
 	@Override

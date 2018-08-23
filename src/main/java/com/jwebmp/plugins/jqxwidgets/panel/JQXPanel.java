@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.jqxwidgets.panel;
 
 import com.jwebmp.core.base.html.Div;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -35,7 +35,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpanel/jquery-panel-getting-started.htm?search=",
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXPanel
-		extends Div<GlobalChildren, JQXPanelAttributes, JQXPanelFeatures, JQXPanelEvents, JQXPanel> //JQXPanelChildrenvv
+		extends Div<IComponentHierarchyBase, JQXPanelAttributes, JQXPanelFeatures, JQXPanelEvents, JQXPanel> //JQXPanelChildrenvv
 {
 
 	private static final long serialVersionUID = 1L;
@@ -63,6 +63,14 @@ public class JQXPanel
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -81,13 +89,5 @@ public class JQXPanel
 		JQXPanel jqxPanel = (JQXPanel) o;
 
 		return getFeature().equals(jqxPanel.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

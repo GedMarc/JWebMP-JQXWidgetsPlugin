@@ -17,7 +17,6 @@
 package com.jwebmp.plugins.jqxwidgets.calendar;
 
 import com.jwebmp.core.Feature;
-import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**
@@ -28,8 +27,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXCalendarFeature
-		extends Feature<JQXCalendarOptions, JQXCalendarFeature>
-		implements JQXCalendarFeatures, GlobalFeatures
+		extends Feature<JQXCalendarFeature, JQXCalendarOptions, JQXCalendarFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -56,30 +54,13 @@ public class JQXCalendarFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXCalendarFeature that = (JQXCalendarFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

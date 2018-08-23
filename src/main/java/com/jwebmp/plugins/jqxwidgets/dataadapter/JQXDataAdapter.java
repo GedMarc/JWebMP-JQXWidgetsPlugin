@@ -105,6 +105,14 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -125,14 +133,6 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 		return getFeature().equals(that.getFeature());
 	}
 
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
-	}
-
 	/**
 	 * Returns all the options associated with the given feature
 	 *
@@ -150,6 +150,7 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 	 *
 	 * @return
 	 */
+	@NotNull
 	@Override
 
 	public StringBuilder renderJavascript()

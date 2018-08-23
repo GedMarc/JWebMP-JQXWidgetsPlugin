@@ -16,15 +16,16 @@
  */
 package com.jwebmp.plugins.jqxwidgets.editor;
 
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.ComponentBase;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 
 /**
  * @author Marc Magon
  * @version 1.0
  * @since 07 Aug 2015
  */
-public interface JQXEditorChildren
-		extends GlobalChildren
+public interface JQXEditorChildren<C extends IComponentHierarchyBase, J extends ComponentBase>
+		extends IComponentHierarchyBase<C, J>
 {
 
 }

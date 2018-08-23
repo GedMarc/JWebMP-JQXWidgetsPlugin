@@ -17,7 +17,6 @@
 package com.jwebmp.plugins.jqxwidgets.buttongroup;
 
 import com.jwebmp.core.Feature;
-import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**
@@ -28,8 +27,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXButtonGroupFeature
-		extends Feature<JQXButtonGroupOptions, JQXButtonGroupFeature>
-		implements JQXButtonGroupFeatures, GlobalFeatures
+		extends Feature<JQXButtonGroupFeature, JQXButtonGroupOptions, JQXButtonGroupFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -56,30 +54,13 @@ public class JQXButtonGroupFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXButtonGroupFeature that = (JQXButtonGroupFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

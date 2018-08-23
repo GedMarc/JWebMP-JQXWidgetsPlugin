@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXTouchFeature
-		extends Feature<JQXTouchOptions, JQXTouchFeature>
-		implements JQXTouchFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXTouchOptions, JQXTouchFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -54,30 +53,13 @@ public class JQXTouchFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof JQXTouchFeature))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXTouchFeature that = (JQXTouchFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

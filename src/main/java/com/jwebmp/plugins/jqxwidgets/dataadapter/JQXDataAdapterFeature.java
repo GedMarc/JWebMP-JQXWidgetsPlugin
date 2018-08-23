@@ -17,7 +17,6 @@
 package com.jwebmp.plugins.jqxwidgets.dataadapter;
 
 import com.jwebmp.core.Feature;
-import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
@@ -32,8 +31,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
-		extends Feature<JQXDataAdapterOptions<A>, JQXDataAdapterFeature<A>>
-		implements JQXDataAdapterFeatures, GlobalFeatures
+		extends Feature<JQXDataAdapterFeature, JQXDataAdapterOptions<A>, JQXDataAdapterFeature<A>>
 {
 
 	private static final long serialVersionUID = 1L;

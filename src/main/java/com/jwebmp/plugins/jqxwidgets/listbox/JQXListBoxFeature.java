@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2015/12/10
  */
 public class JQXListBoxFeature
-		extends Feature<JQXListBoxOptions, JQXListBoxFeature>
-		implements JQXListBoxFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXListBoxOptions, JQXListBoxFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -56,30 +55,13 @@ public class JQXListBoxFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXListBoxFeature that = (JQXListBoxFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

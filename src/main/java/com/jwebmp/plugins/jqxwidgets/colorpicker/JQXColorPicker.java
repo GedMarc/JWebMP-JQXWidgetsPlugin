@@ -34,7 +34,7 @@ import com.jwebmp.plugins.jqxwidgets.dropdownlist.JQXDropDownListChildren;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXColorPicker
 		extends Div<JQXColorPickerChildren, JQXColorPickerAttributes, JQXColorPickerFeature, JQXColorPickerEvents, JQXColorPicker>
-		implements JQXDropDownListChildren
+		implements JQXDropDownListChildren<JQXColorPickerChildren, JQXColorPicker>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -61,31 +61,14 @@ public class JQXColorPicker
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public int hashCode()
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXColorPicker that = (JQXColorPicker) o;
-
-		return getFeature().equals(that.getFeature());
+		return super.hashCode();
 	}
 
 	@Override
-	public int hashCode()
+	public boolean equals(Object o)
 	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
+		return super.equals(o);
 	}
 }

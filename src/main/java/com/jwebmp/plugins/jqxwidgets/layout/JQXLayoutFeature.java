@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXLayoutFeature
-		extends Feature<JQXLayoutOptions, JQXLayoutFeature>
-		implements JQXLayoutFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXLayoutOptions, JQXLayoutFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -53,30 +52,13 @@ public class JQXLayoutFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof JQXLayoutFeature))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXLayoutFeature that = (JQXLayoutFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

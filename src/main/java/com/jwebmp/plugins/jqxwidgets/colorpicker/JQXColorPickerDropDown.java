@@ -17,12 +17,10 @@
 package com.jwebmp.plugins.jqxwidgets.colorpicker;
 
 import com.jwebmp.core.Feature;
-import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.core.htmlbuilder.css.colours.ColourHex;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqxwidgets.JQXColourModes;
 import com.jwebmp.plugins.jqxwidgets.dropdownlist.JQXDropDownButton;
-import com.jwebmp.plugins.jqxwidgets.dropdownlist.JQXDropDownListFeatures;
 
 /**
  * jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. You can configure the jqxColorPicker's color mode, input a color in hex or rgb format.
@@ -45,8 +43,8 @@ public class JQXColorPickerDropDown
 		colourPicker = new JQXColorPicker();
 		colour = new ColourHex("ffaabb");
 		getFeature().setSetContentMethod("getTextElementByColor(new $.jqx.color({ hex: '" + colour + "' }))");
-		getFeatures().add(colourPicker.getFeature());
-		getFeatures().add(new ColourPickerDropDownUpdate(this));
+		addFeature(colourPicker.getFeature());
+		addFeature(new ColourPickerDropDownUpdate(this));
 		colourPicker.getOptions()
 		            .setHeight(220);
 		colourPicker.getOptions()
@@ -61,35 +59,13 @@ public class JQXColorPickerDropDown
 	@Override
 	public boolean equals(Object o)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXColorPickerDropDown that = (JQXColorPickerDropDown) o;
-
-		if (!getColourPicker().equals(that.getColourPicker()))
-		{
-			return false;
-		}
-		return getColour().equals(that.getColour());
+		return super.equals(o);
 	}
 
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getColourPicker().hashCode();
-		result = 31 * result + getColour().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	public JQXColorPicker getColourPicker()
@@ -113,8 +89,7 @@ public class JQXColorPickerDropDown
 	}
 
 	public class ColourPickerDropDownUpdate
-			extends Feature<JavaScriptPart, ColourPickerDropDownUpdate>
-			implements GlobalFeatures, JQXDropDownListFeatures
+			extends Feature<ColourPickerDropDownUpdate, JavaScriptPart, ColourPickerDropDownUpdate>
 	{
 
 		private JQXColorPickerDropDown dropDown;
@@ -129,30 +104,13 @@ public class JQXColorPickerDropDown
 		@Override
 		public int hashCode()
 		{
-			int result = super.hashCode();
-			result = 31 * result + dropDown.hashCode();
-			return result;
+			return super.hashCode();
 		}
 
 		@Override
-		public boolean equals(Object o)
+		public boolean equals(Object obj)
 		{
-			if (this == o)
-			{
-				return true;
-			}
-			if (o == null || getClass() != o.getClass())
-			{
-				return false;
-			}
-			if (!super.equals(o))
-			{
-				return false;
-			}
-
-			ColourPickerDropDownUpdate that = (ColourPickerDropDownUpdate) o;
-
-			return dropDown.equals(that.dropDown);
+			return super.equals(obj);
 		}
 
 		@Override

@@ -34,7 +34,7 @@ import com.jwebmp.plugins.jqxwidgets.layout.JQXLayoutChildren;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXTree
 		extends Div<JQXTreeChildren, JQXTreeAttributes, JQXTreeFeatures, JQXTreeEvents, JQXTree>
-		implements JQXLayoutChildren
+		implements JQXLayoutChildren<JQXTreeChildren, JQXTree>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -61,6 +61,14 @@ public class JQXTree
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXTree
 		JQXTree jqxTree = (JQXTree) o;
 
 		return getFeature().equals(jqxTree.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

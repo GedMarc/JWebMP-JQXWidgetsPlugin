@@ -17,7 +17,6 @@
 package com.jwebmp.plugins.jqxwidgets.listmenu;
 
 import com.jwebmp.core.Feature;
-import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**
@@ -28,8 +27,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 20151210
  */
 public class JQXListMenuFeature
-		extends Feature<JQXListMenuOptions, JQXListMenuFeature>
-		implements JQXListMenuFeatures, GlobalFeatures
+		extends Feature<JQXListMenuFeature, JQXListMenuOptions, JQXListMenuFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -57,30 +55,13 @@ public class JQXListMenuFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXListMenuFeature that = (JQXListMenuFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

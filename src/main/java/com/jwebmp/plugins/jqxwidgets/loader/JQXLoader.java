@@ -18,12 +18,12 @@ package com.jwebmp.plugins.jqxwidgets.loader;
 
 import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.core.base.html.interfaces.NoNewLineBeforeClosingTag;
 import com.jwebmp.core.base.html.interfaces.NoNewLineForRawText;
 import com.jwebmp.core.base.html.interfaces.children.BodyChildren;
 import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.base.servlets.interfaces.Loader;
 import com.jwebmp.core.plugins.ComponentInformation;
 
@@ -39,8 +39,8 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxloader/jquery-loader-getting-started.htm?search=",
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXLoader
-		extends Div<GlobalChildren, NoAttributes, GlobalFeatures, GlobalEvents, JQXLoader>
-		implements BodyChildren, NoNewLineForRawText, NoNewLineBeforeClosingTag, Loader
+		extends Div<IComponentHierarchyBase, NoAttributes, GlobalFeatures, GlobalEvents, JQXLoader>
+		implements BodyChildren<IComponentHierarchyBase, JQXLoader>, NoNewLineForRawText, NoNewLineBeforeClosingTag, Loader
 {
 
 	private JQXLoaderFeature feature;
@@ -56,6 +56,14 @@ public class JQXLoader
 	public JQXLoaderOptions getOptions()
 	{
 		return feature.getOptions();
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + feature.hashCode();
+		return result;
 	}
 
 	@Override
@@ -77,13 +85,5 @@ public class JQXLoader
 		JQXLoader jqxLoader = (JQXLoader) o;
 
 		return feature.equals(jqxLoader.feature);
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + feature.hashCode();
-		return result;
 	}
 }

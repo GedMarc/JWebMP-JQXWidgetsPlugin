@@ -30,8 +30,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 2013/01/16
  */
 public class JQXDropDownListFeature
-		extends Feature<JQXDropDownListOptions, JQXDropDownListFeature>
-		implements JQXDropDownListFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXDropDownListOptions, JQXDropDownListFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -60,35 +59,13 @@ public class JQXDropDownListFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		result = 31 * result + getSetContentMethod().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXDropDownListFeature that = (JQXDropDownListFeature) o;
-
-		if (!getOptions().equals(that.getOptions()))
-		{
-			return false;
-		}
-		return getSetContentMethod().equals(that.getSetContentMethod());
+		return super.equals(obj);
 	}
 
 	/**

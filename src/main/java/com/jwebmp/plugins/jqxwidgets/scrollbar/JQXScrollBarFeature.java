@@ -19,7 +19,6 @@ package com.jwebmp.plugins.jqxwidgets.scrollbar;
 import com.jwebmp.core.Component;
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
-import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**
@@ -30,8 +29,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXScrollBarFeature
-		extends Feature<JavaScriptPart, JQXScrollBarFeature>
-		implements JQXScrollBarFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXScrollBarOptions, JQXScrollBarFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -57,30 +55,13 @@ public class JQXScrollBarFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXScrollBarFeature that = (JQXScrollBarFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

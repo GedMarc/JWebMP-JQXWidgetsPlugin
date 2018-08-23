@@ -19,6 +19,8 @@ package com.jwebmp.plugins.jqxwidgets.tree;
 import com.jwebmp.core.Component;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * The JQX Tree Source Data Adapter
  *
@@ -34,6 +36,7 @@ public class JQXTreeSourceDataAdapter
 		super(componentAddingTo);
 	}
 
+	@NotNull
 	@Override
 	public String toString()
 	{

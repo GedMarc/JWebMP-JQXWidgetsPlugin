@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXProgressBarFeature
-		extends Feature<JQXProgressBarOptions, JQXProgressBarFeature>
-		implements JQXProgressBarFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXProgressBarOptions, JQXProgressBarFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -54,30 +53,13 @@ public class JQXProgressBarFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXProgressBarFeature that = (JQXProgressBarFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.jqxwidgets.navbar;
 
 import com.jwebmp.core.base.html.Div;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -33,7 +33,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavbar/jquery-navbar-getting-started.htm?search=",
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNavBar
-		extends Div<GlobalChildren, JQXNavBarAttributes, JQXNavBarFeatures, JQXNavBarEvents, JQXNavBar>
+		extends Div<IComponentHierarchyBase, JQXNavBarAttributes, JQXNavBarFeatures, JQXNavBarEvents, JQXNavBar>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -60,6 +60,14 @@ public class JQXNavBar
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -78,13 +86,5 @@ public class JQXNavBar
 		JQXNavBar jqxNavBar = (JQXNavBar) o;
 
 		return getFeature().equals(jqxNavBar.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

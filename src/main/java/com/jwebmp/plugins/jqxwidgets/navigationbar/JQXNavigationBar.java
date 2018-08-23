@@ -18,7 +18,7 @@ package com.jwebmp.plugins.jqxwidgets.navigationbar;
 
 import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.base.html.Paragraph;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 import java.io.Serializable;
@@ -41,7 +41,7 @@ import java.util.Objects;
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxnavigationbar/jquery-navigationbar-getting-started.htm?search=",
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXNavigationBar
-		extends Div<GlobalChildren, JQXNavigationBarAttributes, JQXNavigationBarFeature, JQXNavigationBarEvents, JQXNavigationBar>
+		extends Div<IComponentHierarchyBase, JQXNavigationBarAttributes, JQXNavigationBarFeature, JQXNavigationBarEvents, JQXNavigationBar>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -90,6 +90,15 @@ public class JQXNavigationBar
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + getGroups().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -112,15 +121,6 @@ public class JQXNavigationBar
 			return false;
 		}
 		return getGroups().equals(that.getGroups());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		result = 31 * result + getGroups().hashCode();
-		return result;
 	}
 
 	public static class NavigationBarGroup

@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.jqxwidgets.buttons;
 
 import com.jwebmp.core.base.html.Button;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
 import com.jwebmp.core.base.html.interfaces.children.ListItemChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 
@@ -36,7 +36,7 @@ import com.jwebmp.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
 public class JQXButton
 		extends Button
-		implements JQXNavBarChildren, GlobalChildren, ListItemChildren
+		implements JQXNavBarChildren, IComponentHierarchyBase, ListItemChildren
 {
 
 	private static final long serialVersionUID = 1L;
@@ -88,6 +88,14 @@ public class JQXButton
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -106,13 +114,5 @@ public class JQXButton
 		JQXButton jqxButton = (JQXButton) o;
 
 		return getFeature().equals(jqxButton.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

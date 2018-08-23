@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXDataTableFeature
-		extends Feature<JQXDataTableOptions, JQXDataTableFeature>
-		implements JQXDataTableFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXDataTableOptions, JQXDataTableFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -59,30 +58,13 @@ public class JQXDataTableFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXDataTableFeature that = (JQXDataTableFeature) o;
-
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

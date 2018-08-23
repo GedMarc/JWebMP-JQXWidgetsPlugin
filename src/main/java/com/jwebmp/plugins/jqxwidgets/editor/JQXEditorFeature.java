@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXEditorFeature
-		extends Feature<JQXEditorOptions, JQXEditorFeature>
-		implements JQXEditorFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXEditorOptions, JQXEditorFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -62,35 +61,13 @@ public class JQXEditorFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getComponent().hashCode();
-		result = 31 * result + getOptions().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof JQXEditorFeature))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQXEditorFeature that = (JQXEditorFeature) o;
-
-		if (!getComponent().equals(that.getComponent()))
-		{
-			return false;
-		}
-		return getOptions().equals(that.getOptions());
+		return super.equals(obj);
 	}
 
 	/**

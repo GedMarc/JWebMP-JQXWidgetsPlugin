@@ -28,8 +28,7 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since 2013/01/16
  */
 public class JQXComboBoxFeature
-		extends Feature<JQXComboBoxOptions, JQXComboBoxFeature>
-		implements JQXComboBoxFeatures, GlobalFeatures
+		extends Feature<GlobalFeatures, JQXComboBoxOptions, JQXComboBoxFeature>
 {
 
 	private static final long serialVersionUID = 1L;

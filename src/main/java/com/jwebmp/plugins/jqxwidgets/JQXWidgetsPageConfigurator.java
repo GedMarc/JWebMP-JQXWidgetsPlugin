@@ -45,10 +45,39 @@ import javax.validation.constraints.NotNull;
 public class JQXWidgetsPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 
 	public JQXWidgetsPageConfigurator()
 	{
 		//Nothing Needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return JQXWidgetsPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		JQXWidgetsPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -56,5 +85,11 @@ public class JQXWidgetsPageConfigurator
 	public Page configure(Page page)
 	{
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return JQXWidgetsPageConfigurator.enabled;
 	}
 }

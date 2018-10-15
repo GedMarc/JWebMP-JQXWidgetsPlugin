@@ -32,7 +32,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Tooltip",
 		description = "jqxTooltip represents a jQuery widget that displays a popup message. The widget can be used in combination with any html element. You just need to call the jqxTooltip's 'add' method and pass the html element as parameter. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtooltip/jquery-tooltip-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXToolTip
 		extends Div<JQXToolTipChildren, JQXToolTipAttributes, JQXToolTipFeature, JQXToolTipEvents, JQXToolTip>
 {
@@ -61,6 +61,14 @@ public class JQXToolTip
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXToolTip
 		JQXToolTip that = (JQXToolTip) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

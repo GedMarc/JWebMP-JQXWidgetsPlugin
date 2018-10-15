@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Rating",
 		description = "jqxRating represents a jQuery UI widget that allows you to choose a rating. You can configure the jqxRating items size, image and the number of displayed items ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxrating/jquery-rating-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXRating
 		extends Div<JQXRatingChildren, JQXRatingAttributes, JQXRatingFeature, JQXRatingEvents, JQXRating>
 {

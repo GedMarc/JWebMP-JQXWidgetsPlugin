@@ -33,7 +33,7 @@ import com.jwebmp.plugins.jqxwidgets.navbar.JQXNavBarChildren;
 @ComponentInformation(name = "JQX Buttons",
 		description = "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxbutton/jquery-button-api.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXButton
 		extends Button
 		implements JQXNavBarChildren, IComponentHierarchyBase, ListItemChildren

@@ -32,7 +32,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Menu",
 		description = "jqxMenu represents a jQuery menu widget that makes it easy to add menus to your website or web application. With the jqxMenu you can create website menus, customized context menus, or application-style menu bars with just a small amount of scripting. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxmenu/jquery-menu-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXMenu
 		extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeature, JQXMenuEvents, JQXMenu>
 {
@@ -88,6 +88,15 @@ public class JQXMenu
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + getMenuList().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -110,14 +119,5 @@ public class JQXMenu
 			return false;
 		}
 		return getMenuList().equals(jqxMenu.getMenuList());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		result = 31 * result + getMenuList().hashCode();
-		return result;
 	}
 }

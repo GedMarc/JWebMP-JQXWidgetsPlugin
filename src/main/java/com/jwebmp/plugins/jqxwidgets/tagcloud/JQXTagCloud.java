@@ -36,7 +36,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Tag Cloud",
 		description = "jqxTagCloud is a jQuery widget is a flexible UI component that displays a collection of user-generated tags accompanying the articles, posts, or videos on your website. Each tag has weight value which corresponds to its popularity, importance or recurrence on the page.",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtagcloud/jquery-tagcloud-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXTagCloud
 		extends Div<JQXTagCloudChildren, JQXTagCloudAttributes, JQXTagCloudFeature, JQXTagCloudEvents, JQXTagCloud>
 {

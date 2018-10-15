@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Scrollbar",
 		description = "The jqxScrollBar represents a jQuery widget that provides a scroll bar that has a sliding thumb whose position corresponds to a value. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxscrollbar/jquery-scrollbar-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXScrollBar
 		extends Div<JQXScrollBarChildren, JQXScrollBarAttributes, JQXScrollBarFeature, JQXScrollBarEvents, JQXScrollBar>
 {

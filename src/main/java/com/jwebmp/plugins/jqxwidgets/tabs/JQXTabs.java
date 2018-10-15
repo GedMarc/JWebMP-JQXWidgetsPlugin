@@ -31,7 +31,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Tabs",
 		description = "jqxTabs represents a jQuery Tabs widget. jqxTabs is breaking the content into multiple sections. You can populate it from 'LI' elements for the tab titles and 'DIV' elements for tab contents. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtabs/jquery-tabs-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXTabs
 		extends Div<JQXTabsChildren, JQXTabsAttributes, JQXTabsFeature, JQXTabsEvents, JQXTabs>
 {

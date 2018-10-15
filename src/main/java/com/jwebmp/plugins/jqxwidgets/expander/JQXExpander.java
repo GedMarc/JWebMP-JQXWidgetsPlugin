@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Expander",
 		description = "jqxExpander represents a jQuery widget that has header and content sections(like tabs). Click headers to expand or collapse the content. Optionally you can change the default toggle mode to double-click or mouseover. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxexpander/jquery-expander-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXExpander
 		extends Div<JQXExpanderChildren, JQXExpanderAttributes, JQXExpanderFeature, JQXExpanderEvents, JQXExpander>
 {

@@ -33,7 +33,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Panel",
 		description = "The jqxPanel widget represents a jQuery Panel widget. This widget is a container for other widgets or elements. It automatically adds horizontal and vertical scrollbars, if the content is not fully visible ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxpanel/jquery-panel-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXPanel
 		extends Div<IComponentHierarchyBase, JQXPanelAttributes, JQXPanelFeatures, JQXPanelEvents, JQXPanel> //JQXPanelChildrenvv
 {

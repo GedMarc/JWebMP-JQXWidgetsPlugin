@@ -32,7 +32,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Responsive Panel",
 		description = "jqxResponsivePanel represents a panel widget with a responsive behaviour. The responsive panel collapses when the browser window's width becomes less than a set value (collapseBreakpoint) and the panel is then accessible by clicking a button. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxresponsivepanel/jquery-responsive-panel-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXResponsivePanel
 		extends Div<JQXResponsivePanelChildren, JQXResponsivePanelAttributes, JQXResponsivePanelFeature, JQXResponsivePanelEvents, JQXResponsivePanel>
 {

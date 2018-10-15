@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Touch",
 		description = "jqxTouch is a small jQuery-based plugin which detects and triggers touch events like 'swipe', 'swipe left', 'swipe right', 'tap' and 'orientationchange' on touch enabled devices. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxtouch/jquery-touch-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXTouch
 		extends Div<JQXTouchChildren, JQXTouchAttributes, JQXTouchFeature, JQXTouchEvents, JQXTouch>
 {
@@ -59,6 +59,14 @@ public class JQXTouch
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXTouch
 		JQXTouch jqxTouch = (JQXTouch) o;
 
 		return getFeature().equals(jqxTouch.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -37,7 +37,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Loader",
 		description = "The jqxLoader represents a jQuery widget which displays the built-in loading element. The loading element can be icon only, text only or combination of icon and text. It can be used to display loading element until the widget's data is loaded. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxloader/jquery-loader-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXLoader
 		extends Div<IComponentHierarchyBase, NoAttributes, GlobalFeatures, GlobalEvents, JQXLoader>
 		implements BodyChildren<IComponentHierarchyBase, JQXLoader>, NoNewLineForRawText, NoNewLineBeforeClosingTag, Loader

@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Docking Layout",
 		description = "jqxDockingLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be floated, docked, nested, resized, pinned, unpinned and closed. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdockinglayout/jquery-docking-layout-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXDockingLayout
 		extends Div<JQXDockingLayoutChildren, JQXDockingLayoutAttributes, JQXDockingLayoutFeature, JQXDockingLayoutEvents, JQXDockingLayout>
 {

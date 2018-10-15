@@ -44,7 +44,7 @@ import java.util.logging.Logger;
 @ComponentInformation(name = "JQX Data Adapter",
 		description = "jqxDataAdapter represents a jQuery plug-in which simplifies data binding and data operations and supports binding to local and remote data",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdataadapter/jquery-data-adapter.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 
 public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData, J extends JQXDataAdapter<A, J>>
 		extends DataAdapter<JQXDataAdapterChildren, JQXDataAdapterAttributes, JQXDataAdapterFeature, JQXDataAdapterEvents, J>

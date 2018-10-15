@@ -33,9 +33,9 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "jquery,globalize",
 		pluginCategories = "jquery, ui, jqwidgets, jqxwidgets, framework, web",
 		pluginSubtitle = "We specialize in development of platform independent, mobile-ready user interface components and presentation layer for responsive websites and mobile apps.",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin",
 		pluginSourceUrl = "http://www.jqwidgets.com/",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki",
 		pluginOriginalHomepage = "http://www.jqwidgets.com/",
 		pluginCommercial = true,
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQXWidgetsPlugin.jar/download",
@@ -43,7 +43,7 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "bower_components/jqwidgets/jqwidgets_example.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class JQXWidgetsPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<JQXWidgetsPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled

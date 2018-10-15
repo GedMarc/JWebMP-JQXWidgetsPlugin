@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Observable Array",
 		description = "The Observable Array wraps a JavaScript Array object and tracks changes in the Array. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxobservablearray/javascript-observable-array.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXObservableArray
 		extends Div<JQXObservableArrayChildren, JQXObservableArrayAttributes, JQXObservableArrayFeature, JQXObservableArrayEvents, JQXObservableArray>
 {

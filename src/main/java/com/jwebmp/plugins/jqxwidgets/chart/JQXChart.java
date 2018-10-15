@@ -47,7 +47,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Chart",
 		description = "jqxChart is a lightweight and powerful chart widget written 100% in javascript. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxchart/jquery-chart-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXChart
 		extends Div<JQXChartChildren, JQXChartAttributes, JQXChartFeature, JQXChartEvents, JQXChart>
 {
@@ -76,6 +76,14 @@ public class JQXChart
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -94,13 +102,5 @@ public class JQXChart
 		JQXChart jqxChart = (JQXChart) o;
 
 		return getFeature().equals(jqxChart.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

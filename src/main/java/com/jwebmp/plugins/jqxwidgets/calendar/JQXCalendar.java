@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Calendar",
 		description = "jqxCalendar represents a jQuery calendar widget that enables the user to select a date using a visual monthly calendar display. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcalendar/jquery-calendar-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXCalendar
 		extends Div<JQXCalendarChildren, JQXCalendarAttributes, JQXCalendarFeature, JQXCalendarEvents, JQXCalendar>
 {

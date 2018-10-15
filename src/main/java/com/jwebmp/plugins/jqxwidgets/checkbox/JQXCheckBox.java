@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX CheckBox",
 		description = "The jqxCheckBox widget displays a check box that allows the end-user to select a true, false or indeterminate condition. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcheckandradio/jquery-checkbox-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXCheckBox
 		extends Div<JQXCheckBoxChildren, JQXCheckBoxAttributes, JQXCheckBoxFeature, JQXCheckBoxEvents, JQXCheckBox>
 {

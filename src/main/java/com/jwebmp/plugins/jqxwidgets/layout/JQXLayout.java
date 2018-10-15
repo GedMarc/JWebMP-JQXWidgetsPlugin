@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Layout",
 		description = "jqxLayout represents a jQuery widget which allows the creation of complex layouts with panels that can be nested, resized, pinned, unpinned and closed. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxlayout/jquery-layout-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXLayout
 		extends Div<JQXLayoutChildren, JQXLayoutAttributes, JQXLayoutFeature, JQXLayoutEvents, JQXLayout>
 {

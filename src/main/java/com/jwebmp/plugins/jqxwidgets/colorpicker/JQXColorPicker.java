@@ -31,7 +31,7 @@ import com.jwebmp.plugins.jqxwidgets.dropdownlist.JQXDropDownListChildren;
 @ComponentInformation(name = "JQX Color Picker",
 		description = "jqxColorPicker represents a jQuery UI widget that allows you to easily pick a color. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxcolorpicker/jquery-colorpicker-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXColorPicker
 		extends Div<JQXColorPickerChildren, JQXColorPickerAttributes, JQXColorPickerFeature, JQXColorPickerEvents, JQXColorPicker>
 		implements JQXDropDownListChildren<JQXColorPickerChildren, JQXColorPicker>

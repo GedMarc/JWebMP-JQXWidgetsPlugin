@@ -31,7 +31,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Input",
 		description = "jqxInput represents an Input widget with auto-complete capabilities. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxinput/jquery-input-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXInput
 		extends Div<JQXInputChildren, JQXInputAttributes, JQXInputFeature, JQXInputEvents, JQXInput>
 		implements NoClosingTag

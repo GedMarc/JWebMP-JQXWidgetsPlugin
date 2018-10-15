@@ -37,7 +37,7 @@ import java.util.List;
 @ComponentInformation(name = "JQX Ribbon",
 		description = "jqxRibbon represents a jQuery widget which can be used as a tabbed toolbar or mega menu. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxribbon/jquery-ribbon-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXRibbon
 		extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFeature, JQXRibbonEvents, JQXRibbon>
 {
@@ -111,6 +111,17 @@ public class JQXRibbon
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + unorderedList.hashCode();
+		result = 31 * result + itemDivs.hashCode();
+		result = 31 * result + getRibbonItems().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -141,17 +152,6 @@ public class JQXRibbon
 			return false;
 		}
 		return getRibbonItems().equals(jqxRibbon.getRibbonItems());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		result = 31 * result + unorderedList.hashCode();
-		result = 31 * result + itemDivs.hashCode();
-		result = 31 * result + getRibbonItems().hashCode();
-		return result;
 	}
 
 	public static class JQXRibbonItem

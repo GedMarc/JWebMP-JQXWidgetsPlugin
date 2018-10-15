@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Docking",
 		description = "jqxDocking represents a jQuery widget which allows you to manage multiple windows and even the layout of your web page.",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdocking/jquery-docking-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXDocking
 		extends Div<JQXDockingChildren, JQXDockingAttributes, JQXDockingFeature, JQXDockingEvents, JQXDocking>
 {

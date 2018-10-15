@@ -34,7 +34,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Dock Panel",
 		description = "The jqxDockPanel widget represents a container for other widgets or elements. It arranges its inner elements depending on the value of the 'dock' attribute. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxdockpanel/jquery-dockpanel-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXDockPanel
 		extends Div<JQXDockPanelChildren, JQXDockPanelAttributes, JQXDockPanelFeature, JQXDockPanelEvents, JQXDockPanel>
 {
@@ -63,6 +63,14 @@ public class JQXDockPanel
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -81,13 +89,5 @@ public class JQXDockPanel
 		JQXDockPanel that = (JQXDockPanel) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

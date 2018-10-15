@@ -36,7 +36,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "JQX Window",
 		description = "You can use the jqxWindow to direct a user’s attention to a particular activity in your application, such as entering data or viewing information. Consider using a jqxWindow when you want greater customization, you want to block the user interface outside the window, or when you want to retrieve a DialogResult and other data from the popup window. jqxWindow can be displayed as a modal dialog window that blocks user interaction with the underlying user interface or as a standard window without blocking the web page's user interface. ",
 		url = "http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxwindow/jquery-window-getting-started.htm?search=",
-		wikiUrl = "https://github.com/GedMarc/JWebSwing-JQXWidgetsPlugin/wiki")
+		wikiUrl = "https://github.com/GedMarc/JWebMP-JQXWidgetsPlugin/wiki")
 public class JQXWindow
 		extends Div<JQXWindowChildren, JQXWindowAttributes, JQXWindowFeature, JQXWindowEvents, JQXWindow>
 {

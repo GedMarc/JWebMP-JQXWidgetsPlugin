@@ -28,7 +28,6 @@ public class JQXGridRowDetailsTemplate
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXGridRowDetailsTemplate()
 	{

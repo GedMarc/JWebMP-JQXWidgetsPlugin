@@ -31,7 +31,6 @@ public class JQXInputFeature
 		extends Feature<GlobalFeatures, JQXInputOptions, JQXInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private final JQXInput forComponent;
 	private JQXInputOptions options;

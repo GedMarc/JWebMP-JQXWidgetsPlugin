@@ -36,7 +36,7 @@ public class JQXDataTable
 		extends Div<JQXDataTableChildren, JQXDataTableAttributes, JQXDataTableFeature, JQXDataTableEvents, JQXDataTable>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDataTableFeature feature;
 
 	public JQXDataTable()
@@ -60,6 +60,14 @@ public class JQXDataTable
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -78,13 +86,5 @@ public class JQXDataTable
 		JQXDataTable that = (JQXDataTable) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

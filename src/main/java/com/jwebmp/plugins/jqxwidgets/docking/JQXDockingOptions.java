@@ -33,7 +33,6 @@ public class JQXDockingOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Boolean cookies;// 	Boolean 	false
 	private JQXCookieOptions cookieOptions;

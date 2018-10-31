@@ -31,7 +31,6 @@ public class JQXComboBoxFeature
 		extends Feature<GlobalFeatures, JQXComboBoxOptions, JQXComboBoxFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXComboBoxOptions options;
 

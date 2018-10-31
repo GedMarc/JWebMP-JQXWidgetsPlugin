@@ -38,7 +38,7 @@ public class JQXFormattedInput
 		extends Div<JQXFormattedInputChildren, JQXFormattedInputAttributes, JQXFormattedInputFeature, JQXFormattedInputEvents, JQXFormattedInput>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXFormattedInputFeature feature;
 
 	public JQXFormattedInput()
@@ -62,6 +62,14 @@ public class JQXFormattedInput
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -80,13 +88,5 @@ public class JQXFormattedInput
 		JQXFormattedInput that = (JQXFormattedInput) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

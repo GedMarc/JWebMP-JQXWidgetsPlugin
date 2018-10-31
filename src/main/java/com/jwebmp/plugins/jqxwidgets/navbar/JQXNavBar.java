@@ -36,7 +36,7 @@ public class JQXNavBar
 		extends Div<IComponentHierarchyBase, JQXNavBarAttributes, JQXNavBarFeatures, JQXNavBarEvents, JQXNavBar>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXNavBarFeature feature;
 
 	public JQXNavBar()

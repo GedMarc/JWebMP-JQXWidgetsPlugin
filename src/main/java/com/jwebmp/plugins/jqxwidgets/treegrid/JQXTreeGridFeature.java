@@ -31,7 +31,6 @@ public class JQXTreeGridFeature
 		extends Feature<GlobalFeatures, JQXTreeGridOptions, JQXTreeGridFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTreeGridOptions options;
 

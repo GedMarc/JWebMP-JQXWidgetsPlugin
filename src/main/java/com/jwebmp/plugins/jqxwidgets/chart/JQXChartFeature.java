@@ -30,7 +30,6 @@ public class JQXChartFeature
 		extends Feature<JQXChartFeature, JQXChartOptions, JQXChartFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private final JQXChart forComponent;
 	private JQXChartOptions options;

@@ -35,7 +35,7 @@ public class JQXListMenu
 		extends Div<JQXListMenuChildren, JQXListMenuAttributes, JQXListMenuFeature, JQXListMenuEvents, JQXListMenu>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXListMenuFeature feature;
 
 	public JQXListMenu()
@@ -59,6 +59,14 @@ public class JQXListMenu
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXListMenu
 		JQXListMenu that = (JQXListMenu) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

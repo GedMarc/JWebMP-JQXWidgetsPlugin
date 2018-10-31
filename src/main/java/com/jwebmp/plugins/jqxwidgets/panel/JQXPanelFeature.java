@@ -32,7 +32,6 @@ public class JQXPanelFeature
 		extends Feature<GlobalFeatures, JQXPanelOptions, JQXPanelFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXPanelOptions options;
 

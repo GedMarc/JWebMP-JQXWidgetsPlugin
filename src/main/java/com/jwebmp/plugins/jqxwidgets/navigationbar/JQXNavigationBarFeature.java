@@ -31,7 +31,6 @@ public class JQXNavigationBarFeature
 		extends Feature<GlobalFeatures, JQXNavigationBarOptions, JQXNavigationBarFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXNavigationBarOptions options;
 

@@ -36,7 +36,7 @@ public class JQXComplexInput
 		extends Div<JQXComplexInputChildren, JQXComplexInputAttributes, JQXComplexInputFeature, JQXComplexInputEvents, JQXComplexInput>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXComplexInputFeature feature;
 
 	public JQXComplexInput()

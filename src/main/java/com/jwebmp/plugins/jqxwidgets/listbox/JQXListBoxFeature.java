@@ -31,7 +31,6 @@ public class JQXListBoxFeature
 		extends Feature<GlobalFeatures, JQXListBoxOptions, JQXListBoxFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXListBoxOptions options;
 

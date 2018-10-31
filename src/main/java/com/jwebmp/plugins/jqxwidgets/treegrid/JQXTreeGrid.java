@@ -43,7 +43,7 @@ public class JQXTreeGrid
 		extends Div<JQXTreeGridChildren, JQXTreeGridAttributes, JQXTreeGridFeature, JQXTreeGridEvents, JQXTreeGrid>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTreeGridFeature feature;
 
 	public JQXTreeGrid()

@@ -31,7 +31,6 @@ public class JQXLoaderFeature
 		extends Feature<GlobalFeatures, JQXLoaderOptions, JQXLoaderFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXLoaderOptions options;
 

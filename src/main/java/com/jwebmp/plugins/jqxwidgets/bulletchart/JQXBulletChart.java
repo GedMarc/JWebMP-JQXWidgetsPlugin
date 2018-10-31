@@ -35,7 +35,7 @@ public class JQXBulletChart
 		extends Div<JQXBulletChartChildren, JQXBulletChartAttributes, JQXBulletChartFeatures, JQXBulletChartEvents, JQXBulletChart>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXBulletChartFeature feature;
 
 	public JQXBulletChart()

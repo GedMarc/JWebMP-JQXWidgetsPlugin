@@ -31,7 +31,6 @@ public class JQXResponsivePanelFeature
 		extends Feature<GlobalFeatures, JQXResponsivePanelOptions, JQXResponsivePanelFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXResponsivePanelOptions options;
 

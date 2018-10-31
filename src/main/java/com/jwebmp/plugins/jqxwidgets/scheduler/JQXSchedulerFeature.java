@@ -31,7 +31,6 @@ public class JQXSchedulerFeature
 		extends Feature<GlobalFeatures, JQXSchedulerOptions, JQXSchedulerFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXSchedulerOptions options;
 

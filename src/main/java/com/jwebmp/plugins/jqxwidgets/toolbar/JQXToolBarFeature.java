@@ -31,7 +31,6 @@ public class JQXToolBarFeature
 		extends Feature<GlobalFeatures, JQXToolBarOptions, JQXToolBarFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXToolBarOptions options;
 

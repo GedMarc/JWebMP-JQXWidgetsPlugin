@@ -32,7 +32,6 @@ public class JQXScrollBarFeature
 		extends Feature<GlobalFeatures, JQXScrollBarOptions, JQXScrollBarFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXScrollBarOptions options;
 

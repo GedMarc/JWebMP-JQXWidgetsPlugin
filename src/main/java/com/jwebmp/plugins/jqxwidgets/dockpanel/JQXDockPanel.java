@@ -39,7 +39,7 @@ public class JQXDockPanel
 		extends Div<JQXDockPanelChildren, JQXDockPanelAttributes, JQXDockPanelFeature, JQXDockPanelEvents, JQXDockPanel>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDockPanelFeature feature;
 
 	public JQXDockPanel()

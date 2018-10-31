@@ -35,7 +35,7 @@ public class JQXGrid
 		extends Div<JQXGridChildren, JQXGridAttributes, JQXGridFeature, JQXGridEvents, JQXGrid>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXGridFeature feature;
 
 	public JQXGrid()
@@ -59,6 +59,14 @@ public class JQXGrid
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXGrid
 		JQXGrid jqxGrid = (JQXGrid) o;
 
 		return getFeature().equals(jqxGrid.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

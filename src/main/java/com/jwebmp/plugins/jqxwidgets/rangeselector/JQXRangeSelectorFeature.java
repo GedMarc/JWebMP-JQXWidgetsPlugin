@@ -31,7 +31,6 @@ public class JQXRangeSelectorFeature
 		extends Feature<GlobalFeatures, JQXRangeSelectorOptions, JQXRangeSelectorFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXRangeSelectorOptions options;
 

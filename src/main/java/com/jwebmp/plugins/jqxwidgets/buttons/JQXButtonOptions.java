@@ -33,7 +33,6 @@ public class JQXButtonOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Specifies the interval between two Click events. This property is available only in the jqxRepeatButton. The jqxRepeatButton raises Click events repeatedly when the button

@@ -34,7 +34,6 @@ public class JQXTreeFeature
 		extends Feature<GlobalFeatures, JQXTreeOptions, JQXTreeFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTreeOptions options;
 

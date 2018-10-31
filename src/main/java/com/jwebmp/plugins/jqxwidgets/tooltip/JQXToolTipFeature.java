@@ -31,7 +31,6 @@ public class JQXToolTipFeature
 		extends Feature<GlobalFeatures, JQXToolTipOptions, JQXToolTipFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXToolTipOptions options;
 

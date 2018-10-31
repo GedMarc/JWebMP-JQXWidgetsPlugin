@@ -31,7 +31,6 @@ public class JQXDragDropFeature
 		extends Feature<GlobalFeatures, JQXDragDropOptions, JQXDragDropFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDragDropOptions options;
 

@@ -35,7 +35,7 @@ public class JQXPasswordInput
 		extends InputPasswordType
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXPasswordInputFeature feature;
 
 	public JQXPasswordInput()
@@ -59,6 +59,14 @@ public class JQXPasswordInput
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXPasswordInput
 		JQXPasswordInput that = (JQXPasswordInput) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

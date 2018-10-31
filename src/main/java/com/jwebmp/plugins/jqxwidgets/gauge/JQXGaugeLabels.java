@@ -30,7 +30,6 @@ public class JQXGaugeLabels
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXGaugeLabels()
 	{

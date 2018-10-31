@@ -37,7 +37,6 @@ public class JQXInputOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Boolean disabled;// 	Boolean 	false
 	private Integer dropDownWidth;// 	Number/String 	null

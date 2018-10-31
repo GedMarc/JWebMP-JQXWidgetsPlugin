@@ -38,7 +38,6 @@ public class JQXTreeOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer animationShowDuration;// 	Number 	350
 	private Integer animationHideDuration;// 	Number 	fast

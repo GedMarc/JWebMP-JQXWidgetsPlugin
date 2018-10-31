@@ -35,7 +35,7 @@ public class JQXExpander
 		extends Div<JQXExpanderChildren, JQXExpanderAttributes, JQXExpanderFeature, JQXExpanderEvents, JQXExpander>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXExpanderFeature feature;
 
 	public JQXExpander()
@@ -59,6 +59,14 @@ public class JQXExpander
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXExpander
 		JQXExpander that = (JQXExpander) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

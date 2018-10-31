@@ -35,7 +35,7 @@ public class JQXRadioButton
 		extends Div<JQXRadioButtonChildren, JQXRadioButtonAttributes, JQXRadioButtonFeature, JQXRadioButtonEvents, JQXRadioButton>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXRadioButtonFeature feature;
 
 	public JQXRadioButton(String text)

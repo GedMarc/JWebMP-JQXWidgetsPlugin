@@ -31,7 +31,6 @@ public class JQXFormattedInputFeature
 		extends Feature<GlobalFeatures, JQXFormattedInputOptions, JQXFormattedInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXFormattedInputOptions options;
 

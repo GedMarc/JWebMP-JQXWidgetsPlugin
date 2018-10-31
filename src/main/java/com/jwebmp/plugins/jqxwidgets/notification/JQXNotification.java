@@ -37,7 +37,7 @@ public class JQXNotification
 		implements GlobalChildren
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXNotificationFeature feature;
 
 	public JQXNotification()
@@ -69,6 +69,14 @@ public class JQXNotification
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -87,13 +95,5 @@ public class JQXNotification
 		JQXNotification that = (JQXNotification) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

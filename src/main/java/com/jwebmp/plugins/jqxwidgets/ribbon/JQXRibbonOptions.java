@@ -39,7 +39,7 @@ public class JQXRibbonOptions
 	/**
 	 * Version 1.0
 	 */
-	private static final long serialVersionUID = 1L;
+
 
 	private JQEasingEffects animationType;// 	String 	'fade'
 	private Integer animationDelay;// 	Number/String 	400

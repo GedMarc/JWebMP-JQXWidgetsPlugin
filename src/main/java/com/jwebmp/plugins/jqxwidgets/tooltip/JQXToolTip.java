@@ -37,7 +37,7 @@ public class JQXToolTip
 		extends Div<JQXToolTipChildren, JQXToolTipAttributes, JQXToolTipFeature, JQXToolTipEvents, JQXToolTip>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXToolTipFeature feature;
 
 	public JQXToolTip()

@@ -31,7 +31,6 @@ public class JQXRatingFeature
 		extends Feature<GlobalFeatures, JQXRatingOptions, JQXRatingFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXRatingOptions options;
 

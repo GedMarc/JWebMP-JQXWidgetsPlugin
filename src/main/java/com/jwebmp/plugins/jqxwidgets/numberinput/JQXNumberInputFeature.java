@@ -32,7 +32,6 @@ public class JQXNumberInputFeature
 		extends Feature<GlobalFeatures, JQXNumberInputOptions, JQXNumberInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXNumberInputOptions options;
 

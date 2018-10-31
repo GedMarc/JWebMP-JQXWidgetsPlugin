@@ -36,7 +36,6 @@ public class JQXDataTableOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Boolean altRows;// 	Boolean 	false
 	private Boolean autoRowHeight;// 	Boolean 	true

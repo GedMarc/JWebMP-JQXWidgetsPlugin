@@ -35,7 +35,7 @@ public class JQXSplitter
 		extends Div<JQXSplitterChildren, JQXSplitterAttributes, JQXSplitterFeature, JQXSplitterEvents, JQXSplitter>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXSplitterFeature feature;
 
 	public JQXSplitter()

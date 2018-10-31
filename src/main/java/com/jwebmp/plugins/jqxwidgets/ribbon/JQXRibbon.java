@@ -22,7 +22,6 @@ import com.jwebmp.core.base.html.attributes.NoAttributes;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.jqxwidgets.panel.JQXPanel;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +41,7 @@ public class JQXRibbon
 		extends Div<JQXRibbonChildren, NoAttributes, JQXRibbonFeature, JQXRibbonEvents, JQXRibbon>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXRibbonFeature feature;
 
 	private JQXRibbonList unorderedList;
@@ -155,10 +154,9 @@ public class JQXRibbon
 	}
 
 	public static class JQXRibbonItem
-			implements Serializable
+
 	{
 
-		private static final long serialVersionUID = 1L;
 
 		private ListItem header;
 		private Div content;

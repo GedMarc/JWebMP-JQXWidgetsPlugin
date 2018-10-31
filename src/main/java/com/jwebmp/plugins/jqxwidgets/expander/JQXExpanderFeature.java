@@ -31,7 +31,6 @@ public class JQXExpanderFeature
 		extends Feature<GlobalFeatures, JQXExpanderOptions, JQXExpanderFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXExpanderOptions options;
 

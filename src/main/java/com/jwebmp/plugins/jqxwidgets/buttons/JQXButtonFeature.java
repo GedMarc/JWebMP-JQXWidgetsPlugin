@@ -31,7 +31,6 @@ public class JQXButtonFeature
 		extends Feature<JQXButtonFeature, JQXButtonOptions, JQXButtonFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXButtonOptions options;
 

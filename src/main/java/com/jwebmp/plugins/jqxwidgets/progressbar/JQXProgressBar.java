@@ -35,7 +35,7 @@ public class JQXProgressBar
 		extends Div<JQXProgressBarChildren, JQXProgressBarAttributes, JQXProgressBarFeature, JQXProgressBarEvents, JQXProgressBar>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXProgressBarFeature feature;
 
 	public JQXProgressBar()

@@ -38,7 +38,7 @@ public class JQXPanel
 		extends Div<IComponentHierarchyBase, JQXPanelAttributes, JQXPanelFeatures, JQXPanelEvents, JQXPanel> //JQXPanelChildrenvv
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXPanelFeature feature;
 
 	public JQXPanel()

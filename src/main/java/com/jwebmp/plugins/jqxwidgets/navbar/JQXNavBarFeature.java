@@ -31,7 +31,6 @@ public class JQXNavBarFeature
 		extends Feature<GlobalFeatures, JQXNavBarOptions, JQXNavBarFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXNavBarOptions options;
 

@@ -29,7 +29,6 @@ public class JQXTreeGridColumns
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * string property which sets the column headers text.

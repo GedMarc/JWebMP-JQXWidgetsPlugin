@@ -38,7 +38,7 @@ public class JQXTreeMap
 		extends Div<JQXTreeMapChildren, JQXTreeMapAttributes, JQXTreeMapFeature, JQXTreeMapEvents, JQXTreeMap>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTreeMapFeature feature;
 
 	public JQXTreeMap()

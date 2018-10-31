@@ -30,7 +30,6 @@ public class JQXCheckBoxFeature
 		extends Feature<JQXCheckBoxFeature, JQXCheckBoxOptions, JQXCheckBoxFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXCheckBoxOptions options;
 

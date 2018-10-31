@@ -28,7 +28,6 @@ public class JQXTreeGridColumnGroups
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * string property which determines the parent group's name.

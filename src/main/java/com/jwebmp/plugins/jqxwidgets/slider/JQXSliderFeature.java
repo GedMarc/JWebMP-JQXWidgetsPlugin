@@ -31,7 +31,6 @@ public class JQXSliderFeature
 		extends Feature<GlobalFeatures, JQXSliderOptions, JQXSliderFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXSliderOptions options;
 

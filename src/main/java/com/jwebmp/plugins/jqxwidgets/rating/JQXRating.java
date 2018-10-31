@@ -35,7 +35,7 @@ public class JQXRating
 		extends Div<JQXRatingChildren, JQXRatingAttributes, JQXRatingFeature, JQXRatingEvents, JQXRating>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXRatingFeature feature;
 
 	public JQXRating()
@@ -59,6 +59,14 @@ public class JQXRating
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXRating
 		JQXRating jqxRating = (JQXRating) o;
 
 		return getFeature().equals(jqxRating.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

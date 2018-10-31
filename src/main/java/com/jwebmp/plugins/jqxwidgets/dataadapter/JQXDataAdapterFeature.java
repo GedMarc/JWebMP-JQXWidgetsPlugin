@@ -34,7 +34,6 @@ public class JQXDataAdapterFeature<A extends JQXDataAdapterSourceData>
 		extends Feature<JQXDataAdapterFeature, JQXDataAdapterOptions<A>, JQXDataAdapterFeature<A>>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions<A> options;
 

@@ -35,7 +35,7 @@ public class JQXObservableArray
 		extends Div<JQXObservableArrayChildren, JQXObservableArrayAttributes, JQXObservableArrayFeature, JQXObservableArrayEvents, JQXObservableArray>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXObservableArrayFeature feature;
 
 	public JQXObservableArray()
@@ -59,6 +59,14 @@ public class JQXObservableArray
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXObservableArray
 		JQXObservableArray that = (JQXObservableArray) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

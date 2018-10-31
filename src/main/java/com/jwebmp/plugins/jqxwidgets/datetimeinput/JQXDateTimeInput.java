@@ -36,7 +36,7 @@ public class JQXDateTimeInput
 		extends Div<JQXDateTimeInputChildren, JQXDateTimeInputAttributes, JQXDateTimeInputFeature, JQXDateTimeInputEvents, JQXDateTimeInput>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDateTimeInputFeature feature;
 
 	public JQXDateTimeInput()
@@ -60,6 +60,14 @@ public class JQXDateTimeInput
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -78,13 +86,5 @@ public class JQXDateTimeInput
 		JQXDateTimeInput that = (JQXDateTimeInput) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -31,7 +31,6 @@ public class JQXScrollViewFeature
 		extends Feature<GlobalFeatures, JQXScrollViewOptions, JQXScrollViewFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXScrollViewOptions options;
 

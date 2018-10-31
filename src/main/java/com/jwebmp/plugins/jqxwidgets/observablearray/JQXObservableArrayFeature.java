@@ -31,7 +31,6 @@ public class JQXObservableArrayFeature
 		extends Feature<GlobalFeatures, JQXObservableArrayOptions, JQXObservableArrayFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXObservableArrayOptions options;
 

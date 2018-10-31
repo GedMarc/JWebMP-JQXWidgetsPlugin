@@ -30,7 +30,7 @@ public class JQXTouchTip
 		extends Div<JQXTouchTipChildren, JQXTouchTipAttributes, JQXTouchTipFeature, JQXTouchTipEvents, JQXTouchTip>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTouchTipFeature feature;
 
 	public JQXTouchTip()
@@ -54,6 +54,14 @@ public class JQXTouchTip
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -72,13 +80,5 @@ public class JQXTouchTip
 		JQXTouchTip that = (JQXTouchTip) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

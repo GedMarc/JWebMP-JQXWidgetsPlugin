@@ -31,7 +31,6 @@ public class JQXPasswordInputFeature
 		extends Feature<GlobalFeatures, JQXPasswordInputOptions, JQXPasswordInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXPasswordInputOptions options;
 

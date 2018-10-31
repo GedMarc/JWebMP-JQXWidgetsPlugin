@@ -28,7 +28,6 @@ public class JQXWindowDragArea
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer x;
 	private Integer y;

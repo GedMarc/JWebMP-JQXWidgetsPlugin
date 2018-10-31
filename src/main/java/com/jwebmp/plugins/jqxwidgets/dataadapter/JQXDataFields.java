@@ -28,7 +28,6 @@ public class JQXDataFields
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * A string containing the data fields name.

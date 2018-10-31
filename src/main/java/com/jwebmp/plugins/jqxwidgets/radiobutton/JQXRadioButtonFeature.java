@@ -32,7 +32,6 @@ public class JQXRadioButtonFeature
 		extends Feature<GlobalFeatures, JQXRadioButtonOptions, JQXRadioButtonFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXRadioButtonOptions options;
 

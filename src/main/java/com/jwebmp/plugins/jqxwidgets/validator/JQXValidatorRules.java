@@ -20,8 +20,6 @@ import com.jwebmp.core.Component;
 import com.jwebmp.core.generics.XYObject;
 import com.jwebmp.core.htmlbuilder.javascript.events.enumerations.EventTypes;
 
-import java.io.Serializable;
-
 /**
  * This Class
  *
@@ -29,10 +27,10 @@ import java.io.Serializable;
  * @since 25 Dec 2015
  */
 public class JQXValidatorRules
-		implements Serializable
+
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private Component input;
 	private String message;
 	private JQXValidationRuleTypes rule;

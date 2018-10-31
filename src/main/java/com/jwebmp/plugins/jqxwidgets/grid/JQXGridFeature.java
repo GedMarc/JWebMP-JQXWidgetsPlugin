@@ -31,7 +31,6 @@ public class JQXGridFeature
 		extends Feature<GlobalFeatures, JQXGridOptions, JQXGridFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private final JQXGrid forComponent;
 	private JQXGridOptions options;

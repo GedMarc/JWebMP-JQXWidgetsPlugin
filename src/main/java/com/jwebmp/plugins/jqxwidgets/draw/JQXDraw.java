@@ -30,7 +30,7 @@ public class JQXDraw
 		extends Div<JQXDrawChildren, JQXDrawAttributes, JQXDrawFeature, JQXDrawEvents, JQXDraw>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDrawFeature feature;
 
 	public JQXDraw()

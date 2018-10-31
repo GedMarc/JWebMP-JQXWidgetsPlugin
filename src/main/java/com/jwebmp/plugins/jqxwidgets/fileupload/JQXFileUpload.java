@@ -35,7 +35,7 @@ public class JQXFileUpload
 		extends Div//<JQXFileUploadChildren, JQXFileUploadAttributes, JQXFileUploadFeature, JQXFileUploadEvents, JQXFileUpload>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXFileUploadFeature feature;
 
 	public JQXFileUpload()

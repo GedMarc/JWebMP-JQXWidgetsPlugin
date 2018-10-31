@@ -38,7 +38,6 @@ public class JQXDataAdapterOptions<A extends JQXDataAdapterSourceData>
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * String "\t" when datatype is "tab" and "," when datatype is "CSV"

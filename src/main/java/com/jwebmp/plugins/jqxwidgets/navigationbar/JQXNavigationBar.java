@@ -21,7 +21,6 @@ import com.jwebmp.core.base.html.Paragraph;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -44,7 +43,7 @@ public class JQXNavigationBar
 		extends Div<IComponentHierarchyBase, JQXNavigationBarAttributes, JQXNavigationBarFeature, JQXNavigationBarEvents, JQXNavigationBar>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXNavigationBarFeature feature;
 	private List<NavigationBarGroup> groups;
 
@@ -124,7 +123,7 @@ public class JQXNavigationBar
 	}
 
 	public static class NavigationBarGroup
-			implements Serializable
+
 	{
 
 		private Div header;
@@ -193,7 +192,7 @@ public class JQXNavigationBar
 			{
 				return false;
 			}
-			final NavigationBarGroup other = (NavigationBarGroup) obj;
+			NavigationBarGroup other = (NavigationBarGroup) obj;
 			return Objects.equals(name, other.name);
 		}
 

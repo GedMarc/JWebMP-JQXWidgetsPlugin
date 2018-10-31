@@ -27,6 +27,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 public abstract class JQXDataAdapterSourceData
 		extends JavaScriptPart
 {
-	private static final long serialVersionUID = 1L;
+
 
 }

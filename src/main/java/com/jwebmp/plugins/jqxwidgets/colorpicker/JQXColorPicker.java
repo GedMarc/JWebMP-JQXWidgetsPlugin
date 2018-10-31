@@ -37,7 +37,7 @@ public class JQXColorPicker
 		implements JQXDropDownListChildren<JQXColorPickerChildren, JQXColorPicker>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXColorPickerFeature feature;
 
 	public JQXColorPicker()

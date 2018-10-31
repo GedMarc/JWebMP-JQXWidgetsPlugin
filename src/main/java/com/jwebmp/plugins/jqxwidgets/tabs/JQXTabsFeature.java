@@ -31,7 +31,6 @@ public class JQXTabsFeature
 		extends Feature<GlobalFeatures, JQXTabsOptions, JQXTabsFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTabsOptions options;
 

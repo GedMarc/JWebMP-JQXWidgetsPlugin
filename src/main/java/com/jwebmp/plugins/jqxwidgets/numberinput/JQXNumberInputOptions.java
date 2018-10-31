@@ -33,7 +33,6 @@ public class JQXNumberInputOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Boolean allowNull;
 	private Double decimal;// 	Number 	0

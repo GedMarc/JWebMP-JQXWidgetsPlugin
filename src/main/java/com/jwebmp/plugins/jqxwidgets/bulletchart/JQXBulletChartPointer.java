@@ -26,7 +26,7 @@ public class JQXBulletChartPointer
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private Double value;
 	private String label;
 	private Integer thickness;

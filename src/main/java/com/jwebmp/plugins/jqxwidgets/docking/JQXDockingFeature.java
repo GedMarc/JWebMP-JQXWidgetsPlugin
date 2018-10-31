@@ -31,7 +31,6 @@ public class JQXDockingFeature
 		extends Feature<GlobalFeatures, JQXDockingOptions, JQXDockingFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDockingOptions options;
 

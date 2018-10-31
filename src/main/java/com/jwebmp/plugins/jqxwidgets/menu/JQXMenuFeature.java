@@ -31,7 +31,6 @@ public class JQXMenuFeature
 		extends Feature<GlobalFeatures, JQXMenuOptions, JQXMenuFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXMenuOptions options;
 

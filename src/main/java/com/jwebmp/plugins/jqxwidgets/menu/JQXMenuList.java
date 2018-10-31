@@ -27,7 +27,6 @@ public class JQXMenuList
 		implements JQXMenuChildren
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The menu list

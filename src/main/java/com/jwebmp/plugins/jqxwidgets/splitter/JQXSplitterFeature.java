@@ -31,7 +31,6 @@ public class JQXSplitterFeature
 		extends Feature<GlobalFeatures, JQXSplitterOptions, JQXSplitterFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXSplitterOptions options;
 

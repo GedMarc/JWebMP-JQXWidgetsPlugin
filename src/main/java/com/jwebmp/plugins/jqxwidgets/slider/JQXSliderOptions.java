@@ -37,7 +37,6 @@ public class JQXSliderOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXSliderButtonPositions buttonsPosition;// 	String 	both
 	private Boolean disabled;// 	Boolean 	false

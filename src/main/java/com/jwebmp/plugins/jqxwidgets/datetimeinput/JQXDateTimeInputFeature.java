@@ -31,7 +31,6 @@ public class JQXDateTimeInputFeature
 		extends Feature<GlobalFeatures, JQXDateTimeInputOptions, JQXDateTimeInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDateTimeInputOptions options;
 

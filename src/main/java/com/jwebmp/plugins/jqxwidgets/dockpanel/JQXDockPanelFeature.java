@@ -31,7 +31,6 @@ public class JQXDockPanelFeature
 		extends Feature<GlobalFeatures, JQXDockPanelOptions, JQXDockPanelFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDockPanelOptions options;
 

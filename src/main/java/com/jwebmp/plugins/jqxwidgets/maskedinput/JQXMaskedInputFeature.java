@@ -31,7 +31,6 @@ public class JQXMaskedInputFeature
 		extends Feature<GlobalFeatures, JQXMaskedInputOptions, JQXMaskedInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXMaskedInputOptions options;
 

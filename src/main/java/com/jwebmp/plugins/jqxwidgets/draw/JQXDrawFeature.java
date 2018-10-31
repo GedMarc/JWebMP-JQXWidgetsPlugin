@@ -31,7 +31,6 @@ public class JQXDrawFeature
 		extends Feature<GlobalFeatures, JQXDrawOptions, JQXDrawFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDrawOptions options;
 

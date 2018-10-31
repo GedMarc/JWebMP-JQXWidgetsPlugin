@@ -34,7 +34,6 @@ public class JQXButtonGroupOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer delay;// 	Number 	50
 	private Boolean disabled;// 	Boolean 	false

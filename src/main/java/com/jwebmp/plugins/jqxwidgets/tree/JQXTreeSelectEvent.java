@@ -32,7 +32,6 @@ public abstract class JQXTreeSelectEvent
 		implements JQXTreeEvents
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXTreeSelectEvent(Component componentToAddTo)
 	{

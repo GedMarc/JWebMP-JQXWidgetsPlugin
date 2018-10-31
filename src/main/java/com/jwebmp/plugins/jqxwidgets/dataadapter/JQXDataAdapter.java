@@ -51,7 +51,7 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 		implements IJQXDataAdapter<A>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDataAdapterFeature<A> feature;
 
 	/**

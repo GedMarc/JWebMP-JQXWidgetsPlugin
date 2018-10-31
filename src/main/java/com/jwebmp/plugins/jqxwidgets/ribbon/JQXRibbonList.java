@@ -27,7 +27,6 @@ public class JQXRibbonList
 		implements JQXRibbonChildren
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXRibbonList()
 	{

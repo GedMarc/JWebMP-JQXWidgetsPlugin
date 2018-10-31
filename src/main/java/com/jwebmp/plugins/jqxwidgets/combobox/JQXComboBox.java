@@ -35,7 +35,7 @@ public class JQXComboBox
 		extends Div<JQXComboBoxChildren, JQXComboBoxAttributes, JQXComboBoxFeature, JQXComboBoxEvents, JQXComboBox>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXComboBoxFeature feature;
 
 	public JQXComboBox()
@@ -59,6 +59,14 @@ public class JQXComboBox
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXComboBox
 		JQXComboBox that = (JQXComboBox) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -33,7 +33,6 @@ public class JQXDragDropOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private String appendTo;// 	String 	'parent'
 	private Boolean disabled;// 	Boolean 	false

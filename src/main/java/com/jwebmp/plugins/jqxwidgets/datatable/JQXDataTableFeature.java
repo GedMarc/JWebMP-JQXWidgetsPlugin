@@ -31,7 +31,6 @@ public class JQXDataTableFeature
 		extends Feature<GlobalFeatures, JQXDataTableOptions, JQXDataTableFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDataTableOptions options;
 

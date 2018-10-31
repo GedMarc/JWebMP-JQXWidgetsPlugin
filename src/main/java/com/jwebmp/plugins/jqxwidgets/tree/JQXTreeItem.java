@@ -30,7 +30,6 @@ public class JQXTreeItem
 		extends JQXDataAdapterSourceData
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private String label;// - sets the item's label.
 	private String value;// - sets the item's value.

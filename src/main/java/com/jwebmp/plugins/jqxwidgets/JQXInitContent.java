@@ -31,7 +31,7 @@ public class JQXInitContent
 		extends JavascriptLiteralFunction
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private StringBuilder function;
 
 	public JQXInitContent(JQXRibbon ribbon)

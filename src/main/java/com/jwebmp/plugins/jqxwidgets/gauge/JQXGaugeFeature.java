@@ -31,7 +31,6 @@ public class JQXGaugeFeature
 		extends Feature<GlobalFeatures, JQXGaugeOptions, JQXGaugeFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXGaugeOptions options;
 

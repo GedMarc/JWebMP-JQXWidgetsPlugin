@@ -35,7 +35,7 @@ public class JQXTouch
 		extends Div<JQXTouchChildren, JQXTouchAttributes, JQXTouchFeature, JQXTouchEvents, JQXTouch>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTouchFeature feature;
 
 	public JQXTouch()

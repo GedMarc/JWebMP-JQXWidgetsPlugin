@@ -37,7 +37,7 @@ public class JQXResponsivePanel
 		extends Div<JQXResponsivePanelChildren, JQXResponsivePanelAttributes, JQXResponsivePanelFeature, JQXResponsivePanelEvents, JQXResponsivePanel>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXResponsivePanelFeature feature;
 
 	public JQXResponsivePanel()
@@ -61,6 +61,14 @@ public class JQXResponsivePanel
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXResponsivePanel
 		JQXResponsivePanel that = (JQXResponsivePanel) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -37,7 +37,7 @@ public class JQXToolBar
 		extends Div<JQXToolBarChildren, JQXToolBarAttributes, JQXToolBarFeature, JQXToolBarEvents, JQXToolBar>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXToolBarFeature feature;
 
 	public JQXToolBar()
@@ -61,6 +61,14 @@ public class JQXToolBar
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXToolBar
 		JQXToolBar that = (JQXToolBar) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

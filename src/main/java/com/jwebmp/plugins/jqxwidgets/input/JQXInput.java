@@ -37,7 +37,7 @@ public class JQXInput
 		implements NoClosingTag
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXInputFeature feature;
 
 	public JQXInput()
@@ -63,6 +63,14 @@ public class JQXInput
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -81,13 +89,5 @@ public class JQXInput
 		JQXInput jqxInput = (JQXInput) o;
 
 		return getFeature().equals(jqxInput.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

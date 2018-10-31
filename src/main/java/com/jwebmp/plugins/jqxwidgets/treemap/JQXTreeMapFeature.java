@@ -31,7 +31,6 @@ public class JQXTreeMapFeature
 		extends Feature<GlobalFeatures, JQXTreeMapOptions, JQXTreeMapFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTreeMapOptions options;
 

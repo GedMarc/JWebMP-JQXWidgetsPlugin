@@ -37,7 +37,6 @@ public class JQXBulletChartOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Sets ot gets the bulletcharts's animationDuration.

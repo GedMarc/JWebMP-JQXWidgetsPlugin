@@ -31,7 +31,6 @@ public class JQXValidatorFeature
 		extends Feature<GlobalFeatures, JQXValidatorOptions, JQXValidatorFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXValidatorOptions options;
 

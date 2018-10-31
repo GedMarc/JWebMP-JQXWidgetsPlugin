@@ -41,7 +41,7 @@ public class JQXWindow
 		extends Div<JQXWindowChildren, JQXWindowAttributes, JQXWindowFeature, JQXWindowEvents, JQXWindow>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXWindowFeature feature;
 
 	public JQXWindow()
@@ -65,6 +65,14 @@ public class JQXWindow
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -83,13 +91,5 @@ public class JQXWindow
 		JQXWindow jqxWindow = (JQXWindow) o;
 
 		return getFeature().equals(jqxWindow.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

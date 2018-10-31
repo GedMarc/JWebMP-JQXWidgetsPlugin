@@ -37,7 +37,7 @@ public class JQXScrollView
 		extends Div<JQXScrollViewChildren, JQXScrollViewAttributes, JQXScrollViewFeature, JQXScrollViewEvents, JQXScrollView>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXScrollViewFeature feature;
 
 	public JQXScrollView()
@@ -61,6 +61,14 @@ public class JQXScrollView
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXScrollView
 		JQXScrollView that = (JQXScrollView) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

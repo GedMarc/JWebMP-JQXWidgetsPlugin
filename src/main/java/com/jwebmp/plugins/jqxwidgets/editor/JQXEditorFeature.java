@@ -31,7 +31,7 @@ public class JQXEditorFeature
 		extends Feature<GlobalFeatures, JQXEditorOptions, JQXEditorFeature>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXEditorOptions options;
 
 	/**

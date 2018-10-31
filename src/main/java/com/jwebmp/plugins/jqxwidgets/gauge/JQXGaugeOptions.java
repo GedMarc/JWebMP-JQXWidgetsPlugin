@@ -37,7 +37,6 @@ public class JQXGaugeOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer animationDuration;// 	Number 	400
 	private JQXGaugeBorder border;//

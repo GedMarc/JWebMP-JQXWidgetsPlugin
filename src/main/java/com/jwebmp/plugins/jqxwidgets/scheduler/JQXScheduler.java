@@ -35,7 +35,7 @@ public class JQXScheduler
 		extends Div<JQXSchedulerChildren, JQXSchedulerAttributes, JQXSchedulerFeature, JQXSchedulerEvents, JQXScheduler>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXSchedulerFeature feature;
 
 	public JQXScheduler()
@@ -59,6 +59,14 @@ public class JQXScheduler
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXScheduler
 		JQXScheduler that = (JQXScheduler) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

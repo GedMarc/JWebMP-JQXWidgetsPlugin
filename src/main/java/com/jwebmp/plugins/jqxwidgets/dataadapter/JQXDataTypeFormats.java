@@ -28,7 +28,7 @@ public class JQXDataTypeFormats
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The name of the datatype
 	 */

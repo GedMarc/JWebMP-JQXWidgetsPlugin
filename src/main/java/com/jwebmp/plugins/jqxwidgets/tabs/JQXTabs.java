@@ -36,7 +36,7 @@ public class JQXTabs
 		extends Div<JQXTabsChildren, JQXTabsAttributes, JQXTabsFeature, JQXTabsEvents, JQXTabs>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTabsFeature feature;
 
 	public JQXTabs()

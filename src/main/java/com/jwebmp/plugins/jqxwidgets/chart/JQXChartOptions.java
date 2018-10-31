@@ -34,7 +34,6 @@ public class JQXChartOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXChartOptions()
 	{

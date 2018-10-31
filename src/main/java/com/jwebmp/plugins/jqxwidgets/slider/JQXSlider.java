@@ -37,7 +37,7 @@ public class JQXSlider
 		extends Div<JQXSliderChildren, JQXSliderAttributes, JQXSliderFeature, JQXSliderEvents, JQXSlider>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXSliderFeature feature;
 
 	public JQXSlider()
@@ -61,6 +61,14 @@ public class JQXSlider
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXSlider
 		JQXSlider jqxSlider = (JQXSlider) o;
 
 		return getFeature().equals(jqxSlider.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

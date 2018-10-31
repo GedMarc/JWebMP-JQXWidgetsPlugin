@@ -37,7 +37,7 @@ public class JQXMaskedInput
 		extends Div<JQXMaskedInputChildren, JQXMaskedInputAttributes, JQXMaskedInputFeature, JQXMaskedInputEvents, JQXMaskedInput>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXMaskedInputFeature feature;
 
 	public JQXMaskedInput()
@@ -61,6 +61,14 @@ public class JQXMaskedInput
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXMaskedInput
 		JQXMaskedInput that = (JQXMaskedInput) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

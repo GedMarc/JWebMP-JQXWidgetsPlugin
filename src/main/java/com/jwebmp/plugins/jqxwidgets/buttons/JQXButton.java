@@ -39,7 +39,6 @@ public class JQXButton
 		implements JQXNavBarChildren, IComponentHierarchyBase, ListItemChildren
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXButtonFeature feature;
 

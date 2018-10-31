@@ -30,7 +30,7 @@ public class JQXDropDownListSelectMenu
 		extends Select
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDropDownListSelectMenuFeature feature;
 
 	public JQXDropDownListSelectMenu()
@@ -59,6 +59,14 @@ public class JQXDropDownListSelectMenu
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXDropDownListSelectMenu
 		JQXDropDownListSelectMenu that = (JQXDropDownListSelectMenu) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

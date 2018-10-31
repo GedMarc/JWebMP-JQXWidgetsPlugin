@@ -37,7 +37,7 @@ public class JQXButtonGroup
 		implements JQXNavBarChildren
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXButtonGroupFeature feature;
 
 	public JQXButtonGroup(String text)
@@ -66,6 +66,14 @@ public class JQXButtonGroup
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -84,13 +92,5 @@ public class JQXButtonGroup
 		JQXButtonGroup that = (JQXButtonGroup) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

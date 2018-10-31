@@ -31,7 +31,6 @@ public class JQXTouchTipFeature
 		extends Feature<GlobalFeatures, JQXTouchTipOptions, JQXTouchTipFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTouchTipOptions options;
 

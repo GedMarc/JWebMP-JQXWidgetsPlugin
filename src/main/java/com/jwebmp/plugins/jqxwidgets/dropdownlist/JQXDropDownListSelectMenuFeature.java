@@ -32,7 +32,6 @@ public class JQXDropDownListSelectMenuFeature
 		extends Feature<GlobalFeatures, JQXDropDownListOptions, JQXDropDownListSelectMenuFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDropDownListOptions options;
 

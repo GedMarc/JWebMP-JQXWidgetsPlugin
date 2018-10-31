@@ -30,7 +30,6 @@ public class JQXBulletChartFeature
 		extends Feature<JQXBulletChartFeature, JQXBulletChartOptions, JQXBulletChartFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXBulletChartOptions options;
 

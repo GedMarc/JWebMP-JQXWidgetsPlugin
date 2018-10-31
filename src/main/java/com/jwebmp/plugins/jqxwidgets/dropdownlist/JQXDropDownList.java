@@ -36,7 +36,7 @@ public class JQXDropDownList
 		extends Div<JQXDropDownListChildren, JQXDropDownListAttributes, JQXDropDownListFeatures, JQXDropDownListEvents, JQXDropDownList>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private final List list;
 	private JQXDropDownListFeature feature;
 

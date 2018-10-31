@@ -35,7 +35,7 @@ public class JQXEditor
 		extends TextArea
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXEditorFeature feature;
 
 	public JQXEditor()
@@ -61,6 +61,14 @@ public class JQXEditor
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -79,13 +87,5 @@ public class JQXEditor
 		JQXEditor jqxEditor = (JQXEditor) o;
 
 		return getFeature().equals(jqxEditor.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

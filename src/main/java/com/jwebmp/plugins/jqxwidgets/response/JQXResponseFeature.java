@@ -31,7 +31,6 @@ public class JQXResponseFeature
 		extends Feature<GlobalFeatures, JQXResponseOptions, JQXResponseFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXResponseOptions options;
 

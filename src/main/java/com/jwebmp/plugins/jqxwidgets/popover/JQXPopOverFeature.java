@@ -31,7 +31,6 @@ public class JQXPopOverFeature
 		extends Feature<GlobalFeatures, JQXPopOverOptions, JQXPopOverFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXPopOverOptions options;
 

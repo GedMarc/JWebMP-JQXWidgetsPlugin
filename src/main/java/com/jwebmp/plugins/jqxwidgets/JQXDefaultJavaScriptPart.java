@@ -27,7 +27,6 @@ public class JQXDefaultJavaScriptPart
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * The theme of the component

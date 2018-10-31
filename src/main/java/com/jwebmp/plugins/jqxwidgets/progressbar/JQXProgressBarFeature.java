@@ -31,7 +31,6 @@ public class JQXProgressBarFeature
 		extends Feature<GlobalFeatures, JQXProgressBarOptions, JQXProgressBarFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXProgressBarOptions options;
 

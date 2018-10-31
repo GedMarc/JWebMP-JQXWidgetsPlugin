@@ -52,7 +52,7 @@ public class JQXChart
 		extends Div<JQXChartChildren, JQXChartAttributes, JQXChartFeature, JQXChartEvents, JQXChart>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXChartFeature feature;
 
 	public JQXChart()

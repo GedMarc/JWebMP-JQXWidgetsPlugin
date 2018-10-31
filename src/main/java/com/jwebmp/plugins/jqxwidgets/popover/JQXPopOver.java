@@ -35,7 +35,7 @@ public class JQXPopOver
 		extends Div<JQXPopOverChildren, JQXPopOverAttributes, JQXPopOverFeature, JQXPopOverEvents, JQXPopOver>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXPopOverFeature feature;
 
 	public JQXPopOver()
@@ -59,6 +59,14 @@ public class JQXPopOver
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXPopOver
 		JQXPopOver that = (JQXPopOver) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -35,7 +35,7 @@ public class JQXLayout
 		extends Div<JQXLayoutChildren, JQXLayoutAttributes, JQXLayoutFeature, JQXLayoutEvents, JQXLayout>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXLayoutFeature feature;
 
 	public JQXLayout()
@@ -59,6 +59,14 @@ public class JQXLayout
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXLayout
 		JQXLayout jqxLayout = (JQXLayout) o;
 
 		return getFeature().equals(jqxLayout.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

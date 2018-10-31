@@ -30,7 +30,6 @@ public class JQXListMenuFeature
 		extends Feature<JQXListMenuFeature, JQXListMenuOptions, JQXListMenuFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXListMenuOptions options;
 

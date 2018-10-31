@@ -16,8 +16,6 @@
  */
 package com.jwebmp.plugins.jqxwidgets.splitter;
 
-import java.io.Serializable;
-
 /**
  * This Class
  *
@@ -25,10 +23,9 @@ import java.io.Serializable;
  * @since 24 Dec 2015
  */
 public class JQXSplitterPanel
-		implements Serializable
+
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer size;// - sets the panel's size.
 	private Integer min;// - sets the panel's minimum size.

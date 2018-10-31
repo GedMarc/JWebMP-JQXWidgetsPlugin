@@ -31,7 +31,7 @@ public class JQXDropDownButton
 		extends Div<JQXDropDownListChildren, JQXDropDownListAttributes, JQXDropDownListFeatures, JQXDropDownListEvents, JQXDropDownButton>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private final List list;
 	private JQXDropDownButtonFeature feature;
 

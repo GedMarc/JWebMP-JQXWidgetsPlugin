@@ -41,7 +41,7 @@ public class JQXTagCloud
 		extends Div<JQXTagCloudChildren, JQXTagCloudAttributes, JQXTagCloudFeature, JQXTagCloudEvents, JQXTagCloud>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTagCloudFeature feature;
 
 	public JQXTagCloud()

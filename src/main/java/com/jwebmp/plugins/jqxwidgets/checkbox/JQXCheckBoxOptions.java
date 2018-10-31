@@ -32,7 +32,6 @@ public class JQXCheckBoxOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Integer animationShowDelay;// 	Number 	250
 	private Integer animationHideDelay;// 	Number 	300

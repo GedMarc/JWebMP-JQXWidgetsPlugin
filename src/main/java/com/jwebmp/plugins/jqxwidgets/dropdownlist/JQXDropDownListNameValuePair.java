@@ -19,7 +19,6 @@ package com.jwebmp.plugins.jqxwidgets.dropdownlist;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,7 +61,7 @@ public class JQXDropDownListNameValuePair
 	}
 
 	public static class JQXDropDownListData
-			implements Serializable
+
 	{
 
 		private String name;

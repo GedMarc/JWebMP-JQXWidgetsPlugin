@@ -37,7 +37,7 @@ public class JQXValidator
 		extends Div<JQXValidatorChildren, JQXValidatorAttributes, JQXValidatorFeature, JQXValidatorEvents, JQXValidator>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXValidatorFeature feature;
 
 	public JQXValidator()

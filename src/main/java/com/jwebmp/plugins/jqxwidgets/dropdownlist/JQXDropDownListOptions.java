@@ -38,7 +38,6 @@ public class JQXDropDownListOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Boolean autoOpen;// Boolean 	false
 	private Boolean autoDropDownHeight;//  Boolean 	false

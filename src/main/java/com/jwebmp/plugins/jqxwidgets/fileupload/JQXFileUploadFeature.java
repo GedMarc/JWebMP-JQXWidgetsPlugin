@@ -31,7 +31,6 @@ public class JQXFileUploadFeature
 		extends Feature<GlobalFeatures, JQXFileUploadOptions, JQXFileUploadFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXFileUploadOptions options;
 

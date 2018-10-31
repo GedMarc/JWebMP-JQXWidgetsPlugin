@@ -31,7 +31,6 @@ public class JQXColorPickerFeature
 		extends Feature<GlobalFeatures, JQXColorPickerOptions, JQXColorPickerFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXColorPickerOptions options;
 

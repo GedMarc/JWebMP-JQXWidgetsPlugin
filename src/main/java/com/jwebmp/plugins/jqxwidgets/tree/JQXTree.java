@@ -37,7 +37,7 @@ public class JQXTree
 		implements JQXLayoutChildren<JQXTreeChildren, JQXTree>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTreeFeature feature;
 
 	public JQXTree()

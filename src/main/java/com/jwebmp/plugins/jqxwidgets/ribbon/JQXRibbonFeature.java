@@ -32,7 +32,6 @@ public class JQXRibbonFeature
 		extends Feature<GlobalFeatures, JQXRibbonOptions, JQXRibbonFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXRibbonOptions options;
 

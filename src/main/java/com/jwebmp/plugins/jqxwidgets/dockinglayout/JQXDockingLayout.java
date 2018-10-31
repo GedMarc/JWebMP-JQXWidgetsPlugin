@@ -35,7 +35,7 @@ public class JQXDockingLayout
 		extends Div<JQXDockingLayoutChildren, JQXDockingLayoutAttributes, JQXDockingLayoutFeature, JQXDockingLayoutEvents, JQXDockingLayout>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXDockingLayoutFeature feature;
 
 	public JQXDockingLayout()
@@ -59,6 +59,14 @@ public class JQXDockingLayout
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXDockingLayout
 		JQXDockingLayout that = (JQXDockingLayout) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -31,7 +31,7 @@ public class JQXLayoutFeature
 		extends Feature<GlobalFeatures, JQXLayoutOptions, JQXLayoutFeature>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXLayoutOptions options;
 
 	/**

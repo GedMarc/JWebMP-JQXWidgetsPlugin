@@ -30,7 +30,6 @@ public class JQXTagCloudFeature
 		extends Feature<JQXTagCloudFeature, JQXTagCloudOptions, JQXTagCloudFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTagCloudOptions options;
 

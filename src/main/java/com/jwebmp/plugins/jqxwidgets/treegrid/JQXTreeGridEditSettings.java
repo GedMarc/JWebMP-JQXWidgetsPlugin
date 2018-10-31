@@ -28,7 +28,6 @@ public class JQXTreeGridEditSettings
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Boolean saveOnPageChange;
 	private Boolean saveOnBlur;

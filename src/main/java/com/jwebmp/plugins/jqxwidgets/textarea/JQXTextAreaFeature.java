@@ -31,7 +31,6 @@ public class JQXTextAreaFeature
 		extends Feature<GlobalFeatures, JQXTextAreaOptions, JQXTextAreaFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXTextAreaOptions options;
 

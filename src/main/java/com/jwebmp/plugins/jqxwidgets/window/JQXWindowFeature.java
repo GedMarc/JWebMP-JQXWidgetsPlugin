@@ -31,7 +31,6 @@ public class JQXWindowFeature
 		extends Feature<GlobalFeatures, JQXWindowOptions, JQXWindowFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXWindowOptions options;
 

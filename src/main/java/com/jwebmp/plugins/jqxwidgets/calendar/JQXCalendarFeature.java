@@ -30,7 +30,6 @@ public class JQXCalendarFeature
 		extends Feature<JQXCalendarFeature, JQXCalendarOptions, JQXCalendarFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXCalendarOptions options;
 

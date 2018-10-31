@@ -28,7 +28,6 @@ public class JQXSelectedRowIndexes
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXSelectedRowIndexes()
 	{

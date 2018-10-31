@@ -31,7 +31,7 @@ public class JQXComplexInputFeature
 		extends Feature<GlobalFeatures, JQXComplexInputOptions, JQXComplexInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXComplexInputOptions options;
 
 	/**

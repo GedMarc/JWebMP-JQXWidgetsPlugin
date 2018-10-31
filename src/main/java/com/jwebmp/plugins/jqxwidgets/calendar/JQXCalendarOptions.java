@@ -39,7 +39,6 @@ public class JQXCalendarOptions
 		extends JQXDefaultJavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private String backText;// 	String 	Back
 	private Integer columnHeaderHeight;// 	Number 	20

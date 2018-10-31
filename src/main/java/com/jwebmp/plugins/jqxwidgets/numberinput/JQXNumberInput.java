@@ -39,7 +39,7 @@ public class JQXNumberInput
 		extends Div<JQXNumberInputChildren, JQXNumberInputAttributes, JQXNumberInputFeature, JQXNumberInputEvents, JQXNumberInput>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXNumberInputFeature feature;
 
 	public JQXNumberInput()

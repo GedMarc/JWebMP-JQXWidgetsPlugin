@@ -34,7 +34,7 @@ public class JQXColorPickerDropDown
 		extends JQXDropDownButton
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXColorPicker colourPicker;
 	private ColourHex colour;
 

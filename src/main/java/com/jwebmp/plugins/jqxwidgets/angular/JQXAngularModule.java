@@ -31,7 +31,6 @@ public class JQXAngularModule
 		extends AngularModuleBase
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public JQXAngularModule(ComponentHierarchyBase component)
 	{

@@ -35,7 +35,7 @@ public class JQXTextArea
 		extends Div<JQXTextAreaChildren, JQXTextAreaAttributes, JQXTextAreaFeature, JQXTextAreaEvents, JQXTextArea>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXTextAreaFeature feature;
 
 	public JQXTextArea()
@@ -59,6 +59,14 @@ public class JQXTextArea
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXTextArea
 		JQXTextArea that = (JQXTextArea) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

@@ -31,7 +31,6 @@ public class JQXDockingLayoutFeature
 		extends Feature<GlobalFeatures, JQXDockingLayoutOptions, JQXDockingLayoutFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXDockingLayoutOptions options;
 

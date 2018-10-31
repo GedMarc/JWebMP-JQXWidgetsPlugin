@@ -32,7 +32,6 @@ public class JQXNotificationFeature
 		extends Feature<GlobalFeatures, JQXNotificationOptions, JQXNotificationFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQXNotificationOptions options;
 

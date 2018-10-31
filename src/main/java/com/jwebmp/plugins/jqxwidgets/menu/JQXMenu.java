@@ -37,7 +37,7 @@ public class JQXMenu
 		extends Div<JQXMenuChildren, JQXMenuAttributes, JQXMenuFeature, JQXMenuEvents, JQXMenu>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXMenuFeature feature;
 
 	private JQXMenuList menuList;

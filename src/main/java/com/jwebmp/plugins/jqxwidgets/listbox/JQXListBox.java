@@ -35,7 +35,7 @@ public class JQXListBox
 		extends Div<JQXListBoxChildren, JQXListBoxAttributes, JQXListBoxFeature, JQXListBoxEvents, JQXListBox>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXListBoxFeature feature;
 
 	public JQXListBox()
@@ -59,6 +59,14 @@ public class JQXListBox
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,13 +85,5 @@ public class JQXListBox
 		JQXListBox that = (JQXListBox) o;
 
 		return getFeature().equals(that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
 	}
 }

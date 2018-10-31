@@ -30,7 +30,7 @@ public class JQXButtonGroupFeature
 		extends Feature<JQXButtonGroupFeature, JQXButtonGroupOptions, JQXButtonGroupFeature>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private JQXButtonGroupOptions options;
 
 	/**

@@ -25,7 +25,7 @@ public class JQXBulletChartTicks
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The actual position
 	 */

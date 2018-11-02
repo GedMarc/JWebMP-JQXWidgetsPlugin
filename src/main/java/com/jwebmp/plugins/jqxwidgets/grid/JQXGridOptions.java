@@ -20,8 +20,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
 
-import java.io.Serializable;
-
 /**
  * All the options for the JQX Grid library
  * <p>
@@ -135,7 +133,7 @@ public class JQXGridOptions
 	private Boolean sortable;//  	Boolean 	false
 	private Integer selectedrowindex;//  	Number 	-1
 	private JQXSelectedRowIndexes selectedrowindexes;// 	Array 	[]
-	private Serializable source;//
+	private Object source;//
 	private String sorttogglestates;//  	String 	2
 	private Integer updatedelay;//  	Number 	0
 	private Boolean virtualmode;//  	Boolean 	false
@@ -1123,12 +1121,12 @@ public class JQXGridOptions
 		this.selectedrowindexes = selectedrowindexes;
 	}
 
-	public Serializable getSource()
+	public Object getSource()
 	{
 		return source;
 	}
 
-	public void setSource(Serializable source)
+	public void setSource(Object source)
 	{
 		this.source = source;
 	}

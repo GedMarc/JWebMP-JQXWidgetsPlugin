@@ -29,8 +29,6 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 public class JQXBulletChartFeature
 		extends Feature<JQXBulletChartFeature, JQXBulletChartOptions, JQXBulletChartFeature>
 {
-
-
 	private JQXBulletChartOptions options;
 
 	/**

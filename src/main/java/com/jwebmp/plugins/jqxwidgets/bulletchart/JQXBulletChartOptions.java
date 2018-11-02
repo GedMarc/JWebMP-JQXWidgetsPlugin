@@ -36,8 +36,6 @@ import java.util.List;
 public class JQXBulletChartOptions
 		extends JQXDefaultJavaScriptPart
 {
-
-
 	/**
 	 * Sets ot gets the bulletcharts's animationDuration.
 	 */

@@ -1,7 +1,9 @@
 import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
 import com.jwebmp.plugins.jqxwidgets.JQXWidgetsPageConfigurator;
 
-module com.jwebmp.plugins.jqxwidgets {
+open module com.jwebmp.plugins.jqxwidgets {
 
 	exports com.jwebmp.plugins.jqxwidgets;
 
@@ -18,5 +20,7 @@ module com.jwebmp.plugins.jqxwidgets {
 	requires com.jwebmp.plugins.globalize.cultures;
 
 	provides IPageConfigurator with JQXWidgetsPageConfigurator;
+	provides IGuiceScanModuleExclusions with com.jwebmp.plugins.jqxwidgets.implementations.JQXWidgetsExclusionsModule;
+	provides IGuiceScanJarExclusions with com.jwebmp.plugins.jqxwidgets.implementations.JQXWidgetsExclusionsModule;
 
 }

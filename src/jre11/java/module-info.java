@@ -18,6 +18,7 @@ open module com.jwebmp.plugins.jqxwidgets {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.plugins.easingeffects;
 	requires com.jwebmp.plugins.globalize.cultures;
+	requires com.jwebmp.core.angularjs;
 
 	provides IPageConfigurator with JQXWidgetsPageConfigurator;
 	provides IGuiceScanModuleExclusions with com.jwebmp.plugins.jqxwidgets.implementations.JQXWidgetsExclusionsModule;

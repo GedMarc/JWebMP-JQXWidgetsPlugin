@@ -18,6 +18,7 @@ package com.jwebmp.plugins.jqxwidgets.angular;
 
 import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
+import com.jwebmp.plugins.jqxwidgets.JQXWidgetsPageConfigurator;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
 
 /**
@@ -28,10 +29,9 @@ import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;
  * @since Nov 6, 2016
  */
 public class JQXAngularModule
-		extends AngularModuleBase
+		extends AngularModuleBase<JQXAngularModule>
 {
-
-
+	@SuppressWarnings("unchecked")
 	public JQXAngularModule(ComponentHierarchyBase component)
 	{
 		super("jqwidgets");
@@ -45,5 +45,11 @@ public class JQXAngularModule
 	public String renderFunction()
 	{
 		return "";
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return JQXWidgetsPageConfigurator.isEnabled();
 	}
 }

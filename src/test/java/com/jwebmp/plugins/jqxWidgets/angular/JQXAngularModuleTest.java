@@ -17,6 +17,8 @@
 package com.jwebmp.plugins.jqxWidgets.angular;
 
 import com.jwebmp.core.Page;
+import com.jwebmp.core.base.angular.AngularPageConfigurator;
+import com.jwebmp.guicedinjection.GuiceContext;
 import com.jwebmp.plugins.jqxwidgets.angular.JQXAngularModule;
 import org.junit.jupiter.api.Test;
 
@@ -37,8 +39,8 @@ public class JQXAngularModuleTest
 		Page p = new Page();
 		JQXAngularModule mod = new JQXAngularModule(p.getBody());
 		System.out.println(p.toString(true));
-		System.out.println(p.getAngular()
-		                    .renderAngularJavascript(p));
+		System.out.println(GuiceContext.getInstance(AngularPageConfigurator.class)
+		                               .renderAngularJavascript(p));
 
 	}
 }

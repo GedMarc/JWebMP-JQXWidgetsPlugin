@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@ import com.jwebmp.core.base.html.Div;
  * jqxDraw is a small jQuery-based plugin which allows you to draw shapes and texts using VML, SVG and HTML5.
  * <p>
  *
- * @author Marc Magon
+ * @author GedMarc
  * @version 1.0
  * @since 13 Dec 2015
  */

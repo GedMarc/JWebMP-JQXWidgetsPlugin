@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
  * jqxNotification represents a jQuery widget which displays an unobtrusive notification to the user. Multiple instances of the same notification can be shown at the same time.
  * <p>
  *
- * @author Marc Magon
+ * @author GedMarc
  * @version 1.0
  * @since 20 Dec 2015
  */

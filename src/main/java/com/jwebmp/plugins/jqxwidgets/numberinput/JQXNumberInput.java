@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
  * Other built-in capabilities are customizable number of digits and decimal digits, currency symbol's string and position, group and decimal separator character.
  * <p>
  *
- * @author Marc Magon
+ * @author GedMarc
  * @version 1.0
  * @since 20 Dec 2015
  */

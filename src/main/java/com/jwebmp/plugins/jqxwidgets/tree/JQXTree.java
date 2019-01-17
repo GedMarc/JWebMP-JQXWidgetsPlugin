@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ import com.jwebmp.plugins.jqxwidgets.layout.JQXLayoutChildren;
  * jqxTree represents a jQuery Tree widget that displays a hierarchical collection of items. You can populate it from 'UL' or by using its 'source' property.
  * <p>
  *
- * @author Marc Magon
+ * @author GedMarc
  * @version 1.0
  * @since 29 Aug 2015
  */

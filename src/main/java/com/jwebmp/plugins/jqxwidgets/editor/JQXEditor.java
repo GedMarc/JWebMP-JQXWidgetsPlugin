@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
  * jqxEditor represents a ready-for-use HTML text editor which can simplify web content creation or be a replacement of your HTML Text Areas.
  * <p>
  *
- * @author Marc Magon
+ * @author GedMarc
  * @version 1.0
  * @since 29 Aug 2015
  */

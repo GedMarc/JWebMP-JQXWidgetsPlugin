@@ -158,7 +158,7 @@ public class JQXDataAdapter<A extends com.jwebmp.plugins.jqxwidgets.dataadapter.
 		JQXDataAdapterSourceData dataPacket = getOptions().getLocaldata();
 		try
 		{
-			return new StringBuilder(GuiceContext.getInstance(ObjectMapper.class)
+			return new StringBuilder(GuiceContext.get(ObjectMapper.class)
 			                                     .writeValueAsString(dataPacket));
 		}
 		catch (JsonProcessingException ex)

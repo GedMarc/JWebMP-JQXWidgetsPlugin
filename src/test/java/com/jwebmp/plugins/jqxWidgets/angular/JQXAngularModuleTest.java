@@ -39,7 +39,7 @@ public class JQXAngularModuleTest
 		Page p = new Page();
 		JQXAngularModule mod = new JQXAngularModule(p.getBody());
 		System.out.println(p.toString(true));
-		System.out.println(GuiceContext.getInstance(AngularPageConfigurator.class)
+		System.out.println(GuiceContext.get(AngularPageConfigurator.class)
 		                               .renderAngularJavascript(p));
 
 	}

@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jwebmp.core.Component;
 import com.jwebmp.core.components.DataAdapter;
 import com.jwebmp.core.plugins.ComponentInformation;
-import com.jwebmp.guicedinjection.GuiceContext;
+import com.guicedee.guicedinjection.GuiceContext;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterOptions;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.options.JQXDataAdapterSourceData;
 import com.jwebmp.plugins.pools.jqxwidgets.JQXReferencePool;

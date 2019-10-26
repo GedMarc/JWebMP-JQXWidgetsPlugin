@@ -18,7 +18,7 @@ package com.jwebmp.plugins.jqxWidgets.angular;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
-import com.jwebmp.guicedinjection.GuiceContext;
+import com.guicedee.guicedinjection.GuiceContext;
 import com.jwebmp.plugins.jqxwidgets.angular.JQXAngularModule;
 import org.junit.jupiter.api.Test;
 

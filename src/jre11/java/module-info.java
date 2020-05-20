@@ -1,4 +1,4 @@
-open module com.jwebmp.plugins.jqxwidgets {
+module com.jwebmp.plugins.jqxwidgets {
 
 	exports com.jwebmp.plugins.jqxwidgets;
 

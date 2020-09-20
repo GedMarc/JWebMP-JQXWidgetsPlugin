@@ -23,18 +23,15 @@
         <dependency>
             <groupId>com.jwebmp.plugins.javascript</groupId>
             <artifactId>jwebmp-easing-effects</artifactId>
-            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.jwebmp.plugins.javascript</groupId>
             <artifactId>jwebmp-globalize</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.jwebmp.plugins.angular</groupId>
             <artifactId>jwebmp-plugins-angularjs</artifactId>
-            <type>jar</type>
         </dependency>
     </dependencies>
 

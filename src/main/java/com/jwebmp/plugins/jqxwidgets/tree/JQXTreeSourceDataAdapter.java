@@ -19,7 +19,7 @@ package com.jwebmp.plugins.jqxwidgets.tree;
 import com.jwebmp.core.Component;
 import com.jwebmp.plugins.jqxwidgets.dataadapter.JQXDataAdapter;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * The JQX Tree Source Data Adapter

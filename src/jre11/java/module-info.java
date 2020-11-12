@@ -5,7 +5,7 @@ module com.jwebmp.plugins.jqxwidgets {
 	requires com.jwebmp.core;
 	requires com.guicedee.logmaster;
 
-	requires java.validation;
+	requires jakarta.validation;
 	requires java.logging;
 	requires com.fasterxml.jackson.core;
 	requires com.fasterxml.jackson.databind;

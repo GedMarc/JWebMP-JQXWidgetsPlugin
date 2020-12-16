@@ -17,6 +17,7 @@
 package com.jwebmp.plugins.jqxwidgets.maskedinput;
 
 import com.jwebmp.core.base.ComponentBase;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 
 /**
@@ -24,8 +25,8 @@ import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
  * @version 1.0
  * @since 07 Aug 2015
  */
-public interface JQXMaskedInputChildren<C extends IComponentHierarchyBase, J extends ComponentBase>
-		extends IComponentHierarchyBase<C, J>
+public interface JQXMaskedInputChildren
+		extends GlobalChildren
 {
 
 }

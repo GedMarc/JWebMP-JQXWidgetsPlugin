@@ -36,7 +36,7 @@ public class JQXAngularModuleTest
 	@Test
 	public void testSomeMethod()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		JQXAngularModule mod = new JQXAngularModule(p.getBody());
 		System.out.println(p.toString(true));
 		System.out.println(GuiceContext.get(AngularPageConfigurator.class)

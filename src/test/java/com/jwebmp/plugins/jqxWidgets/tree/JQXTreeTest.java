@@ -38,7 +38,7 @@ public class JQXTreeTest
 	{
 		JQXTree tree = new JQXTree();
 		System.out.println(tree.toString(true));
-		Page p = new Page();
+		Page<?> p = new Page();
 
 		p.getBody()
 		 .add(tree);

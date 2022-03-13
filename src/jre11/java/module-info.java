@@ -12,7 +12,7 @@ module com.jwebmp.plugins.jqxwidgets {
 	requires com.guicedee.guicedinjection;
 	requires com.jwebmp.plugins.easingeffects;
 	requires com.jwebmp.plugins.globalize.cultures;
-	requires com.jwebmp.core.angularjs;
+	requires com.jwebmp.core.angular;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.jqxwidgets.JQXWidgetsPageConfigurator;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqxwidgets.implementations.JQXWidgetsExclusionsModule;
